@@ -1,6 +1,6 @@
-# Module: lock
-# Description: Locks system
-# Usage: !lock or !lock secondsToLock
+# Module: clip
+# Description: copy to PC's Clipboard
+# Usage: !clip text
 # Dependencies: time, os
 
 import os, time, asyncio, configs
