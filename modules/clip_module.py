@@ -11,8 +11,6 @@ async def clip(ctx, txt):
 
     if configs.operating_sys == "Windows":
         os.system('''echo {0} |clip'''.format(txt))
-    elif configs.operating_sys == "Linux":
-        os.popen('xdg-open {0}'.format(txt))
     else:
-        await ctx.send("Can't lock system.")
+        await ctx.send("Can't copy")
         await asyncio.sleep(3)
