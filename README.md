@@ -146,7 +146,7 @@ Note: Some commands may require elevated privileges on Linux.
 
 [![Video Tutorial](https://j.gifs.com/l5m85j.gif)](https://www.youtube.com/watch?v=JXqS3WaTOB4)
 
-This above video is an instruction for install Chimera and the process is same for Reco too.
+The above video is an instruction for install Chimera and the process is same for Reco too.
 
 
 
@@ -166,7 +166,7 @@ Here's how to create a Reco module:
 
 
 ## Contributors:
-
+* [CedArctic](https://github.com/CedArctic)
 * [Zachman61](https://github.com/Zachman61)
 * [vfcoelho](https://github.com/vfcoelho)
 * [DragosPopse](https://github.com/DragosPopse)
