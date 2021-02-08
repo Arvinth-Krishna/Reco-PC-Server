@@ -63,7 +63,7 @@ Installing Reco is an easy 3 minute process - you can check the instructions bel
 	> copy the message to your PC's Clipboard
 
 * !echo *status*
-	> turns on or off !cmd and !powershell command echo in chat. When turned on, the command return will be sent to chat, e.g: !echo on / !echo off
+	> turns on or off !cmd and !powershell command echo in chat. When turned on, the command return will be sent to chat, e.g: !echo on (or) !echo off
 
 * !file *command* or !file *command* *path*
 	> browses, saves and retrieves files from or to your computer, e.g: !file relative ..
@@ -95,15 +95,15 @@ Installing Reco is an easy 3 minute process - you can check the instructions bel
 
 * !media *command* or !media *command* *repeat_n_times*
 	> controls computer media playback and volume once or repeatedly, e.g: !media prev 2
-		list of commands:
-		- vol-up
-		- vol-down
-		- vol-mute
-		- next
-		- prev
-		- stop
-		- play
-		- pause
+		>list of commands:
+		>- vol-up
+		>- vol-down
+		>- vol-mute
+		>- next
+		>- prev
+		>- stop
+		>- play
+		>- pause
 
 * !notification "*message*"
     > sends a notification to the computer
