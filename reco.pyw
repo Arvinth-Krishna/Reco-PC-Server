@@ -104,7 +104,7 @@ async def lock(ctx, minutes=0):
 @Logger(client)
 async def appquitter(ctx, appName,minutes=0):
     await appQuitter_module.appquitter(ctx,appName, minutes)
-    text= appName+"will close in "+str(minutes)+" minutes"
+    text= appName+" will close in "+str(minutes)+" minutes"
     await notification_module.notification(ctx,text)
     
     
@@ -315,11 +315,11 @@ def applicationExit():
 
 
 # About
-def about(): webbrowser.open('')
+def about(): webbrowser.open('https://github.com/Arvinth-Krishna/Reco-PC-Server')
 
 
 # Instructions
-def instructions(): webbrowser.open('')
+def instructions(): webbrowser.open('https://github.com/Arvinth-Krishna/Reco-PC-Server#features-documentation')
 
 
 # Create system tray icon and start running the client
