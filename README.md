@@ -166,7 +166,7 @@ Here's how to create a Reco module:
 
 ## Credits:
 
-* [CedArctic](https://github.com/CedArctic) for creating [Chimera](https://github.com/CedArctic/Chimera) which is modified and acting server(PC controller) for Reco-Discord PC Remote Controller app.
+* [CedArctic](https://github.com/CedArctic) for creating [Chimera](https://github.com/CedArctic/Chimera) which is modified and now actas a server(PC controller) for Reco-Discord PC Remote Controller app.
 
 
 ## Contributors:
