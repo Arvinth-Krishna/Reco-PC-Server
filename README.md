@@ -4,7 +4,7 @@
 </p>
 
 # 
-**Reco PC Server** is a cross platform System Controller Discord Bot which is modified version of Chimera for Reco-Discord PC Remote Controller app & it's written in Python discord.py.
+**Reco PC Server** is a cross platform PC Controller Discord Bot which is modified version of Chimera for Reco-Discord PC Remote Controller app & it's written in Python discord.py.
 
 
 Using Reco you can easily control your computer remotely and have it do from simple tasks such as shutdown, sleep, lock and to open a website from your computer or executing powershell commands.
@@ -83,19 +83,19 @@ Installing Reco is an easy 3 minute process - you can check the instructions bel
 	> shows Chimera help, listing commands of shows help for a specific command, e.g: !helpme screenshot
 
 * !hibernate or !hibernate *seconds*
-	> hibernates your computer immediately or with a time delay in seconds, e.g: !hibernate 30
+	> hibernates your computer immediately or with a time delay in minutes, e.g: !hibernate 30
 
 * !launch *shortcut*
     > launches a custom shortcut you placed in the shortcuts folder
 
 * !lock or !lock *seconds*
-	> locks your computer immediately or with a time delay in seconds, e.g: !lock 30
+	> locks your computer immediately or with a time delay in minutes, e.g: !lock 30
 
 * !log *param* or !log *param* *date*
-	> turns on or off chat logging or show log for given date (defaults to today), e.g: !log show 2018-10-16
+	> turns on or off chat logging or show log for given date (defaults to today), e.g: !log show 2021-02-08
 
 * !logoff or !logoff *seconds*
-	> logs off your user immediately or with a time delay in seconds, e.g: !logoff 30
+	> logs off your user immediately or with a time delay in minutes, e.g: !logoff 30
 
 * !media *command* or !media *command* *repeat_n_times*
 	> controls computer media playback and volume once or repeatedly, e.g: !media prev 2
@@ -116,7 +116,7 @@ Installing Reco is an easy 3 minute process - you can check the instructions bel
 	> executes *command* in Powershell
 
 * !restart or !restart *seconds*
-	> restarts your computer immediately or with a time delay in seconds, e.g: !restart 30
+	> restarts your computer immediately or with a time delay in minutes, e.g: !restart 30
 
 * !say "*text*"
 	> uses powershell commands and a TTS engine to make your computer say something
@@ -125,10 +125,10 @@ Installing Reco is an easy 3 minute process - you can check the instructions bel
 	> takes a screenshot of your computer and sends it back to you 
 
 * !shutdown or !shutdown *seconds*
-	> shuts down your computer immediately or with a time delay in seconds, e.g: !shutdown 30
+	> shuts down your computer immediately or with a time delay in minutes, e.g: !shutdown 30
 
 * !sleep or !sleep *seconds*
-	> sleeps your computer immediately or with a time delay in seconds, e.g: !sleep 30
+	> sleeps your computer immediately or with a time delay in minutes, e.g: !sleep 30
 
 * !url *website*
 	> Opens the website in your browser
