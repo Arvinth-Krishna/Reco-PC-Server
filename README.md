@@ -14,7 +14,7 @@ Reco PC Server is a self hosted bot, which means that you have to run the bot on
 Installing Reco is an easy 3 minute process - you can check the instructions bellow to see how to do it.
 
 ## Reco -Mobile App
-### Screenshots
+### Screenshots:
 <p align="center">
   <img  width="210" height="385" src="https://user-images.githubusercontent.com/49812701/107601722-8257b600-6c4d-11eb-87c2-9f9036382745.jpg">
   <img  width="210" height="385" src="https://user-images.githubusercontent.com/49812701/107601747-8e437800-6c4d-11eb-9c14-49080bd84cfa.jpg">
