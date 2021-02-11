@@ -80,7 +80,7 @@ Installing Reco is an easy 3 minute process - you can check the instructions bel
 * !file *command* or !file *command* *path*
 	> browses, saves and retrieves files from or to your computer, 
 
-         e.g: !file relative ..
+        e.g: !file relative ..
 		list of commands:
 		- absolute => sets an absolute path
 		- relative => sets a relative path
