@@ -70,17 +70,17 @@ Installing Reco is an easy 3 minute process - you can check the instructions bel
 * !clip *text*
 	> copy the message to your PC's Clipboard
 
-             e.g: !clip Copy this text to PC's Clipboard
+		e.g: !clip Copy this text to PC's Clipboard
 
 * !echo *status*
 	> turns on or off !cmd and !powershell command echo in chat. When turned on, the command return will be sent to chat, 
 
-              e.g: !echo on (or) !echo off
+		e.g: !echo on (or) !echo off
 
 * !file *command* or !file *command* *path*
 	> browses, saves and retrieves files from or to your computer, 
 
-        e.g: !file relative ..
+		e.g: !file relative ..
 		list of commands:
 		- absolute => sets an absolute path
 		- relative => sets a relative path
@@ -91,33 +91,33 @@ Installing Reco is an easy 3 minute process - you can check the instructions bel
 
 * !helpme or !helpme *command*
 	> shows Chimera help, listing commands of shows help for a specific command, 
-
-                e.g: !helpme screenshot
+	
+		e.g: !helpme screenshot
 
 * !hibernate or !hibernate *seconds*
 	> hibernates your computer immediately or with a time delay in minutes, 
 
-                e.g: !hibernate 30
+		e.g: !hibernate 30
 
 * !launch *shortcut*
     > launches a custom shortcut you placed in the shortcuts folder
 
-                e.g: !launch Application_Name_in_Shortcut_Folder
+		e.g: !launch Application_Name_in_Shortcut_Folder
 
 * !lock or !lock *seconds*
 	> locks your computer immediately or with a time delay in minutes, 
 
-                e.g: !lock 30
+		e.g: !lock 30
 
 * !log *param* or !log *param* *date*
 	> turns on or off chat logging or show log for given date (defaults to today), 
 
-                e.g: !log show 2021-02-08
+		e.g: !log show 2021-02-08
 
 * !logoff or !logoff *seconds*
 	> logs off your user immediately or with a time delay in minutes, 
 
-                e.g: !logoff 30
+		e.g: !logoff 30
 
 * !media *command* or !media *command* *repeat_n_times*
 	> controls computer media playback and volume once or repeatedly, e.g: !media prev 2
@@ -145,7 +145,7 @@ Installing Reco is an easy 3 minute process - you can check the instructions bel
 * !notification "*message*"
     > sends a notification to the computer
 
-                e.g: !notification who are you?
+		e.g: !notification who are you?
 
 * !powershell "*command*"
 	> executes *command* in Powershell
@@ -153,32 +153,32 @@ Installing Reco is an easy 3 minute process - you can check the instructions bel
 * !restart or !restart *seconds*
 	> restarts your computer immediately or with a time delay in minutes, 
 
-                e.g: !restart 30
+		e.g: !restart 30
 
 * !say "*text*"
 	> uses powershell commands and a TTS engine to make your computer say something
      
-                e.g: !say Reco
+		e.g: !say Reco
 
 * !screenshot or !screenshot *seconds*
 	> takes a screenshot of your computer and sends it back to you 
 
-                e.g: !screenshot 1
+		e.g: !screenshot 1
 
 * !shutdown or !shutdown *seconds*
 	> shuts down your computer immediately or with a time delay in minutes, 
 
-                e.g: !shutdown 30
+		e.g: !shutdown 30
 
 * !sleep or !sleep *seconds*
 	> sleeps your computer immediately or with a time delay in minutes, 
 
-                e.g: !sleep 30
+		e.g: !sleep 30
 
 * !url *website*
 	> Opens the website in your browser
 
-                e.g: !url www.google.com
+		e.g: !url www.google.com
 
 Note: Some commands may require elevated privileges on Linux.
 
