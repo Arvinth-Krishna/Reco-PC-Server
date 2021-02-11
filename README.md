@@ -54,15 +54,15 @@ Installing Reco is an easy 3 minute process - you can check the instructions bel
 * !appquitter *Application_Name* or !appquitter *Application_Name* *minutes*
 	> quits the specified application immediately or with a time delay in minutes, 
 
-             e.g: !appquitter chrome 30
+		e.g: !appquitter chrome 30
 
 * !camera *command* or !camera *command* *time*
 	> controls computer camera for taking photo or filming for a given *time* in seconds (default is 5 seconds), 
 
-           e.g: !camera video 10
-	       list of commands:
-	       - video time
-	       - photo
+		e.g: !camera video 10
+		list of commands:
+		- video time
+		- photo
 
 * !cmd "*command*"
 	> executes *command* in cmd.exe
