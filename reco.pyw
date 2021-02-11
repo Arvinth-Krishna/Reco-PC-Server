@@ -149,9 +149,10 @@ async def restart(ctx, minutes=0):
 @client.command()
 @Logger(client)
 async def abort(ctx):
-    await abort_module.abort(ctx)
     text="Aborting the schedule!"
     await notification_module.notification(ctx,text)
+    await abort_module.abort(ctx)
+
 
 # Module: hibernate
 # Description: Hibernates the system
