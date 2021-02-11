@@ -122,22 +122,15 @@ Installing Reco is an easy 3 minute process - you can check the instructions bel
 * !media *command* or !media *command* *repeat_n_times*
 	> controls computer media playback and volume once or repeatedly, e.g: !media prev 2
 	
-	list of commands:
-        - vol-up
-	- vol-down
-	- vol-mute
-	- next
-	- prev
-	- stop
-	- play
-	- pause
-        - key-up
-        - key-left
-        - key-down
-	- key-right
-	- key-enter
-	- key-space
-	- key-tab
+		list of commands:
+		- vol-up
+		- vol-down
+		- vol-mute
+		- next
+		- prev
+		- stop
+		- play
+		- pause
 		
 
 
