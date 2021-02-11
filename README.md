@@ -59,7 +59,7 @@ Installing Reco is an easy 3 minute process - you can check the instructions bel
 * !camera *command* or !camera *command* *time*
 	> controls computer camera for taking photo or filming for a given *time* in seconds (default is 5 seconds), 
 
-        e.g: !camera video 10
+           e.g: !camera video 10
 	       list of commands:
 	       - video time
 	       - photo
@@ -80,7 +80,7 @@ Installing Reco is an easy 3 minute process - you can check the instructions bel
 * !file *command* or !file *command* *path*
 	> browses, saves and retrieves files from or to your computer, 
 
-           e.g: !file relative ..
+       e.g: !file relative ..
 		list of commands:
 		- absolute => sets an absolute path
 		- relative => sets a relative path
