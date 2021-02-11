@@ -132,7 +132,7 @@ Installing Reco is an easy 3 minute process - you can check the instructions bel
 		- play
 		- pause
                 - key-up
-		- key-left
+                - key-left
 		- key-down
 		- key-right
 		- key-enter
