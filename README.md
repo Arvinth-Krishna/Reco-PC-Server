@@ -100,7 +100,7 @@ Installing Reco is an easy 3 minute process - you can check the instructions bel
                 e.g: !hibernate 30
 
 * !launch *shortcut*
-    > launches a custom shortcut you placed in the shortcuts folder.
+    > launches a custom shortcut you placed in the shortcuts folder
 
                 e.g: !launch Application_Name_in_Shortcut_Folder
 
