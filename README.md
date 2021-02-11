@@ -15,12 +15,12 @@ Installing Reco is an easy 3 minute process - you can check the instructions bel
 
 ## Reco -Mobile App
 
-<table style="width:100%">
-  <tr>
-    <th>![Screenshot_20210210-145745](https://user-images.githubusercontent.com/49812701/107601722-8257b600-6c4d-11eb-87c2-9f9036382745.jpg)</th>
-    <th>![Screenshot_20210210-145745](https://user-images.githubusercontent.com/49812701/107601722-8257b600-6c4d-11eb-87c2-9f9036382745.jpg)</th> 
-    <th>![Screenshot_20210210-145745](https://user-images.githubusercontent.com/49812701/107601722-8257b600-6c4d-11eb-87c2-9f9036382745.jpg)</th>
-  </tr>
+<p align="center">
+  <img  width="165" height="160" src="https://user-images.githubusercontent.com/49812701/107601722-8257b600-6c4d-11eb-87c2-9f9036382745.jpg">
+  <img  width="165" height="160" src="https://user-images.githubusercontent.com/49812701/107212940-b18fdc80-6a2d-11eb-929c-d3d9d1ca5e53.png">
+  <img  width="165" height="160" src="https://user-images.githubusercontent.com/49812701/107212940-b18fdc80-6a2d-11eb-929c-d3d9d1ca5e53.png">
+</p>
+
 
 ## Requirements:
 * Python 3
