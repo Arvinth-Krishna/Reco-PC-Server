@@ -80,7 +80,7 @@ Installing Reco is an easy 3 minute process - you can check the instructions bel
 * !file *command* or !file *command* *path*
 	> browses, saves and retrieves files from or to your computer, 
 
-              e.g: !file relative ..
+                e.g: !file relative ..
 		list of commands:
 		- absolute => sets an absolute path
 		- relative => sets a relative path
@@ -131,13 +131,19 @@ Installing Reco is an easy 3 minute process - you can check the instructions bel
 		- stop
 		- play
 		- pause
-		
+		- key-tab
+		- key-space
+		- key-enter
+		- key-up
+		- key-down
+		- key-left
+		- key-right	
 
 
 * !notification "*message*"
     > sends a notification to the computer
 
-                 e.g: !notification who are you?
+                e.g: !notification who are you?
 
 * !powershell "*command*"
 	> executes *command* in Powershell
@@ -145,32 +151,32 @@ Installing Reco is an easy 3 minute process - you can check the instructions bel
 * !restart or !restart *seconds*
 	> restarts your computer immediately or with a time delay in minutes, 
 
-                 e.g: !restart 30
+                e.g: !restart 30
 
 * !say "*text*"
 	> uses powershell commands and a TTS engine to make your computer say something
      
-                 e.g: !say Reco
+                e.g: !say Reco
 
 * !screenshot or !screenshot *seconds*
 	> takes a screenshot of your computer and sends it back to you 
 
-                 e.g: !screenshot 1
+                e.g: !screenshot 1
 
 * !shutdown or !shutdown *seconds*
 	> shuts down your computer immediately or with a time delay in minutes, 
 
-                 e.g: !shutdown 30
+                e.g: !shutdown 30
 
 * !sleep or !sleep *seconds*
 	> sleeps your computer immediately or with a time delay in minutes, 
 
-                 e.g: !sleep 30
+                e.g: !sleep 30
 
 * !url *website*
 	> Opens the website in your browser
 
-                 e.g: !url www.google.com
+                e.g: !url www.google.com
 
 Note: Some commands may require elevated privileges on Linux.
 
