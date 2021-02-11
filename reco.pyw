@@ -103,9 +103,10 @@ async def lock(ctx, minutes=0):
 @client.command()
 @Logger(client)
 async def appquitter(ctx, appName,minutes=0):
-    await appQuitter_module.appquitter(ctx,appName, minutes)
     text= appName+" will close in "+str(minutes)+" minutes"
     await notification_module.notification(ctx,text)
+    await appQuitter_module.appquitter(ctx,appName, minutes)
+
     
     
 # Module: sleep
