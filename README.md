@@ -16,9 +16,9 @@ Installing Reco is an easy 3 minute process - you can check the instructions bel
 ## Reco -Mobile App
 
 <p align="center">
-  <img  width="165" height="160" src="https://user-images.githubusercontent.com/49812701/107601722-8257b600-6c4d-11eb-87c2-9f9036382745.jpg">
-  <img  width="165" height="160" src="https://user-images.githubusercontent.com/49812701/107212940-b18fdc80-6a2d-11eb-929c-d3d9d1ca5e53.png">
-  <img  width="165" height="160" src="https://user-images.githubusercontent.com/49812701/107212940-b18fdc80-6a2d-11eb-929c-d3d9d1ca5e53.png">
+  <img  width="200" height="280" src="https://user-images.githubusercontent.com/49812701/107601722-8257b600-6c4d-11eb-87c2-9f9036382745.jpg">
+  <img  width="200" height="280" src="https://user-images.githubusercontent.com/49812701/107601747-8e437800-6c4d-11eb-9c14-49080bd84cfa.jpg">
+  <img  width="200" height="280" src="https://user-images.githubusercontent.com/49812701/107601773-9d2a2a80-6c4d-11eb-8ed0-958e136eff84.jpg">
 </p>
 
 
