@@ -23,6 +23,7 @@ Installing Reco is an easy 3 minute process - you can check the instructions bel
   <img  width="205" height="365" src="https://user-images.githubusercontent.com/49812701/107601788-a7e4bf80-6c4d-11eb-8f64-bd4c2fe6c7e3.jpg">
   <img  width="205" height="365" src="https://user-images.githubusercontent.com/49812701/107601794-ad420a00-6c4d-11eb-91f0-d9d35f7505c8.jpg">
   <img  width="205" height="365" src="https://user-images.githubusercontent.com/49812701/107601806-b29f5480-6c4d-11eb-95a9-043bc57e5d6d.jpg">
+  <img  width="205" height="365" src="https://user-images.githubusercontent.com/49812701/107602896-0b242100-6c51-11eb-8fc8-4473af17c846.jpg">
 </p>
 
 
