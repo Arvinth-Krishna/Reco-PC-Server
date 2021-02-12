@@ -55,8 +55,12 @@ async def on_message(message):
 # Usage: !cmd "command"
 @client.command()
 @Logger(client)
-async def cmd(ctx, cmnd):
-    await cmd_module.cmd(ctx, cmnd)
+async def cmd(ctx, *txt):
+    text=''''''
+    for txxt in txt: 
+        text = text+''' '''+txxt  
+    
+    await cmd_module.cmd(ctx, text)
 
 
 # Module: powershell
@@ -64,8 +68,12 @@ async def cmd(ctx, cmnd):
 # Usage: !powershell "command"
 @client.command()
 @Logger(client)
-async def powershell(ctx, cmnd):
-    await powershell_module.powershell(ctx, cmnd)
+async def powershell(ctx, *txt):
+    text=''''''
+    for txxt in txt: 
+        text = text+''' '''+txxt  
+    
+    await powershell_module.powershell(ctx, text)
 
 
 # Module: urlLauncher
