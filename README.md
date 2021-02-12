@@ -79,6 +79,8 @@ https://github.com/Arvinth-Krishna/Reco-PC-Server/edit/main/README.md
 ```diff
 @@ !abort @@
 ```
+<p style='color:purple'>This is some red text.</p>
+
 	> Aborts the Shutdown or Restart schedule.
 	
 		e.g: !abort
