@@ -234,7 +234,25 @@ The above video is an instruction for installing Chimera and the process is same
 #### Error 1: Building wheel for multidict (PEP 517) ... error
 
 * Its an simple error and easy to solve by following below instrustion:
-   - Just install [Visual Studio C++ build tools](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools&rel=16)
+   - We will Just Install and then Uninstall - Visual Studio C++ Build Tools.
+   - Now, just install [Visual Studio Installer](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools&rel=16) and then insall Build Tools.
+   - And now again try to run **run setup.bat on Windows** or **setup.sh on Linux** from Downloaded Reco Folder.
+   - After successfully installed Reco setup, Paste your Bot Token in the newly created **.env file** & continue following the [instuction from the 4th Step](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools&rel=16)
+
+#### Error 2: WARNING: The script chardetect.exe is installed in ........ which is not on PATH.
+
+* To solve this issue just copy and paste the path which is given in the error in The Environmental variable.
+   - eg:
+    - WARNING: The script chardetect.exe is installed in 'C:\Users\USER_NAME\AppData\Roaming\Python\Python39\Scripts' which is not on PATH.
+    - Copy the Path: C:\Users\USER_NAME\AppData\Roaming\Python\Python39\Scripts
+    - Now go to Start Menu and Type: Edit environment variables for your account
+    - In that click Path and then add the copied path in that field and click OK.
+    - And now again try to run **run setup.bat on Windows** or **setup.sh on Linux** from Downloaded Reco Folder.
+    - After successfully installed Reco setup, Paste your Bot Token in the newly created **.env file** & continue following the [instuction from the 4th Step](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools&rel=16)
+    
+       
+      
+   
    
 
 
