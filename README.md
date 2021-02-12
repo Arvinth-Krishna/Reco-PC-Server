@@ -49,27 +49,27 @@ https://github.com/Arvinth-Krishna/Reco-PC-Server/edit/main/README.md
 
 ## Features List:
 * **[Abort](https://github.com/Arvinth-Krishna/Reco-PC-Server/blob/main/README.md#-abort)**
-* **[appquitter](https://github.com/Arvinth-Krishna/Reco-PC-Server/blob/main/README.md#-appquitter)**
-* **[camera](https://github.com/Arvinth-Krishna/Reco-PC-Server/blob/main/README.md#-camera)**
-* **[cmd](https://github.com/Arvinth-Krishna/Reco-PC-Server/blob/main/README.md#-cmd)**
-* **[clip](https://github.com/Arvinth-Krishna/Reco-PC-Server/blob/main/README.md#-clip)**
-* **[echo](https://github.com/Arvinth-Krishna/Reco-PC-Server/blob/main/README.md#-echo)**
-* **[file](https://github.com/Arvinth-Krishna/Reco-PC-Server/blob/main/README.md#-file)**
-* **[helpme](https://github.com/Arvinth-Krishna/Reco-PC-Server/blob/main/README.md#-help-me)**
-* **[hibernate](https://github.com/Arvinth-Krishna/Reco-PC-Server/blob/main/README.md#-hibernate)**
-* **[launch](https://github.com/Arvinth-Krishna/Reco-PC-Server/blob/main/README.md#-Launch)**
-* **[lock](https://github.com/Arvinth-Krishna/Reco-PC-Server/blob/main/README.md#-lock)**
-* **[log](https://github.com/Arvinth-Krishna/Reco-PC-Server/blob/main/README.md#-log)**
-* **[logoff](https://github.com/Arvinth-Krishna/Reco-PC-Server/blob/main/README.md#-logoff)**
-* **[media](https://github.com/Arvinth-Krishna/Reco-PC-Server/blob/main/README.md#-media)**
-* **[notification](https://github.com/Arvinth-Krishna/Reco-PC-Server/blob/main/README.md#-notification)**
-* **[powershell](https://github.com/Arvinth-Krishna/Reco-PC-Server/blob/main/README.md#-powershell)**
-* **[restart](https://github.com/Arvinth-Krishna/Reco-PC-Server/blob/main/README.md#-powershell)**
-* **[say](https://github.com/Arvinth-Krishna/Reco-PC-Server/blob/main/README.md#-powershell)**
-* **[screenshot](https://github.com/Arvinth-Krishna/Reco-PC-Server/blob/main/README.md#-powershell)**
-* **[shutdown](https://github.com/Arvinth-Krishna/Reco-PC-Server/blob/main/README.md#-powershell)**
-* **[sleep](https://github.com/Arvinth-Krishna/Reco-PC-Server/blob/main/README.md#-powershell)**
-* **[url](https://github.com/Arvinth-Krishna/Reco-PC-Server/blob/main/README.md#-powershell)**
+* **[Appquitter](https://github.com/Arvinth-Krishna/Reco-PC-Server/blob/main/README.md#-appquitter)**
+* **[Camera](https://github.com/Arvinth-Krishna/Reco-PC-Server/blob/main/README.md#-camera)**
+* **[Cmd](https://github.com/Arvinth-Krishna/Reco-PC-Server/blob/main/README.md#-cmd)**
+* **[Clip](https://github.com/Arvinth-Krishna/Reco-PC-Server/blob/main/README.md#-clip)**
+* **[Echo](https://github.com/Arvinth-Krishna/Reco-PC-Server/blob/main/README.md#-echo)**
+* **[File](https://github.com/Arvinth-Krishna/Reco-PC-Server/blob/main/README.md#-file)**
+* **[Helpme](https://github.com/Arvinth-Krishna/Reco-PC-Server/blob/main/README.md#-help-me)**
+* **[Hibernate](https://github.com/Arvinth-Krishna/Reco-PC-Server/blob/main/README.md#-hibernate)**
+* **[Launch](https://github.com/Arvinth-Krishna/Reco-PC-Server/blob/main/README.md#-Launch)**
+* **[Lock](https://github.com/Arvinth-Krishna/Reco-PC-Server/blob/main/README.md#-lock)**
+* **[Log](https://github.com/Arvinth-Krishna/Reco-PC-Server/blob/main/README.md#-log)**
+* **[Logoff](https://github.com/Arvinth-Krishna/Reco-PC-Server/blob/main/README.md#-logoff)**
+* **[Media](https://github.com/Arvinth-Krishna/Reco-PC-Server/blob/main/README.md#-media)**
+* **[Notification](https://github.com/Arvinth-Krishna/Reco-PC-Server/blob/main/README.md#-notification)**
+* **[Powershell](https://github.com/Arvinth-Krishna/Reco-PC-Server/blob/main/README.md#-powershell)**
+* **[Restart](https://github.com/Arvinth-Krishna/Reco-PC-Server/blob/main/README.md#-powershell)**
+* **[Say](https://github.com/Arvinth-Krishna/Reco-PC-Server/blob/main/README.md#-powershell)**
+* **[Screenshot](https://github.com/Arvinth-Krishna/Reco-PC-Server/blob/main/README.md#-powershell)**
+* **[Shutdown](https://github.com/Arvinth-Krishna/Reco-PC-Server/blob/main/README.md#-powershell)**
+* **[Sleep](https://github.com/Arvinth-Krishna/Reco-PC-Server/blob/main/README.md#-powershell)**
+* **[Url](https://github.com/Arvinth-Krishna/Reco-PC-Server/blob/main/README.md#-powershell)**
 
 
 
