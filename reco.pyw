@@ -111,7 +111,7 @@ async def lock(ctx, minutes=0):
 @client.command()
 @Logger(client)
 async def appquitter(ctx, appName,minutes=0):
-    text= appName+" will close in "+str(minutes)+" minutes"
+    text= str(appName).capitalize()+" will close in "+str(minutes)+" minutes"
     await notification_module.notification(ctx,text)
     await appQuitter_module.appquitter(ctx,appName, minutes)
 
@@ -201,9 +201,9 @@ async def screenshot(ctx, seconds=0):
 @client.command()
 @Logger(client)
 async def say(ctx, *txt):
-    text=''
+    text=''''''
     for txxt in txt: 
-        text = text+txxt     
+        text = text+''' '''+txxt     
     await say_module.say(ctx, text)
 
 
