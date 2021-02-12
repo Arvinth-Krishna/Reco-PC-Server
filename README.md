@@ -51,28 +51,28 @@ https://github.com/Arvinth-Krishna/Reco-PC-Server/edit/main/README.md
 * Pillow
 
 ## Features List:
-* **[Abort](https://github.com/Arvinth-Krishna/Reco-PC-Server/blob/main/README.md#-abort)**
-* **[Appquitter](https://github.com/Arvinth-Krishna/Reco-PC-Server/blob/main/README.md#-appquitter)**
-* **[Camera](https://github.com/Arvinth-Krishna/Reco-PC-Server/blob/main/README.md#-camera)**
-* **[Cmd](https://github.com/Arvinth-Krishna/Reco-PC-Server/blob/main/README.md#-cmd)**
-* **[Clip](https://github.com/Arvinth-Krishna/Reco-PC-Server/blob/main/README.md#-clip)**
-* **[Echo](https://github.com/Arvinth-Krishna/Reco-PC-Server/blob/main/README.md#-echo)**
-* **[File](https://github.com/Arvinth-Krishna/Reco-PC-Server/blob/main/README.md#-file)**
-* **[Helpme](https://github.com/Arvinth-Krishna/Reco-PC-Server/blob/main/README.md#-help-me)**
-* **[Hibernate](https://github.com/Arvinth-Krishna/Reco-PC-Server/blob/main/README.md#-hibernate)**
-* **[Launch](https://github.com/Arvinth-Krishna/Reco-PC-Server/blob/main/README.md#-Launch)**
-* **[Lock](https://github.com/Arvinth-Krishna/Reco-PC-Server/blob/main/README.md#-lock)**
-* **[Log](https://github.com/Arvinth-Krishna/Reco-PC-Server/blob/main/README.md#-log)**
-* **[Logoff](https://github.com/Arvinth-Krishna/Reco-PC-Server/blob/main/README.md#-logoff)**
-* **[Media](https://github.com/Arvinth-Krishna/Reco-PC-Server/blob/main/README.md#-media)**
-* **[Notification](https://github.com/Arvinth-Krishna/Reco-PC-Server/blob/main/README.md#-notification)**
-* **[Powershell](https://github.com/Arvinth-Krishna/Reco-PC-Server/blob/main/README.md#-powershell)**
-* **[Restart](https://github.com/Arvinth-Krishna/Reco-PC-Server/blob/main/README.md#-powershell)**
-* **[Say](https://github.com/Arvinth-Krishna/Reco-PC-Server/blob/main/README.md#-powershell)**
-* **[Screenshot](https://github.com/Arvinth-Krishna/Reco-PC-Server/blob/main/README.md#-powershell)**
-* **[Shutdown](https://github.com/Arvinth-Krishna/Reco-PC-Server/blob/main/README.md#-powershell)**
-* **[Sleep](https://github.com/Arvinth-Krishna/Reco-PC-Server/blob/main/README.md#-powershell)**
-* **[Url](https://github.com/Arvinth-Krishna/Reco-PC-Server/blob/main/README.md#-powershell)**
+* **[Abort](https://github.com/Arvinth-Krishna/Reco-PC-Server#-abort)**
+* **[Appquitter](https://github.com/Arvinth-Krishna/Reco-PC-Server#-appquitter)**
+* **[Camera](https://github.com/Arvinth-Krishna/Reco-PC-Server#-camera)**
+* **[Cmd](https://github.com/Arvinth-Krishna/Reco-PC-Server#-cmd)**
+* **[Clip](https://github.com/Arvinth-Krishna/Reco-PC-Server#-clip)**
+* **[Echo](https://github.com/Arvinth-Krishna/Reco-PC-Server#-echo)**
+* **[File](https://github.com/Arvinth-Krishna/Reco-PC-Server#-file)**
+* **[Helpme](https://github.com/Arvinth-Krishna/Reco-PC-Server#-help-me)**
+* **[Hibernate](https://github.com/Arvinth-Krishna/Reco-PC-Server#-hibernate)**
+* **[Launch](https://github.com/Arvinth-Krishna/Reco-PC-Server#-launch)**
+* **[Lock](https://github.com/Arvinth-Krishna/Reco-PC-Server#-lock)**
+* **[Log](https://github.com/Arvinth-Krishna/Reco-PC-Server#-log)**
+* **[Logoff](https://github.com/Arvinth-Krishna/Reco-PC-Server#-logoff)**
+* **[Media](https://github.com/Arvinth-Krishna/Reco-PC-Server#-media)**
+* **[Notification](https://github.com/Arvinth-Krishna/Reco-PC-Server#-notification)**
+* **[Powershell](https://github.com/Arvinth-Krishna/Reco-PC-Server#-powershell)**
+* **[Restart](https://github.com/Arvinth-Krishna/Reco-PC-Server#-restart)**
+* **[Say](https://github.com/Arvinth-Krishna/Reco-PC-Server#-say)**
+* **[Screenshot](https://github.com/Arvinth-Krishna/Reco-PC-Server#-screenshot)**
+* **[Shutdown](https://github.com/Arvinth-Krishna/Reco-PC-Server#-shutdown)**
+* **[Sleep](https://github.com/Arvinth-Krishna/Reco-PC-Server#-sleep)**
+* **[Url](https://github.com/Arvinth-Krishna/Reco-PC-Server#-url)**
 
 
 
