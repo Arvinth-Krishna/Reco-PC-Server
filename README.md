@@ -105,7 +105,9 @@ https://github.com/Arvinth-Krishna/Reco-PC-Server/edit/main/README.md
 ### ★ Cmd 
 
 * !cmd "*command*"
-	> Executes *command* in cmd.exe
+	> Executes *command* in cmd.exe.
+
+		e.g: !cmd shutdown -a
 
 ### ★ Clip 
 
@@ -213,6 +215,8 @@ https://github.com/Arvinth-Krishna/Reco-PC-Server/edit/main/README.md
 
 * !powershell "*command*"
 	> Executes *command* in Powershell.
+
+		e.g: !powershell shutdown -s -t 300
 
 ### ★ Restart 
 
