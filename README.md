@@ -82,9 +82,9 @@ https://github.com/Arvinth-Krishna/Reco-PC-Server/edit/main/README.md
 ```diff
 - Aborts the Shutdown or Restart schedule.
 ```
-	> !abort
+> !abort
 
-		e.g: !abort
+	e.g: !abort
 
 ### ⦿ AppQuitter 
 
