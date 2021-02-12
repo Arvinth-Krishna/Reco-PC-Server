@@ -80,14 +80,10 @@ https://github.com/Arvinth-Krishna/Reco-PC-Server/edit/main/README.md
 
 ### ★ Abort 
 ```diff
-- !abort
+- Aborts the Shutdown or Restart schedule.
 ```
-<div class="text-purple">
-  This text is purple, <a href="#" class="text-inherit">including the link</a>
-</div>
+	> !abort
 
-	> Aborts the Shutdown or Restart schedule.
-	
 		e.g: !abort
 
 ### ⦿ AppQuitter 
