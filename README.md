@@ -215,7 +215,7 @@ Note: Some commands may require elevated privileges on Linux.
 ## Installation:
 
 ### Text Instructions:
-1. **Download & Install Python** -> https://www.python.org/downloads/
+1. **Download & Install Python** -> https://www.python.org/  - Remember: Tick the Add to path checkBox during installation.
 2. Create a bot and get its **token** and then get your **channel ID** by following these instructions: https://github.com/Chikachi/DiscordIntegration/wiki/How-to-get-a-token-and-channel-ID-for-Discord
 3. [Download](https://github.com/Arvinth-Krishna/Reco-PC-Server/archive/main.zip) the Reco PC Server Repository, **run setup.bat on Windows** or **setup.sh on Linux** and put your Bot Token in the newly created **.env file**. 
 4. Get **Webhook URL** from your Channel and add it in your Weebhook tab in your Reco mobile App. https://user-images.githubusercontent.com/49812701/107608547-4844df00-6c62-11eb-9800-4361cd39451c.png
