@@ -16,6 +16,13 @@ https://github.com/Arvinth-Krishna/Reco-PC-Server/edit/main/README.md
 ## Reco -Mobile App
 **_Reco: Discord PC Remote Controller_**-Mobile App will be soon available on Play Store✌. And it will be a open Source soon.
 
+* Reco contain 4 Screen 
+  - Home Screen
+  - Media Screen
+  - Command Screen
+  - Webhook Screen
+  
+
 ### Screenshots:
 <p align="center">
   <img  width="210" height="385" src="https://user-images.githubusercontent.com/49812701/107601722-8257b600-6c4d-11eb-87c2-9f9036382745.jpg">
