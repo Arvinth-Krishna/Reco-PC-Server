@@ -75,7 +75,7 @@ https://github.com/Arvinth-Krishna/Reco-PC-Server/edit/main/README.md
 
 ## Features Documentation:
 
-### ⦿ Abort 
+### ★ Abort 
 
 * !abort
 	> Aborts the Shutdown or Restart schedule.
