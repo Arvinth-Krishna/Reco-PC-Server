@@ -229,7 +229,7 @@ Note: Some commands may require elevated privileges on Linux.
 
 The above video is an instruction for installing Chimera and the process is same for Reco too.
 
-### To Deal with Error:
+### To Deal with any Error:
 
 #### Error 1: Building wheel for multidict (PEP 517) ... error
 
