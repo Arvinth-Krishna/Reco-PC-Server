@@ -37,11 +37,6 @@ Installing Reco is an easy 3 minute process.
   <img  width="210" height="385" src="https://user-images.githubusercontent.com/49812701/107602896-0b242100-6c51-11eb-8fc8-4473af17c846.jpg">
 </p>
 
-<div class="text-purple">
-  This text is purple, <a href="#" class="text-inherit">including the link</a>
-</div>
-
-
 
 
 ## Requirements:
