@@ -283,66 +283,6 @@ async def url(ctx, txt):
 
 
 
-
-
-
-
-    
-    
-
-
-
-
-    
-
-
-
-    
-
-
-
-
-
-    
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # System Tray menu functions
 
 # Starts the bot client
