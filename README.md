@@ -77,7 +77,7 @@ https://github.com/Arvinth-Krishna/Reco-PC-Server/edit/main/README.md
 
 ### ★ Abort 
 ```diff
-@@ !abort @@
+- !abort 
 ```
 <p style='color:purple'>This is some red text.</p>
 
