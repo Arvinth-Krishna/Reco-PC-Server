@@ -48,7 +48,7 @@ https://github.com/Arvinth-Krishna/Reco-PC-Server/edit/main/README.md
 * Pillow
 
 ## Features List:
-* abort
+* [Abort](https://github.com/Arvinth-Krishna/Reco-PC-Server/blob/main/README.md#-abort)
 * appquitter
 * camera
 * cmd
