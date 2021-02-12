@@ -82,10 +82,14 @@ https://github.com/Arvinth-Krishna/Reco-PC-Server/edit/main/README.md
 
 		e.g: !abort
 
+### ⦿ AppQuitter 
+
 * !appquitter *Application_Name* or !appquitter *Application_Name* *minutes*
 	> Quits the specified application immediately or with a time delay in minutes.
 
 		e.g: !appquitter chrome 30
+
+### ⦿ Camera 
 
 * !camera *command* or !camera *command* *time*
 	> Controls computer camera for taking photo or filming for a given *time* in seconds (default is 5 seconds).
@@ -95,18 +99,26 @@ https://github.com/Arvinth-Krishna/Reco-PC-Server/edit/main/README.md
 		- video time
 		- photo
 
+### ⦿ Cmd 
+
 * !cmd "*command*"
 	> Executes *command* in cmd.exe
+
+### ⦿ Clip 
 
 * !clip *text*
 	> Copy the message to your PC's Clipboard.
 
 		e.g: !clip Copy this text to PC's Clipboard
 
+### ⦿ Echo 
+
 * !echo *status*
 	> Turns on or off !cmd and !powershell command echo in chat. When turned on, the command return will be sent to chat.
 
 		e.g: !echo on (or) !echo off
+
+### ⦿ File 
 
 * !file *command* or !file *command* *path*
 	> Browses, saves and retrieves files from or to your computer.
@@ -120,35 +132,49 @@ https://github.com/Arvinth-Krishna/Reco-PC-Server/edit/main/README.md
 		- save => saves a file to the HD from the chat
 		- download => saves a file from a direct url to the HD
 
+### ⦿ Help Me 
+
 * !helpme or !helpme *command*
 	> Shows Chimera help, listing commands of shows help for a specific command.
 	
 		e.g: !helpme screenshot
+
+### ⦿ Hibernate 
 
 * !hibernate or !hibernate *seconds*
 	> Hibernates your computer immediately or with a time delay in minutes. 
 
 		e.g: !hibernate 30
 
+### ⦿ Shortcut 
+
 * !launch *shortcut*
     > Launches a custom shortcut you placed in the shortcuts folder.
 
 		e.g: !launch Application_Name_in_Shortcut_Folder
+
+### ⦿ Lock 
 
 * !lock or !lock *seconds*
 	> Locks your computer immediately or with a time delay in minutes.
 
 		e.g: !lock 30
 
+### ⦿ Log 
+
 * !log *param* or !log *param* *date*
 	> turns on or off chat logging or show log for given date (defaults to today).
 
 		e.g: !log show 2021-02-08
 
+### ⦿ LogOff 
+
 * !logoff or !logoff *seconds*
 	> Logs off your user immediately or with a time delay in minutes.
 
 		e.g: !logoff 30
+
+### ⦿ Media 
 
 * !media *command* or !media *command* *repeat_n_times*
 	> Controls computer media playback and volume once or repeatedly.
@@ -173,38 +199,54 @@ https://github.com/Arvinth-Krishna/Reco-PC-Server/edit/main/README.md
 		- key-right	
 
 
+### ⦿ Notification 
+
 * !notification "*message*"
     > Sends a notification to the computer.
 
 		e.g: !notification who are you?
 
+### ⦿ Powershell 
+
 * !powershell "*command*"
 	> Executes *command* in Powershell.
+
+### ⦿ Restart 
 
 * !restart or !restart *seconds*
 	> Restarts your computer immediately or with a time delay in minutes.
 
 		e.g: !restart 30
 
+### ⦿ Say 
+
 * !say "*text*"
 	> Uses powershell commands and a TTS engine to make your computer say something.
      
 		e.g: !say Reco
+
+### ⦿ ScreenShot 
 
 * !screenshot or !screenshot *seconds*
 	> Takes a screenshot of your computer and sends it back to you.
 
 		e.g: !screenshot 1
 
+### ⦿ Shutdown 
+
 * !shutdown or !shutdown *seconds*
 	> Shuts down your computer immediately or with a time delay in minutes.
 
 		e.g: !shutdown 30
 
+### ⦿ Sleep 
+
 * !sleep or !sleep *seconds*
 	> Sleeps your computer immediately or with a time delay in minutes. 
 
 		e.g: !sleep 30
+
+### ⦿ URL 
 
 * !url *website*
 	> Opens the website in your browser.
