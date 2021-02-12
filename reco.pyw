@@ -50,6 +50,38 @@ async def on_message(message):
     ctx = await client.get_context(message)
     await client.invoke(ctx)
 
+
+# Module: abort
+# Description: Abort the Shutdown or Restart schedule
+# Usage: !abort 
+@client.command()
+@Logger(client)
+async def abort(ctx):
+    text="Aborting the schedule!"
+    await notification_module.notification(ctx,text)
+    await abort_module.abort(ctx)
+
+
+# Module: appQuitter
+# Description: Quits the application
+# Usage: !appquitter "Application Name" or !appquitter "Application Name" minutesToQuit
+@client.command()
+@Logger(client)
+async def appquitter(ctx, appName,minutes=0):
+    text= str(appName).capitalize()+" will close in "+str(minutes)+" minutes"
+    await notification_module.notification(ctx,text)
+    await appQuitter_module.appquitter(ctx,appName, minutes)
+
+
+# Module: camera
+# Description: Records a video or takes a photo (no audio)
+# Usage: !camera command time
+@client.command()
+@Logger(client)
+async def camera(ctx, command, time=5):
+    await camera_module.camera(ctx, command, time)
+
+
 # Module: cmd
 # Description: Executes cmd command
 # Usage: !cmd "command"
@@ -61,6 +93,116 @@ async def cmd(ctx, *txt):
         text = text+''' '''+txxt  
     
     await cmd_module.cmd(ctx, text)
+
+
+# Module: clipBoard
+# Description: Copy to PC's Clipboard
+# Usage: !clip txt
+@client.command()
+@Logger(client)
+async def clip(ctx, *txt):
+    text=''''''
+    for txxt in txt: 
+        text = text+''' '''+txxt  
+    
+    await clip_module.clip(ctx, text)
+
+
+# Module: echo
+# Description: Turns command output display to discord chat on and off (works for !cmd and !powershell)
+# Usage: !echo off or !echo on
+@client.command()
+@Logger(client)
+async def echo(ctx, status):
+    await echo_module.echo(ctx, status)
+
+
+# Module: file
+# Description: Allows file download, upload and system navigation
+# Usage: !file [command] [[path]|[times]]
+@client.command()
+@Logger(client)
+async def file(ctx, command, *args):
+    await file_module.file(ctx, command, *args)
+
+
+# Module: helpme
+# Description: Allows file download, upload and system navigation
+# Usage: !helpme [command]
+@client.command()
+@Logger(client)
+async def helpme(ctx, command=None):
+    await helpme_module.helpme(ctx, command)
+
+
+# Module: hibernate
+# Description: Hibernates the system
+# Usage: !hibernate or !hibernate secondsToHibernation
+@client.command()
+@Logger(client)
+async def hibernate(ctx, minutes=0):
+    text="System hibernates in "+str(minutes)+" minutes"
+    await notification_module.notification(ctx,text)
+    await hibernate_module.hibernate(ctx, minutes)
+
+
+# Module: launch
+# Description: Launches a shortcut in the shortcuts directory
+# Usage: !launch [shortcut]
+@client.command()
+@Logger(client)
+async def launch(ctx, shortcut):
+    await launch_module.launch(ctx, shortcut)
+
+
+# Module: lock
+# Description: Locks system
+# Usage: !lock or !lock minutesToLock
+@client.command()
+@Logger(client)
+async def lock(ctx, minutes=0):
+    await lock_module.lock(ctx, minutes)
+
+
+# Module: log
+# Description: Turns on of off logs in chat. Also can be used to retrieve Chimera execution logs
+# Usage: !log [off|on] | [show] [date (format: YYYY-MM-DD)]
+@client.command()
+@Logger(client)
+async def log(ctx, param, date=None):
+    await log_module.log(ctx, param, date)
+
+
+# Module: logoff
+# Description: Logs the user out of the system
+# Usage: !logoff or !logoff secondsToLogoff
+@client.command()
+@Logger(client)
+async def logoff(ctx, minutes=0):
+    text="System logout in "+str(minutes)+" minutes"
+    await notification_module.notification(ctx,text)
+    await logoff_module.logoff(ctx, minutes)
+
+
+# Module: media
+# Description: Controls Media Features
+# Usage: !media command or !media command times
+@client.command()
+@Logger(client)
+async def media(ctx, command, times=1):
+    await media_module.media(ctx, command, times)
+
+
+# Module: notification
+# Description: Sends a notification to the computer
+# Usage: !notification "Notification Content"
+@client.command()
+@Logger(client)
+async def notification(ctx, *txt):
+    text=''''''
+    for txxt in txt: 
+        text = text+''' '''+txxt  
+    await notification_module.notification(ctx, text)
 
 
 # Module: powershell
@@ -76,70 +218,6 @@ async def powershell(ctx, *txt):
     await powershell_module.powershell(ctx, text)
 
 
-# Module: urlLauncher
-# Description: Launch the website
-# Usage: !url website
-@client.command()
-@Logger(client)
-async def url(ctx, txt):
-    await urlLauncher_module.url(ctx, txt)
-
-# Module: clipBoard
-# Description: Copy to PC's Clipboard
-# Usage: !clip txt
-@client.command()
-@Logger(client)
-async def clip(ctx, *txt):
-    text=''''''
-    for txxt in txt: 
-        text = text+''' '''+txxt  
-    
-    await clip_module.clip(ctx, text)
-
-
-# Module: lock
-# Description: Locks system
-# Usage: !lock or !lock minutesToLock
-@client.command()
-@Logger(client)
-async def lock(ctx, minutes=0):
-    await lock_module.lock(ctx, minutes)
-
-# Module: appQuitter
-# Description: Quits the application
-# Usage: !appquitter "Application Name" or !appquitter "Application Name" minutesToQuit
-@client.command()
-@Logger(client)
-async def appquitter(ctx, appName,minutes=0):
-    text= str(appName).capitalize()+" will close in "+str(minutes)+" minutes"
-    await notification_module.notification(ctx,text)
-    await appQuitter_module.appquitter(ctx,appName, minutes)
-
-    
-    
-# Module: sleep
-# Description: Puts system to sleep
-# Usage: !sleep or !sleep minutesToSleep
-@client.command()
-@Logger(client)
-async def sleep(ctx, minutes=0):
-    text="System sleep in "+str(minutes)+" minutes"
-    await notification_module.notification(ctx,text)
-    await sleep_module.sleep(ctx, minutes)
-
-
-# Module: shutdown
-# Description: Shuts system down
-# Usage: !shutdown or !shutdown minutesToShutdown
-@client.command()
-@Logger(client)
-async def shutdown(ctx, minutes=0):
-    text="System shutdown in "+str(minutes)+" minutes"
-    await notification_module.notification(ctx,text)
-    await shutdown_module.shutdown(ctx, minutes)
-    
-
-
 # Module: restart
 # Description: Restarts system
 # Usage: !restart or !restart minutesToRestart
@@ -149,50 +227,6 @@ async def restart(ctx, minutes=0):
     text="System restart in "+str(minutes)+" minutes"
     await notification_module.notification(ctx,text)
     await restart_module.restart(ctx, minutes)
-    
-
-# Module: abort
-# Description: Abort the Shutdown or Restart schedule
-# Usage: !abort 
-@client.command()
-@Logger(client)
-async def abort(ctx):
-    text="Aborting the schedule!"
-    await notification_module.notification(ctx,text)
-    await abort_module.abort(ctx)
-
-
-# Module: hibernate
-# Description: Hibernates the system
-# Usage: !hibernate or !hibernate secondsToHibernation
-@client.command()
-@Logger(client)
-async def hibernate(ctx, minutes=0):
-    text="System hibernates in "+str(minutes)+" minutes"
-    await notification_module.notification(ctx,text)
-    await hibernate_module.hibernate(ctx, minutes)
-    
-
-
-# Module: logoff
-# Description: Logs the user out of the system
-# Usage: !logoff or !logoff secondsToLogoff
-@client.command()
-@Logger(client)
-async def logoff(ctx, minutes=0):
-    text="System logout in "+str(minutes)+" minutes"
-    await notification_module.notification(ctx,text)
-    await logoff_module.logoff(ctx, minutes)
-    
-
-
-# Module: screenshot
-# Description: Takes a screenshot and sends it back
-# Usage: !screenshot or !screenshot secondsToScreenshot
-@client.command()
-@Logger(client)
-async def screenshot(ctx, seconds=0):
-    await screenshot_module.screenshot(ctx, seconds)
 
 
 # Module: say
@@ -207,81 +241,105 @@ async def say(ctx, *txt):
     await say_module.say(ctx, text)
 
 
-
-# Module: media
-# Description: Controls Media Features
-# Usage: !media command or !media command times
+# Module: screenshot
+# Description: Takes a screenshot and sends it back
+# Usage: !screenshot or !screenshot secondsToScreenshot
 @client.command()
 @Logger(client)
-async def media(ctx, command, times=1):
-    await media_module.media(ctx, command, times)
+async def screenshot(ctx, seconds=0):
+    await screenshot_module.screenshot(ctx, seconds)
 
 
-
-# Module: camera
-# Description: Records a video or takes a photo (no audio)
-# Usage: !camera command time
+# Module: shutdown
+# Description: Shuts system down
+# Usage: !shutdown or !shutdown minutesToShutdown
 @client.command()
 @Logger(client)
-async def camera(ctx, command, time=5):
-    await camera_module.camera(ctx, command, time)
+async def shutdown(ctx, minutes=0):
+    text="System shutdown in "+str(minutes)+" minutes"
+    await notification_module.notification(ctx,text)
+    await shutdown_module.shutdown(ctx, minutes)
 
 
-# Module: echo
-# Description: Turns command output display to discord chat on and off (works for !cmd and !powershell)
-# Usage: !echo off or !echo on
+# Module: sleep
+# Description: Puts system to sleep
+# Usage: !sleep or !sleep minutesToSleep
 @client.command()
 @Logger(client)
-async def echo(ctx, status):
-    await echo_module.echo(ctx, status)
+async def sleep(ctx, minutes=0):
+    text="System sleep in "+str(minutes)+" minutes"
+    await notification_module.notification(ctx,text)
+    await sleep_module.sleep(ctx, minutes)
 
 
-# Module: log
-# Description: Turns on of off logs in chat. Also can be used to retrieve Chimera execution logs
-# Usage: !log [off|on] | [show] [date (format: YYYY-MM-DD)]
+# Module: urlLauncher
+# Description: Launch the website
+# Usage: !url website
 @client.command()
 @Logger(client)
-async def log(ctx, param, date=None):
-    await log_module.log(ctx, param, date)
+async def url(ctx, txt):
+    await urlLauncher_module.url(ctx, txt)
 
 
-# Module: file
-# Description: Allows file download, upload and system navigation
-# Usage: !file [command] [[path]|[times]]
-@client.command()
-@Logger(client)
-async def file(ctx, command, *args):
-    await file_module.file(ctx, command, *args)
 
 
-# Module: launch
-# Description: Launches a shortcut in the shortcuts directory
-# Usage: !launch [shortcut]
-@client.command()
-@Logger(client)
-async def launch(ctx, shortcut):
-    await launch_module.launch(ctx, shortcut)
 
 
-# Module: helpme
-# Description: Allows file download, upload and system navigation
-# Usage: !helpme [command]
-@client.command()
-@Logger(client)
-async def helpme(ctx, command=None):
-    await helpme_module.helpme(ctx, command)
 
 
-# Module: notification
-# Description: Sends a notification to the computer
-# Usage: !notification "Notification Content"
-@client.command()
-@Logger(client)
-async def notification(ctx, *txt):
-    text=''''''
-    for txxt in txt: 
-        text = text+''' '''+txxt  
-    await notification_module.notification(ctx, text)
+    
+    
+
+
+
+
+    
+
+
+
+    
+
+
+
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
