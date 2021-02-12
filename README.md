@@ -229,9 +229,9 @@ Note: Some commands may require elevated privileges on Linux.
 
 The above video is an instruction for installing Chimera and the process is same for Reco too.
 
-### To Deal with any Error:
+## To Deal with any Error:
 
-#### Error 1: Building wheel for multidict (PEP 517) ... error
+### Error 1: Building wheel for multidict (PEP 517) ... error
 
 * Its an simple error and easy to solve by following below instrustion:
    - We will Just Install and then Uninstall - Visual Studio C++ Build Tools.
@@ -240,7 +240,7 @@ The above video is an instruction for installing Chimera and the process is same
    - After successfully installed Reco setup, Paste your Bot Token in the newly created **.env file** & continue following the [instuction from the 4th Step](https://github.com/Arvinth-Krishna/Reco-PC-Server#installation)
    - And, now you can uninstall Visual Studio Installer from Controll Panel
 
-#### Error 2: WARNING: The script chardetect.exe is installed in ........ which is not on PATH.
+### Error 2: WARNING: The script chardetect.exe is installed in ........ which is not on PATH.
 
 * To solve this issue **just copy and paste the path which is given in the error in The Environmental variable.**
    - eg:
