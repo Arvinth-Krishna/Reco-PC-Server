@@ -11,8 +11,9 @@ Using Reco you can easily control your computer remotely and have it do from sim
 
 Reco PC Server is a self hosted bot, which means that you have to run the bot on your computer - the machine you want to control via discord commands.
 
-Installing Reco is an easy 3 minute process - you can check the instructions bellow to see how to do it.
-https://github.com/Arvinth-Krishna/Reco-PC-Server/edit/main/README.md
+Installing Reco is an easy 3 minute process.
+
+
 ## Reco -Mobile App
 **_Reco: Discord PC Remote Controller_**-Mobile App will be soon available on Play Store✌. And it will be a open Source soon.
 
@@ -22,6 +23,7 @@ https://github.com/Arvinth-Krishna/Reco-PC-Server/edit/main/README.md
   - Command Screen
   - Webhook Screen
   
+
 
 ### Screenshots:
 <p align="center">
@@ -39,6 +41,9 @@ https://github.com/Arvinth-Krishna/Reco-PC-Server/edit/main/README.md
   This text is purple, <a href="#" class="text-inherit">including the link</a>
 </div>
 
+
+
+
 ## Requirements:
 * Python 3
 * discord.py
@@ -49,6 +54,8 @@ https://github.com/Arvinth-Krishna/Reco-PC-Server/edit/main/README.md
 * python-dotenv
 * pystray
 * Pillow
+
+
 
 ## Features List:
 * **[Abort](https://github.com/Arvinth-Krishna/Reco-PC-Server#-abort)**
