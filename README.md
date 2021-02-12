@@ -229,6 +229,13 @@ Note: Some commands may require elevated privileges on Linux.
 
 The above video is an instruction for installing Chimera and the process is same for Reco too.
 
+### To Deal with Error:
+
+#### Error 1: Building wheel for multidict (PEP 517) ... error
+
+* Its an simple error and easy to solve by following below instrustion:
+   - Just install [Visual Studio C++ build tools](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools&rel=16)
+   
 
 
 ## Contributing:
