@@ -76,10 +76,12 @@ https://github.com/Arvinth-Krishna/Reco-PC-Server/edit/main/README.md
 ## Features Documentation:
 
 ### ★ Abort 
-**```diff
+```diff
 - !abort
-```**
-<p style='color:purple'>This is some red text.</p>
+```
+<div class="text-purple">
+  This text is purple, <a href="#" class="text-inherit">including the link</a>
+</div>
 
 	> Aborts the Shutdown or Restart schedule.
 	
