@@ -55,7 +55,7 @@ Installing Reco is an easy 3 minute process.
 
 ## Features List:
 * **[Abort](https://github.com/Arvinth-Krishna/Reco-PC-Server#-abort)**
-* **[Appquitter](https://github.com/Arvinth-Krishna/Reco-PC-Server#-appquitter)**
+* **[appQuitter](https://github.com/Arvinth-Krishna/Reco-PC-Server#-appquitter)**
 * **[Camera](https://github.com/Arvinth-Krishna/Reco-PC-Server#-camera)**
 * **[Cmd](https://github.com/Arvinth-Krishna/Reco-PC-Server#-cmd)**
 * **[Clip](https://github.com/Arvinth-Krishna/Reco-PC-Server#-clip)**
@@ -75,7 +75,7 @@ Installing Reco is an easy 3 minute process.
 * **[Screenshot](https://github.com/Arvinth-Krishna/Reco-PC-Server#-screenshot)**
 * **[Shutdown](https://github.com/Arvinth-Krishna/Reco-PC-Server#-shutdown)**
 * **[Sleep](https://github.com/Arvinth-Krishna/Reco-PC-Server#-sleep)**
-* **[Url](https://github.com/Arvinth-Krishna/Reco-PC-Server#-url)**
+* **[URL](https://github.com/Arvinth-Krishna/Reco-PC-Server#-url)**
 
 
 
@@ -140,7 +140,7 @@ Installing Reco is an easy 3 minute process.
 		- save => saves a file to the HD from the chat
 		- download => saves a file from a direct url to the HD
 
-### ★ Help Me 
+### ★ HelpMe 
 
 * !helpme or !helpme *command*
 	> Shows Chimera help, listing commands of shows help for a specific command.
@@ -290,7 +290,7 @@ The above video is an instruction for installing Chimera and the process is same
 * Its an simple error and easy to solve by following below instrustion:
    - We will Just Install and then Uninstall - Visual Studio C++ Build Tools.
    - Now, just **install [Visual Studio Installer](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools&rel=16)** and **then insall Build Tools**.
-   - And now again try to run **run setup.bat on Windows** or **setup.sh on Linux** from Downloaded Reco Folder.
+   - And now try again to **run setup.bat on Windows** or **setup.sh on Linux** from Downloaded Reco Folder.
    - After successfully installed Reco setup, Paste your Bot Token in the newly created **.env file** & continue following the [instuction from the 4th Step](https://github.com/Arvinth-Krishna/Reco-PC-Server#installation)
    - And, now you can uninstall Visual Studio Installer from Controll Panel
 
@@ -302,7 +302,7 @@ The above video is an instruction for installing Chimera and the process is same
     - **Copy the Path:** C:\Users\USER_NAME\AppData\Roaming\Python\Python39\Scripts
     - Now go to Start Menu and Type: **Edit environment variables for your account**
     - In that **click Path** and **then add the copied path in that field** and click OK.
-    - And now again try to run **run setup.bat on Windows** or **setup.sh on Linux** from Downloaded Reco Folder.
+    - And now try again to **run setup.bat on Windows** or **setup.sh on Linux** from Downloaded Reco Folder.
     - After successfully installed Reco setup, Paste your Bot Token in the newly created **.env file** & continue following the [instuction from the 4th Step](https://github.com/Arvinth-Krishna/Reco-PC-Server#installation)
     
        
