@@ -4,7 +4,7 @@ echo Installing required packages.
 
 pip install --user -r .\requirements.txt
 
-SET exampleFile=".env.example"
+SET exampleFile="dummy_env.txt"
 SET newFile=".env."
 
 echo Creating environment configuration file
