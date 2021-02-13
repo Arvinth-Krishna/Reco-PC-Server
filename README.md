@@ -1,5 +1,5 @@
 <div align="center">
-  <p><img   width="165" height="160"  src="https://user-images.githubusercontent.com/49812701/107212940-b18fdc80-6a2d-11eb-929c-d3d9d1ca5e53.png"/></p>
+  <p><img   width="175" height="170"  src="https://user-images.githubusercontent.com/49812701/107212940-b18fdc80-6a2d-11eb-929c-d3d9d1ca5e53.png"/></p>
   <h1>Reco PC Server</h1>
 </div>
 
