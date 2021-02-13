@@ -1,6 +1,6 @@
 # Reco-PC-Server
 <p align="center">
-  <img  width="165" height="160" src="https://user-images.githubusercontent.com/49812701/107212940-b18fdc80-6a2d-11eb-929c-d3d9d1ca5e53.png">
+  <img src="https://user-images.githubusercontent.com/49812701/107841113-0f317980-6dde-11eb-9b70-499ce095a1a0.png">
 </p>
 
 # 
