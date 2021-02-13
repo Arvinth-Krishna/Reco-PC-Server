@@ -281,7 +281,7 @@ Note: Some commands may require elevated privileges on Linux.
 
 [![Video Tutorial](https://j.gifs.com/l5m85j.gif)](https://www.youtube.com/watch?v=JXqS3WaTOB4)
 
-The above video is an instruction for installing Chimera and the process is same for Reco too.
+The above video is an instruction for installing Chimera and the process is same for Reco PC Server too.
 
 ## To Deal with any Error:
 
