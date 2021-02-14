@@ -15,6 +15,18 @@ Reco PC Server is a self hosted bot, which means that you have to run the bot on
 Installing Reco is an easy 3 minute process.
 
 
+## Quick Jumps
+
+* **[Reco-Mobile App](https://github.com/Arvinth-Krishna/Reco-PC-Server#reco--mobile-app)**
+* **[Commands List](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list)**
+* **[Commands Documentations](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-documentation)**
+* **[Installation](https://github.com/Arvinth-Krishna/Reco-PC-Server#installation)**
+* **[Error-Help](https://github.com/Arvinth-Krishna/Reco-PC-Server#to-deal-with-any-error)**
+* **[For Contributing](https://github.com/Arvinth-Krishna/Reco-PC-Server#contributing)**
+* **[Credits](https://github.com/Arvinth-Krishna/Reco-PC-Server#credits)**
+* **[Contributors](https://github.com/Arvinth-Krishna/Reco-PC-Server#contributors)**
+
+
 ## Reco -Mobile App
 **_Reco: Discord PC Remote Controller_**-Mobile App will be soon available on Play Store✌. And it will be an open Source soon.
 
