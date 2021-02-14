@@ -287,7 +287,7 @@ The above video is an instruction for installing Chimera and the process is same
 
 ### Error 1: Building wheel for multidict (PEP 517) ... error
 
-* Its an simple error and easy to solve by following below instrustion:
+* Its an simple error and can easily solved by following below instrustion:
    - We will Just Install and then Uninstall - Visual Studio C++ Build Tools.
    - Now, just **install [Visual Studio Installer](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools&rel=16)** and **then insall Build Tools**.
    - And now try again to **run setup.bat on Windows** or **setup.sh on Linux** from Downloaded Reco Folder.
