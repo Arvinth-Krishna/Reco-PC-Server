@@ -19,7 +19,7 @@ Installing Reco is an easy 3 minute process.
 
 * **[Reco-Mobile App](https://github.com/Arvinth-Krishna/Reco-PC-Server#reco--mobile-app)**
 * **[Commands List](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list)**
-* **[Commands Documentations](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-documentation)**
+* **[Commands Documentation](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-documentation)**
 * **[Installation](https://github.com/Arvinth-Krishna/Reco-PC-Server#installation)**
 * **[Error-Help](https://github.com/Arvinth-Krishna/Reco-PC-Server#to-deal-with-any-error)**
 * **[For Contributing](https://github.com/Arvinth-Krishna/Reco-PC-Server#contributing)**
@@ -346,3 +346,4 @@ Here's how to create a Reco module:
 * [medusalix](https://github.com/medusalix)
 * [kostino](https://github.com/kostino)
 
+### [Back to Top](https://github.com/Arvinth-Krishna/Reco-PC-Server#reco-pc-server)
