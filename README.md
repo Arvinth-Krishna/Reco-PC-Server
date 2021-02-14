@@ -149,7 +149,7 @@ Installing Reco is an easy 3 minute process.
 
 ### ★ Hibernate 
 
-* !hibernate or !hibernate *seconds*
+* !hibernate or !hibernate *minutes*
 	> Hibernates your computer immediately or with a time delay in minutes. 
 
 		e.g: !hibernate 30
@@ -163,7 +163,7 @@ Installing Reco is an easy 3 minute process.
 
 ### ★ Lock 
 
-* !lock or !lock *seconds*
+* !lock or !lock *minutes*
 	> Locks your computer immediately or with a time delay in minutes.
 
 		e.g: !lock 30
@@ -177,7 +177,7 @@ Installing Reco is an easy 3 minute process.
 
 ### ★ LogOff 
 
-* !logoff or !logoff *seconds*
+* !logoff or !logoff *minutes*
 	> Logs off your user immediately or with a time delay in minutes.
 
 		e.g: !logoff 30
@@ -223,7 +223,7 @@ Installing Reco is an easy 3 minute process.
 
 ### ★ Restart 
 
-* !restart or !restart *seconds*
+* !restart or !restart *minutes*
 	> Restarts your computer immediately or with a time delay in minutes.
 
 		e.g: !restart 30
@@ -244,14 +244,14 @@ Installing Reco is an easy 3 minute process.
 
 ### ★ Shutdown 
 
-* !shutdown or !shutdown *seconds*
+* !shutdown or !shutdown *minutes*
 	> Shuts down your computer immediately or with a time delay in minutes.
 
 		e.g: !shutdown 30
 
 ### ★ Sleep 
 
-* !sleep or !sleep *seconds*
+* !sleep or !sleep *minutes*
 	> Sleeps your computer immediately or with a time delay in minutes. 
 
 		e.g: !sleep 30
