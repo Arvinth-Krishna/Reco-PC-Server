@@ -21,8 +21,8 @@ Installing Reco is an easy 3 minute process.
 * **[Reco-Mobile App](https://github.com/Arvinth-Krishna/Reco-PC-Server#reco--mobile-app)**
 * **[Commands List](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list)**
 * **[Commands Documentation](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-documentation)**
-* **[Installation](https://github.com/Arvinth-Krishna/Reco-PC-Server#installation)**
-* **[Error-Help](https://github.com/Arvinth-Krishna/Reco-PC-Server#to-deal-with-any-error)**
+* **[Installation Process](https://github.com/Arvinth-Krishna/Reco-PC-Server#installation)**
+* **[Installation Error-Help](https://github.com/Arvinth-Krishna/Reco-PC-Server#to-deal-with-any-error)**
 * **[For Contributing](https://github.com/Arvinth-Krishna/Reco-PC-Server#contributing)**
 * **[Credits](https://github.com/Arvinth-Krishna/Reco-PC-Server#credits)**
 * **[Contributors](https://github.com/Arvinth-Krishna/Reco-PC-Server#contributors)**
