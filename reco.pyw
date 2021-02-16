@@ -41,7 +41,7 @@ async def on_ready():
     print('Use this link to invite {}:'.format(client.user.name))
     print('https://discordapp.com/oauth2/authorize?client_id={}&scope=bot&permissions=8'.format(client.user.id))
     print('--------')
-    print('Github Link: ')
+    print('Github Link: https://github.com/Arvinth-Krishna/Reco-PC-Server ')
     print('--------')
     return await client.change_presence(activity=discord.Game(name='with your PC'))
 
