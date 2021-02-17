@@ -319,13 +319,32 @@ The above video is an instruction for installing Chimera and the process is same
 * To solve this issue **just copy and paste the path which is given in the error in The Environmental variable.**
    - eg:
     - **WARNING:** The script chardetect.exe is installed in '**C:\Users\USER_NAME\AppData\Roaming\Python\Python39\Scripts**' which is not on PATH.
-    - **Copy the Path from the error given in the setup.bat console or change teh username in this path:** C:\Users\ **USER_NAME**\AppData\Roaming\Python\Python39\Scripts
+    - **Copy the Path from the error given in the setup.bat console or change the username in this path and use it:**
+        C:\Users\ **USER_NAME**\AppData\Roaming\Python\Python39\Scripts
     - Now go to Start Menu and Type: **Edit environment variables for your account**
     - In that **click Path** and **then add the copied path in that field** and click OK.
     - And now try again to **run setup.bat on Windows** or **setup.sh on Linux** from Downloaded Reco Folder.
     - After successfully installed Reco setup, Paste your Bot Token in the newly created **.env file** & continue following the [instuction from the 4th Step](https://github.com/Arvinth-Krishna/Reco-PC-Server#installation)
     
-       
+## Setting up Task Scheduler for Reco-Startup:
+These instruction will help us to setup Reco to startup automatically when we start our PC.
+It looks like lenghty but its so easy to bcoz I have explained all the step clearly. so chill, do and have fun...
+
+1. Open **Task Scheduler** by typing it inside the start menu.
+2. click **Create Task**
+3. Enter the Name as **Reco Startup**
+4. Now, go to **Triggers tab** and click **New**
+5. And set _Begin the task:_ **At log on** and click **OK**
+6. And now go to **Actions tab** and click **New**
+7. Now set
+    > **Action:** Start a Program
+    > **Program/script:** C:\Users\USERNAME\AppData\Local\Programs\Python\Python39\pythonw.exe (change the USERNAME in this path to your username)
+    > **Add arguments(optional):** reco.pyw
+    > **Start in (optional):** C:\Users\USERNAME\Downloads\Reco-PC-Server-main (change the USERNAME in this path to your username or paste the downloaded RecoPCServer Repository path)
+    > And clickv **OK**
+8. And now go to **Conditions tab** and **uncheck all the checkBox** and **Check ONLY Network CheckBox** -> (Start only if following network connection avaliable: Any Connection)
+9. And now **Click OK**
+10.  Next time when you turn on your PC - Reco will Start Automatically🥳.
 
 ## Contributing:
 Reco was written to be modular so one can easily modify the code and enhance it. I welcome and greatly appreciate anyone who wishes to contribute a module of their own.
