@@ -2,12 +2,17 @@
 <h1>Reco PC Server</h1>
   <p><img   width="175" height="170"  src="https://user-images.githubusercontent.com/49812701/107212940-b18fdc80-6a2d-11eb-929c-d3d9d1ca5e53.png"/></p>
  
-
-[<img src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge-border.png" height="60" alt="Get Reco: Discord PC Remote Controller on Google Play" />](https://play.google.com/store/apps/details?id=com.gak.reco"Get Reco: Discord PC Remote Controller on Google Play")
-
-
 </div>
 
+<div align="center">
+
+[<img src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge-border.png" height="60" alt="Get Reco: Discord PC Remote Controller on Google Play" />](https://play.google.com/store/apps/details?id=com.gak.reco "Get Reco: Discord PC Remote Controller on Google Play")
+
+If you enjoyed this project — or just feeling generous, consider buying me a coffee. Cheers! :beers:
+
+[<img src="blue.svg" height="40" alt="PayPal Link" />](https://paypal.me/rajkumaar23)
+
+</div>
 
 # 
 **Reco PC Server** is a cross platform PC Controller Discord Bot which is a modified version of Chimera for Reco-Discord PC Remote Controller app & it's written in Python discord.py.
