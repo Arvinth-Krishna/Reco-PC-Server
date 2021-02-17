@@ -328,8 +328,8 @@ The above video is an instruction for installing Chimera and the process is same
     - After successfully installed Reco setup, Paste your Bot Token in the newly created **.env file** & continue following the [instuction from the 4th Step](https://github.com/Arvinth-Krishna/Reco-PC-Server#installation)
     
 ## Setting up Task Scheduler for Reco-Startup:
-These instruction will help us to setup Reco to startup automatically when we start our PC.
-It looks like lenghty but its so easy to setup bcoz I have explained all the step clearly. so chill, do and have fun...
+These instruction will help you to setup Reco to startup automatically when we start your PC.
+It looks like lenghty but its so easy to setup, just follow the steps. so chill, do and have fun...
 
 1. Open **Task Scheduler** by typing it inside the start menu.
 2. click **Create Task**
