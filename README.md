@@ -319,7 +319,7 @@ The above video is an instruction for installing Chimera and the process is same
 * To solve this issue **just copy and paste the path which is given in the error in The Environmental variable.**
    - eg:
     - **WARNING:** The script chardetect.exe is installed in '**C:\Users\USER_NAME\AppData\Roaming\Python\Python39\Scripts**' which is not on PATH.
-    - **Copy the Path:** C:\Users\USER_NAME\AppData\Roaming\Python\Python39\Scripts
+    - **Copy the Path from the error given in the setup.bat console or change teh username in this path:** C:\Users\ **USER_NAME**\AppData\Roaming\Python\Python39\Scripts
     - Now go to Start Menu and Type: **Edit environment variables for your account**
     - In that **click Path** and **then add the copied path in that field** and click OK.
     - And now try again to **run setup.bat on Windows** or **setup.sh on Linux** from Downloaded Reco Folder.
