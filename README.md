@@ -337,11 +337,11 @@ It looks like lenghty but its so easy to bcoz I have explained all the step clea
 5. And set _Begin the task:_ **At log on** and click **OK**
 6. And now go to **Actions tab** and click **New**
 7. Now set
-    > **Action:** Start a Program
-    > **Program/script:** C:\Users\USERNAME\AppData\Local\Programs\Python\Python39\pythonw.exe (change the USERNAME in this path to your username)
-    > **Add arguments(optional):** reco.pyw
-    > **Start in (optional):** C:\Users\USERNAME\Downloads\Reco-PC-Server-main (change the USERNAME in this path to your username or paste the downloaded RecoPCServer Repository path)
-    > And clickv **OK**
+    - **Action:** Start a Program
+    - **Program/script:** C:\Users\USERNAME\AppData\Local\Programs\Python\Python39\pythonw.exe (change the USERNAME in this path to your username)
+    - **Add arguments(optional):** reco.pyw
+    - **Start in (optional):** C:\Users\USERNAME\Downloads\Reco-PC-Server-main (change the USERNAME in this path to your username or paste the downloaded RecoPCServer Repository path)
+    - And clickv **OK**
 8. And now go to **Conditions tab** and **uncheck all the checkBox** and **Check ONLY Network CheckBox** -> (Start only if following network connection avaliable: Any Connection)
 9. And now **Click OK**
 10.  Next time when you turn on your PC - Reco will Start Automatically🥳.
