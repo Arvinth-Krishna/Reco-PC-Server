@@ -23,6 +23,7 @@ Installing Reco is an easy 3 minute process.
 * **[Commands Documentation](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-documentation)**
 * **[Installation Process](https://github.com/Arvinth-Krishna/Reco-PC-Server#installation)**
 * **[Installation Error-Help](https://github.com/Arvinth-Krishna/Reco-PC-Server#to-deal-with-any-error)**
+* **[Setting up Task Scheduler for Reco-Startup](https://github.com/Arvinth-Krishna/Reco-PC-Server/blob/main/README.md#setting-up-task-scheduler-for-reco-startup)**
 * **[For Contributing](https://github.com/Arvinth-Krishna/Reco-PC-Server#contributing)**
 * **[Credits](https://github.com/Arvinth-Krishna/Reco-PC-Server#credits)**
 * **[Contributors](https://github.com/Arvinth-Krishna/Reco-PC-Server#contributors)**
@@ -319,7 +320,7 @@ The above video is an instruction for installing Chimera and the process is same
 * To solve this issue **just copy and paste the path which is given in the error in The Environmental variable.**
    - eg:
     - **WARNING:** The script chardetect.exe is installed in '**C:\Users\USER_NAME\AppData\Roaming\Python\Python39\Scripts**' which is not on PATH.
-    - **Copy the Path from the error given in the setup.bat console or change the username in this path and use it:**
+    - **Copy the Path from the error** given in the setup.bat console **or change the username in this path and use it:**
         C:\Users\ **USER_NAME**\AppData\Roaming\Python\Python39\Scripts
     - Now go to Start Menu and Type: **Edit environment variables for your account**
     - In that **click Path** and **then add the copied path in that field** and click OK.
@@ -341,7 +342,7 @@ It looks like lenghty but its so easy to bcoz I have explained all the step clea
     - **Program/script:** C:\Users\USERNAME\AppData\Local\Programs\Python\Python39\pythonw.exe (change the USERNAME in this path to your username)
     - **Add arguments(optional):** reco.pyw
     - **Start in (optional):** C:\Users\USERNAME\Downloads\Reco-PC-Server-main (change the USERNAME in this path to your username or paste the downloaded RecoPCServer Repository path)
-    - And clickv **OK**
+    - And click **OK**
 8. And now go to **Conditions tab** and **uncheck all the checkBox** and **Check ONLY Network CheckBox** -> (Start only if following network connection avaliable: Any Connection)
 9. And now **Click OK**
 10.  Next time when you turn on your PC - Reco will Start Automatically🥳.
