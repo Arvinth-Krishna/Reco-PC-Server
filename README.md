@@ -329,7 +329,7 @@ The above video is an instruction for installing Chimera and the process is same
     
 ## Setting up Task Scheduler for Reco-Startup:
 These instruction will help us to setup Reco to startup automatically when we start our PC.
-It looks like lenghty but its so easy to bcoz I have explained all the step clearly. so chill, do and have fun...
+It looks like lenghty but its so easy to setup bcoz I have explained all the step clearly. so chill, do and have fun...
 
 1. Open **Task Scheduler** by typing it inside the start menu.
 2. click **Create Task**
