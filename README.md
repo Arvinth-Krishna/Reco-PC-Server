@@ -1,7 +1,11 @@
 <div align="center">
 <h1>Reco PC Server</h1>
   <p><img   width="175" height="170"  src="https://user-images.githubusercontent.com/49812701/107212940-b18fdc80-6a2d-11eb-929c-d3d9d1ca5e53.png"/></p>
-  
+ 
+
+[<img src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge-border.png" height="60" alt="Get Reco: Discord PC Remote Controller on Google Play" />](https://play.google.com/store/apps/details?id=com.gak.reco"Get Reco: Discord PC Remote Controller on Google Play")
+
+
 </div>
 
 
@@ -28,7 +32,7 @@ Installing Reco is an easy 3 minute process.
 * **[Contributors](https://github.com/Arvinth-Krishna/Reco-PC-Server#contributors)**
 
 
-## **[Reco - Mobile App](https://github.com/Arvinth-Krishna/Reco-PC-Server#contributors)**
+## Reco - Mobile App
 **[Reco: Discord PC Remote Controller](https://play.google.com/store/apps/details?id=com.gak.reco)**-Mobile App is now available on Play Store✌. And it will be an open Source soon.
 
 * Reco-Mobile App contain 4 tabs 
