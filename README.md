@@ -335,7 +335,7 @@ It looks like lenghty but its so easy to setup, just follow the steps. so chill,
 2. click **Create Task**
 3. Enter the Name as **Reco Startup**
 4. Now, go to **Triggers tab** and click **New**
-5. And set _Begin the task:_ **At log on** and also set _Delay task for:_ **5 seconds** and then click **OK**
+5. And set _Begin the task:_ **At log on** and also set _Delay task for:_ **8 seconds** and then click **OK**
 6. And now go to **Actions tab** and click **New**
 7. Now set
     - **Action:** Start a Program
