@@ -30,8 +30,7 @@ Installing Reco is an easy 3 minute process.
 
 
 ## Reco - Mobile App
-**[Reco: Discord PC Remote Controller](https://play.google.com/store/apps/details?id=com.gak.reco)**-Mobile App is now available on Play Store✌. And it will be an open Source soon.
-
+**[Reco: Discord PC Remote Controller](https://play.google.com/store/apps/details?id=com.gak.reco)**-Mobile App is now available on Play Store✌. 
 
 
 
