@@ -334,18 +334,19 @@ It looks like lenghty but its so easy to setup, just follow the steps. so chill,
 1. Open **Task Scheduler** by typing it inside the start menu.
 2. click **Create Task**
 3. Enter the Name as **Reco Startup**
-4. Now, go to **Triggers tab** and click **New**
-5. And set _Begin the task:_ **At log on** and also set _Delay task for:_ **8 seconds** and then click **OK**
-6. And now go to **Actions tab** and click **New**
-7. Now set
+4. And now **check(✔) the _Run with highest privileges_ checkBox**
+5. And then, go to **Triggers tab** and click **New**
+6. And set _Begin the task:_ **At log on** and also set _Delay task for:_ **8 seconds** and then click **OK**
+7. And now go to **Actions tab** and click **New**
+8. Now set
     - **Action:** Start a Program
     - **Program/script:** C:\Users\USERNAME\AppData\Local\Programs\Python\Python39\pythonw.exe (change the USERNAME in this path to your username)
     - **Add arguments(optional):** reco.pyw
     - **Start in (optional):** C:\Users\USERNAME\Downloads\Reco-PC-Server-main (change the USERNAME in this path to your username or paste the downloaded RecoPCServer Repository path)
     - And click **OK**
-8. And now go to **Conditions tab** and **uncheck all the checkBox** and **Check ONLY Network CheckBox** -> (Start only if following network connection avaliable: Any Connection)
-9. And now **Click OK**
-10.  Next time when you turn on your PC - Reco will Start Automatically🥳.
+9. And now go to **Conditions tab** and **uncheck all the checkBox** and **Check(✔) ONLY Network CheckBox** -> (Start only if following network connection avaliable: Any Connection)
+10. And now **Click OK**
+11.  Next time when you turn on your PC - Reco will Start Automatically🥳.
 
 ## Contributing:
 Reco was written to be modular so one can easily modify the code and enhance it. I welcome and greatly appreciate anyone who wishes to contribute a module of their own.
