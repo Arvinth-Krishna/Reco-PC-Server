@@ -70,7 +70,7 @@ Installing Reco is an easy 3 minute process.
 * python-dotenv
 * pystray
 * Pillow
-
+* plyer
 
 
 ## Features List:
