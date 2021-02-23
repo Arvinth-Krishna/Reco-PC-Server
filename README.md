@@ -223,7 +223,9 @@ Installing Reco is an easy 3 minute process.
 		- key-up
 		- key-down
 		- key-left
-		- key-right	
+		- key-right
+		- key-close
+		- key-quit	
 
 
 ### ★ Notification 
