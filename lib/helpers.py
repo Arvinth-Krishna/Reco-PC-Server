@@ -86,6 +86,10 @@ class MediaControlAdapter():
     VK_KEY_RIGHT = 11
     VK_KEY_DOWN = 12
     VK_KEY_ENTER = 13
+    VK_KEY_CTRL = 14
+    VK_KEY_F4 = 15
+    VK_KEY_W = 16
+    VK_KEY_ALT = 17
 
     
     _command_list = {
@@ -113,7 +117,11 @@ class MediaControlAdapter():
             VK_KEY_LEFT:37,
             VK_KEY_RIGHT:39,
             VK_KEY_DOWN:40,
-            VK_KEY_ENTER:13
+            VK_KEY_ENTER:13,
+            VK_KEY_CTRL:17,
+            VK_KEY_F4:115,
+            VK_KEY_W:87,
+            VK_KEY_ALT:18
         }
     }
     
@@ -163,3 +171,12 @@ class MediaControlAdapter():
     def media_key_enter(self):
         virtual_key_id = self._command_list[self.os_name][self.VK_KEY_ENTER]
         self.input_commands.press_release(virtual_key_id) 
+    def media_key_close(self):
+        virtual_key_id = self._command_list[self.os_name][self.VK_KEY_CTRL]
+        virtual_key_id2 = self._command_list[self.os_name][self.VK_KEY_W]
+        self.input_commands.hold_release(virtual_key_id,virtual_key_id2)
+    def media_key_quit(self):
+        virtual_key_id = self._command_list[self.os_name][self.VK_KEY_ALT]
+        virtual_key_id2 = self._command_list[self.os_name][self.VK_KEY_F4]
+        self.input_commands.hold_release(virtual_key_id,virtual_key_id2)
+
