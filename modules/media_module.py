@@ -24,7 +24,9 @@ async def media(ctx, command, times=1):
         'key-left':media_control.media_key_left,
         'key-right':media_control.media_key_right,
         'key-down':media_control.media_key_down,
-        'key-enter':media_control.media_key_enter
+        'key-enter':media_control.media_key_enter,
+        'key-close':media_control.media_key_close,
+        'key-quit':media_control.media_key_quit
 
     }
 
