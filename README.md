@@ -21,7 +21,7 @@ Installing Reco is an easy 3 minute process.
 * **[Commands List](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list)**
 * **[Commands Documentation](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-documentation)**
 * **[Installation Process](https://github.com/Arvinth-Krishna/Reco-PC-Server#installation)**
-* **[Installation Error-Help](https://github.com/Arvinth-Krishna/Reco-PC-Server#to-deal-with-any-error)**
+* **[Installation Error-Help](https://github.com/Arvinth-Krishna/Reco-PC-Server#to-deal-with-any-error-during-installation)**
 * **[Setting up Task Scheduler for Reco-Startup](https://github.com/Arvinth-Krishna/Reco-PC-Server#setting-up-task-scheduler-for-reco-startup)**
 * **[For Contributing](https://github.com/Arvinth-Krishna/Reco-PC-Server#contributing)**
 * **[Credits](https://github.com/Arvinth-Krishna/Reco-PC-Server#credits)**
@@ -80,7 +80,7 @@ Installing Reco is an easy 3 minute process.
 * **[Clip](https://github.com/Arvinth-Krishna/Reco-PC-Server#-clip)**
 * **[Echo](https://github.com/Arvinth-Krishna/Reco-PC-Server#-echo)**
 * **[File](https://github.com/Arvinth-Krishna/Reco-PC-Server#-file)**
-* **[Helpme](https://github.com/Arvinth-Krishna/Reco-PC-Server#-help-me)**
+* **[Helpme](https://github.com/Arvinth-Krishna/Reco-PC-Server#-helpme)**
 * **[Hibernate](https://github.com/Arvinth-Krishna/Reco-PC-Server#-hibernate)**
 * **[Launch](https://github.com/Arvinth-Krishna/Reco-PC-Server#-launch)**
 * **[Lock](https://github.com/Arvinth-Krishna/Reco-PC-Server#-lock)**
