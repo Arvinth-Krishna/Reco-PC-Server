@@ -284,6 +284,13 @@ Installing Reco is an easy 3 minute process.
 
 		e.g: !url www.google.com
 
+### ★ Whatsapp 
+
+* !whatsapp *countryCode_MobileNumber*
+	> Opens chat screen for entered mobile number (Click to Chat feature).
+
+		e.g: !whatsapp 911234567890
+
 Note: Some commands may require elevated privileges on Linux.
 
 
