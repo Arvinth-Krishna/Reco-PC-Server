@@ -280,6 +280,15 @@ async def sleep(ctx, minutes=0):
 async def url(ctx, txt):
     await urlLauncher_module.url(ctx, txt)
 
+    
+# Module: whatapp
+# Description: Opens the chat Screen for the entered MobileNumber
+# Usage: !whatsapp CountryCode_Followed_by_MobileNumber
+@client.command()
+@Logger(client)
+async def whatsapp(ctx, txt):
+    await whatsapp_module.whatsapp(ctx, txt)
+
 
 
 
