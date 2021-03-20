@@ -18,5 +18,5 @@ async def notification(ctx, txt):
                     message=txt,
                     app_name="Reco",
                     app_icon="icon.ico",
-                    timeout=999999)
+                    timeout=777777)
     await asyncio.sleep(3)
