@@ -295,8 +295,8 @@ async def url(ctx, txt):
 # Usage: !whatsapp CountryCode_Followed_by_MobileNumber
 @client.command()
 @Logger(client)
-async def whatsapp(ctx, txt):
-    await whatsapp_module.whatsapp(ctx, txt)
+async def whatsapp(ctx, num=0):
+    await whatsapp_module.whatsapp(ctx, num)
 
 
 
