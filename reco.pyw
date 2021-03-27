@@ -72,7 +72,16 @@ async def appquitter(ctx, appName,minutes=0):
     await notification_module.notification(ctx,text)
     await appQuitter_module.appquitter(ctx,appName, minutes)
 
+ 
+# Module: batteryReportGenerator
+# Description: Generates detailed report for your battery
+# Usage: !batteryreport
+@client.command()
+@Logger(client)
+async def batteryreport(ctx):
+    await batteryReportGenerator_module.batteryreport(ctx)    
 
+ 
 # Module: camera
 # Description: Records a video or takes a photo (no audio)
 # Usage: !camera command time
