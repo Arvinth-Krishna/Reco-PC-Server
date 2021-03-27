@@ -295,7 +295,9 @@ Installing Reco PC Server is an easy 3 minute process.
 
 		e.g: !whatsapp 911234567890
 
-Note: All above commands works best on Windows and some commands may not work on other platforms. And some commands may require elevated privileges on Linux.
+Note: 
+* All above commands works best on Windows and some commands may not work on other platforms.
+* And some commands may require elevated privileges on Linux.
 
 
 ## Installation:
