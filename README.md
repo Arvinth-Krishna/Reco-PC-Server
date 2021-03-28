@@ -384,7 +384,7 @@ Here's how to create a Reco module:
 If you found this project helpful and want to thank me, consider buying me a cup of ☕
 
 
-[PayPal](paypal.me/gak15)
+[PayPal](https://www.paypal.com/paypalme/gak15)
 
 
 <a href="https://www.buymeacoffee.com/ArvinthKrishna"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=ArvinthKrishna&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff"></a>
