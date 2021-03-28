@@ -76,30 +76,30 @@ Installing Reco PC Server is an easy 3 minute process.
 
 
 ## Features List:
-* **[Abort](https://github.com/Arvinth-Krishna/Reco-PC-Server#-abort)**
-* **[App Quitter](https://github.com/Arvinth-Krishna/Reco-PC-Server#-appquitter)**
-* **[Battery Report Generator](https://github.com/Arvinth-Krishna/Reco-PC-Server#-battery-report-generator)**
-* **[Camera](https://github.com/Arvinth-Krishna/Reco-PC-Server#-camera)**
-* **[Cmd](https://github.com/Arvinth-Krishna/Reco-PC-Server#-cmd)**
-* **[Clip](https://github.com/Arvinth-Krishna/Reco-PC-Server#-clip)**
-* **[Echo](https://github.com/Arvinth-Krishna/Reco-PC-Server#-echo)**
-* **[File](https://github.com/Arvinth-Krishna/Reco-PC-Server#-file)**
-* **[Helpme](https://github.com/Arvinth-Krishna/Reco-PC-Server#-helpme)**
-* **[Hibernate](https://github.com/Arvinth-Krishna/Reco-PC-Server#-hibernate)**
-* **[Launch](https://github.com/Arvinth-Krishna/Reco-PC-Server#-launch)**
-* **[Lock](https://github.com/Arvinth-Krishna/Reco-PC-Server#-lock)**
-* **[Log](https://github.com/Arvinth-Krishna/Reco-PC-Server#-log)**
-* **[Logoff](https://github.com/Arvinth-Krishna/Reco-PC-Server#-logoff)**
-* **[Media](https://github.com/Arvinth-Krishna/Reco-PC-Server#-media)**
-* **[Notification](https://github.com/Arvinth-Krishna/Reco-PC-Server#-notification)**
-* **[Powershell](https://github.com/Arvinth-Krishna/Reco-PC-Server#-powershell)**
-* **[Restart](https://github.com/Arvinth-Krishna/Reco-PC-Server#-restart)**
-* **[Say](https://github.com/Arvinth-Krishna/Reco-PC-Server#-say)**
-* **[Screenshot](https://github.com/Arvinth-Krishna/Reco-PC-Server#-screenshot)**
-* **[Shutdown](https://github.com/Arvinth-Krishna/Reco-PC-Server#-shutdown)**
-* **[Sleep](https://github.com/Arvinth-Krishna/Reco-PC-Server#-sleep)**
-* **[URL](https://github.com/Arvinth-Krishna/Reco-PC-Server#-url)**
-* **[WhatsApp (click to chat)](https://github.com/Arvinth-Krishna/Reco-PC-Server#-whatsapp)**
+* **[Abort](https://github.com/Arvinth-Krishna/Reco-PC-Server#-abort--)**
+* **[App Quitter](https://github.com/Arvinth-Krishna/Reco-PC-Server#-appquitter--)**
+* **[Battery Report Generator](https://github.com/Arvinth-Krishna/Reco-PC-Server#-battery-report-generator--)**
+* **[Camera](https://github.com/Arvinth-Krishna/Reco-PC-Server#-camera--)**
+* **[Cmd](https://github.com/Arvinth-Krishna/Reco-PC-Server#-cmd--)**
+* **[Clip](https://github.com/Arvinth-Krishna/Reco-PC-Server#-clip--)**
+* **[Echo](https://github.com/Arvinth-Krishna/Reco-PC-Server#-echo--)**
+* **[File](https://github.com/Arvinth-Krishna/Reco-PC-Server#-file--)**
+* **[Helpme](https://github.com/Arvinth-Krishna/Reco-PC-Server#-helpme--)**
+* **[Hibernate](https://github.com/Arvinth-Krishna/Reco-PC-Server#-hibernate--)**
+* **[Launch](https://github.com/Arvinth-Krishna/Reco-PC-Server#-launch--)**
+* **[Lock](https://github.com/Arvinth-Krishna/Reco-PC-Server#-lock--)**
+* **[Log](https://github.com/Arvinth-Krishna/Reco-PC-Server#-log--)**
+* **[Logoff](https://github.com/Arvinth-Krishna/Reco-PC-Server#-logoff--)**
+* **[Media](https://github.com/Arvinth-Krishna/Reco-PC-Server#-media--)**
+* **[Notification](https://github.com/Arvinth-Krishna/Reco-PC-Server#-notification--)**
+* **[Powershell](https://github.com/Arvinth-Krishna/Reco-PC-Server#-powershell--)**
+* **[Restart](https://github.com/Arvinth-Krishna/Reco-PC-Server#-restart--)**
+* **[Say](https://github.com/Arvinth-Krishna/Reco-PC-Server#-say--)**
+* **[Screenshot](https://github.com/Arvinth-Krishna/Reco-PC-Server#-screenshot--)**
+* **[Shutdown](https://github.com/Arvinth-Krishna/Reco-PC-Server#-shutdown--)**
+* **[Sleep](https://github.com/Arvinth-Krishna/Reco-PC-Server#-sleep--)**
+* **[URL](https://github.com/Arvinth-Krishna/Reco-PC-Server#-url--)**
+* **[WhatsApp (click to chat)](https://github.com/Arvinth-Krishna/Reco-PC-Server#-whatsapp--)**
 
 
 
