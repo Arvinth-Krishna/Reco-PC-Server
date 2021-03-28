@@ -380,6 +380,13 @@ Here's how to create a Reco module:
 4. Update the README.md file to include your new module and your github profile under Contributors
 
 
+## Donate
+If you found this project helpful and want to thank me, consider buying me a cup of ☕
+[PayPal](paypal.me/gak15)
+
+<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="ArvinthKrishna" data-color="#FFDD00" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
+
+
 ## Credits:
 
 * [CedArctic](https://github.com/CedArctic) and all contributors for creating [Chimera](https://github.com/CedArctic/Chimera) which is modified and now act as a server(PC controller) for Reco-Discord PC Remote Controller app.
