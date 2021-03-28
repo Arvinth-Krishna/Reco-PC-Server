@@ -105,7 +105,7 @@ Installing Reco PC Server is an easy 3 minute process.
 
 ## Features Documentation:
 
-### ★ Abort 
+### ★ Abort [ᵇᵃᶜᵏ ᵗᵒ ᴸⁱˢᵗ](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list)
 
 * !abort
 	> Aborts the Shutdown or Restart schedule.
