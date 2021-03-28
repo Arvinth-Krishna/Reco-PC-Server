@@ -122,7 +122,7 @@ Installing Reco PC Server is an easy 3 minute process.
 ### ★ Battery Report Generator 
 
 * !batteryreport
-	> Generates a detailed battery report for your PC.
+	> Generates a detailed battery report for your PC. [Screenshots](https://github.com/Arvinth-Krishna/Battery_Report/blob/master/README.md#screenshots)
 
 		e.g: !batteryreport
 
