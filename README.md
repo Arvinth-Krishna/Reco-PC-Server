@@ -97,7 +97,7 @@ Installing Reco PC Server is an easy 3 minute process.
 * **[Restart](https://github.com/Arvinth-Krishna/Reco-PC-Server#-restart--)**
 * **[Say](https://github.com/Arvinth-Krishna/Reco-PC-Server#-say--)**
 * **[Screenshot](https://github.com/Arvinth-Krishna/Reco-PC-Server#-screenshot--)**
-* **[Google Search](https://github.com/Arvinth-Krishna/Reco-PC-Server#-google-search--)**
+* **[Search](https://github.com/Arvinth-Krishna/Reco-PC-Server#-google-search--)**
 * **[Shutdown](https://github.com/Arvinth-Krishna/Reco-PC-Server#-shutdown--)**
 * **[Sleep](https://github.com/Arvinth-Krishna/Reco-PC-Server#-sleep--)**
 * **[URL Launcher](https://github.com/Arvinth-Krishna/Reco-PC-Server#-url-launcher--)**
