@@ -408,4 +408,4 @@ If you found this project helpful and want to thank me, consider buying me a cup
 * [medusalix](https://github.com/medusalix)
 * [kostino](https://github.com/kostino)
 
-### [↟ Jump to the top](https://github.com/Arvinth-Krishna/Reco-PC-Server#reco-pc-server)
+### [⟰ Jump to the top](https://github.com/Arvinth-Krishna/Reco-PC-Server#reco-pc-server)
