@@ -104,7 +104,7 @@ Installing Reco PC Server is an easy 3 minute process.
 
 
 
-## Features Documentation:  [⮵](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
+## Features Documentation:  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
 
 ### ★ Abort  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--)
 
