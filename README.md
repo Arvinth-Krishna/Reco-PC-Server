@@ -27,6 +27,7 @@ Installing Reco PC Server is an easy 3 minute process.
 * **[Installation Error-Help](https://github.com/Arvinth-Krishna/Reco-PC-Server#to-deal-with-any-error-during-installation--)**
 * **[Setting up Task Scheduler for Reco-Startup](https://github.com/Arvinth-Krishna/Reco-PC-Server#setting-up-task-scheduler-for-reco-startup--)**
 * **[For Contributing](https://github.com/Arvinth-Krishna/Reco-PC-Server#contributing--)**
+* **[Donate](https://github.com/Arvinth-Krishna/Reco-PC-Server#donate--)**
 * **[Credits](https://github.com/Arvinth-Krishna/Reco-PC-Server#credits--)**
 * **[Contributors](https://github.com/Arvinth-Krishna/Reco-PC-Server#contributors--)**
 
