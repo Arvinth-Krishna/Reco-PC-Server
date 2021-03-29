@@ -31,7 +31,7 @@ Installing Reco PC Server is an easy 3 minute process.
 * **[Contributors](https://github.com/Arvinth-Krishna/Reco-PC-Server#contributors)**
 
 
-## Reco - Mobile App  [🢑](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
+## Reco - Mobile App  [⮝](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
 **[Reco: Discord PC Remote Controller](https://play.google.com/store/apps/details?id=com.gak.reco)**-Mobile App is now available on Play Store✌. 
 
 
