@@ -20,15 +20,15 @@ Installing Reco PC Server is an easy 3 minute process.
 
 ## Quick Jumps
 
-* **[Reco-Mobile App](https://github.com/Arvinth-Krishna/Reco-PC-Server#reco---mobile-app)**
-* **[Commands List](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list)**
-* **[Commands Documentation](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-documentation)**
-* **[Installation Process](https://github.com/Arvinth-Krishna/Reco-PC-Server#installation)**
-* **[Installation Error-Help](https://github.com/Arvinth-Krishna/Reco-PC-Server#to-deal-with-any-error-during-installation)**
-* **[Setting up Task Scheduler for Reco-Startup](https://github.com/Arvinth-Krishna/Reco-PC-Server#setting-up-task-scheduler-for-reco-startup)**
-* **[For Contributing](https://github.com/Arvinth-Krishna/Reco-PC-Server#contributing)**
-* **[Credits](https://github.com/Arvinth-Krishna/Reco-PC-Server#credits)**
-* **[Contributors](https://github.com/Arvinth-Krishna/Reco-PC-Server#contributors)**
+* **[Reco-Mobile App](https://github.com/Arvinth-Krishna/Reco-PC-Server#reco---mobile-app--)**
+* **[Commands List](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--)**
+* **[Commands Documentation](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-documentation--)**
+* **[Installation Process](https://github.com/Arvinth-Krishna/Reco-PC-Server#installation--)**
+* **[Installation Error-Help](https://github.com/Arvinth-Krishna/Reco-PC-Server#to-deal-with-any-error-during-installation--)**
+* **[Setting up Task Scheduler for Reco-Startup](https://github.com/Arvinth-Krishna/Reco-PC-Server#setting-up-task-scheduler-for-reco-startup--)**
+* **[For Contributing](https://github.com/Arvinth-Krishna/Reco-PC-Server#contributing--)**
+* **[Credits](https://github.com/Arvinth-Krishna/Reco-PC-Server#credits--)**
+* **[Contributors](https://github.com/Arvinth-Krishna/Reco-PC-Server#contributors--)**
 
 
 ## Reco - Mobile App  [⮵](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
@@ -105,28 +105,28 @@ Installing Reco PC Server is an easy 3 minute process.
 
 ## Features Documentation:  [⮵](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
 
-### ★ Abort  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list)
+### ★ Abort  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--)
 
 * !abort
 	> Aborts the Shutdown or Restart schedule.
 
 		e.g: !abort
 
-### ★ AppQuitter  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list)
+### ★ AppQuitter  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--)
 
 * !appquitter *Application_Name* or !appquitter *Application_Name* *minutes*
 	> Quits the specified application immediately or with a time delay in minutes.
 
 		e.g: !appquitter chrome 30
 
-### ★ Battery Report Generator  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list) 
+### ★ Battery Report Generator  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 
 * !batteryreport
 	> Generates a detailed battery report for your PC. [Screenshots](https://github.com/Arvinth-Krishna/Battery_Report/blob/master/README.md#screenshots)
 
 		e.g: !batteryreport
 
-### ★ Camera  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list) 
+### ★ Camera  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 
 * !camera *command* or !camera *command* *time*
 	> Controls computer camera for taking photo or filming for a given *time* in seconds (default is 5 seconds).
@@ -136,28 +136,28 @@ Installing Reco PC Server is an easy 3 minute process.
 		- video time
 		- photo
 
-### ★ Cmd  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list) 
+### ★ Cmd  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 
 * !cmd "*command*"
 	> Executes *command* in cmd.exe.
 
 		e.g: !cmd shutdown -a
 
-### ★ Clip  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list) 
+### ★ Clip  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 
 * !clip *text*
 	> Copy the message to your PC's Clipboard.
 
 		e.g: !clip Copy this text to PC's Clipboard
 
-### ★ Echo  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list) 
+### ★ Echo  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 
 * !echo *status*
 	> Turns on or off !cmd and !powershell command echo in chat. When turned on, the command return will be sent to chat.
 
 		e.g: !echo on (or) !echo off
 
-### ★ File  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list) 
+### ★ File  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 
 * !file *command* or !file *command* *path*
 	> Browses, saves and retrieves files from or to your computer.
@@ -171,49 +171,49 @@ Installing Reco PC Server is an easy 3 minute process.
 		- save => saves a file to the HD from the chat
 		- download => saves a file from a direct url to the HD
 
-### ★ HelpMe  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list) 
+### ★ HelpMe  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 
 * !helpme or !helpme *command*
 	> Shows Chimera help, listing commands of shows help for a specific command.
 	
 		e.g: !helpme screenshot
 
-### ★ Hibernate  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list) 
+### ★ Hibernate  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 
 * !hibernate or !hibernate *minutes*
 	> Hibernates your computer immediately or with a time delay in minutes. 
 
 		e.g: !hibernate 30
 
-### ★ Launch  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list) 
+### ★ Launch  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 
 * !launch *shortcut*
     > Launches a custom shortcut you placed in the shortcuts folder.
 
 		e.g: !launch Application_Name_in_Shortcut_Folder
 
-### ★ Lock  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list) 
+### ★ Lock  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 
 * !lock or !lock *minutes*
 	> Locks your computer immediately or with a time delay in minutes.
 
 		e.g: !lock 30
 
-### ★ Log  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list) 
+### ★ Log  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 
 * !log *param* or !log *param* *date*
 	> turns on or off chat logging or show log for given date (defaults to today).
 
 		e.g: !log show 2021-02-08
 
-### ★ LogOff  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list) 
+### ★ LogOff  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 
 * !logoff or !logoff *minutes*
 	> Logs off your user immediately or with a time delay in minutes.
 
 		e.g: !logoff 30
 
-### ★ Media  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list) 
+### ★ Media  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 
 * !media *command* or !media *command* *repeat_n_times*
 	> Controls computer media playback and volume once or repeatedly.
@@ -240,63 +240,63 @@ Installing Reco PC Server is an easy 3 minute process.
 		- key-quit	
 
 
-### ★ Notification  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list) 
+### ★ Notification  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 
 * !notification "*message*"
     > Sends a notification to the computer.
 
 		e.g: !notification who are you?
 
-### ★ Powershell  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list) 
+### ★ Powershell  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 
 * !powershell "*command*"
 	> Executes *command* in Powershell.
 
 		e.g: !powershell shutdown -s -t 300
 
-### ★ Restart  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list) 
+### ★ Restart  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 
 * !restart or !restart *minutes*
 	> Restarts your computer immediately or with a time delay in minutes.
 
 		e.g: !restart 30
 
-### ★ Say  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list) 
+### ★ Say  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 
 * !say "*text*"
 	> Uses powershell commands and a TTS engine to make your computer say something.
      
 		e.g: !say Reco
 
-### ★ ScreenShot  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list) 
+### ★ ScreenShot  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 
 * !screenshot or !screenshot *seconds*
 	> Takes a screenshot of your computer and sends it back to you.
 
 		e.g: !screenshot 1
 
-### ★ Shutdown  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list) 
+### ★ Shutdown  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 
 * !shutdown or !shutdown *minutes*
 	> Shuts down your computer immediately or with a time delay in minutes.
 
 		e.g: !shutdown 30
 
-### ★ Sleep  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list) 
+### ★ Sleep  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 
 * !sleep or !sleep *minutes*
 	> Sleeps your computer immediately or with a time delay in minutes. 
 
 		e.g: !sleep 30
 
-### ★ URL  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list)
+### ★ URL  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--)
 
 * !url *website*
 	> Opens the website in your browser.
 
 		e.g: !url www.google.com
 
-### ★ Whatsapp  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list) 
+### ★ Whatsapp  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 
 * !whatsapp *countryCode_MobileNumber*
 	> Opens chat screen for entered mobile number (Click to Chat feature).
