@@ -1,4 +1,9 @@
+
+# Enter your Discord bot token below.
 DISCORD_BOT_TOKEN=
+
+
+# Don't edit anything given below.
 DISCORD_BOT_PREFIX=!
 DISCORD_LOGS_ENABLED=False
 
