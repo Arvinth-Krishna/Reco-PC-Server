@@ -259,6 +259,18 @@ async def screenshot(ctx, seconds=0):
     await screenshot_module.screenshot(ctx, seconds)
 
 
+# Module: search
+# Description: Your query will be searched on Google.
+# Usage: !search or !search query
+@client.command()
+@Logger(client)
+async def search(ctx, *txt):
+    text=''''''
+    for txxt in txt: 
+        text = text+"+"+txxt     
+    await search_module.search(ctx, text)
+
+
 # Module: shutdown
 # Description: Shuts system down
 # Usage: !shutdown or !shutdown minutesToShutdown
