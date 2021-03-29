@@ -76,7 +76,7 @@ Installing Reco PC Server is an easy 3 minute process.
 * plyer
 
 
-## Features List:  [⮵](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
+## Features List:  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
 * **[Abort](https://github.com/Arvinth-Krishna/Reco-PC-Server#-abort--)**
 * **[App Quitter](https://github.com/Arvinth-Krishna/Reco-PC-Server#-appquitter--)**
 * **[Battery Report Generator](https://github.com/Arvinth-Krishna/Reco-PC-Server#-battery-report-generator--)**
@@ -309,7 +309,7 @@ Note:
 * And some commands may require elevated privileges on Linux.
 
 
-## Installation:  [⮵](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
+## Installation:  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
 
 ### Text Instructions:
 1. **Download & Install Python** - Remember: Tick the Add to path checkBox during installation.
@@ -326,7 +326,7 @@ Note:
 
 The above video is an instruction for installing Chimera and the process is same for Reco PC Server too.
 
-## To Deal with any Error during Installation:  [⮵](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
+## To Deal with any Error during Installation:  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
 
 ### Error 1: Building wheel for multidict (PEP 517) ... error
 
@@ -349,7 +349,7 @@ The above video is an instruction for installing Chimera and the process is same
     - And now try again to **run setup.bat on Windows** or **setup.sh on Linux** from Downloaded Reco Folder.
     - After successfully installed Reco setup, Paste your Bot Token in the newly created **.env file** & continue following the [instuction from the 4th Step](https://github.com/Arvinth-Krishna/Reco-PC-Server#installation)
     
-## Setting up Task Scheduler for Reco-Startup:  [⮵](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
+## Setting up Task Scheduler for Reco-Startup:  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
 These instruction will help you to setup Reco to startup automatically when we start your PC.
 It looks like lenghty but its so easy to setup, just follow the steps. so chill, do and have fun...
 
@@ -371,7 +371,7 @@ It looks like lenghty but its so easy to setup, just follow the steps. so chill,
 11. And now **Click OK**
 12.  Next time when you turn on your PC - Reco will Start Automatically🥳.
 
-## Contributing:  [⮵](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
+## Contributing:  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
 Reco was written to be modular so one can easily modify the code and enhance it. I welcome and greatly appreciate anyone who wishes to contribute a module of their own.
 Here's how to create a Reco module:
 
@@ -381,7 +381,7 @@ Here's how to create a Reco module:
 4. Update the README.md file to include your new module and your github profile under Contributors
 
 
-## Donate  [⮵](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
+## Donate  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
 If you found this project helpful and want to thank me, consider buying me a cup of ☕
 
 
@@ -391,12 +391,12 @@ If you found this project helpful and want to thank me, consider buying me a cup
 <a href="https://www.buymeacoffee.com/ArvinthKrishna"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=ArvinthKrishna&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff"></a>
 
 
-## Credits:  [⮵](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
+## Credits:  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
 
 * [CedArctic](https://github.com/CedArctic) and all contributors for creating [Chimera](https://github.com/CedArctic/Chimera) which is modified and now act as a server(PC controller) for Reco-Discord PC Remote Controller app.
 
 
-## Contributors:  [⮵](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
+## Contributors:  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
 * [CedArctic](https://github.com/CedArctic)
 * [Zachman61](https://github.com/Zachman61)
 * [vfcoelho](https://github.com/vfcoelho)
@@ -408,4 +408,4 @@ If you found this project helpful and want to thank me, consider buying me a cup
 * [medusalix](https://github.com/medusalix)
 * [kostino](https://github.com/kostino)
 
-### [⮵ Jump to the top](https://github.com/Arvinth-Krishna/Reco-PC-Server#reco-pc-server)
+### [↟ Jump to the top](https://github.com/Arvinth-Krishna/Reco-PC-Server#reco-pc-server)
