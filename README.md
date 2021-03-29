@@ -97,6 +97,7 @@ Installing Reco PC Server is an easy 3 minute process.
 * **[Restart](https://github.com/Arvinth-Krishna/Reco-PC-Server#-restart--)**
 * **[Say](https://github.com/Arvinth-Krishna/Reco-PC-Server#-say--)**
 * **[Screenshot](https://github.com/Arvinth-Krishna/Reco-PC-Server#-screenshot--)**
+* **[Google Search](https://github.com/Arvinth-Krishna/Reco-PC-Server#-google-search--)**
 * **[Shutdown](https://github.com/Arvinth-Krishna/Reco-PC-Server#-shutdown--)**
 * **[Sleep](https://github.com/Arvinth-Krishna/Reco-PC-Server#-sleep--)**
 * **[URL Launcher](https://github.com/Arvinth-Krishna/Reco-PC-Server#-url-launcher--)**
@@ -275,6 +276,13 @@ Installing Reco PC Server is an easy 3 minute process.
 	> Takes a screenshot of your computer and sends it back to you.
 
 		e.g: !screenshot 1
+
+### ★ Google Search  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+
+* !search or !search *query*
+	> Helps you to search your query in Google very easily.
+
+		e.g: !search Reco Discord PC Remote Controller
 
 ### ★ Shutdown  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 
