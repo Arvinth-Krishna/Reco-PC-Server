@@ -102,6 +102,7 @@ Installing Reco PC Server is an easy 3 minute process.
 * **[Sleep](https://github.com/Arvinth-Krishna/Reco-PC-Server#-sleep--)**
 * **[URL Launcher](https://github.com/Arvinth-Krishna/Reco-PC-Server#-url-launcher--)**
 * **[WhatsApp (click to chat)](https://github.com/Arvinth-Krishna/Reco-PC-Server#-whatsapp--)**
+* **[YouTube (search)](https://github.com/Arvinth-Krishna/Reco-PC-Server#-youtube-search--)**
 
 
 
@@ -311,6 +312,13 @@ Installing Reco PC Server is an easy 3 minute process.
 	> Opens chat screen for entered mobile number (Click to Chat feature).
 
 		e.g: !whatsapp 911234567890
+
+### ★ YouTube Search  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+
+* !youtube or !youtube *search*
+	> Shows search result on YouTube.
+
+		e.g: !youtube Avicii - The Nights
 
 Note: 
 * All above commands works best on Windows and some commands may not work on other platforms.
