@@ -311,6 +311,16 @@ async def whatsapp(ctx, num=0):
     await whatsapp_module.whatsapp(ctx, num)
 
 
+# Module: youtube
+# Description: Searches on YouTube.
+# Usage: !youtube or !youtube search
+@client.command()
+@Logger(client)
+async def youtube(ctx, *txt):
+    text=''''''
+    for txxt in txt: 
+        text = text+"+"+txxt     
+    await youtube_module.youtube(ctx, text)
 
 
 # System Tray menu functions
