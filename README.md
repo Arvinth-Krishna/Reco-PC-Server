@@ -404,7 +404,7 @@ If you found this project helpful and want to thank me, consider buying me a cup
 <a href="https://www.paypal.com/paypalme/gak15"><img width="240" src="https://github.com/everdrone/coolbadge/blob/master/badges/Paypal/Coffee/Dark/Big.png?raw=true"></a>
 
 
-<a href="https://www.buymeacoffee.com/ArvinthKrishna"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=ArvinthKrishna&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff"></a>
+<a href="https://www.buymeacoffee.com/ArvinthKrishna"><img src="https://www.buymeacoffee.com/gbraad"></a>
 
 
 ## Credits:  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
