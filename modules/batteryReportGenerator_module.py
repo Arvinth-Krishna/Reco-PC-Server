@@ -3,7 +3,7 @@
 # Usage: !batteryreport
 # Dependencies: time, os
 
-import os, time, asyncio, configs
+import os, time, asyncio, configs, discord
 
 
 async def batteryreport(ctx):
@@ -12,6 +12,7 @@ async def batteryreport(ctx):
     if configs.operating_sys == "Windows":
         os.system('powercfg /batteryreport /output "./battery_report.html"')
         os.system('start battery_report.html')
+        await ctx.send(file=discord.File('battery_report.html'))
         
 
     else:
