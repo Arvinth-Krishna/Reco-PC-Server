@@ -101,6 +101,7 @@ Installing Reco PC Server is an easy 3 minute process.
 * **[Shutdown](https://github.com/Arvinth-Krishna/Reco-PC-Server#-shutdown--)**
 * **[Sleep](https://github.com/Arvinth-Krishna/Reco-PC-Server#-sleep--)**
 * **[URL Launcher](https://github.com/Arvinth-Krishna/Reco-PC-Server#-url-launcher--)**
+* **[Wlan Signal](https://github.com/Arvinth-Krishna/Reco-PC-Server#-Wlan-Signal--)**
 * **[WhatsApp (click to chat)](https://github.com/Arvinth-Krishna/Reco-PC-Server#-whatsapp--)**
 * **[YouTube (search)](https://github.com/Arvinth-Krishna/Reco-PC-Server#-youtube-search--)**
 
@@ -305,6 +306,13 @@ Installing Reco PC Server is an easy 3 minute process.
 	> Opens the website in your browser.
 
 		e.g: !url www.google.com
+
+### ★ Wlan Signal  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--)
+
+* !wlansignal
+	> To check the signal strength of a Wi-Fi Connection.
+
+		e.g: !wlansignal
 
 ### ★ Whatsapp  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 
