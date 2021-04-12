@@ -301,6 +301,15 @@ async def sleep(ctx, minutes=0):
 async def url(ctx, txt):
     await urlLauncher_module.url(ctx, txt)
 
+
+# Module: wlanSignal
+# Description: To check the signal strength of a Wi-Fi Connection
+# Usage: !wlansignal
+@client.command()
+@Logger(client)
+async def wlansignal(ctx):
+    await wlanSignal_module.wlansignal(ctx)
+
     
 # Module: whatapp
 # Description: Opens the chat Screen for the entered MobileNumber
