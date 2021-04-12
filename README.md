@@ -79,6 +79,7 @@ Installing Reco PC Server is an easy 3 minute process.
 ## Features List:  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
 * **[Abort](https://github.com/Arvinth-Krishna/Reco-PC-Server#-abort--)**
 * **[App Quitter](https://github.com/Arvinth-Krishna/Reco-PC-Server#-appquitter--)**
+* **[Battery Level](https://github.com/Arvinth-Krishna/Reco-PC-Server#-battery-level--)**
 * **[Battery Report Generator](https://github.com/Arvinth-Krishna/Reco-PC-Server#-battery-report-generator--)**
 * **[Camera](https://github.com/Arvinth-Krishna/Reco-PC-Server#-camera--)**
 * **[Cmd](https://github.com/Arvinth-Krishna/Reco-PC-Server#-cmd--)**
@@ -122,6 +123,13 @@ Installing Reco PC Server is an easy 3 minute process.
 	> Quits the specified application immediately or with a time delay in minutes.
 
 		e.g: !appquitter chrome 30
+
+### ★ Battery Level  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+
+* !batterylevel
+	> To see the estimated battery charge remaining.
+
+		e.g: !batterylevel
 
 ### ★ Battery Report Generator  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 
