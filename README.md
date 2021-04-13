@@ -187,7 +187,7 @@ Installing Reco PC Server is an easy 3 minute process.
 ### ★ HelpMe  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 
 * !helpme or !helpme *command*
-	> Shows Chimera help, listing commands of shows help for a specific command.
+	> Shows Reco help, listing commands of shows help for a specific command.
 	
 		e.g: !helpme screenshot
 
