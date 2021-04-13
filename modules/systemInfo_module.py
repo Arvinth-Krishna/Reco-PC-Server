@@ -18,8 +18,7 @@ async def systeminfo(ctx):
              file.write(cmnd_result)
              file.close()
              await ctx.send(file=discord.File('SystemInfo.txt'))
-
-             os.system('cmd /c "systeminfo && echo. && echo. && echo Check your Discord Server to find the SystemInfo.txt file && echo.  && echo Close this terminal to resume Reco. && echo. &&  pause"')
+             os.system("start SystemInfo.txt")
         else:
              await ctx.send("This feature is only available in Windows")
         await asyncio.sleep(3)
