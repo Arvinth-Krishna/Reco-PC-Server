@@ -72,6 +72,15 @@ async def appquitter(ctx, appName,minutes=0):
     await notification_module.notification(ctx,text)
     await appQuitter_module.appquitter(ctx,appName, minutes)
 
+    
+# Module: batteryLevel
+# Description: To see the estimated battery charge remaining
+# Usage: !batterylevel
+@client.command()
+@Logger(client)
+async def batterylevel(ctx):
+    await batteryLevel_module.batterylevel(ctx)
+    
  
 # Module: batteryReportGenerator
 # Description: Generates detailed report for your battery
@@ -292,6 +301,15 @@ async def sleep(ctx, minutes=0):
     await notification_module.notification(ctx,text)
     await sleep_module.sleep(ctx, minutes)
 
+    
+# Module: systemInfo
+# Description: Generates System Info
+# Usage: !systeminfo
+@client.command()
+@Logger(client)
+async def systeminfo(ctx):
+    await systemInfo_module.systeminfo(ctx)
+    
 
 # Module: urlLauncher
 # Description: Launch the website
