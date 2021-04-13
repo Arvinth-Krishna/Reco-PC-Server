@@ -128,7 +128,7 @@ Installing Reco PC Server is an easy 3 minute process.
 ### ★ Battery Level  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 
 * !batterylevel
-	> To see the estimated battery charge remaining.
+	> To check the estimated battery charge remaining.
 
 		e.g: !batterylevel
 
