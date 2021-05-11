@@ -23,6 +23,7 @@ Installing Reco PC Server is an easy 3 minute process.
 * **[Reco-Mobile App](https://github.com/Arvinth-Krishna/Reco-PC-Server#reco---mobile-app--)**
 * **[🔸Commands List](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--)**
 * **[Commands Documentation](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-documentation--)**
+* **[Webhook Restricter](https://github.com/Arvinth-Krishna/Reco-PC-Server#webhook-restricter--)**
 * **[🔸Installation Process](https://github.com/Arvinth-Krishna/Reco-PC-Server#installation--)**
 * **[Installation Error-Help](https://github.com/Arvinth-Krishna/Reco-PC-Server#to-deal-with-any-error-during-installation--)**
 * **[Setting up Task Scheduler for Reco-Startup](https://github.com/Arvinth-Krishna/Reco-PC-Server#setting-up-task-scheduler-for-reco-startup--)**
@@ -366,11 +367,9 @@ Note:
                 'webhookURL':'https://discord.com/api/webhooks/841227223729700866/aW4XpuFTUfweJIcQAqTSgikXZu6r5r6Q8MK_rOawf6qj_dyAUVQUCzbTm6Is0Bs8bQFG',
                 'webhookId':'841227223729700866',   # You can obtain the "webhook id" by looking at the webhook URL, the number after https://discord.com/api/webhooks/ is the "id" , and the part after that is the token. 
 
-
                  #3️⃣ Before sharing your Webhook URL to others. you can set permission to each commands as you wish🥳
                  # "True"  => means Permission granted to use the command.
                  # "False" => means Permission Denied to use the command.
-
 
                  # ⚠ Powerfull Commands: (All powerfull commands will be "False" by default)
                  '!appquitter':False,
@@ -392,13 +391,11 @@ Note:
                   '!launch':True,
                   '!screenshot':True,              
 
-
                   # Media Commands: (!media)
                   'media_Function_Keys':True,           # next, prev, stop, play, pause
                   'media_Volume_Keys':True,             # vol-up, vol-down, vol-mute
                   'media_ArrowKeys':True,               # key-up, key-down, key-left, key-right
                   'media_Tab,Space&EnterKeys':True,     # key-tab, key-space, key-enter
-
 
                   # Least Powerful Commands:
                   '!batterylevel':True,
