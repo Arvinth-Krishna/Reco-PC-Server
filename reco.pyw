@@ -86,11 +86,11 @@ async def on_message(message):
                  elif(messageContentList[1]in media_Function_Keys and i['media_Function_Keys']):
                      await client.invoke(ctx)       
                  else:
-                     await ctx.send("This webhook: ( "+message.author.name +" ) tried to use permission denied command: ( "+messageContentList[0]+" "+messageContentList[1]+" )")                                                          
+                     await ctx.send("This webhook: ( "+i['webhookName'] +" ) tried to use permission denied command: ( "+messageContentList[0]+" "+messageContentList[1]+" )")                                                          
              elif(i[messageContentList[0]]):
                  await client.invoke(ctx)
              else:
-                 await ctx.send("This webhook: ( "+message.author.name +" ) tried to use permission denied command: ( "+messageContentList[0]+" )")          
+                 await ctx.send("This webhook: ( "+i['webhookName']+" ) tried to use permission denied command: ( "+messageContentList[0]+" )")          
     if(found==False):
         await client.invoke(ctx)
 
