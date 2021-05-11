@@ -41,7 +41,7 @@ webhook_restricter_list=[
     'media_ArrowKeys':True,               # key-up, key-down, key-left, key-right
     'media_Tab,Space&EnterKeys':True,     # key-tab, key-space, key-enter
 
-    # Least Powerful Commands:
+    # Other Commands:
     '!batterylevel':True,
     '!batteryreport':True,
     '!echo':True,
