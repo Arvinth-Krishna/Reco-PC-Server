@@ -11,6 +11,9 @@ from threading import Thread
 # Import configurations
 import configs
 
+# Import Webhook Restricter
+from webhook_restricter import webhook_restricter_list
+
 # Import logger
 from lib.helpers import Logger
 
@@ -45,12 +48,53 @@ async def on_ready():
     print('--------')
     return await client.change_presence(activity=discord.Game(name='with your PC'))
 
+
+media_Volume_Keys=['vol-up','vol-down','vol-mute']
+media_ArrowKeys=['key-up','key-down','key-left','key-right']
+media_CloseandQuitKeys=['key-close','key-quit']
+media_Tab_SpaceandEnterKeys=['key-tab','key-space','key-enter']
+media_Function_Keys=['next','prev','stop','play','pause']
+
+
 @client.event
 async def on_message(message):
     ctx = await client.get_context(message)
-    await client.invoke(ctx)
 
+    found=False
 
+    varMsgcontent=message.content
+    messageContentList=varMsgcontent.split(" ")
+    for i in webhook_restricter_list:
+        
+         print(message.webhook_id)
+         print(i['webhookId'])
+         msgWebhookId = message.webhook_id
+         webhookIdtoString=str(msgWebhookId)
+     
+         
+         if i['webhookId'] == webhookIdtoString :
+             found=True
+             if(messageContentList[0]=='!media'):
+                 if(messageContentList[1]in media_Volume_Keys and i['media_Volume_Keys']):
+                     await client.invoke(ctx)
+                 elif(messageContentList[1]in media_ArrowKeys and i['media_ArrowKeys']):
+                     await client.invoke(ctx)
+                 elif(messageContentList[1]in media_CloseandQuitKeys and i['media_Close&QuitKeys']):
+                     await client.invoke(ctx)                    
+                 elif(messageContentList[1]in media_Tab_SpaceandEnterKeys and i['media_Tab,Space&EnterKeys']):
+                     await client.invoke(ctx)
+                 elif(messageContentList[1]in media_Function_Keys and i['media_Function_Keys']):
+                     await client.invoke(ctx)       
+                 else:
+                     await ctx.send("This webhook: ( "+message.author.name +" ) tried to use permission denied command: ( "+messageContentList[0]+" "+messageContentList[1]+" )")                                                          
+             elif(i[messageContentList[0]]):
+                 await client.invoke(ctx)
+             else:
+                 await ctx.send("This webhook: ( "+message.author.name +" ) tried to use permission denied command: ( "+messageContentList[0]+" )")          
+    if(found==False):
+        await client.invoke(ctx)
+
+  
 # Module: abort
 # Description: Abort the Shutdown or Restart schedule
 # Usage: !abort 
@@ -372,8 +416,8 @@ def showShortcuts(): os.startfile("shortcuts")
 def connectInfo(): webbrowser.open(
     'https://discordapp.com/oauth2/authorize?client_id={}&scope=bot&permissions=8'.format(client.user.id))
 
-
-
+# Opens webhook_restricter.py file
+def open_Webhook_restricter(): os.startfile("webhook_restricter.py")
 
 # Hides the application
 def applicationHide():
@@ -405,6 +449,7 @@ def iconSetup():
         MenuItem("Instructions", action=instructions),
         MenuItem("Show Logs", action=showLogs),
         MenuItem("Show Shortcuts", action=showShortcuts),
+        MenuItem("Webhook Restricter", action=open_Webhook_restricter),
         MenuItem("Hide Icon", action=applicationHide),
         MenuItem("About", action=about),
         MenuItem("Force Quit",action=applicationExit),
