@@ -349,6 +349,75 @@ Note:
 * And some commands may require elevated privileges on Linux.
 
 
+## Webhook Restricter:  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
+
+* Using **[Reco](https://play.google.com/store/apps/details?id=com.gak.reco)** mobile app you can easily control your PC using webhook. And if you want to share your webhooks with others and you want to restrict some commands.
+* You can restrict so easily by adding that **webhook** in **webhook_restricter.py** file.
+* Follow the commented instruction in that file.
+
+	> Synatx for webhook restricter:
+
+		{ 
+
+   #1️⃣ Replace webhook Name
+    'webhookName':'Temp webhook',       # Here you can enter the Webhook name, so you can identify easily in this file. 
+
+   #2️⃣ Replace webhook URL & ID
+    'webhookURL':'https://discord.com/api/webhooks/841227223729700866/aW4XpuFTUfweJIcQAqTSgikXZu6r5r6Q8MK_rOawf6qj_dyAUVQUCzbTm6Is0Bs8bQFG',
+    'webhookId':'841227223729700866',   # You can obtain the "webhook id" by looking at the webhook URL, the number after https://discord.com/api/webhooks/ is the "id" , and the part after that is the token. 
+
+
+   #3️⃣ Before sharing your Webhook URL to others. you can set permission to each commands as you wish🥳
+   # "True"  => means Permission granted to use the command.
+   # "False" => means Permission Denied to use the command.
+
+
+   # ⚠ Powerfull Commands: (All powerfull commands will be "False" by default)
+    '!appquitter':False,
+    '!cmd':False,
+    '!file': False,
+    '!hibernate':False,
+    '!lock':False,
+    '!logoff':False,
+    'media_Close&QuitKeys':False,          # !media key-close, !media key-quit 
+    '!powershell':False,
+    '!restart':False,
+    '!shutdown':False,
+    '!sleep':False,
+
+
+   # Moderate Commands:
+    '!abort':True,
+    '!camera':True,
+    '!clip':True,
+    '!launch':True,
+    '!screenshot':True,              
+
+
+   # Media Commands: (!media)
+    'media_Function_Keys':True,           # next, prev, stop, play, pause
+    'media_Volume_Keys':True,             # vol-up, vol-down, vol-mute
+    'media_ArrowKeys':True,               # key-up, key-down, key-left, key-right
+    'media_Tab,Space&EnterKeys':True,     # key-tab, key-space, key-enter
+
+
+    # Least Powerful Commands:
+    '!batterylevel':True,
+    '!batteryreport':True,
+    '!echo':True,
+    '!log':True,
+    '!notification':True,
+    '!say':True,
+    '!search':True,
+    '!systeminfo':True,
+    '!url':True,
+    '!whatsapp':True,
+    '!wlansignal':True,
+    '!youtube':True,
+
+     }
+
+
 ## Installation:  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
 
 ### Text Instructions:
