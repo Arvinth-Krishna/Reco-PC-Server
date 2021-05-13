@@ -372,6 +372,7 @@ Note:
                  # "False" => means Permission Denied to use the command.
 
                  # ⚠ Powerfull Commands: (All powerfull commands will be "False" by default)
+                 '!abort':False,
                  '!appquitter':False,
                  '!cmd':False,
                  '!file': False,
@@ -385,7 +386,6 @@ Note:
                  '!sleep':False,
 
                   # Moderate Commands:
-                  '!abort':True,
                   '!camera':True,
                   '!clip':True,
                   '!launch':True,
