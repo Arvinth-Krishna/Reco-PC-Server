@@ -1,5 +1,5 @@
 
-# Enter your Discord bot token below.
+# Enter your Discord bot token below without any quotes.
 DISCORD_BOT_TOKEN=
 
 
