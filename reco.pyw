@@ -310,7 +310,9 @@ async def screenshot(ctx, seconds=0):
 @client.command()
 @Logger(client)
 async def search(ctx, *txt):
-    text=" ".join(txt)
+    text=''''''
+    for txxt in txt: 
+        text = text+"+"+txxt   
   
     await search_module.search(ctx, text)
 
@@ -379,7 +381,9 @@ async def whatsapp(ctx, num=0):
 @client.command()
 @Logger(client)
 async def youtube(ctx, *txt):
-    text=" ".join(txt)
+    text=''''''
+    for txxt in txt: 
+        text = text+"+"+txxt   
    
     await youtube_module.youtube(ctx, text)
 
