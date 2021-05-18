@@ -150,10 +150,8 @@ async def camera(ctx, command, time=5):
 @client.command()
 @Logger(client)
 async def cmd(ctx, *txt):
-    text=''''''
-    for txxt in txt: 
-        text = text+''' '''+txxt  
-    
+    text=" ".join(txt)
+
     await cmd_module.cmd(ctx, text)
 
 
@@ -163,10 +161,8 @@ async def cmd(ctx, *txt):
 @client.command()
 @Logger(client)
 async def clip(ctx, *txt):
-    text=''''''
-    for txxt in txt: 
-        text = text+''' '''+txxt  
-    
+    text=" ".join(txt)
+
     await clip_module.clip(ctx, text)
 
 
@@ -261,9 +257,8 @@ async def media(ctx, command, times=1):
 @client.command()
 @Logger(client)
 async def notification(ctx, *txt):
-    text=''''''
-    for txxt in txt: 
-        text = text+''' '''+txxt  
+    text=" ".join(txt)
+ 
     await notification_module.notification(ctx, text)
 
 
@@ -273,10 +268,8 @@ async def notification(ctx, *txt):
 @client.command()
 @Logger(client)
 async def powershell(ctx, *txt):
-    text=''''''
-    for txxt in txt: 
-        text = text+''' '''+txxt  
-    
+    text=" ".join(txt)
+
     await powershell_module.powershell(ctx, text)
 
 
@@ -297,9 +290,8 @@ async def restart(ctx, minutes=0):
 @client.command()
 @Logger(client)
 async def say(ctx, *txt):
-    text=''''''
-    for txxt in txt: 
-        text = text+''' '''+txxt     
+    text=" ".join(txt)
+ 
     await say_module.say(ctx, text)
 
 
@@ -318,9 +310,8 @@ async def screenshot(ctx, seconds=0):
 @client.command()
 @Logger(client)
 async def search(ctx, *txt):
-    text=''''''
-    for txxt in txt: 
-        text = text+"+"+txxt     
+    text=" ".join(txt)
+  
     await search_module.search(ctx, text)
 
 
@@ -388,9 +379,8 @@ async def whatsapp(ctx, num=0):
 @client.command()
 @Logger(client)
 async def youtube(ctx, *txt):
-    text=''''''
-    for txxt in txt: 
-        text = text+"+"+txxt     
+    text=" ".join(txt)
+   
     await youtube_module.youtube(ctx, text)
 
 
