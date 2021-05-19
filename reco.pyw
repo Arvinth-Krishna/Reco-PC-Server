@@ -257,14 +257,15 @@ async def media(ctx, command, times=1):
 @client.command()
 @Logger(client)
 async def music(ctx, *txt):
-    text="+".join(txt)    
-    await music_module.music(ctx, txt)  
+    text="+".join(txt)
+    await music_module.music(ctx, text)  
     
 @client.command()
 @Logger(client)
 async def m(ctx, *txt):
-    text="+".join(txt)  
-    await music_module.music(ctx, txt)      
+    text="+".join(txt)
+   
+    await music_module.music(ctx, text)      
 
     
 # Module: notification
