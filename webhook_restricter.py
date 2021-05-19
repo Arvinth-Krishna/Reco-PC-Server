@@ -46,6 +46,8 @@ webhook_restricter_list=[
     '!batteryreport':True,
     '!echo':True,
     '!log':True,
+    '!music':True,
+    '!m':True,
     '!notification':True,
     '!say':True,
     '!search':True,
