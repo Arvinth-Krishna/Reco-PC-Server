@@ -250,7 +250,23 @@ async def logoff(ctx, minutes=0):
 async def media(ctx, command, times=1):
     await media_module.media(ctx, command, times)
 
+    
+# Module: Music
+# Description: Play video music from YouTube in VLC Player.
+# Usage: !music query or !m query
+@client.command()
+@Logger(client)
+async def music(ctx, *txt):
+    text=" ".join(txt)    
+    await music_module.music(ctx, txt)  
+    
+@client.command()
+@Logger(client)
+async def m(ctx, *txt):
+    text=" ".join(txt)  
+    await music_module.music(ctx, txt)      
 
+    
 # Module: notification
 # Description: Sends a notification to the computer
 # Usage: !notification "Notification Content"
