@@ -42,5 +42,5 @@ async def music(ctx, txt):
     elif configs.operating_sys == "Linux":
         os.popen('xdg-open {0}'.format(url))
     else:
-        await ctx.send("Can't use YouTube search command for this platform.")
+        await ctx.send("Can't use Music command for this platform.")
         await asyncio.sleep(3)
