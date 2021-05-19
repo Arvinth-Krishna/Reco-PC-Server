@@ -11,7 +11,7 @@ async def music(ctx, txt):
     
     if txt=="":
         videoResult="https://www.youtube.com/channel/UC-9-kyTW8ZkZNDHQJ6FgpwQ"
-    elif txt!="quit" and txt!="pause" and txt!="play"and txt!="stop"and txt!="next"and txt!="prev":
+    else:
         url="https://www.youtube.com/results?search_query={0}+song".format(txt)
         searchResult= urllib.request.urlopen(url,timeout=5)
         firstResult=re.findall(r"watch\?v=(\S{11})",searchResult.read().decode())
@@ -33,7 +33,8 @@ async def music(ctx, txt):
             await media_module.media(ctx, "next", 1)
         elif txt=="prev":
             await media_module.media(ctx, "prev", 1)
-
+        elif txt=="":
+            os.system("start {0}".format(videoResult))
         else:
             await ctx.send("Searching {0}".format(txt))
             os.system("start vlc --one-instance --playlist-enqueue {0}".format(videoResult))
