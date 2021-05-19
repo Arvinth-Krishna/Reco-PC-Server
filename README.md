@@ -94,6 +94,7 @@ Installing Reco PC Server is an easy 3 minute process.
 * **[Log](https://github.com/Arvinth-Krishna/Reco-PC-Server#-log--)**
 * **[Logoff](https://github.com/Arvinth-Krishna/Reco-PC-Server#-logoff--)**
 * **[Media](https://github.com/Arvinth-Krishna/Reco-PC-Server#-media--)**
+* **[Music](https://github.com/Arvinth-Krishna/Reco-PC-Server#-music--)**
 * **[Notification](https://github.com/Arvinth-Krishna/Reco-PC-Server#-notification--)**
 * **[Powershell](https://github.com/Arvinth-Krishna/Reco-PC-Server#-powershell--)**
 * **[Restart](https://github.com/Arvinth-Krishna/Reco-PC-Server#-restart--)**
@@ -253,6 +254,23 @@ Installing Reco PC Server is an easy 3 minute process.
 		- key-close
 		- key-quit	
 
+
+### ★ Music  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+
+* !music "*query*" or !m "*query*"
+    > Plays video music from YouTube in VLC Player.
+
+		e.g: !music The Nights 
+		          or
+	             !m The Nights
+		     
+		     !m quit      - Quits the VLC Player.
+		     !m play      - Play the paused song.
+		     !m pause     - Pause the current playing song.
+		     !m stop      - Stops the song.
+		     !m next      - Play the next song if you have any queued song.
+		     !m prev      - Play the previous song if you have any queued song.
+		     
 
 ### ★ Notification  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 
