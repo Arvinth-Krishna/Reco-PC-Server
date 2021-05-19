@@ -262,7 +262,7 @@ Installing Reco PC Server is an easy 3 minute process.
 
 		e.g: !music The Nights 
 		          or
-	             !m The Nights
+	          !m The Nights
 		     
 		     !m quit      - Quits the VLC Player.
 		     !m play      - Play the paused song.
@@ -420,6 +420,8 @@ Note:
                   '!batteryreport':True,
                   '!echo':True,
                   '!log':True,
+		  '!music':True,
+		  '!m':True,
                   '!notification':True,
                   '!say':True,
                   '!search':True,
