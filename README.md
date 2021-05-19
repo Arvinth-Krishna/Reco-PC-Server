@@ -259,6 +259,8 @@ Installing Reco PC Server is an easy 3 minute process.
 
 * !music "*query*" or !m "*query*"
     > Plays video music from YouTube in VLC Player.
+    > ⚠ To use this command you need to add VLC to the Path (Environmental Variables)
+    > Default path: C:\Program Files\VideoLAN\VLC
 
 		e.g: !music The Nights 
 		          or
