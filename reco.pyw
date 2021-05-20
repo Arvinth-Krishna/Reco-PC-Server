@@ -88,7 +88,7 @@ async def on_message(message):
                  else:
                      await ctx.send("This webhook: ( "+i['webhookName'] +" ) tried to use permission denied command: ( "+messageContentList[0]+" "+messageContentList[1]+" )")                                                          
              elif not messageContentList[0] in i:
-                 await client.invoke(ctx)                                                     
+                 await ctx.send("This command: ( **"+messageContentList[0]+"** ) is not added in your \"**webhook_restricter.py**\" file, so it\'s taken as \"**False**\" (Permission denied).\n\n Please add the commad to use: **'"+messageContentList[0]+"':True,** ")                                                                                                       
              elif(i[messageContentList[0]]):
                  await client.invoke(ctx)
              else:
