@@ -16,7 +16,7 @@ async def music(ctx, txt):
         searchResult= urllib.request.urlopen(url,timeout=5)
         firstResult=re.findall(r"watch\?v=(\S{11})",searchResult.read().decode())
         videoResult="https://www.youtube.com/watch?v={0}".format(firstResult[0])
-        await ctx.send("IM inside Elif")
+        
 
 
 
@@ -37,7 +37,7 @@ async def music(ctx, txt):
             os.system("start {0}".format(videoResult))
         else:
             await ctx.send("Searching {0}".format(txt))
-            os.system("start vlc --one-instance --playlist-enqueue {0}".format(videoResult))
+            os.system("start vlc --one-instance --playlist-autostart --loop  {0}".format(videoResult))
 
 
     elif configs.operating_sys == "Linux":
