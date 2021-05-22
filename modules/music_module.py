@@ -37,7 +37,7 @@ async def music(ctx, txt):
             os.system("start {0}".format(videoResult))
         else:
             await ctx.send("Searching {0}".format(txt))
-            os.system("start vlc --one-instance --playlist-autostart --loop  {0}".format(videoResult))
+            os.system("start vlc --one-instance --playlist-autostart --playlist-enqueue --loop  {0}".format(videoResult))
 
 
     elif configs.operating_sys == "Linux":
