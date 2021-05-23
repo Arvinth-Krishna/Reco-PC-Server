@@ -4,24 +4,34 @@
 # Dependencies: os, time, asynci, urllib.request, re
 
 import os, time, asyncio, configs, urllib.request,re
-
+from re import search
 from modules import media_module
 
 async def music(ctx, txt):
-    
+
     if txt=="":
         videoResult="https://www.youtube.com/channel/UC-9-kyTW8ZkZNDHQJ6FgpwQ"
-    else:
+    elif txt.__contains__('playlist?list='):
+        searchResult= urllib.request.urlopen(txt,timeout=5)
+        firstResult=re.findall(r"watch\?v=(\S{11})",searchResult.read().decode('utf-8'))
+        urlMaker=""
+        for id in firstResult:
+            urlMaker=urlMaker+" https://www.youtube.com/watch?v="+id
+        videoResult=urlMaker
+        await ctx.send("**Queued** {0} **tracks**".format(len(firstResult)))
+        print("im insiside playlist")
+    elif txt!="quit" and txt!="q" and txt!="clear" and txt!="pause" and txt!="play" and txt!="pause"and txt!="stop" and txt!="next"and txt!="prev":
         url="https://www.youtube.com/results?search_query={0}+song".format(txt)
         searchResult= urllib.request.urlopen(url,timeout=5)
-        firstResult=re.findall(r"watch\?v=(\S{11})",searchResult.read().decode())
+        firstResult=re.findall(r"watch\?v=(\S{11})",searchResult.read().decode('utf-8'))
         videoResult="https://www.youtube.com/watch?v={0}".format(firstResult[0])
-        
+
+       
 
 
 
     if configs.operating_sys == "Windows":
-        if txt=="quit":
+        if txt=="quit" or txt=="q" or txt=="clear":
             os.system("taskkill /F /IM vlc.exe")
         elif txt=="pause":
             await media_module.media(ctx, "pause", 1)
@@ -37,7 +47,7 @@ async def music(ctx, txt):
             os.system("start {0}".format(videoResult))
         else:
             await ctx.send("Searching {0}".format(txt))
-            os.system("start vlc --one-instance --playlist-autostart --playlist-enqueue --loop  {0}".format(videoResult))
+            os.system("start vlc --one-instance --playlist-enqueue  --loop  {0}".format(videoResult))
 
 
     elif configs.operating_sys == "Linux":
