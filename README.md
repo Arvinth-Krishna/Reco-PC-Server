@@ -443,7 +443,7 @@ Note:
 ### Text Instructions:
 1. **Download & Install Python** - Remember: Tick the Add to path checkBox during installation.
    -> https://www.python.org/  
-2. Create a bot and get its **token** by following these instructions: https://github.com/Chikachi/DiscordIntegration/wiki/How-to-get-a-token-and-channel-ID-for-Discord
+2. Create a bot and get its **token** by following these instructions: https://youtu.be/-m-Z7Wav-fM
 3. [Download](https://github.com/Arvinth-Krishna/Reco-PC-Server/archive/main.zip) the Reco PC Server Repository, **run setup.bat on Windows** or **setup.sh on Linux** and put your Bot Token in the newly created **.env file**. 
 4. Get **Webhook URL** from your Channel and add it in your Weebhook tab in your [Reco](https://play.google.com/store/apps/details?id=com.gak.reco) mobile App. https://www.youtube.com/watch?v=2Fcvg-Bh7Oo&t=1s
 5. Launch **reco.pyw**, right click on the system tray icon and hit Connect to invite Reco Pc Server to your Discord server.
