@@ -54,6 +54,7 @@ media_ArrowKeys=['key-up','key-down','key-left','key-right']
 media_CloseandQuitKeys=['key-close','key-quit']
 media_Tab_SpaceandEnterKeys=['key-tab','key-space','key-enter']
 media_Function_Keys=['next','prev','stop','play','pause']
+media_Music_Control_Keys=['key-loop','key-shuffle','key-f','key-vlc-mute','key-mini']
 
 
 @client.event
@@ -84,13 +85,16 @@ async def on_message(message):
                  elif(messageContentList[1]in media_Tab_SpaceandEnterKeys and i['media_Tab,Space&EnterKeys']):
                      await client.invoke(ctx)
                  elif(messageContentList[1]in media_Function_Keys and i['media_Function_Keys']):
-                     await client.invoke(ctx)       
+                     await client.invoke(ctx)    
+                 elif(messageContentList[1]in media_Music_Control_Keys and i['music_Controls_Keys']):
+                     await client.invoke(ctx)      
                  else:
-                     await ctx.send("This webhook: ( "+i['webhookName'] +" ) tried to use permission denied command: ( "+messageContentList[0]+" "+messageContentList[1]+" )")                                                          
+                     await ctx.send("This webhook: ( "+i['webhookName'] +" ) tried to use permission denied command: ( "+messageContentList[0]+" "+messageContentList[1]+" )")     
              elif not messageContentList[0] in i:
-                 await ctx.send("This command: ( **"+messageContentList[0]+"** ) is not added in your \"**webhook_restricter.py**\" file, so it\'s taken as \"**False**\" (Permission denied).\n\n Please add the commad to use: **'"+messageContentList[0]+"':True,** ")                                                                                                       
+                 await ctx.send("This command: ( **"+messageContentList[0]+"** ) is not added in your \"**webhook_restricter.py**\" file, so it\'s taken as \"**False**\" (Permission denied).\n\n Please add the commad to use: **'"+messageContentList[0]+"':True,** ")                                                     
              elif(i[messageContentList[0]]):
                  await client.invoke(ctx)
+
              else:
                  await ctx.send("This webhook: ( "+i['webhookName']+" ) tried to use permission denied command: ( "+messageContentList[0]+" )")          
     if(found==False):
@@ -260,6 +264,8 @@ async def media(ctx, command, times=1):
 @Logger(client)
 async def music(ctx, *txt):
     text="+".join(txt)
+
+     
     await music_module.music(ctx, text)  
     
 @client.command()
