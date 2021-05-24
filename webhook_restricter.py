@@ -40,6 +40,7 @@ webhook_restricter_list=[
     'media_Volume_Keys':True,             # vol-up, vol-down, vol-mute
     'media_ArrowKeys':True,               # key-up, key-down, key-left, key-right
     'media_Tab,Space&EnterKeys':True,     # key-tab, key-space, key-enter
+    'music_controls':True,                # key-f, ey-shuffle, key-loop
 
     # Other Commands:
     '!batterylevel':True,
