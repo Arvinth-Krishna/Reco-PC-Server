@@ -26,7 +26,12 @@ async def media(ctx, command, times=1):
         'key-down':media_control.media_key_down,
         'key-enter':media_control.media_key_enter,
         'key-close':media_control.media_key_close,
-        'key-quit':media_control.media_key_quit
+        'key-quit':media_control.media_key_quit,
+        'key-shuffle':media_control.media_key_shuffle,
+        'key-loop':media_control.media_key_loop,
+        'key-f':media_control.media_key_fullscreen,
+        'key-mini':media_control.media_key_mini,
+        'key-vlc-mute':media_control.media_key_vlc_mute,
 
     }
 
