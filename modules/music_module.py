@@ -12,6 +12,7 @@ async def music(ctx, txt):
 
     if txt=="":
         videoResult="https://www.youtube.com/channel/UC-9-kyTW8ZkZNDHQJ6FgpwQ"
+
     elif txt.__contains__('playlist?list='):
         print("im insiside playlist")
         print(txt)
@@ -21,14 +22,32 @@ async def music(ctx, txt):
             if list[i].__contains__('playlist?list='):
                 txt=list[i]
                 print(txt)
-        searchResult= urllib.request.urlopen(txt,timeout=5)
+        searchResult= urllib.request.urlopen(txt,timeout=5) 
         firstResult=re.findall(r"watch\?v=(\S{11})",searchResult.read().decode('utf-8'))
+        count=0
+        
         urlMaker=""
         for id in firstResult:
+            if (urlMaker.__contains__(id)):
+                continue
+            count=count+1
             urlMaker=urlMaker+" https://www.youtube.com/watch?v="+id
         videoResult=urlMaker
-        await ctx.send("**Queued** {0} **tracks**".format(len(firstResult)))
+        print(urlMaker)
+        await ctx.send("**Queued** {0} **tracks**".format(count))
         print("im insiside playlist")
+    elif txt.__contains__('https://'):
+        print("im insiside url")
+        print(txt)
+        list=txt.split("+")
+        print(list)
+        for i in range(len(list)):
+            if list[i].__contains__('https://'):
+                txt=list[i]
+                print(txt)
+        videoResult=txt
+        
+        print("im insiside url")
     elif txt!="quit" and txt!="q" and txt!="clear" and txt!="pause" and txt!="play" and txt!="pause"and txt!="stop" and txt!="videos" and txt!="next"and txt!="prev":
         url="https://www.youtube.com/results?search_query={0}+song".format(txt)
         searchResult= urllib.request.urlopen(url,timeout=5)
