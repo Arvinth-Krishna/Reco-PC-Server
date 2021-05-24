@@ -90,7 +90,12 @@ class MediaControlAdapter():
     VK_KEY_F4 = 15
     VK_KEY_W = 16
     VK_KEY_ALT = 17
-
+    VK_KEY_M=18
+    VK_KEY_L=19
+    VK_KEY_F = 20
+    VK_KEY_R=21
+    VK_KEY_THREE=22
+    
     
     _command_list = {
         'Linux':{
@@ -102,6 +107,7 @@ class MediaControlAdapter():
             VK_MEDIA_STOP:269025045,
             VK_MEDIA_PLAY_PAUSE:269025044,
             VK_KEY_TAB:65289
+
         },
         'Windows':{
             VK_VOLUME_MUTE:173,
@@ -121,7 +127,13 @@ class MediaControlAdapter():
             VK_KEY_CTRL:17,
             VK_KEY_F4:115,
             VK_KEY_W:87,
-            VK_KEY_ALT:18
+            VK_KEY_ALT:18,
+            VK_KEY_M:77,
+            VK_KEY_L:76,
+            VK_KEY_F:70,
+            VK_KEY_R:82,
+            VK_KEY_THREE:51,
+            
         }
     }
     
@@ -179,4 +191,21 @@ class MediaControlAdapter():
         virtual_key_id = self._command_list[self.os_name][self.VK_KEY_ALT]
         virtual_key_id2 = self._command_list[self.os_name][self.VK_KEY_F4]
         self.input_commands.hold_release(virtual_key_id,virtual_key_id2)
+    def media_key_loop(self):
+        virtual_key_id = self._command_list[self.os_name][self.VK_KEY_L]
+        self.input_commands.press_release(virtual_key_id) 
+    def media_key_shuffle(self):
+        virtual_key_id = self._command_list[self.os_name][self.VK_KEY_R]
+        self.input_commands.press_release(virtual_key_id) 
+    def media_key_fullscreen(self):
+        virtual_key_id = self._command_list[self.os_name][self.VK_KEY_F]
+        self.input_commands.press_release(virtual_key_id) 
+    def media_key_mini(self):
+        virtual_key_id = self._command_list[self.os_name][self.VK_KEY_ALT]
+        virtual_key_id2 = self._command_list[self.os_name][self.VK_KEY_THREE]
+        self.input_commands.hold_release(virtual_key_id,virtual_key_id2)
+    def media_key_vlc_mute(self):
+        virtual_key_id = self._command_list[self.os_name][self.VK_KEY_M]
+        self.input_commands.press_release(virtual_key_id) 
+    # 
 
