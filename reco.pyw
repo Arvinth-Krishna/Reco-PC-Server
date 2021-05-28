@@ -378,8 +378,9 @@ async def systeminfo(ctx):
 # Usage: !url website
 @client.command()
 @Logger(client)
-async def url(ctx, txt):
-    await urlLauncher_module.url(ctx, txt)
+async def url(ctx, *txt):
+    text=" ".join(txt)
+    await urlLauncher_module.url(ctx, text)
 
 
 # Module: wlanSignal
