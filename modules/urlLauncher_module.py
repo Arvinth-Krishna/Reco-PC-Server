@@ -14,5 +14,5 @@ async def url(ctx, txt):
     elif configs.operating_sys == "Linux":
         os.popen('xdg-open {0}'.format(txt))
     else:
-        await ctx.send("Can't lock system.")
+        await ctx.send("URL feature is not available in this platform.")
         await asyncio.sleep(3)
