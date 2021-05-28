@@ -1,7 +1,7 @@
-# Module: lock
-# Description: Locks system
-# Usage: !lock or !lock secondsToLock
-# Dependencies: time, os
+# Module: url
+# Description: Launch websites
+# Usage: !url website
+# Dependencies: os, time, asyncio, configs
 
 import os, time, asyncio, configs
 
