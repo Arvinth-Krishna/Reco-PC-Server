@@ -16,7 +16,7 @@ async def music(ctx, txt):
     if txt=="":
         videoResult="https://www.youtube.com/channel/UC-9-kyTW8ZkZNDHQJ6FgpwQ"
     elif txt.__contains__('playlist?list=') and (splitTxt[0]=="dm" or splitTxt[0]=="DM" or splitTxt[0]=="Dm") :
-        print("Inside dm Playlist")
+        print("im insiside youtube download playlist")
         print(txt)
         list=txt.split("+")
         print(list)
@@ -55,11 +55,11 @@ async def music(ctx, txt):
             new_file=base+'.mp3'
             os.rename(audiomp4,new_file)        
             await ctx.send("This music is downloaded: **{0}**.\n **{1}** tracks downloaded.".format(yt.title,count))
-        print('dm Playlist files downloaded')
+        print('all files downloaded')
         await ctx.send("**Downloaded** {0} **tracks**".format(count))
 
     elif txt.__contains__('https://') and (splitTxt[0]=="dm" or splitTxt[0]=="DM" or splitTxt[0]=="Dm"):
-        print("Inside dm url")
+        print("im insiside download url")
         print(txt)
         list=txt.split("+")
         print(list)
@@ -95,10 +95,13 @@ async def music(ctx, txt):
         file.close()
         os.system("start Downloader_info.txt")
 
-        print("Inside dm Keyword")
-        
+        print("im inside the youtube downloader")
+        print(len(txt))
         slice_txt = txt[2: len(txt): 1]
         
+
+
+        print(slice_txt)
 
         url="https://www.youtube.com/results?search_query={0}+song".format(slice_txt)
         searchResult= urllib.request.urlopen(url,timeout=5)
@@ -115,10 +118,15 @@ async def music(ctx, txt):
         new_file=base+'.mp3'
         os.rename(audiomp4,new_file)
 
+    
+
+        
+
+
 
         
     elif txt.__contains__('playlist?list=') and (splitTxt[0]=="dv" or splitTxt[0]=="DV" or splitTxt[0]=="Dv") :
-        print("Inside dv playlist")
+        print("im insiside youtube download playlist")
         print(txt)
         list=txt.split("+")
         print(list)
@@ -158,11 +166,11 @@ async def music(ctx, txt):
             await ctx.send("This video is downloaded: **{0}**.\n **{1}** tracks downloaded.".format(yt.title,count))
 
         
-        print('all dv playlist files downloaded')
+        print('all files downloaded')
         await ctx.send("**Downloaded** {0} **tracks**".format(count))
 
     elif txt.__contains__('https://') and (splitTxt[0]=="dv" or splitTxt[0]=="DV" or splitTxt[0]=="Dv"):
-        print("Inside dv URL")
+        print("im insiside download url")
         print(txt)
         list=txt.split("+")
         print(list)
@@ -200,7 +208,7 @@ async def music(ctx, txt):
         file.close()
         os.system("start Downloader_info.txt")
 
-        print("Inside dv Keyword")
+        print("im inside the youtube downloader")
         print(len(txt))
         slice_txt = txt[2: len(txt): 1]
         
@@ -233,7 +241,7 @@ async def music(ctx, txt):
 
 
     elif txt.__contains__('playlist?list='):
-        print("Inside Playlist Player")
+        print("im insiside playlisttttt")
         print(txt)
         list=txt.split("+")
         print(list)
@@ -254,11 +262,11 @@ async def music(ctx, txt):
         videoResult=urlMaker
         print(urlMaker)
         await ctx.send("**Queued** {0} **tracks**".format(count))
-        print("Queued for Playlist Player")
+        print("im insiside playlist")
 
 
     elif txt.__contains__('https://'):
-        print("Inside URL Player")
+        print("im insiside url")
         print(txt)
         list=txt.split("+")
         print(list)
@@ -268,10 +276,10 @@ async def music(ctx, txt):
                 print(txt)
                 break
         videoResult=txt
-        print("Queued URL player")
+        print("im insiside url")
 
 
-    elif txt!="quit" and txt!="q" and txt!="clear" and txt!="pause" and txt!="play" and txt!="pause"and txt!="stop" and txt!="next"and txt!="prev":
+    elif txt!="quit" and txt!="q" and txt!="clear" and txt!="pause" and txt!="df" and txt!="DF" and txt!="Df" and txt!="dF" and txt!="play" and txt!="pause"and txt!="stop"  and txt!="next"and txt!="prev":
         url="https://www.youtube.com/results?search_query={0}+song".format(txt)
         searchResult= urllib.request.urlopen(url,timeout=5)
         firstResult=re.findall(r"watch\?v=(\S{11})",searchResult.read().decode('utf-8'))
@@ -302,6 +310,12 @@ async def music(ctx, txt):
             file.close()
             os.system("start Downloader_info.txt")
             await ctx.send("🥳 Music - Download Completed.\n\n**Now you can use your Reco.**")
+        elif txt=="df" or txt=="DF" or txt=="Df" or txt=="dF":
+            
+            print(os.getcwd())
+            os.system("start downloads")
+            await ctx.send("Opening Downloads Folder")
+
         elif txt=="pause":
             await media_module.media(ctx, "pause", 1)
         elif txt=="play":
@@ -312,6 +326,7 @@ async def music(ctx, txt):
             await media_module.media(ctx, "next", 1)
         elif txt=="prev":
             await media_module.media(ctx, "prev", 1)
+        
         elif txt=="":
             os.system("start {0}".format(videoResult))
         else:
