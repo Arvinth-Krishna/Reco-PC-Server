@@ -431,6 +431,8 @@ def showLogs(): os.startfile("logs")
 # Shows shortcuts folder
 def showShortcuts(): os.startfile("shortcuts")
 
+# Shows shortcuts folder
+def showdownloads(): os.startfile("downloads")
 
 # Opens bot invitation link in the browser
 def connectInfo(): webbrowser.open(
@@ -469,6 +471,7 @@ def iconSetup():
         MenuItem("Instructions", action=instructions),
         MenuItem("Show Logs", action=showLogs),
         MenuItem("Show Shortcuts", action=showShortcuts),
+        MenuItem("Show Downloads", action=showdownloads),
         MenuItem("Webhook Restricter", action=open_Webhook_restricter),
         MenuItem("Hide Icon", action=applicationHide),
         MenuItem("About", action=about),
