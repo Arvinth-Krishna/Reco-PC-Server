@@ -1,4 +1,6 @@
 # --------------- #
+# Reco PC Server  |
+# --------------- #
 # Version No: 2.0 |
 # --------------- #
 
@@ -49,6 +51,8 @@ async def on_ready():
     print('https://discordapp.com/oauth2/authorize?client_id={}&scope=bot&permissions=8'.format(client.user.id))
     print('--------')
     print('Github Link: https://github.com/Arvinth-Krishna/Reco-PC-Server ')
+    print('--------')
+    print('Reco PC Server - Version N0: 2.0')
     print('--------')
     return await client.change_presence(activity=discord.Game(name='with your PC'))
 
