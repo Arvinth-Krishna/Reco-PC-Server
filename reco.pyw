@@ -1,3 +1,7 @@
+# --------------- #
+# Version No: 2.0 |
+# --------------- #
+
 # Basic bot dependencies
 import discord
 from discord.ext.commands import Bot
