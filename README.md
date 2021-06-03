@@ -75,6 +75,7 @@ Installing Reco PC Server is an easy 3 minute process.
 * pystray
 * Pillow
 * plyer
+* pytube
 
 
 ## Features List:  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
