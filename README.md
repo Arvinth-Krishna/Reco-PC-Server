@@ -258,7 +258,7 @@ Installing Reco PC Server is an easy 3 minute process.
 ### ★ Music  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 
 * !music "*query*" or !m "*query*"
-    > *query* can be a song name or video link or playlist link
+    > "*query*" can be a song name or video link or playlist link
     > 
     > Plays video music from YouTube in VLC Player. 
     > 
