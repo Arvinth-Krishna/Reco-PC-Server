@@ -258,7 +258,9 @@ Installing Reco PC Server is an easy 3 minute process.
 ### ★ Music  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 
 * !music "*query*" or !m "*query*"
-    > Plays video music from YouTube in VLC Player.
+    > *query* can be a song name or video link or playlist link
+    > 
+    > Plays video music from YouTube in VLC Player. 
     > 
     > ⚠ To use this command you need to add VLC to the Path (Environmental Variables)
     > 
@@ -266,7 +268,7 @@ Installing Reco PC Server is an easy 3 minute process.
 
 		e.g: !music The Nights 
 		          or
-	          !m The Nights
+	         !m The Nights
 		     
 		     !m quit      - Quits the VLC Player.
 		     !m play      - Play the paused song.
@@ -274,6 +276,18 @@ Installing Reco PC Server is an easy 3 minute process.
 		     !m stop      - Stops the song.
 		     !m next      - Play the next song if you have any queued song.
 		     !m prev      - Play the previous song if you have any queued song.
+		     
+    > Advanced Music commands:
+    > 
+    > ⚠ You can even download any video from YouTube using Reco into .mp3 or .mp4 file.
+    
+		e.g: !music dm The Nights
+		          or
+	         !m dm The Nights
+		     
+		     !m dm *query*      - Downloads music files.
+		     !m dv *query*      - Downloads videos files.
+		     !m df              - Shows Download folder.
 		     
 
 ### ★ Notification  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
