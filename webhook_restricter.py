@@ -15,6 +15,8 @@ webhook_restricter_list=[
  # "True"  => means Permission granted to use the command.
  # "False" => means Permission Denied to use the command.
 
+ # For safety and security purposes we have set False as default for all commands and you can override by mentioning command permission down here.
+
    # ⚠ Powerfull Commands: (All powerfull commands will be "False" by default)
     '!abort':False,
     '!appquitter':False,
