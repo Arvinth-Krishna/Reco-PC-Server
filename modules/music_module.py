@@ -331,6 +331,7 @@ async def music(ctx, txt):
             os.system("start {0}".format(videoResult))
         else:
             await ctx.send("Searching {0}".format(txt))
+            await ctx.send("**Sending this search result to VLC**\n{0}".format(videoResult))
             os.system("start vlc --one-instance --playlist-enqueue  --loop  {0}".format(videoResult))
 
 
