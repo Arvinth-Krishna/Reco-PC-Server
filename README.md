@@ -484,9 +484,10 @@ The above video is an instruction for installing Chimera and the process is same
 ### Error 2: WARNING: The script chardetect.exe is installed in ........ which is not on PATH.
 
 * To solve this issue **just copy and paste the path which is given in the error in The Environmental variable.**
-   - eg:
-    - **WARNING:** The script chardetect.exe is installed in '**C:\Users\USER_NAME\AppData\Roaming\Python\Python39\Scripts**' which is not on PATH.
-    - **Copy the Path from the error** given in the setup.bat console **or change the username in this path and use it:**
+   - eg:   
+    **WARNING:** The script chardetect.exe is installed in '**C:\Users\USER_NAME\AppData\Roaming\Python\Python39\Scripts**' which is not on PATH.
+       if you get above given error in the **console** while running **setup.bat** or **setup.sh**. Then follow below given instruction.
+    - **Copy the Path from the error** given in the setup.bat console **or change the username in this path and try it:**
         C:\Users\ **USER_NAME**\AppData\Roaming\Python\Python39\Scripts
     - Now go to Start Menu and Type: **Edit environment variables for your account**
     - In that **click Path** and **then add the copied path in that field** and click OK.
