@@ -476,7 +476,7 @@ The above video is an instruction for installing Chimera and the process is same
 
 * Its an simple error and can easily solved by following below instrustion:
    - We will Just Install and then Uninstall - Visual Studio C++ Build Tools.
-   - Now, just **install [Visual Studio Installer](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools&rel=16)** and **then insall Build Tools**.
+   - Now, just **install [Visual Studio Installer](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools&rel=16)** and **then install Build Tools**.
    - And now try again to **run setup.bat on Windows** or **setup.sh on Linux** from Downloaded Reco Folder.
    - After successfully installed Reco setup, Paste your Bot Token in the newly created **.env file** & continue following the [instuction from the 4th Step](https://github.com/Arvinth-Krishna/Reco-PC-Server#installation)
    - And, now you can uninstall Visual Studio Installer from Controll Panel
