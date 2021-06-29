@@ -4,7 +4,6 @@
  
 </div>
 
-
 # 
 **Reco PC Server** is a cross platform PC Controller Discord Bot which is a modified version of Chimera for Reco-Discord PC Remote Controller app & it's written in Python discord.py.
 
