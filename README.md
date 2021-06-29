@@ -484,7 +484,7 @@ The above video is an instruction for installing Chimera and the process is same
    - We will Just Install and then Uninstall - Visual Studio C++ Build Tools.
    - Now, just **install [Visual Studio Installer](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools&rel=16)** and **then install Build Tools**.
    - And now try again to **run setup.bat on Windows** or **setup.sh on Linux** from Downloaded Reco Folder.
-   - After successfully installed Reco setup, Paste your Bot Token in the newly created **.env file** & continue following the [instuction from the 4th Step](https://github.com/Arvinth-Krishna/Reco-PC-Server#installation)
+   - After successfully installed Reco setup, Paste your Bot Token in the newly created **.env file** & continue following the [instuction from the 4th Step](https://github.com/Arvinth-Krishna/Reco-PC-Server#text-instructions)
    - And, now you can uninstall Visual Studio Installer from Controll Panel
 
 ### Error 2: WARNING: The script chardetect.exe is installed in ........ which is not on PATH.
@@ -499,7 +499,7 @@ The above video is an instruction for installing Chimera and the process is same
     - Now go to Start Menu and Type: **Edit environment variables for your account**
     - In that **click Path** and **then add the copied path in that field** and click OK.
     - And now try again to **run setup.bat on Windows** or **setup.sh on Linux** from Downloaded Reco Folder.
-    - After successfully installed Reco setup, Paste your Bot Token in the newly created **.env file** & continue following the [instuction from the 4th Step](https://github.com/Arvinth-Krishna/Reco-PC-Server#installation)
+    - After successfully installed Reco setup, Paste your Bot Token in the newly created **.env file** & continue following the [instuction from the 4th Step](https://github.com/Arvinth-Krishna/Reco-PC-Server#text-instructions)
     
 ## Setting up Task Scheduler for Reco-Startup:  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
 These instruction will help you to setup Reco to startup automatically when we start your PC.
