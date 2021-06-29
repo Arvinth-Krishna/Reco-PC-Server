@@ -474,6 +474,12 @@ The above video is an instruction for installing Chimera and the process is same
 
 ### Error 1: Building wheel for multidict (PEP 517) ... error
 
+     error: Microsoft Visual C++ 14.0 or greater is required. Get it with "Microsoft C++ Build Tools": https://visualstudio.microsoft.com/visual-cpp-build-tools/
+     ----------------------------------------
+     ERROR: Failed building wheel for multidict
+     Failed to build yarl multidict
+     ERROR: Could not build wheels for yarl, multidict which use PEP 517 and cannot be installed directly```
+
 * Its an simple error and can easily solved by following below instrustion:
    - We will Just Install and then Uninstall - Visual Studio C++ Build Tools.
    - Now, just **install [Visual Studio Installer](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools&rel=16)** and **then install Build Tools**.
@@ -486,7 +492,7 @@ The above video is an instruction for installing Chimera and the process is same
 * To solve this issue **just copy and paste the path which is given in the error in The Environmental variable.**
    - eg:   
    
-		 **WARNING:** The script chardetect.exe is installed in '**C:\Users\USER_NAME\AppData\Roaming\Python\Python39\Scripts**' which is not on PATH.
+		 WARNING: The script chardetect.exe is installed in 'C:\Users\USER_NAME\AppData\Roaming\Python\Python39\Scripts' which is not on PATH.
     - If you get above given error in the **console** while running **setup.bat** or **setup.sh**. Then follow below given instruction.
     - **Copy the Path from the error** given in the setup.bat console **or change the username in this path and try it:**
         C:\Users\ **USER_NAME**\AppData\Roaming\Python\Python39\Scripts
