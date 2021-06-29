@@ -1,6 +1,6 @@
 <div align="center">
 <h1>Reco PC Server</h1>
-  <p><img   width="185" height="180"  src="https://user-images.githubusercontent.com/49812701/123842966-f9f15d80-d92e-11eb-9db0-087202e92f7b.png"/></p>
+  <p><img   width="215" height="200"  src="https://user-images.githubusercontent.com/49812701/123842966-f9f15d80-d92e-11eb-9db0-087202e92f7b.png"/></p>
  
 </div>
 
