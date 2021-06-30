@@ -4,7 +4,7 @@
 <p align="center">
 <a  href="https://discord.com/developers/applications" ><img  width="265" height="250" alt="Reco PC Controller Bot" title="Reco PC Controller Bot" src="https://user-images.githubusercontent.com/49812701/123964912-92d8b500-d9d1-11eb-92c1-221027350206.png"></a>
 <a  href="https://github.com/Arvinth-Krishna/Reco-PC-Server" ><img  width="265" height="250" alt="Reco PC Server" title="Reco PC Server" src="https://user-images.githubusercontent.com/49812701/123842966-f9f15d80-d92e-11eb-9db0-087202e92f7b.png"></a>
-<a  href="http://bit.ly/RecoApp" ><img  width="265" height="250" alt="Reco: Discord PC Remote Controller" title="Reco: Discord PC Remote Controller" src="https://user-images.githubusercontent.com/49812701/123964846-82283f00-d9d1-11eb-97ac-74b914e55537.png"></a>
+<a  href="http://bit.ly/RecoApp" ><img  width="265" height="250" alt="Reco: Discord PC Remote Controller Mobile App" title="Reco: Discord PC Remote Controller" src="https://user-images.githubusercontent.com/49812701/123964846-82283f00-d9d1-11eb-97ac-74b914e55537.png"></a>
 </p>
 
  
