@@ -1,6 +1,9 @@
 <div align="center">
 <h1>Reco PC Server</h1>
-  <p><img   width="265" height="250"  src="https://user-images.githubusercontent.com/49812701/123842966-f9f15d80-d92e-11eb-9db0-087202e92f7b.png"/></p>
+
+<p><img   width="265" height="250"  src="https://user-images.githubusercontent.com/49812701/123964912-92d8b500-d9d1-11eb-92c1-221027350206.png"/></p>
+<p><img   width="265" height="250"  src="https://user-images.githubusercontent.com/49812701/123842966-f9f15d80-d92e-11eb-9db0-087202e92f7b.png"/></p>
+<p><img   width="265" height="250"  src="https://user-images.githubusercontent.com/49812701/123964846-82283f00-d9d1-11eb-97ac-74b914e55537.png"/></p>
  
 </div>
 
