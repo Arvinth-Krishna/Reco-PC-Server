@@ -497,6 +497,7 @@ Note:
    - eg:   
    
          WARNING: The script chardetect.exe is installed in 'C:\Users\USER_NAME\AppData\Roaming\Python\Python39\Scripts' which is not on PATH.
+	 
     - If you get above given error in the **console** while running **setup.bat** or **setup.sh**. Then follow below given instruction.
     - **Copy the Path from the error** given in the setup.bat console **or change the username in this path and try it:**
         C:\Users\ **USER_NAME**\AppData\Roaming\Python\Python39\Scripts
