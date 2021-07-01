@@ -18,7 +18,7 @@ Using Reco you can easily control your computer remotely and have it do from sim
 Reco PC Server is a self hosted bot, which means that you have to run the bot on your computer - the machine you want to control via discord commands.
 
 
-Installing Reco PC Server is an easy 3 minute process.
+Installing Reco PC Server is an easy 3 minute process.[youtube](https://www.youtube.com/playlist?list=PLwfmXAeVRyvkiFj_kyodNsd2uUa-0yrAG)
 
 
 
