@@ -11,7 +11,7 @@
 </div>
 
 # 
-**Reco PC Server** is a cross platform PC Controller Discord Bot which is a modified version of Chimera for Reco-Discord PC Remote Controller app & it's written in Python discord.py.
+**Reco PC Server** is a cross platform PC Controller Discord Bot which is a modified and improved version of Chimera for Reco-Discord PC Remote Controller app & it's written in Python discord.py.
 
 Using Reco you can easily control your computer remotely and have it do from simple tasks such as shutdown, sleep, and lock to opening a website or executing powershell commands.
 
@@ -471,9 +471,8 @@ Note:
 
 ### Video tutorial:
 
-[![Video Tutorial](https://j.gifs.com/l5m85j.gif)](https://www.youtube.com/watch?v=JXqS3WaTOB4)
+[![Video Tutorial](https://j.gifs.com/J8qwWg.gif)](https://www.youtube.com/watch?v=HbqW0zCIZYg)
 
-The above video is an instruction for installing Chimera and the process is same for Reco PC Server too.
 
 ## To Deal with any Error during Installation:  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
 
