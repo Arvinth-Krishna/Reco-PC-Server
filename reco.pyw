@@ -1,7 +1,7 @@
 # --------------- #
 # Reco PC Server  |
 # --------------- #
-# Version No: 2.0 |
+# Version No: 2.1 |
 # --------------- #
 
 # Basic bot dependencies
@@ -52,7 +52,7 @@ async def on_ready():
     print('--------')
     print('Github Link: https://github.com/Arvinth-Krishna/Reco-PC-Server ')
     print('--------')
-    print('Reco PC Server - Version N0: 2.0')
+    print('Reco PC Server - Version N0: 2.1')
     print('--------')
     return await client.change_presence(activity=discord.Game(name='with your PC'))
 
@@ -223,8 +223,9 @@ async def hibernate(ctx, minutes=0):
 # Usage: !launch [shortcut]
 @client.command()
 @Logger(client)
-async def launch(ctx, shortcut):
-    await launch_module.launch(ctx, shortcut)
+async def launch(ctx, *shortcut):
+    fullLenShortcut=" ".join(shortcut)
+    await launch_module.launch(ctx, fullLenShortcut)
 
 
 # Module: lock
