@@ -111,6 +111,7 @@ Installing Reco PC Server is an easy 3 minute process. [youtube](https://www.you
 * **[Sleep](https://github.com/Arvinth-Krishna/Reco-PC-Server#-sleep--)**
 * **[System Info](https://github.com/Arvinth-Krishna/Reco-PC-Server#-system-info--)**
 * **[URL Launcher](https://github.com/Arvinth-Krishna/Reco-PC-Server#-url-launcher--)**
+* **[Version Checker](https://github.com/Arvinth-Krishna/Reco-PC-Server#-version-checker--)**
 * **[Wlan Signal](https://github.com/Arvinth-Krishna/Reco-PC-Server#-Wlan-Signal--)**
 * **[WhatsApp (click to chat)](https://github.com/Arvinth-Krishna/Reco-PC-Server#-whatsapp--)**
 * **[YouTube (search)](https://github.com/Arvinth-Krishna/Reco-PC-Server#-youtube-search--)**
@@ -366,6 +367,13 @@ Installing Reco PC Server is an easy 3 minute process. [youtube](https://www.you
 
 		e.g: !url www.google.com
 
+### ★ Version Checker  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--)
+
+* !version
+	> Shows the current version of Reco PC Server.
+
+		e.g: !version
+
 ### ★ Wlan Signal  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--)
 
 * !wlansignal
@@ -451,6 +459,7 @@ Note:
                   '!search':True,
                   '!systeminfo':True,
                   '!url':True,
+                  '!version':True,
                   '!whatsapp':True,
                   '!wlansignal':True,
                   '!youtube':True,
