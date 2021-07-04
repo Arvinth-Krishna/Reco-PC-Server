@@ -1,7 +1,7 @@
 # --------------- #
 # Reco PC Server  |
 # --------------- #
-# Version No: 2.1 |
+# Version No: 2.2 |
 # --------------- #
 
 # Basic bot dependencies
@@ -52,7 +52,7 @@ async def on_ready():
     print('--------')
     print('Github Link: https://github.com/Arvinth-Krishna/Reco-PC-Server ')
     print('--------')
-    print('Reco PC Server - Version N0: 2.1')
+    print('Reco PC Server - Version N0: {0}'.format(versionChecker_module.currentVersionNo))
     print('--------')
     return await client.change_presence(activity=discord.Game(name='with your PC'))
 
@@ -391,6 +391,15 @@ async def url(ctx, *txt):
     text=" ".join(txt)
     await urlLauncher_module.url(ctx, text)
 
+
+# Module: versionChecker
+# Description: Here you can check the current verion of Reco PC Server and it's improvements.
+# Usage: !version
+@client.command()
+@Logger(client)
+async def version(ctx):
+    await versionChecker_module.version(ctx)
+    
 
 # Module: wlanSignal
 # Description: To check the signal strength of a Wi-Fi Connection
