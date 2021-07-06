@@ -1,7 +1,7 @@
 # --------------- #
 # Reco PC Server  |
 # --------------- #
-# Version No: 2.2 |
+# Version No: 3.0 |
 # --------------- #
 
 # Basic bot dependencies
