@@ -519,6 +519,8 @@ Note:
 These instruction will help you to setup Reco to startup automatically when we start your PC.
 It looks like lenghty but its so easy to setup, just follow the steps. so chill, do and have fun...
 
+[YouTube - How to set up Reco Startup](https://youtu.be/gAic5Gv9FcQ)
+
 1. Open **Task Scheduler** by typing it inside the start menu.
 2. click **Create Task**
 3. Enter the Name as **Reco Startup**
