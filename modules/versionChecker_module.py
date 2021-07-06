@@ -6,9 +6,12 @@
 import os, asyncio, configs
 
 
-currentVersionNo=2.2
+currentVersionNo=3.0
 
-print_log = '''Reco PC Server Version: {0}'''.format(currentVersionNo)
+print_log = '''Reco PC Server Version: {0}
+New Features:
+🔸 Added - Version Checker command
+    "!version" - This command will show the current verion of your Reco PC Server '''.format(currentVersionNo)
 
 
 
