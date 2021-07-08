@@ -402,6 +402,8 @@ Note:
 
 ## Webhook Restricter:  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
 
+[🎬 YouTube - How to use Webhook Restricter](https://youtu.be/JpJQW7IAKj0)
+
 * Using **[Reco mobile app](https://play.google.com/store/apps/details?id=com.gak.reco)** you can easily control your PC using webhook. And if you want to share your webhooks with others and you want to restrict some commands.
 * You can restrict so easily by adding that **webhook** in **webhook_restricter.py** file.
 * Follow the commented instruction in that file.
