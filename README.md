@@ -211,6 +211,7 @@ Installing Reco PC Server is an easy 3 minute process. [🎬 YouTube - Reco Play
 
 * !launch *shortcut*
     > Launches a custom shortcut you placed in the shortcuts folder.
+    > [🎬 YouTube - How to use App Launcher](https://youtu.be/-b-7-8oK1tI)
 
 		e.g: !launch Application_Name_in_Shortcut_Folder
 
