@@ -3,7 +3,7 @@
 
 <p align="center">
 
-<img  width="265" height="250" alt="Reco PC Server" title="Reco PC Server" src="https://user-images.githubusercontent.com/49812701/123842966-f9f15d80-d92e-11eb-9db0-087202e92f7b.png">
+<a  href="https://github.com/Arvinth-Krishna/Reco-PC-Server#installation--" ><img  width="265" height="250" alt="Reco PC Server" title="Reco PC Server" src="https://user-images.githubusercontent.com/49812701/123842966-f9f15d80-d92e-11eb-9db0-087202e92f7b.png"></a>
 
 </p>
 
