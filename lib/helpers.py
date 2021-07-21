@@ -192,14 +192,17 @@ class MediaControlAdapter():
         virtual_key_id2 = self._command_list[self.os_name][self.VK_KEY_F4]
         self.input_commands.hold_release(virtual_key_id,virtual_key_id2)
     def media_key_loop(self):
-        virtual_key_id = self._command_list[self.os_name][self.VK_KEY_L]
-        self.input_commands.press_release(virtual_key_id) 
+        virtual_key_id = self._command_list[self.os_name][self.VK_KEY_ALT]
+        virtual_key_id2 = self._command_list[self.os_name][self.VK_KEY_L]
+        self.input_commands.hold_release(virtual_key_id,virtual_key_id2)
     def media_key_shuffle(self):
-        virtual_key_id = self._command_list[self.os_name][self.VK_KEY_R]
-        self.input_commands.press_release(virtual_key_id) 
+        virtual_key_id = self._command_list[self.os_name][self.VK_KEY_ALT]
+        virtual_key_id2 = self._command_list[self.os_name][self.VK_KEY_R]
+        self.input_commands.hold_release(virtual_key_id,virtual_key_id2)
     def media_key_fullscreen(self):
-        virtual_key_id = self._command_list[self.os_name][self.VK_KEY_F]
-        self.input_commands.press_release(virtual_key_id) 
+        virtual_key_id = self._command_list[self.os_name][self.VK_KEY_ALT]
+        virtual_key_id2 = self._command_list[self.os_name][self.VK_KEY_F]
+        self.input_commands.hold_release(virtual_key_id,virtual_key_id2)
     def media_key_mini(self):
         virtual_key_id = self._command_list[self.os_name][self.VK_KEY_ALT]
         virtual_key_id2 = self._command_list[self.os_name][self.VK_KEY_THREE]
