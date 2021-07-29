@@ -290,6 +290,7 @@ Installing Reco PC Server is an easy 3 minute process. [🎬 YouTube - Reco Play
     > Advanced Music commands:
     > 
     > ⚠ You can even download any video from YouTube using Reco into .mp3 or .mp4 file.
+    > ⚠⚠IMPORTANT: Sometimes Download feature won't work, maybe it's because YouTube's API changes and it's will take time to get new update from Pytube package✌.
     
 		e.g: !music dm The Nights
 		          or
