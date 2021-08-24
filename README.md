@@ -486,7 +486,7 @@ Note:
 6. Enjoy!🥳
 
 ### Video tutorial:
-click below GIF to see the video.
+Click below GIF to see the video.
 [![Video Tutorial](https://j.gifs.com/J8qwWg.gif)](https://www.youtube.com/watch?v=HbqW0zCIZYg)
 
 
