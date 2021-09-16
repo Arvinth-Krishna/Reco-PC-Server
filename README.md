@@ -275,6 +275,8 @@ Installing Reco PC Server is an easy 3 minute process. [🎬 YouTube - Reco Play
     > ⚠ To use this command you need to add VLC to the Path (Environmental Variables)
     > 
     > Default path: C:\Program Files\VideoLAN\VLC
+    
+    
 
     > **Trouble in Playing Music in VLC**
     > 
