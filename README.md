@@ -276,6 +276,14 @@ Installing Reco PC Server is an easy 3 minute process. [🎬 YouTube - Reco Play
     > 
     > Default path: C:\Program Files\VideoLAN\VLC
 
+    > **Trouble in Playing Music in VLC**
+    > 
+    > If VLC shows some error while try to play a music.
+    > 
+    > ⚠ Try *Replacing* **[youtube.lua](https://drive.google.com/uc?export=download&id=1NnZmyOJ-khgxP6eCFUCCxFUko-_ZfjIV)** file from VLC.
+    > 
+    > Default path: C:\Program Files\VideoLAN\VLC\lua\playlist
+
 		e.g: !music The Nights 
 		          or
 	         !m The Nights
