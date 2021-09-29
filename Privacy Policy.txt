@@ -5,7 +5,7 @@ Updated at 2021-09-29
 
 Reco: Discord PC Remote Controller is committed to protecting your privacy. This Privacy Policy explains how your personal information is collected, used, and disclosed by Reco: Discord PC Remote Controller.
 
-This Privacy Policy applies to our Android Mobile App, and its associated subdomains (collectively, our Service) alongside our application, (Reco: Discord PC Remote Controller. By accessing or using our Service, you signify that you have read, understood, and agree to our collection, storage, use, and disclosure of your personal information(webhooks) as described in this Privacy Policy and our Terms of Service.
+This Privacy Policy applies to our Android Mobile App, and its associated subdomains (collectively, our Service) alongside our application, (Reco: Discord PC Remote Controller. By accessing or using our Service, you signify that you have read, understood, and agree to our collection, storage, and use information(webhooks) as described in this Privacy Policy and our Terms of Service.
 
 Definitions and key terms
 
