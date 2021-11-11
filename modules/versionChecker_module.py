@@ -6,15 +6,18 @@
 import os, asyncio, configs
 
 
-currentVersionNo=3.0
+currentVersionNo=3.1
 
 print_log = '''_
 
 **Your Current Reco PC Server Version: {0}**
 
-New Features:
-**Added** - Version Checker command.
-"!version" - This command will show the current verion of your Reco PC Server
+**Updates**
+Timer feature for "Pause", "Play", "Stop" added.
+!media play <minutes>
+
+eg:
+!media pause 10
 
 _'''.format(currentVersionNo)
 
