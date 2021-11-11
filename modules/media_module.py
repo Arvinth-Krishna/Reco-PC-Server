@@ -7,7 +7,7 @@ import asyncio, configs
 from lib import helpers
 
 
-async def media(ctx, command, times=1):
+async def media(ctx, command, times):
     media_control = helpers.MediaControlAdapter(configs.operating_sys)
     switcher = {
         'vol-up': media_control.up_volume,
@@ -34,9 +34,28 @@ async def media(ctx, command, times=1):
         'key-vlc-mute':media_control.media_key_vlc_mute,
 
     }
+    media_commands=['pause','play','stop','loop','mute']
+    bool_media_command=False
 
-    for time in range(0, times):
+    for check in media_commands:
+        if check == command:
+            bool_media_command=True
+            break
+
+    if bool_media_command ==False:
+        print("im outside timer")
+        times=1 if times==0 else times
+        for time in range(0, times):
+             switcher[command]()
+             await asyncio.sleep(0.5)
+    else:
+        print("im inside timer")
+        timer=times*60
+        if timer !=0:
+             await ctx.send('Command: {0} will be executed within {1} minutes'.format(command,times))
+        await asyncio.sleep(timer)
         switcher[command]()
-        await asyncio.sleep(0.5)
+        
 
     await ctx.send('Media Adjusted!')
+
