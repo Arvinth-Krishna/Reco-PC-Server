@@ -242,6 +242,7 @@ Installing Reco PC Server is an easy 3 minute process. [🎬 YouTube - Reco Play
 
 * !media *command* or !media *command* *repeat_n_times or delay_n_minutes*
 	> Controls computer media playback and volume once or repeatedly.
+	> 
 	> For Play, Pause and Stop commands have delay_n_minutes feature.
 		
 		e.g: !media prev 2
