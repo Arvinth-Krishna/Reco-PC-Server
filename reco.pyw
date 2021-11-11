@@ -1,7 +1,7 @@
 # --------------- #
 # Reco PC Server  |
 # --------------- #
-# Version No: 3.0 |
+# Version No: 3.1 |
 # --------------- #
 
 # Basic bot dependencies
@@ -262,7 +262,7 @@ async def logoff(ctx, minutes=0):
 # Usage: !media command or !media command times
 @client.command()
 @Logger(client)
-async def media(ctx, command, times=1):
+async def media(ctx, command, times=0):
     await media_module.media(ctx, command, times)
 
     
