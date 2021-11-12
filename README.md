@@ -93,7 +93,7 @@ Installing Reco PC Server is an easy 3 minute process. [🎬 YouTube - Reco Play
 * **[Clip](https://github.com/Arvinth-Krishna/Reco-PC-Server#-clip--)**
 * **[Echo](https://github.com/Arvinth-Krishna/Reco-PC-Server#-echo--)**
 * **[File](https://github.com/Arvinth-Krishna/Reco-PC-Server#-file--)**
-* **[Helpme](https://github.com/Arvinth-Krishna/Reco-PC-Server#-helpme--)**
+* **[Help](https://github.com/Arvinth-Krishna/Reco-PC-Server#-help--)**
 * **[Hibernate](https://github.com/Arvinth-Krishna/Reco-PC-Server#-hibernate--)**
 * **[Launch](https://github.com/Arvinth-Krishna/Reco-PC-Server#-launch--)**
 * **[Lock](https://github.com/Arvinth-Krishna/Reco-PC-Server#-lock--)**
@@ -193,12 +193,12 @@ Installing Reco PC Server is an easy 3 minute process. [🎬 YouTube - Reco Play
 		- save => saves a file to the HD from the chat
 		- download => saves a file from a direct url to the HD
 
-### ★ HelpMe  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+### ★ Help  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 
-* !helpme or !helpme *command*
+* !help or !help *command*
 	> Shows Reco help, listing commands of shows help for a specific command.
 	
-		e.g: !helpme screenshot
+		e.g: !help screenshot
 
 ### ★ Hibernate  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 
