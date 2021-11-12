@@ -108,7 +108,7 @@ Installing Reco PC Server is an easy 3 minute process. [🎬 YouTube - Reco Play
 * **[Screenshot](https://github.com/Arvinth-Krishna/Reco-PC-Server#-screenshot--)**
 * **[Search (Google)](https://github.com/Arvinth-Krishna/Reco-PC-Server#-google-search--)**
 * **[Shutdown](https://github.com/Arvinth-Krishna/Reco-PC-Server#-shutdown--)**
-* **[Sleep](https://github.com/Arvinth-Krishna/Reco-PC-Server#-sleep--)**
+* **[Sleep (may act as hibernate)](https://github.com/Arvinth-Krishna/Reco-PC-Server#-sleep--)**
 * **[System Info](https://github.com/Arvinth-Krishna/Reco-PC-Server#-system-info--)**
 * **[URL Launcher](https://github.com/Arvinth-Krishna/Reco-PC-Server#-url-launcher--)**
 * **[Version Checker](https://github.com/Arvinth-Krishna/Reco-PC-Server#-version-checker--)**
@@ -366,6 +366,8 @@ Installing Reco PC Server is an easy 3 minute process. [🎬 YouTube - Reco Play
 ### ★ Sleep  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 
 * !sleep or !sleep *minutes*
+	> ⚠ Warning: Sleep command may act as hibernate. (Please create a pull request if you know to fix this issue.)
+	> 
 	> Sleeps your computer immediately or with a time delay in minutes. 
 
 		e.g: !sleep 30
