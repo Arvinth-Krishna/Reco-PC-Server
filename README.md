@@ -492,7 +492,7 @@ Note:
 
 ### Text Instructions:
 1. **Download & Install Python** - Remember: Tick the Add to path checkBox during installation.
-   -> https://www.python.org/  
+   -> https://www.python.org/   (Python Version - [3.9.8](https://www.python.org/downloads/release/python-398/) recommended)
 2. Create a bot and get its **token** by following these instructions: https://youtu.be/-m-Z7Wav-fM
 3. [Download](https://github.com/Arvinth-Krishna/Reco-PC-Server/archive/main.zip) the Reco PC Server Repository, **run setup.bat on Windows** or **setup.sh on Linux** and put your Bot Token in the newly created **.env file**. 
 4. Get **Webhook URL** from your Channel and add it in your Webhook tab in your [Reco](https://play.google.com/store/apps/details?id=com.gak.reco) mobile App. https://www.youtube.com/watch?v=2Fcvg-Bh7Oo&t=1s
