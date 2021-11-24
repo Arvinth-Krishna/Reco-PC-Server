@@ -28,9 +28,10 @@ Installing Reco PC Server is an easy 3 minute process. [🎬 YouTube - Reco Play
 * **[Reco-Mobile App](https://github.com/Arvinth-Krishna/Reco-PC-Server#reco---mobile-app--)**
 * **[🔸Commands List](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--)**
 * **[Commands Documentation](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-documentation--)**
-* **[Webhook Restricter](https://github.com/Arvinth-Krishna/Reco-PC-Server#webhook-restricter--)**
 * **[🔸Installation Process](https://github.com/Arvinth-Krishna/Reco-PC-Server#installation--)**
 * **[Installation Error-Help](https://github.com/Arvinth-Krishna/Reco-PC-Server#to-deal-with-any-error-during-installation--)**
+* **[User Restricter](https://github.com/Arvinth-Krishna/Reco-PC-Server#user-restricter--)**
+* **[Webhook Restricter](https://github.com/Arvinth-Krishna/Reco-PC-Server#webhook-restricter--)**
 * **[Setting up Task Scheduler for Reco-Startup](https://github.com/Arvinth-Krishna/Reco-PC-Server#setting-up-task-scheduler-for-reco-startup--)**
 * **[For Contributing](https://github.com/Arvinth-Krishna/Reco-PC-Server#contributing--)**
 * **[Donate](https://github.com/Arvinth-Krishna/Reco-PC-Server#donate--)**
@@ -419,6 +420,124 @@ Note:
 * And some commands may require elevated privileges on Linux.
 
 
+## Installation:  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
+
+### Text Instructions:
+1. **Download & Install Python** - Remember: Tick the Add to path checkBox during installation.
+   -> https://www.python.org/   (Python Version - [3.9.8](https://www.python.org/downloads/release/python-398/) recommended)
+2. Create a bot and get its **token** by following these instructions: https://youtu.be/-m-Z7Wav-fM
+3. [Download](https://github.com/Arvinth-Krishna/Reco-PC-Server/archive/main.zip) the Reco PC Server Repository, **run setup.bat on Windows** or **setup.sh on Linux** and put your Bot Token in the newly created **.env file**. 
+4. Get **Webhook URL** from your Channel and add it in your Webhook tab in your [Reco](https://play.google.com/store/apps/details?id=com.gak.reco) mobile App. https://www.youtube.com/watch?v=2Fcvg-Bh7Oo&t=1s
+5. Launch **reco.pyw**, right click on the system tray icon and hit Connect to invite Reco Pc Server to your Discord server.
+6. Enjoy!🥳
+
+### Video tutorial:
+Click below GIF to see the video.
+[![Video Tutorial](https://j.gifs.com/J8qwWg.gif)](https://www.youtube.com/watch?v=HbqW0zCIZYg)
+
+
+## To Deal with any Error during Installation:  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
+
+### Error 1: Building wheel for multidict (PEP 517) ... error
+
+     error: Microsoft Visual C++ 14.0 or greater is required. Get it with "Microsoft C++ Build Tools": https://visualstudio.microsoft.com/visual-cpp-build-tools/
+     ----------------------------------------
+     ERROR: Failed building wheel for multidict
+     Failed to build yarl multidict
+     ERROR: Could not build wheels for yarl, multidict which use PEP 517 and cannot be installed directly```
+
+* Its an simple error and can easily solved by following below instrustion:
+   - We will Just Install and then Uninstall - Visual Studio C++ Build Tools.
+   - Now, just **install [Visual Studio Installer](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools&rel=16)** and **then install Build Tools**.
+   - And now try again to **run setup.bat on Windows** or **setup.sh on Linux** from Downloaded Reco Folder.
+   - After successfully installed Reco setup, Paste your Bot Token in the newly created **.env file** & continue following the [instuction from the 4th Step](https://github.com/Arvinth-Krishna/Reco-PC-Server#text-instructions)
+   - And, now you can uninstall Visual Studio Installer from Controll Panel
+
+### Error 2: WARNING: The script chardetect.exe is installed in ........ which is not on PATH.
+
+* To solve this issue **just copy and paste the path which is given in the error in The Environmental variable.**
+   - eg:   
+   
+         WARNING: The script chardetect.exe is installed in 'C:\Users\USER_NAME\AppData\Roaming\Python\Python39\Scripts' which is not on PATH.
+	 
+    - If you get above given error in the **console** while running **setup.bat** or **setup.sh**. Then follow below given instruction.
+    - **Copy the Path from the error** given in the setup.bat console **or change the username in this path and try it:**
+        C:\Users\ **USER_NAME**\AppData\Roaming\Python\Python39\Scripts
+    - Now go to Start Menu and Type: **Edit environment variables for your account**
+    - In that **click Path** and **then add the copied path in that field** and click OK.
+    - And now try again to **run setup.bat on Windows** or **setup.sh on Linux** from Downloaded Reco Folder.
+    - After successfully installed Reco setup, Paste your Bot Token in the newly created **.env file** & continue following the [instuction from the 4th Step](https://github.com/Arvinth-Krishna/Reco-PC-Server#text-instructions)
+
+
+
+## User Restricter:  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
+
+* Using this feature you can easily restrict commands permission by adding **User's Id** in **user_restricter.py** file.
+* Follow the commented instruction in that file.
+
+	> Synatx for webhook restricter:
+
+		{ 
+		
+                #1️⃣ Replace User Name
+                'userName':'Demo(GAK)',         # Here you can enter the User name, so you can identify easily in this file. 
+
+                #2️⃣ Replace User ID
+                'userId':'113595095059988521',   # Watch this video if you don't know how to get User ID - https://youtu.be/OS2rp7wHVTI
+
+                #3️⃣ Before sharing your Reco with others. you can set permission to each commands as you wish🥳
+                # "True"  => means Permission granted to use the command.
+                # "False" => means Permission Denied to use the command.
+
+                 # For safety and security purposes we have set False as default for all commands and you can override by mentioning commands permission down here.
+
+                 # ⚠ Powerfull Commands: (All powerfull commands will be "False" by default)
+                 '!abort':False,
+                 '!appquitter':False,
+                 '!cmd':False,
+                 '!file': False,
+                 '!hibernate':False,
+                 '!lock':False,
+                 '!logoff':False,
+                 'media_Close&QuitKeys':False,          # !media key-close, !media key-quit 
+                 '!powershell':False,
+                 '!restart':False,
+                 '!shutdown':False,
+                 '!sleep':False,
+
+                  # Moderate Commands:
+                  '!camera':True,
+                  '!clip':True,
+                  '!launch':True,
+                  '!screenshot':True,              
+
+                  # Media Commands: (!media)
+                  'media_Function_Keys':True,           # next, prev, stop, play, pause
+                  'media_Volume_Keys':True,             # vol-up, vol-down, vol-mute
+                  'media_ArrowKeys':True,               # key-up, key-down, key-left, key-right
+                  'media_Tab,Space&EnterKeys':True,     # key-tab, key-space, key-enter
+
+                  # Other Commands:
+                  '!batterylevel':True,
+                  '!batteryreport':True,
+                  '!echo':True,
+                  '!log':True,
+                  '!music':True,
+                  '!m':True,
+                  '!notification':True,
+                  '!say':True,
+                  '!search':True,
+                  '!systeminfo':True,
+                  '!url':True,
+                  '!version':True,
+                  '!whatsapp':True,
+                  '!wlansignal':True,
+                  '!youtube':True,
+		},
+
+
+
+
 ## Webhook Restricter:  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
 
 [🎬 YouTube - How to use Webhook Restricter](https://youtu.be/JpJQW7IAKj0)
@@ -432,7 +551,7 @@ Note:
 		{ 
 		
                 #1️⃣ Replace webhook Name
-                'webhookName':'Temp webhook',       # Here you can enter the Webhook name, so you can identify easily in this file. 
+                'webhookName':'Demo webhook',       # Here you can enter the Webhook name, so you can identify easily in this file. 
 
                 #2️⃣ Replace webhook URL & ID
                 'webhookURL':'https://discord.com/api/webhooks/841227223729700866/aW4XpuFTUfweJIcQAqTSgikXZu6r5r6Q8MK_rOawf6qj_dyAUVQUCzbTm6Is0Bs8bQFG',
@@ -484,58 +603,11 @@ Note:
                   '!whatsapp':True,
                   '!wlansignal':True,
                   '!youtube':True,
-		  
-		}
+		},
 
 
-## Installation:  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
-
-### Text Instructions:
-1. **Download & Install Python** - Remember: Tick the Add to path checkBox during installation.
-   -> https://www.python.org/   (Python Version - [3.9.8](https://www.python.org/downloads/release/python-398/) recommended)
-2. Create a bot and get its **token** by following these instructions: https://youtu.be/-m-Z7Wav-fM
-3. [Download](https://github.com/Arvinth-Krishna/Reco-PC-Server/archive/main.zip) the Reco PC Server Repository, **run setup.bat on Windows** or **setup.sh on Linux** and put your Bot Token in the newly created **.env file**. 
-4. Get **Webhook URL** from your Channel and add it in your Webhook tab in your [Reco](https://play.google.com/store/apps/details?id=com.gak.reco) mobile App. https://www.youtube.com/watch?v=2Fcvg-Bh7Oo&t=1s
-5. Launch **reco.pyw**, right click on the system tray icon and hit Connect to invite Reco Pc Server to your Discord server.
-6. Enjoy!🥳
-
-### Video tutorial:
-Click below GIF to see the video.
-[![Video Tutorial](https://j.gifs.com/J8qwWg.gif)](https://www.youtube.com/watch?v=HbqW0zCIZYg)
 
 
-## To Deal with any Error during Installation:  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
-
-### Error 1: Building wheel for multidict (PEP 517) ... error
-
-     error: Microsoft Visual C++ 14.0 or greater is required. Get it with "Microsoft C++ Build Tools": https://visualstudio.microsoft.com/visual-cpp-build-tools/
-     ----------------------------------------
-     ERROR: Failed building wheel for multidict
-     Failed to build yarl multidict
-     ERROR: Could not build wheels for yarl, multidict which use PEP 517 and cannot be installed directly```
-
-* Its an simple error and can easily solved by following below instrustion:
-   - We will Just Install and then Uninstall - Visual Studio C++ Build Tools.
-   - Now, just **install [Visual Studio Installer](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools&rel=16)** and **then install Build Tools**.
-   - And now try again to **run setup.bat on Windows** or **setup.sh on Linux** from Downloaded Reco Folder.
-   - After successfully installed Reco setup, Paste your Bot Token in the newly created **.env file** & continue following the [instuction from the 4th Step](https://github.com/Arvinth-Krishna/Reco-PC-Server#text-instructions)
-   - And, now you can uninstall Visual Studio Installer from Controll Panel
-
-### Error 2: WARNING: The script chardetect.exe is installed in ........ which is not on PATH.
-
-* To solve this issue **just copy and paste the path which is given in the error in The Environmental variable.**
-   - eg:   
-   
-         WARNING: The script chardetect.exe is installed in 'C:\Users\USER_NAME\AppData\Roaming\Python\Python39\Scripts' which is not on PATH.
-	 
-    - If you get above given error in the **console** while running **setup.bat** or **setup.sh**. Then follow below given instruction.
-    - **Copy the Path from the error** given in the setup.bat console **or change the username in this path and try it:**
-        C:\Users\ **USER_NAME**\AppData\Roaming\Python\Python39\Scripts
-    - Now go to Start Menu and Type: **Edit environment variables for your account**
-    - In that **click Path** and **then add the copied path in that field** and click OK.
-    - And now try again to **run setup.bat on Windows** or **setup.sh on Linux** from Downloaded Reco Folder.
-    - After successfully installed Reco setup, Paste your Bot Token in the newly created **.env file** & continue following the [instuction from the 4th Step](https://github.com/Arvinth-Krishna/Reco-PC-Server#text-instructions)
-    
 ## Setting up Task Scheduler for Reco-Startup:  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
 These instruction will help you to setup Reco to startup automatically when we start your PC.
 It looks like lenghty but its so easy to setup, just follow the steps. so chill, do and have fun...
