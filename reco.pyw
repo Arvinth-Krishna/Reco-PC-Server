@@ -1,7 +1,7 @@
 # --------------- #
 # Reco PC Server  |
 # --------------- #
-# Version No: 4.0 |
+# Version No: 4.1 |
 # --------------- #
 
 # Basic bot dependencies
@@ -17,10 +17,6 @@ from threading import Thread
 # Import configurations
 import configs
 from modules import restricter_module
-
-# Import Restricters
-from user_restricter import *
-from webhook_restricter import *
 
 # Import logger
 from lib.helpers import Logger
