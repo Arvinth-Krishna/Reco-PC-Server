@@ -6,7 +6,7 @@
 import os, asyncio, configs
 
 
-currentVersionNo=4.0
+currentVersionNo=4.1
 
 print_log = '''_
 
@@ -14,6 +14,10 @@ print_log = '''_
 
 **Updates**
 Webhook and User Restricter feature added.
+
+New !media commands also added.
+!media say-vol
+!media cv
 
 
 _'''.format(currentVersionNo)
