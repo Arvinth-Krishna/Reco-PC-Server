@@ -3,8 +3,11 @@
 DISCORD_BOT_TOKEN=
 
 
-# Don't edit anything given below.
+# Reco Command Prefix. 
 DISCORD_BOT_PREFIX=!
+
+
+# Don't edit anything given below.
 DISCORD_LOGS_ENABLED=False
 
 DISK_LOGS_ENABLED=True
