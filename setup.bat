@@ -10,7 +10,7 @@ SET newFile=".env."
 echo Creating environment configuration file
 
 IF EXIST %newFile% (
-  echo Configuration file already exists
+  echo Configuration file already exists!
 ) ELSE (
   copy %exampleFile% %newFile%
 )
