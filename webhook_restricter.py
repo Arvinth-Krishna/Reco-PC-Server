@@ -1,15 +1,30 @@
-# Everytime you make changes in this file, you have to run Reco again (reco.pyw).
+# Everytime you make changes in this file, you have to restart the Reco client (reco.pyw).
 
-webhook_restricter_list=[
+
+# ⚠ All Ids and URL entries should be in quotes('') and followed by comma (,)
+
+
+# True -> Allows all webhooks. 
+# False -> only allow - allowed webhooks (in allowed_webhooks_Id_list) or in command restricter list (webhook_commands_restricter_list).
+# ⬇⬇⬇
+allow_all_webhooks=True
+
+
+allowed_webhooks_Id_list=['900715738501238431',  ]
+blocked_webhooks_Id_list=['901715738501238431',  ]
+
+
+
+webhook_commands_restricter_list=[
 
 #(copy starts from here)    
 { 
    #1️⃣ Replace webhook Name
-    'webhookName':'Temp webhook',       # Here you can enter the Webhook name, so you can identify easily in this file. 
+    'webhookName':'Reco Demo Webhook',       # Here you can enter the Webhook name, so you can identify easily in this file. 
 
    #2️⃣ Replace webhook URL & ID
-    'webhookURL':'https://discord.com/api/webhooks/841227223729700866/aW4XpuFTUfweJIcQAqTSgikXZu6r5r6Q8MK_rOawf6qj_dyAUVQUCzbTm6Is0Bs8bQFG',
-    'webhookId':'841227223729700866',   # You can obtain the "webhook id" by looking at the webhook URL, the number after https://discord.com/api/webhooks/ is the "id" , and the part after that is the token. 
+    'webhookURL':'https://discord.com/api/webhooks/9997157385061238436/ErwFK48uztUeOaXJFeb9LosUwpeVilewoLNH8cRzBchKbY1dQqlAaM3rVY8XT3IqLrCf',
+    'webhookId':'999715738501238436',   # You can obtain the "webhook id" by looking at the webhook URL, the number after https://discord.com/api/webhooks/ is the "id" , and the part after that is the token. 
 
  #3️⃣ Before sharing your Webhook URL to others. you can set permission to each commands as you wish🥳
  # "True"  => means Permission granted to use the command.
@@ -42,7 +57,7 @@ webhook_restricter_list=[
     'media_Volume_Keys':True,             # vol-up, vol-down, vol-mute
     'media_ArrowKeys':True,               # key-up, key-down, key-left, key-right
     'media_Tab,Space&EnterKeys':True,     # key-tab, key-space, key-enter
-    'music_Controls_Keys':True,                # key-f, ey-shuffle, key-loop
+    'music_Controls_Keys':True,           # key-f, key-shuffle, key-loop
 
     # Other Commands:
     '!batterylevel':True,
@@ -64,9 +79,8 @@ webhook_restricter_list=[
 }, #(copy ends here)
 
 # If you have multiple webhooks to set permission. Copy { Everthing including Curly braces }.
+# Don't forget to use comma after Curly braces( {}, ) and after entering ID with quotes(' ').
 # And paste down here.
-
-
 
 
 
