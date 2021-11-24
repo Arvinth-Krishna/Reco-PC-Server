@@ -1,11 +1,12 @@
 # --------------- #
 # Reco PC Server  |
 # --------------- #
-# Version No: 3.1 |
+# Version No: 4.0 |
 # --------------- #
 
 # Basic bot dependencies
 import discord
+from discord.client import Client
 from discord.ext.commands import Bot
 import platform
 import os
@@ -13,12 +14,13 @@ import os
 import asyncio
 from threading import Thread
 
-
 # Import configurations
 import configs
+from modules import restricter_module
 
-# Import Webhook Restricter
-from webhook_restricter import webhook_restricter_list
+# Import Restricters
+from user_restricter import *
+from webhook_restricter import *
 
 # Import logger
 from lib.helpers import Logger
@@ -56,57 +58,11 @@ async def on_ready():
     print('--------')
     return await client.change_presence(activity=discord.Game(name='with your PC'))
 
-
-media_Volume_Keys=['vol-up','vol-down','vol-mute']
-media_ArrowKeys=['key-up','key-down','key-left','key-right']
-media_CloseandQuitKeys=['key-close','key-quit']
-media_Tab_SpaceandEnterKeys=['key-tab','key-space','key-enter']
-media_Function_Keys=['next','prev','stop','play','pause']
-media_Music_Control_Keys=['key-loop','key-shuffle','key-f','key-vlc-mute','key-mini']
-
-
+# Module: restricter
+# Description: To control both user and webhook commands permission
 @client.event
 async def on_message(message):
-    ctx = await client.get_context(message)
-
-    found=False
-
-    varMsgcontent=message.content
-    messageContentList=varMsgcontent.split(" ")
-    for i in webhook_restricter_list:
-        
-         print(message.webhook_id)
-         print(i['webhookId'])
-         msgWebhookId = message.webhook_id
-         webhookIdtoString=str(msgWebhookId)
-     
-         
-         if i['webhookId'] == webhookIdtoString :
-             found=True
-             if(messageContentList[0]=='!media'):
-                 if(messageContentList[1]in media_Volume_Keys and i['media_Volume_Keys']):
-                     await client.invoke(ctx)
-                 elif(messageContentList[1]in media_ArrowKeys and i['media_ArrowKeys']):
-                     await client.invoke(ctx)
-                 elif(messageContentList[1]in media_CloseandQuitKeys and i['media_Close&QuitKeys']):
-                     await client.invoke(ctx)                    
-                 elif(messageContentList[1]in media_Tab_SpaceandEnterKeys and i['media_Tab,Space&EnterKeys']):
-                     await client.invoke(ctx)
-                 elif(messageContentList[1]in media_Function_Keys and i['media_Function_Keys']):
-                     await client.invoke(ctx)    
-                 elif(messageContentList[1]in media_Music_Control_Keys and i['music_Controls_Keys']):
-                     await client.invoke(ctx)      
-                 else:
-                     await ctx.send("This webhook: ( "+i['webhookName'] +" ) tried to use permission denied command: ( "+messageContentList[0]+" "+messageContentList[1]+" )")     
-             elif not messageContentList[0] in i:
-                 await ctx.send("This command: ( **"+messageContentList[0]+"** ) is not added in your \"**webhook_restricter.py**\" file, so it\'s taken as \"**False**\" (Permission denied).\n\n Please add the commad to use: **'"+messageContentList[0]+"':True,** ")                                                     
-             elif(i[messageContentList[0]]):
-                 await client.invoke(ctx)
-
-             else:
-                 await ctx.send("This webhook: ( "+i['webhookName']+" ) tried to use permission denied command: ( "+messageContentList[0]+" )")          
-    if(found==False):
-        await client.invoke(ctx)
+    await restricter_module.restricter(message,client)
 
   
 # Module: abort
@@ -196,15 +152,6 @@ async def echo(ctx, status):
 @Logger(client)
 async def file(ctx, command, *args):
     await file_module.file(ctx, command, *args)
-
-
-# Module: helpme
-# Description: Allows file download, upload and system navigation
-# Usage: !helpme [command]
-@client.command()
-@Logger(client)
-async def helpme(ctx, command=None):
-    await helpme_module.helpme(ctx, command)
 
 
 # Module: hibernate
@@ -325,7 +272,6 @@ async def restart(ctx, minutes=0):
 @Logger(client)
 async def say(ctx, *txt):
     text=" ".join(txt)
- 
     await say_module.say(ctx, text)
 
 
@@ -459,6 +405,9 @@ def connectInfo(): webbrowser.open(
 # Opens webhook_restricter.py file
 def open_Webhook_restricter(): os.startfile("webhook_restricter.py")
 
+# Opens webhook_restricter.py file
+def open_User_restricter(): os.startfile("user_restricter.py")
+
 # Hides the application
 def applicationHide():
     # This doesn't quit the bot client.
@@ -490,6 +439,7 @@ def iconSetup():
         MenuItem("Show Logs", action=showLogs),
         MenuItem("Show Shortcuts", action=showShortcuts),
         MenuItem("Show Downloads", action=showdownloads),
+        MenuItem("User Restricter", action=open_User_restricter),
         MenuItem("Webhook Restricter", action=open_Webhook_restricter),
         MenuItem("Hide Icon", action=applicationHide),
         MenuItem("About", action=about),
