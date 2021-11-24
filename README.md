@@ -251,6 +251,8 @@ Installing Reco PC Server is an easy 3 minute process. [🎬 YouTube - Reco Play
 		- vol-up
 		- vol-down
 		- vol-mute
+		- say-vol
+		- cv
 		- next
 		- prev
 		- stop
@@ -516,6 +518,7 @@ Click below GIF to see the video.
                   'media_Volume_Keys':True,             # vol-up, vol-down, vol-mute
                   'media_ArrowKeys':True,               # key-up, key-down, key-left, key-right
                   'media_Tab,Space&EnterKeys':True,     # key-tab, key-space, key-enter
+		  'other_media_commands':True,          # say-vol, cv
 
                   # Other Commands:
                   '!batterylevel':True,
@@ -586,6 +589,7 @@ Click below GIF to see the video.
                   'media_Volume_Keys':True,             # vol-up, vol-down, vol-mute
                   'media_ArrowKeys':True,               # key-up, key-down, key-left, key-right
                   'media_Tab,Space&EnterKeys':True,     # key-tab, key-space, key-enter
+		  'other_media_commands':True,          # say-vol, cv
 
                   # Other Commands:
                   '!batterylevel':True,
@@ -669,6 +673,7 @@ If you found this project helpful and want to thank me, consider buying me a cup
 * [cominixo01](https://github.com/cominixo01)
 * [medusalix](https://github.com/medusalix)
 * [kostino](https://github.com/kostino)
+* [Big Flubba](https://github.com/TheHunter1234)
 
 
 ## ❤️ Found this project useful?
