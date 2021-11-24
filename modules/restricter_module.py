@@ -9,12 +9,13 @@ from user_restricter import *
 from webhook_restricter import *
 
 
-media_Volume_Keys=['vol-up','vol-down','vol-mute']
+media_Volume_Keys=['vol-up','vol-down','vol-mute',]
 media_ArrowKeys=['key-up','key-down','key-left','key-right']
 media_CloseandQuitKeys=['key-close','key-quit']
 media_Tab_SpaceandEnterKeys=['key-tab','key-space','key-enter']
 media_Function_Keys=['next','prev','stop','play','pause']
 media_Music_Control_Keys=['key-loop','key-shuffle','key-f','key-vlc-mute','key-mini']
+other_media_commands=['cv','say-vol']
 
 
 
@@ -174,6 +175,8 @@ async def restricter(message,client):
                 await client.invoke(ctx)    
             elif(messageContentList[1]in media_Music_Control_Keys and i['music_Controls_Keys']):
                 await client.invoke(ctx)      
+            elif(messageContentList[1]in other_media_commands and i['other_media_commands']):
+                await client.invoke(ctx)    
             else:
                 if (check_bot==True):
                     await ctx.send("This webhook: ( "+i['webhookName'] +" ) tried to use permission denied command: ( "+original_command+" "+messageContentList[1]+" )")     
