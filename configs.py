@@ -23,3 +23,4 @@ initial_path = os.getenv('INITIAL_PATH')
 discord_logs_enabled = os.getenv('DISCORD_LOGS_ENABLED', False)
 
 operating_sys = lib.helpers.get_operating()
+
