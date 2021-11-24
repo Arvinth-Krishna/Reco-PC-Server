@@ -3,7 +3,7 @@
 DISCORD_BOT_TOKEN=
 
 
-# Reco Command Prefix. 
+# Reco's Command Prefix. 
 DISCORD_BOT_PREFIX=!
 
 
