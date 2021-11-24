@@ -1,6 +1,6 @@
 discord.py==1.7.3
 mss==6.1.0
-opencv-python==4.5.4.58
+opencv-python==4.5.4.60
 pynput==1.7.4
 requests==2.26.0
 python-dotenv==0.19.1
