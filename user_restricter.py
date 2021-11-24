@@ -55,6 +55,7 @@ user_commands_restricter_list=[
     'media_ArrowKeys':True,               # key-up, key-down, key-left, key-right
     'media_Tab,Space&EnterKeys':True,     # key-tab, key-space, key-enter
     'music_Controls_Keys':True,           # key-f, ey-shuffle, key-loop
+    'other_media_commands':True,          # say-vol, cv
 
     # Other Commands:
     '!batterylevel':True,
