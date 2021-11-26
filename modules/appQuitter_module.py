@@ -1,6 +1,6 @@
 # Module: appQuitter
 # Description: Quits the application
-# Usage: !appquitter "Application Name" or !appquitter "Application Name" minutesToQuit
+# Usage: !appquitter "PID/Application Name" or !appquitter "PID/Application Name" minutesToQuit
 # Dependencies: os
 
 import os, asyncio, configs,subprocess
