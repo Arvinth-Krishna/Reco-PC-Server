@@ -1,7 +1,7 @@
 # Module: media
 # Description: Controls Media Features
 # Usage: !media command or !media command times
-# Dependencies: pynput, time, helpers
+# Dependencies: pynput, time, helpers, 
 
 import asyncio, configs
 from modules import say_module
@@ -10,9 +10,12 @@ from ctypes import cast, POINTER
 from comtypes import CLSCTX_ALL
 from pycaw.pycaw import AudioUtilities, IAudioEndpointVolume
 
+
 devices = AudioUtilities.GetSpeakers()
 interface = devices.Activate(IAudioEndpointVolume._iid_, CLSCTX_ALL, None)
 volume = cast(interface, POINTER(IAudioEndpointVolume))
+
+
 
 async def media(ctx, command, times):
     media_control = helpers.MediaControlAdapter(configs.operating_sys)
@@ -62,9 +65,10 @@ async def media(ctx, command, times):
              await asyncio.sleep(0.5)
     elif bool_media_command==None:
         if command=="say-vol":
-            await say_module.say(ctx,txt=f"Current volume level is {(round(volume.GetMasterVolumeLevelScalar()*100))}%")
+            await say_module.say(ctx,txt=f"Current volume level is **{(round(volume.GetMasterVolumeLevelScalar()*100))}%**")
         elif command=="cv":
             await ctx.send(f"Current volume level is **{(round(volume.GetMasterVolumeLevelScalar()*100))}%**.")
+
 
 
     else:
@@ -75,12 +79,13 @@ async def media(ctx, command, times):
         
         switcher[command]()
         
+        
+    if((bool_media_command==True or command=="vol-up"or command=="vol-down" or command=='vol-mute' )and command!="cv"):
+        await ctx.send('Media Adjusted!')
+    elif (bool_media_command!=None and command!="cv"):
+        await ctx.send('Media Command Executed!')
+
     if(command=="vol-up"or command=="vol-down"):
         await ctx.send(f"Current volume level is **{(round(volume.GetMasterVolumeLevelScalar()*100))}%**.")
-        
-    if(bool_media_command==True or command=="vol-up"or command=="vol-down" or command=='vol-mute'):
-        await ctx.send('Media Adjusted!')
-    elif (bool_media_command!=None):
-        await ctx.send('Media Command Executed!')
 
 
