@@ -1,7 +1,7 @@
 # --------------- #
 # Reco PC Server  |
 # --------------- #
-# Version No: 4.1 |
+# Version No: 5.0 |
 # --------------- #
 
 # Basic bot dependencies
@@ -16,7 +16,7 @@ from threading import Thread
 
 # Import configurations
 import configs
-from modules import restricter_module
+from modules import restricter_module, speedtest_module
 
 # Import logger
 from lib.helpers import Logger
@@ -78,8 +78,9 @@ async def abort(ctx):
 @client.command()
 @Logger(client)
 async def appquitter(ctx, appName,minutes=0):
-    text= str(appName).capitalize()+" will close in "+str(minutes)+" minutes"
-    await notification_module.notification(ctx,text)
+    if minutes!=0:
+        text= str(appName).capitalize()+" will close in "+str(minutes)+" minutes"
+        await notification_module.notification(ctx,text)
     await appQuitter_module.appquitter(ctx,appName, minutes)
 
     
@@ -156,8 +157,9 @@ async def file(ctx, command, *args):
 @client.command()
 @Logger(client)
 async def hibernate(ctx, minutes=0):
-    text="System hibernates in "+str(minutes)+" minutes"
-    await notification_module.notification(ctx,text)
+    if minutes!=0:
+        text="System hibernates in "+str(minutes)+" minutes"
+        await notification_module.notification(ctx,text)
     await hibernate_module.hibernate(ctx, minutes)
 
 
@@ -195,8 +197,9 @@ async def log(ctx, param, date=None):
 @client.command()
 @Logger(client)
 async def logoff(ctx, minutes=0):
-    text="System logout in "+str(minutes)+" minutes"
-    await notification_module.notification(ctx,text)
+    if minutes!=0:
+        text="System logout in "+str(minutes)+" minutes"
+        await notification_module.notification(ctx,text)
     await logoff_module.logoff(ctx, minutes)
 
 
@@ -216,8 +219,6 @@ async def media(ctx, command, times=0):
 @Logger(client)
 async def music(ctx, *txt):
     text="+".join(txt)
-
-     
     await music_module.music(ctx, text)  
     
 @client.command()
@@ -248,6 +249,15 @@ async def powershell(ctx, *txt):
     text=" ".join(txt)
 
     await powershell_module.powershell(ctx, text)
+
+
+# Module: processes
+# Description: Shows all running process which may be useful for !appquitter feature.
+# Usage: !processes
+@client.command()
+@Logger(client)
+async def processes(ctx):
+    await processes_module.processes(ctx)
 
 
 # Module: restart
@@ -310,11 +320,21 @@ async def shutdown(ctx, minutes=0):
 @client.command()
 @Logger(client)
 async def sleep(ctx, minutes=0):
-    text="System sleep in "+str(minutes)+" minutes"
-    await notification_module.notification(ctx,text)
+    if minutes!=0:
+        text="System sleep in "+str(minutes)+" minutes"
+        await notification_module.notification(ctx,text)
     await sleep_module.sleep(ctx, minutes)
 
     
+# Module: speedtest
+# Description: Checks internet download and upload speed.
+# Usage: !speedtest
+@client.command()
+@Logger(client)
+async def speedtest(ctx):
+    await speedtest_module.speedtest(ctx)
+
+
 # Module: systemInfo
 # Description: Generates System Info
 # Usage: !systeminfo
@@ -352,7 +372,7 @@ async def wlansignal(ctx):
     await wlanSignal_module.wlansignal(ctx)
 
     
-# Module: whatapp
+# Module: whatsapp
 # Description: Opens the chat Screen for the entered MobileNumber
 # Usage: !whatsapp CountryCode_Followed_by_MobileNumber
 @client.command()
