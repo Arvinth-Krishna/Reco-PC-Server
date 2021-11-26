@@ -16,7 +16,6 @@ from threading import Thread
 
 # Import configurations
 import configs
-from modules import restricter_module, speedtest_module
 
 # Import logger
 from lib.helpers import Logger
@@ -225,7 +224,6 @@ async def music(ctx, *txt):
 @Logger(client)
 async def m(ctx, *txt):
     text="+".join(txt)
-   
     await music_module.music(ctx, text)      
 
     
@@ -236,7 +234,6 @@ async def m(ctx, *txt):
 @Logger(client)
 async def notification(ctx, *txt):
     text=" ".join(txt)
- 
     await notification_module.notification(ctx, text)
 
 
@@ -247,7 +244,6 @@ async def notification(ctx, *txt):
 @Logger(client)
 async def powershell(ctx, *txt):
     text=" ".join(txt)
-
     await powershell_module.powershell(ctx, text)
 
 
@@ -299,7 +295,6 @@ async def search(ctx, *txt):
     text=''''''
     for txxt in txt: 
         text = text+"+"+txxt   
-  
     await search_module.search(ctx, text)
 
 
