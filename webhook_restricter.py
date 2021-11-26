@@ -79,7 +79,6 @@ webhook_commands_restricter_list=[
     '!whatsapp':True,
     '!wlansignal':True,
     '!youtube':True,
-   
 }, #(copy ends here)
 
 # If you have multiple webhooks to set permission. Copy { Everthing including Curly braces }.
