@@ -75,7 +75,7 @@ webhook_commands_restricter_list=[
     '!speedtest':True,
     '!systeminfo':True,
     '!url':True, 
-    '!version':False, 
+    '!version':True, 
     '!whatsapp':True,
     '!wlansignal':True,
     '!youtube':True,
