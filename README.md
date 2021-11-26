@@ -82,6 +82,7 @@ Installing Reco PC Server is an easy 3 minute process. [🎬 YouTube - Reco Play
 * Pillow
 * plyer
 * pytube
+* pycaw
 
 
 ## Features List:  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
@@ -104,12 +105,14 @@ Installing Reco PC Server is an easy 3 minute process. [🎬 YouTube - Reco Play
 * **[Music](https://github.com/Arvinth-Krishna/Reco-PC-Server#-music--)**
 * **[Notification](https://github.com/Arvinth-Krishna/Reco-PC-Server#-notification--)**
 * **[Powershell](https://github.com/Arvinth-Krishna/Reco-PC-Server#-powershell--)**
+* **[Processes](https://github.com/Arvinth-Krishna/Reco-PC-Server#-processes--)**
 * **[Restart](https://github.com/Arvinth-Krishna/Reco-PC-Server#-restart--)**
 * **[Say](https://github.com/Arvinth-Krishna/Reco-PC-Server#-say--)**
 * **[Screenshot](https://github.com/Arvinth-Krishna/Reco-PC-Server#-screenshot--)**
 * **[Search (Google)](https://github.com/Arvinth-Krishna/Reco-PC-Server#-google-search--)**
 * **[Shutdown](https://github.com/Arvinth-Krishna/Reco-PC-Server#-shutdown--)**
 * **[Sleep (may act as hibernate)](https://github.com/Arvinth-Krishna/Reco-PC-Server#-sleep--)**
+* **[Speedtest](https://github.com/Arvinth-Krishna/Reco-PC-Server#-speedtest--)**
 * **[System Info](https://github.com/Arvinth-Krishna/Reco-PC-Server#-system-info--)**
 * **[URL Launcher](https://github.com/Arvinth-Krishna/Reco-PC-Server#-url-launcher--)**
 * **[Version Checker](https://github.com/Arvinth-Krishna/Reco-PC-Server#-version-checker--)**
@@ -130,7 +133,7 @@ Installing Reco PC Server is an easy 3 minute process. [🎬 YouTube - Reco Play
 
 ### ★ AppQuitter  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--)
 
-* !appquitter *Application_Name* or !appquitter *Application_Name* *minutes*
+* !appquitter *PID/Application_Name* or !appquitter *PID/Application_Name* *minutes*
 	> Quits the specified application immediately or with a time delay in minutes.
 
 		e.g: !appquitter chrome 30
@@ -331,6 +334,13 @@ Installing Reco PC Server is an easy 3 minute process. [🎬 YouTube - Reco Play
 
 		e.g: !powershell shutdown -s -t 300
 
+### ★ Processes  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+
+* !processes
+	> Shows the current Foreground Apps with PID.
+		e.g: !processes
+
+
 ### ★ Restart  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 
 * !restart or !restart *minutes*
@@ -374,6 +384,13 @@ Installing Reco PC Server is an easy 3 minute process. [🎬 YouTube - Reco Play
 	> Sleeps your computer immediately or with a time delay in minutes. 
 
 		e.g: !sleep 30
+
+### ★ Speedtest  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+
+* !speedtest
+	> Shows your internet speed. 
+
+		e.g: !speedtest
 
 ### ★ System Info  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 
@@ -518,24 +535,27 @@ Click below GIF to see the video.
                   'media_Volume_Keys':True,             # vol-up, vol-down, vol-mute
                   'media_ArrowKeys':True,               # key-up, key-down, key-left, key-right
                   'media_Tab,Space&EnterKeys':True,     # key-tab, key-space, key-enter
-		  'other_media_commands':True,          # say-vol, cv
+                  'other_media_commands':True,          # say-vol, cv
 
                   # Other Commands:
                   '!batterylevel':True,
-                  '!batteryreport':True,
-                  '!echo':True,
-                  '!log':True,
-                  '!music':True,
-                  '!m':True,
-                  '!notification':True,
-                  '!say':True,
-                  '!search':True,
-                  '!systeminfo':True,
-                  '!url':True,
-                  '!version':True,
-                  '!whatsapp':True,
-                  '!wlansignal':True,
-                  '!youtube':True,
+		  '!batteryreport':True,
+		  '!echo':True,
+		  '!log':True,
+		  '!music':True,
+		  '!m':True,
+		  '!notification':True,
+		  '!help':True,
+		  '!processes':True,
+		  '!search':True,
+		  '!say':True,
+		  '!speedtest':True,
+		  '!systeminfo':True,
+		  '!url':True,
+		  '!version':True,
+		  '!whatsapp':True,
+		  '!wlansignal':True,
+		  '!youtube':True,
 		},
 
 
@@ -593,20 +613,23 @@ Click below GIF to see the video.
 
                   # Other Commands:
                   '!batterylevel':True,
-                  '!batteryreport':True,
-                  '!echo':True,
-                  '!log':True,
-                  '!music':True,
-                  '!m':True,
-                  '!notification':True,
-                  '!say':True,
-                  '!search':True,
-                  '!systeminfo':True,
-                  '!url':True,
-                  '!version':True,
-                  '!whatsapp':True,
-                  '!wlansignal':True,
-                  '!youtube':True,
+		  '!batteryreport':True,
+		  '!echo':True,
+		  '!log':True,
+		  '!music':True,
+		  '!m':True,
+		  '!notification':True,
+		  '!help':True,
+		  '!processes':True,
+		  '!search':True,
+		  '!say':True,
+		  '!speedtest':True,
+		  '!systeminfo':True,
+		  '!url':True,
+		  '!version':True,
+		  '!whatsapp':True,
+		  '!wlansignal':True,
+		  '!youtube':True,
 		},
 
 
