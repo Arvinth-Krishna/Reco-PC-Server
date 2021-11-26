@@ -338,6 +338,7 @@ Installing Reco PC Server is an easy 3 minute process. [🎬 YouTube - Reco Play
 
 * !processes
 	> Shows the current Foreground Apps with PID.
+
 		e.g: !processes
 
 
@@ -539,23 +540,23 @@ Click below GIF to see the video.
 
                   # Other Commands:
                   '!batterylevel':True,
-		  '!batteryreport':True,
-		  '!echo':True,
-		  '!log':True,
-		  '!music':True,
-		  '!m':True,
-		  '!notification':True,
-		  '!help':True,
-		  '!processes':True,
-		  '!search':True,
-		  '!say':True,
-		  '!speedtest':True,
-		  '!systeminfo':True,
-		  '!url':True,
-		  '!version':True,
-		  '!whatsapp':True,
-		  '!wlansignal':True,
-		  '!youtube':True,
+                  '!batteryreport':True,
+                  '!echo':True,
+                  '!log':True,
+                  '!music':True,
+                  '!m':True,
+                  '!notification':True,
+                  '!help':True,
+                  '!processes':True,
+                  '!search':True,
+                  '!say':True,
+                  '!speedtest':True,
+                  '!systeminfo':True,
+                  '!url':True,
+                  '!version':True,
+                  '!whatsapp':True,
+                  '!wlansignal':True,
+                  '!youtube':True,
 		},
 
 
@@ -609,27 +610,27 @@ Click below GIF to see the video.
                   'media_Volume_Keys':True,             # vol-up, vol-down, vol-mute
                   'media_ArrowKeys':True,               # key-up, key-down, key-left, key-right
                   'media_Tab,Space&EnterKeys':True,     # key-tab, key-space, key-enter
-		  'other_media_commands':True,          # say-vol, cv
+                  'other_media_commands':True,          # say-vol, cv
 
                   # Other Commands:
                   '!batterylevel':True,
-		  '!batteryreport':True,
-		  '!echo':True,
-		  '!log':True,
-		  '!music':True,
-		  '!m':True,
-		  '!notification':True,
-		  '!help':True,
-		  '!processes':True,
-		  '!search':True,
-		  '!say':True,
-		  '!speedtest':True,
-		  '!systeminfo':True,
-		  '!url':True,
-		  '!version':True,
-		  '!whatsapp':True,
-		  '!wlansignal':True,
-		  '!youtube':True,
+                  '!batteryreport':True,
+                  '!echo':True,
+                  '!log':True,
+                  '!music':True,
+                  '!m':True,
+                  '!notification':True,
+                  '!help':True,
+                  '!processes':True,
+                  '!search':True,
+                  '!say':True,
+                  '!speedtest':True,
+                  '!systeminfo':True,
+                  '!url':True,
+                  '!version':True,
+                  '!whatsapp':True,
+                  '!wlansignal':True,
+                  '!youtube':True,
 		},
 
 
