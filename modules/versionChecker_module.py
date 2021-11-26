@@ -6,19 +6,17 @@
 import os, asyncio, configs
 
 
-currentVersionNo=4.1
+currentVersionNo=5.0
 
 print_log = '''_
 
 **Your Current Reco PC Server Version: {0}**
 
 **Updates**
-Webhook and User Restricter feature added.
+New commands added!
 
-New !media commands also added.
-!media say-vol
-!media cv
-
+!speedtest -> To check your internet speed.
+!processes -> Shows all the foreground processes.
 
 _'''.format(currentVersionNo)
 
