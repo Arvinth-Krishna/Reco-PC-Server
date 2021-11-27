@@ -1,5 +1,3 @@
-## Please use version 4.1 - Stable Version [Download](https://github.com/Arvinth-Krishna/Reco-PC-Server/releases/tag/v4.1)
-
 <div align="center">
 <h1>Reco PC Server</h1>
 
