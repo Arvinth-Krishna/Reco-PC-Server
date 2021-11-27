@@ -388,10 +388,10 @@ Installing Reco PC Server is an easy 3 minute process. [🎬 YouTube - Reco Play
 
 ### ★ ~Speedtest~  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 
-* ~!speedtest~
+* ~!speedtest~ ([issue opened](https://github.com/Arvinth-Krishna/Reco-PC-Server/issues/7))
 	> ~Shows your internet speed.~ 
 
-		~e.g: !speedtest~
+		e.g: !speedtest
 
 ### ★ System Info  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 
