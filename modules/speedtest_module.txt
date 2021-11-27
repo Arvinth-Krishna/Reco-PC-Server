@@ -8,12 +8,7 @@ import asyncio, configs, lib.speedtest_modified as speedtest
 from logging import root
 
 servers = []
-# If you want to test against a specific server
-# servers = [1234]
-
 threads = None
-# If you want to use a single threaded test
-# threads = 1
 s = speedtest.Speedtest()
 
 
