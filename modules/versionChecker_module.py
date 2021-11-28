@@ -6,7 +6,7 @@
 import os, asyncio, configs
 
 
-currentVersionNo=5.0
+currentVersionNo=6.0
 
 print_log = '''_
 
