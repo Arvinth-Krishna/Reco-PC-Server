@@ -83,6 +83,7 @@ Installing Reco PC Server is an easy 3 minute process. [🎬 YouTube - Reco Play
 * plyer
 * pytube
 * pycaw
+* speedtest-cli
 
 
 ## Features List:  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
@@ -112,7 +113,7 @@ Installing Reco PC Server is an easy 3 minute process. [🎬 YouTube - Reco Play
 * **[Search (Google)](https://github.com/Arvinth-Krishna/Reco-PC-Server#-google-search--)**
 * **[Shutdown](https://github.com/Arvinth-Krishna/Reco-PC-Server#-shutdown--)**
 * **[Sleep (may act as hibernate)](https://github.com/Arvinth-Krishna/Reco-PC-Server#-sleep--)**
-* ~[Speedtest](https://github.com/Arvinth-Krishna/Reco-PC-Server#-speedtest--)~
+* **[Speedtest](https://github.com/Arvinth-Krishna/Reco-PC-Server#-speedtest--)**
 * **[System Info](https://github.com/Arvinth-Krishna/Reco-PC-Server#-system-info--)**
 * **[URL Launcher](https://github.com/Arvinth-Krishna/Reco-PC-Server#-url-launcher--)**
 * **[Version Checker](https://github.com/Arvinth-Krishna/Reco-PC-Server#-version-checker--)**
@@ -386,10 +387,10 @@ Installing Reco PC Server is an easy 3 minute process. [🎬 YouTube - Reco Play
 
 		e.g: !sleep 30
 
-### ★ ~Speedtest~  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+### ★ Speedtest  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 
-* ~!speedtest~ ([issue opened](https://github.com/Arvinth-Krishna/Reco-PC-Server/issues/7))
-	> ~Shows your internet speed.~ 
+* !speedtest ([issue opened](https://github.com/Arvinth-Krishna/Reco-PC-Server/issues/7))
+	> Shows your internet speed. 
 
 		e.g: !speedtest
 
