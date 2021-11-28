@@ -1,7 +1,7 @@
 # --------------- #
 # Reco PC Server  |
 # --------------- #
-# Version No: 5.0 |
+# Version No: 6.0 |
 # --------------- #
 
 # Basic bot dependencies
@@ -324,10 +324,10 @@ async def sleep(ctx, minutes=0):
 # Module: speedtest
 # Description: Checks internet download and upload speed.
 # Usage: !speedtest
-#@client.command()
-#@Logger(client)
-#async def speedtest(ctx):
-#    await speedtest_module.speedtest(ctx)
+@client.command()
+@Logger(client)
+async def speedtest(ctx):
+    await speedtest_module.speedtest(ctx)
 
 
 # Module: systemInfo
