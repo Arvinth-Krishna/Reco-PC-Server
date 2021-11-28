@@ -58,7 +58,7 @@ async def speedtest(ctx):
     if configs.operating_sys == "Windows":   
         if count>3 or count==0:
             await ctx.send("❌ Error Occurred:\n🔸 Try Running Reco - **setup.bat** file again.\n🔸 Make sure you have added **Python Scripts path** in your environmental variables.\n\nAdd below given two paths in your Environmental variables's **Paths** section:") 
-            await ctx.send("C:/Users/**gak**/AppData/Roaming/Python/Python39/Scripts\nC:/Users/**gak**/AppData/Local/Programs/Python/Python39/Scripts\nReplace **gak** with your username. \n\n**How to add in Environmental variables?**\n**StartMenu**-> search '**Environmental variables**'-> click '**Enviro__n__mental variables...**'-> click '**Paths**'-> click '**New**'and add both paths one by one-> click '**Ok**'")    
+            await ctx.send("C:/Users/**gak**/AppData/Roaming/Python/Python39/Scripts/\nC:/Users/**gak**/AppData/Local/Programs/Python/Python39/Scripts/\nReplace **gak** with your username. \n\n**How to add in Environmental variables?**\n**StartMenu**-> search '**Environmental variables**'-> click '**Enviro__n__mental variables...**'-> click '**Paths**'-> click '**New**'and add both paths one by one-> click '**Ok**'")    
         else:
             d=printlist[0]
             res = json.loads(d)
