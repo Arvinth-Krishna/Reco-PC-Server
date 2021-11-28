@@ -9,3 +9,4 @@ pystray==0.18.0
 plyer==2.0.0
 pytube==11.0.1
 pycaw==20181226
+speedtest-cli==2.1.3
