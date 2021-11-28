@@ -57,7 +57,15 @@ async def on_ready():
 # Description: To control both user and webhook commands permission
 @client.event
 async def on_message(message):
-    await restricter_module.restricter(message,client)
+    ctx = await client.get_context(message)
+    if not message.guild and not message.author.bot:
+        await ctx.send("I respond to commands via **Discord Server only**.")
+        await ctx.send("**GitHub**: <https://bit.ly/recoserver>")
+        await ctx.send("**Mobile App**: <https://bit.ly/RecoApp>")
+        await ctx.send("**YouTube**: <https://bit.ly/recoYoutube>")
+        await ctx.send("**My Brother 😉**:\n**De & go**: <https://bit.ly/deandgo-invite>")     
+    else:
+        await restricter_module.restricter(message,client)
 
   
 # Module: abort
