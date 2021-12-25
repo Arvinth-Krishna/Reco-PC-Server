@@ -264,6 +264,15 @@ async def processes(ctx):
     await processes_module.processes(ctx)
 
 
+# Module: reco
+# Description: Show all Reco information.
+# Usage: !reco
+@client.command()
+@Logger(client)
+async def reco(ctx):
+    await reco_module.reco(ctx,client,discord.Embed)
+  
+
 # Module: restart
 # Description: Restarts system
 # Usage: !restart or !restart minutesToRestart
