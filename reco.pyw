@@ -270,7 +270,7 @@ async def processes(ctx):
 @client.command()
 @Logger(client)
 async def reco(ctx):
-    await reco_module.reco(ctx,client,discord.Embed)
+    await reco_module.reco(ctx,client)
   
 
 # Module: restart

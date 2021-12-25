@@ -6,7 +6,7 @@
 import  asyncio, configs
 
 
-async def reco(ctx,client,discord,embeds):
+async def reco(ctx,client):
     await ctx.send(f"Gathering information from **{client.user.name}**...")
     
 
