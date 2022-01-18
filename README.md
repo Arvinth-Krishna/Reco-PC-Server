@@ -144,14 +144,14 @@ Installing Reco PC Server is an easy 3 minute process. [🎬 YouTube - Reco Play
 
 ### ★ Battery Level  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 
-* !batterylevel
+* !batterylevel or !batterylevel show
 	> To check the estimated battery charge remaining.
 
 		e.g: !batterylevel
 
 ### ★ Battery Report Generator  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 
-* !batteryreport
+* !batteryreport or !batteryreport file
 	> Generates a detailed battery report for your PC. [Screenshots](https://github.com/Arvinth-Krishna/Battery_Report/blob/master/README.md#screenshots)
 
 		e.g: !batteryreport
@@ -175,8 +175,9 @@ Installing Reco PC Server is an easy 3 minute process. [🎬 YouTube - Reco Play
 
 ### ★ Clip  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 
-* !clip *text*
-	> Copy the message to your PC's Clipboard.
+* !clip *text* or !clip get
+	> **!clip** *<text>* - Copy the message to your PC's Clipboard.
+	> **!clip get**     - Get data from PC's Clipboard
 
 		e.g: !clip Copy this text to PC's Clipboard
 
@@ -197,9 +198,12 @@ Installing Reco PC Server is an easy 3 minute process. [🎬 YouTube - Reco Play
 		- absolute => sets an absolute path
 		- relative => sets a relative path
 		- list => lists current path
-		- retrieve => uploads a file to the chat
-		- save => saves a file to the HD from the chat
-		- download => saves a file from a direct url to the HD
+		- retrieve => uploads a file to the chat from your system
+		- save => saves a file to your saved_files directory in your system from the chat
+	        - save folder => opens the saved_files directory
+	        - rsave => saves a file to your current relaive path from the chat
+	        - open => opens the current relative path
+		- download => saves a file from a direct url to the your system
 
 ### ★ Help  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 
@@ -217,7 +221,7 @@ Installing Reco PC Server is an easy 3 minute process. [🎬 YouTube - Reco Play
 
 ### ★ Launch  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 
-* !launch *shortcut*
+* !launch *shortcut* or !launch list or !launch list_index
     > Launches a custom shortcut you placed in the shortcuts folder.
 
 
@@ -239,16 +243,9 @@ Installing Reco PC Server is an easy 3 minute process. [🎬 YouTube - Reco Play
 
 		e.g: !log show 2021-02-08
 
-### ★ LogOff  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
-
-* !logoff or !logoff *minutes*
-	> Logs off your user immediately or with a time delay in minutes.
-
-		e.g: !logoff 30
-
 ### ★ Media  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 
-* !media *command* or !media *command* *repeat_n_times or delay_n_minutes*
+* !media *command* or !media *command* *time/times* *time*
 	> Controls computer media playback and volume once or repeatedly.
 	> 
 	> For Play, Pause, and Stop commands have delay_n_minutes feature.
@@ -258,7 +255,7 @@ Installing Reco PC Server is an easy 3 minute process. [🎬 YouTube - Reco Play
 		- vol-up
 		- vol-down
 		- vol-mute
-		- say-vol
+		- say-cv
 		- cv
 		- next
 		- prev
@@ -381,11 +378,16 @@ Installing Reco PC Server is an easy 3 minute process. [🎬 YouTube - Reco Play
 
 		e.g: !shutdown 30
 
+### ★ SignOut  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+
+* !signout or !signout *minutes*
+	> Sign out your user immediately or with a time delay in minutes.
+
+		e.g: !signout 30
+	
 ### ★ Sleep  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 
-* !sleep or !sleep *minutes*
-	> ⚠ Warning: Sleep command may act as hibernate. (Please create a pull request if you know to fix this issue. [sleep_module.py](https://github.com/Arvinth-Krishna/Reco-PC-Server/blob/main/modules/sleep_module.py))
-	> 
+* !sleep or !sleep *minutes*	> 
 	> Sleeps your computer immediately or with a time delay in minutes. 
 
 		e.g: !sleep 30
@@ -427,17 +429,17 @@ Installing Reco PC Server is an easy 3 minute process. [🎬 YouTube - Reco Play
 
 ### ★ Whatsapp  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 
-* !whatsapp *countryCode_MobileNumber*
+* !whatsapp *countryCode_MobileNumber* or !whatsapp web 
 	> Opens chat screen for entered mobile number (Click to Chat feature).
 
 		e.g: !whatsapp 911234567890
 
 ### ★ YouTube Search  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 
-* !youtube or !youtube *search*
+* !yt play *query* or !youtube *search* 
 	> Shows search result on YouTube.
 
-		e.g: !youtube Avicii - The Nights
+		e.g: !yt Avicii - The Nights
 
 Note: 
 * All above commands works best on Windows and some commands may not work on other platforms.
@@ -450,6 +452,7 @@ Note:
 1. **Download & Install Python** - Remember: Tick the Add to path checkBox during installation.
    -> https://www.python.org/   (Python Version - [3.9.8](https://www.python.org/downloads/release/python-398/) recommended)
 2. Create a bot and get its **token** by following these instructions: https://youtu.be/-m-Z7Wav-fM
+	- ⚠ **Don't forget to turn on these [three buttons](https://user-images.githubusercontent.com/49812701/149883812-53643ba8-df84-47ee-89e5-cf3177202b7f.png)**
 3. [Download](https://github.com/Arvinth-Krishna/Reco-PC-Server/archive/main.zip) the Reco PC Server Repository, **run setup.bat on Windows** or **setup.sh on Linux** and put your Bot Token in the newly created **.env file**. 
 4. Get **Webhook URL** from your Channel and add it in your Webhook tab in your [Reco](https://play.google.com/store/apps/details?id=com.gak.reco) mobile App. https://www.youtube.com/watch?v=2Fcvg-Bh7Oo&t=1s
 5. Launch **reco.pyw**, right click on the system tray icon and hit Connect to invite Reco Pc Server to your Discord server.
@@ -642,7 +645,7 @@ Click below GIF to see the video.
 
 ## Setting up Task Scheduler for Reco-Startup:  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
 These instruction will help you to setup Reco to startup automatically when we start your PC.
-It looks like lenghty but its so easy to setup, just follow the steps. so chill, do and have fun...
+It looks like lenghty but its **so easy to setup**, just follow the steps. So chill, do and have fun...
 
 [🎬 YouTube - How to set up Reco Startup using Task Scheduler](https://youtu.be/gAic5Gv9FcQ)
 
