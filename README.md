@@ -122,7 +122,7 @@ Installing Reco PC Server is an easy 3 minute process. [🎬 YouTube - Reco Play
 * **[Version Checker](https://github.com/Arvinth-Krishna/Reco-PC-Server#-version-checker--)**
 * **[Wake](https://github.com/Arvinth-Krishna/Reco-PC-Server#-Wake--)**
 * **[Wlan Signal](https://github.com/Arvinth-Krishna/Reco-PC-Server#-Wlan-Signal--)**
-* **[WhatsApp (click to chat)](https://github.com/Arvinth-Krishna/Reco-PC-Server#-whatsapp--)**
+* **[WhatsApp](https://github.com/Arvinth-Krishna/Reco-PC-Server#-whatsapp--)**
 * **[YouTube (search)](https://github.com/Arvinth-Krishna/Reco-PC-Server#-youtube-search--)**
 
 
