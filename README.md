@@ -510,7 +510,7 @@ Note:
 1. **Download & Install Python** - Remember: Tick the Add to path checkBox during installation.
    -> https://www.python.org/   (Python Version - [3.9.8](https://www.python.org/downloads/release/python-398/) recommended)
 2. Create a bot and get its **token** by following these instructions: https://youtu.be/-m-Z7Wav-fM
-	- ⚠ **Don't forget to turn on these [three switches.](https://user-images.githubusercontent.com/49812701/149883812-53643ba8-df84-47ee-89e5-cf3177202b7f.png)**
+	- ⚠ **Don't forget to turn on these [three switches](https://user-images.githubusercontent.com/49812701/149883812-53643ba8-df84-47ee-89e5-cf3177202b7f.png)** in [Discord Developer Portal](https://discord.com/developers/applications).
 3. [Download](https://github.com/Arvinth-Krishna/Reco-PC-Server/releases/download/v7.0/Reco-PC-Server-main.zip) the Reco PC Server Repository, **run setup.bat on Windows** or **setup.sh on Linux** and put your Bot Token in the newly created **.env file**. 
 4. Get **Webhook URL** from your Channel and add it in your Webhook tab in your [Reco](https://play.google.com/store/apps/details?id=com.gak.reco) mobile App. https://www.youtube.com/watch?v=2Fcvg-Bh7Oo&t=1s
 5. Launch **reco.pyw**, right click on the system tray icon and hit Connect to invite Reco Pc Server to your Discord server.
