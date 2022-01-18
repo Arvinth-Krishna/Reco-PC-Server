@@ -57,11 +57,11 @@ async def reco(ctx,*options,client,discordVersion):
         mtxt=mtxt+"‣ "+x
     
     mtxt="**🔮 Commands List ("+str(len(features))+"):**\n\n"+mtxt
-    for x in features[:13]:
+    for x in features[:12]:
         mtxt1=mtxt1+"‣ "+x
-    for x in features[13:26]:
+    for x in features[12:24]:
         mtxt2=mtxt2+"‣ "+x
-    for x in features[26:]:
+    for x in features[24:]:
         mtxt3=mtxt3+"‣ "+x    
 
 
