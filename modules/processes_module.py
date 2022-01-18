@@ -1,22 +1,20 @@
-# Module: Processes
+# Module: processes
 # Description: Shows all running process which may be useful for !appquitter feature.
-# Usage: !processes 
-# Dependencies: 
+# Usage: !processes
+# Dependencies: asyncio, configs,subprocess,discord
 
 
-import asyncio, configs,subprocess
-
-import discord
-
-
-
+import asyncio, configs,subprocess,discord,time
+import socket
+from psutil import users
 
 async def processes(ctx):
-    await ctx.send("Gathering information...")
+    await ctx.send(f"> Gathering information from **💻 {socket.gethostname().capitalize()}**...",delete_after=1.5)
     printlist=[]
             
     cmd = 'powershell "gps | where {$_.MainWindowTitle } | select Id,ProcessName'
     proc = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE)
+    print(proc)
     for line in proc.stdout:
         if not line.decode()[0].isspace():
             printlist.append(line.decode().rstrip())
@@ -31,8 +29,8 @@ async def processes(ctx):
             applicationNlist=applicationNlist+j[1]+"\n "
             p=p+j[0]+"  ::: "+j[1]+"\n"
         p=p+"\n```"
-        embed=discord.Embed( color=0x8f047c)
-        embed.set_author(name="!processes", url="https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--", icon_url="https://user-images.githubusercontent.com/49812701/123842966-f9f15d80-d92e-11eb-9db0-087202e92f7b.png")
+        embed=discord.Embed( color=int(configs.EMBEDS_COLOR,0))
+        embed.set_author(name="!processes", url="https://bit.ly/RecoCommands", icon_url="https://user-images.githubusercontent.com/49812701/123842966-f9f15d80-d92e-11eb-9db0-087202e92f7b.png")
         embed.add_field(name="Foreground Apps:",value=p,inline=False)
         embed.add_field(name="Pro Tip:",value="```\nTry!\n!appquitter PID/Application_Name\nor\n!appquitter PID/Application_Name minutes```",inline=False)
         embed.add_field(name='FYI',value="```fix\nThe PID will change every time you restart your Application.\n```")

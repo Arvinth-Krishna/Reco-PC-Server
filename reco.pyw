@@ -5,7 +5,9 @@
 # --------------- #
 
 # Basic bot dependencies
+from pydoc import cli
 import discord
+from discord import channel
 from discord.client import Client
 from discord.ext.commands import Bot
 import platform
@@ -17,8 +19,10 @@ from threading import Thread
 # Import configurations
 import configs
 
-# Import logger
+# Import helpers
 from lib.helpers import Logger
+from lib.helpers import recoCount
+from lib.reco_startup import startup_Initializer
 
 # Imports for system tray icon
 from pystray import Icon, Menu, MenuItem
@@ -28,18 +32,22 @@ import webbrowser
 # Modules import - this imports all modules under the modules directory
 # IDEs will complain about unresolved references, but it runs as intended
 from modules import *
+from modules import signout_module
+
 
 # Create a bot client with a description and a command prefix
-client = Bot(description="A remote system administration bot for discord", command_prefix=configs.BOT_PREFIX)
-
+intents = discord.Intents.default()
+intents.members = True
+client = Bot(description="A remote system administration bot for discord", command_prefix=configs.BOT_PREFIX,intents=intents)
 
 @client.event
 async def on_ready():
+    
     print('--------')
     print('Reco PC Server Administration Bot by GAK')
     print('--------')
     print('Logged in as ' + client.user.name + ' (ID:' + str(client.user.id) + ') | Connected to '
-          + str(len(client.guilds)) + ' servers | Connected to ' + str(len(set(client.get_all_members()))) + ' users')
+          + str(len(client.guilds)) + ' servers | Connected to ' + str(recoCount.get_reco_user_count(client)) + ' users')
     print('--------')
     print('Current Discord.py Version: {} | Current Python Version: {}'.format(
         discord.__version__, platform.python_version()))
@@ -49,9 +57,12 @@ async def on_ready():
     print('--------')
     print('Github Link: https://github.com/Arvinth-Krishna/Reco-PC-Server ')
     print('--------')
-    print('Reco PC Server - Version N0: {0}'.format(versionChecker_module.currentVersionNo))
+    print('Reco PC Server - Version N0: {0}'.format(configs.RECO_VERSION_NO))
     print('--------')
+    await startup_Initializer(client)
     return await client.change_presence(activity=discord.Game(name='with your PC'))
+
+
 
 # Module: restricter
 # Description: To control both user and webhook commands permission
@@ -74,9 +85,7 @@ async def on_message(message):
 @client.command()
 @Logger(client)
 async def abort(ctx):
-    text="Aborting the schedule!"
-    await notification_module.notification(ctx,text)
-    await abort_module.abort(ctx)
+    await abort_module.abort(ctx,client)
 
 
 # Module: appQuitter
@@ -84,29 +93,26 @@ async def abort(ctx):
 # Usage: !appquitter "Application Name" or !appquitter "Application Name" minutesToQuit
 @client.command()
 @Logger(client)
-async def appquitter(ctx, appName,minutes=0):
-    if minutes!=0:
-        text= str(appName).capitalize()+" will close in "+str(minutes)+" minutes"
-        await notification_module.notification(ctx,text)
-    await appQuitter_module.appquitter(ctx,appName, minutes)
+async def appquitter(ctx, appName=None,minutes=0):
+    await appQuitter_module.appquitter(ctx,client,appName, minutes)
 
     
 # Module: batteryLevel
 # Description: To see the estimated battery charge remaining
 # Usage: !batterylevel
-@client.command()
+@client.command() 
 @Logger(client)
-async def batterylevel(ctx):
-    await batteryLevel_module.batterylevel(ctx)
+async def batterylevel(ctx,option=None):
+    await batteryLevel_module.batterylevel(ctx,client,option)
     
  
 # Module: batteryReportGenerator
 # Description: Generates detailed report for your battery
 # Usage: !batteryreport
-@client.command()
+@client.command() 
 @Logger(client)
-async def batteryreport(ctx):
-    await batteryReportGenerator_module.batteryreport(ctx)    
+async def batteryreport(ctx,option=None):
+    await batteryReportGenerator_module.batteryreport(ctx,option)    
 
  
 # Module: camera
@@ -114,8 +120,8 @@ async def batteryreport(ctx):
 # Usage: !camera command time
 @client.command()
 @Logger(client)
-async def camera(ctx, command, time=5):
-    await camera_module.camera(ctx, command, time)
+async def camera(ctx,*commandtime):
+    await camera_module.camera(ctx,*commandtime)
 
 
 # Module: cmd
@@ -123,9 +129,8 @@ async def camera(ctx, command, time=5):
 # Usage: !cmd "command"
 @client.command()
 @Logger(client)
-async def cmd(ctx, *txt):
+async def cmd(ctx,*txt):
     text=" ".join(txt)
-
     await cmd_module.cmd(ctx, text)
 
 
@@ -134,10 +139,8 @@ async def cmd(ctx, *txt):
 # Usage: !clip txt
 @client.command()
 @Logger(client)
-async def clip(ctx, *txt):
-    text=" ".join(txt)
-
-    await clip_module.clip(ctx, text)
+async def clip(ctx):
+    await clipboardGetCopy_module.clip(ctx)
 
 
 # Module: echo
@@ -145,7 +148,7 @@ async def clip(ctx, *txt):
 # Usage: !echo off or !echo on
 @client.command()
 @Logger(client)
-async def echo(ctx, status):
+async def echo(ctx, status=None):
     await echo_module.echo(ctx, status)
 
 
@@ -154,7 +157,7 @@ async def echo(ctx, status):
 # Usage: !file [command] [[path]|[times]]
 @client.command()
 @Logger(client)
-async def file(ctx, command, *args):
+async def file(ctx, command=None, *args):
     await file_module.file(ctx, command, *args)
 
 
@@ -164,10 +167,7 @@ async def file(ctx, command, *args):
 @client.command()
 @Logger(client)
 async def hibernate(ctx, minutes=0):
-    if minutes!=0:
-        text="System hibernates in "+str(minutes)+" minutes"
-        await notification_module.notification(ctx,text)
-    await hibernate_module.hibernate(ctx, minutes)
+    await hibernate_module.hibernate(ctx,client, minutes)
 
 
 # Module: launch
@@ -177,7 +177,7 @@ async def hibernate(ctx, minutes=0):
 @Logger(client)
 async def launch(ctx, *shortcut):
     fullLenShortcut=" ".join(shortcut)
-    await launch_module.launch(ctx, fullLenShortcut)
+    await launch_module.launch(ctx,client, fullLenShortcut)
 
 
 # Module: lock
@@ -186,7 +186,7 @@ async def launch(ctx, *shortcut):
 @client.command()
 @Logger(client)
 async def lock(ctx, minutes=0):
-    await lock_module.lock(ctx, minutes)
+    await lock_module.lock(ctx,client, minutes)
 
 
 # Module: log
@@ -194,20 +194,8 @@ async def lock(ctx, minutes=0):
 # Usage: !log [off|on] | [show] [date (format: YYYY-MM-DD)]
 @client.command()
 @Logger(client)
-async def log(ctx, param, date=None):
+async def log(ctx, param=None, date=None):
     await log_module.log(ctx, param, date)
-
-
-# Module: logoff
-# Description: Logs the user out of the system
-# Usage: !logoff or !logoff secondsToLogoff
-@client.command()
-@Logger(client)
-async def logoff(ctx, minutes=0):
-    if minutes!=0:
-        text="System logout in "+str(minutes)+" minutes"
-        await notification_module.notification(ctx,text)
-    await logoff_module.logoff(ctx, minutes)
 
 
 # Module: media
@@ -215,8 +203,8 @@ async def logoff(ctx, minutes=0):
 # Usage: !media command or !media command times
 @client.command()
 @Logger(client)
-async def media(ctx, command, times=0):
-    await media_module.media(ctx, command, times)
+async def media(ctx, command=None, times=0,*time):
+    await media_module.media(ctx, command, times,*time)
 
     
 # Module: Music
@@ -226,23 +214,22 @@ async def media(ctx, command, times=0):
 @Logger(client)
 async def music(ctx, *txt):
     text="+".join(txt)
-    await music_module.music(ctx, text)  
-    
+    await music_module.music(ctx,client, text)  
 @client.command()
 @Logger(client)
 async def m(ctx, *txt):
     text="+".join(txt)
-    await music_module.music(ctx, text)      
+    await music_module.music(ctx,client,text)      
 
     
 # Module: notification
-# Description: Sends a notification to the computer
+# Description: Sends a notification to the computer4
 # Usage: !notification "Notification Content"
 @client.command()
 @Logger(client)
-async def notification(ctx, *txt):
-    text=" ".join(txt)
-    await notification_module.notification(ctx, text)
+async def notification(ctx):
+    text=str(ctx.message.content[14:])
+    await notification_module.notification(ctx,client, text)
 
 
 # Module: powershell
@@ -253,6 +240,15 @@ async def notification(ctx, *txt):
 async def powershell(ctx, *txt):
     text=" ".join(txt)
     await powershell_module.powershell(ctx, text)
+
+
+# Module: print
+# Description: To print
+# Usage: !print
+@client.command()
+@Logger(client)
+async def printer(ctx,mode=None,*inputs):
+    await recoPrint_module.printer(ctx, mode,*inputs)
 
 
 # Module: processes
@@ -269,8 +265,8 @@ async def processes(ctx):
 # Usage: !reco
 @client.command()
 @Logger(client)
-async def reco(ctx):
-    await reco_module.reco(ctx,client)
+async def reco(ctx,*option):
+    await reco_module.reco(ctx,*option,client=client,discordVersion=discord.__version__)
   
 
 # Module: restart
@@ -279,9 +275,7 @@ async def reco(ctx):
 @client.command()
 @Logger(client)
 async def restart(ctx, minutes=0):
-    text="System restart in "+str(minutes)+" minutes"
-    await notification_module.notification(ctx,text)
-    await restart_module.restart(ctx, minutes)
+    await restart_module.restart(ctx,client, minutes)
 
 
 # Module: say
@@ -308,11 +302,8 @@ async def screenshot(ctx, seconds=0):
 # Usage: !search or !search query
 @client.command()
 @Logger(client)
-async def search(ctx, *txt):
-    text=''''''
-    for txxt in txt: 
-        text = text+"+"+txxt   
-    await search_module.search(ctx, text)
+async def search(ctx):  
+    await search_module.search(ctx)
 
 
 # Module: shutdown
@@ -321,9 +312,16 @@ async def search(ctx, *txt):
 @client.command()
 @Logger(client)
 async def shutdown(ctx, minutes=0):
-    text="System shutdown in "+str(minutes)+" minutes"
-    await notification_module.notification(ctx,text)
-    await shutdown_module.shutdown(ctx, minutes)
+    await shutdown_module.shutdown(ctx,client, minutes)
+
+
+# Module: signout
+# Description: Sign out the user out of the system
+# Usage: !signout or !signout minutes
+@client.command()
+@Logger(client)
+async def signout(ctx, minutes=0):
+    await signout_module.signout(ctx,client, minutes)
 
 
 # Module: sleep
@@ -332,10 +330,7 @@ async def shutdown(ctx, minutes=0):
 @client.command()
 @Logger(client)
 async def sleep(ctx, minutes=0):
-    if minutes!=0:
-        text="System sleep in "+str(minutes)+" minutes"
-        await notification_module.notification(ctx,text)
-    await sleep_module.sleep(ctx, minutes)
+    await sleep_module.sleep(ctx,client, minutes)
 
     
 # Module: speedtest
@@ -361,9 +356,8 @@ async def systeminfo(ctx):
 # Usage: !url website
 @client.command()
 @Logger(client)
-async def url(ctx, *txt):
-    text=" ".join(txt)
-    await urlLauncher_module.url(ctx, text)
+async def url(ctx):
+    await urlLauncher_module.url(ctx)
 
 
 # Module: versionChecker
@@ -372,8 +366,16 @@ async def url(ctx, *txt):
 @client.command()
 @Logger(client)
 async def version(ctx):
-    await versionChecker_module.version(ctx)
+    await versionChecker_module.version(ctx,client)
     
+
+# Module: wake
+# Description: Help to keep screen alway on
+# Usage: !wake on or !wake off
+@client.command()
+@Logger(client)
+async def wake(ctx,option=None):
+    await wake_module.wake(ctx,option)    
 
 # Module: wlanSignal
 # Description: To check the signal strength of a Wi-Fi Connection
@@ -389,8 +391,8 @@ async def wlansignal(ctx):
 # Usage: !whatsapp CountryCode_Followed_by_MobileNumber
 @client.command()
 @Logger(client)
-async def whatsapp(ctx, num=0):
-    await whatsapp_module.whatsapp(ctx, num)
+async def whatsapp(ctx, num=None,platform='pc'):
+    await whatsapp_module.whatsapp(ctx, num,platform)
 
 
 # Module: youtube
@@ -398,27 +400,29 @@ async def whatsapp(ctx, num=0):
 # Usage: !youtube or !youtube search
 @client.command()
 @Logger(client)
-async def youtube(ctx, *txt):
-    text=''''''
-    for txxt in txt: 
-        text = text+"+"+txxt   
-   
-    await youtube_module.youtube(ctx, text)
+async def youtube(ctx):
+    await youtube_module.youtube(ctx)
+@client.command()
+@Logger(client)
+async def yt(ctx):
+    await youtube_module.youtube(ctx)
 
 
 # System Tray menu functions
 
 # Starts the bot client
+
 def iconRun():
     loop = asyncio.get_event_loop()
     loop.create_task(client.start(configs.BOT_TOKEN))
     t1=Thread(target=loop.run_forever)
     t1.start()
+    
+
 
 
 # Shows logs folder
 def showLogs(): os.startfile("logs")
-
 
 # Shows shortcuts folder
 def showShortcuts(): os.startfile("shortcuts")
@@ -447,11 +451,16 @@ def applicationHide():
 # Exits the application
 def applicationExit():
     # This will Force quit all the pythonw.exe program running in your computer
-     os.system("taskkill /F /IM pythonw.exe")
+     recoPid=os.getpid()
+     os.system(f"taskkill /F /PID {recoPid}")
+
+    #  os.system("taskkill /F /IM pythonw.exe")
 
 
 # About
 def about(): webbrowser.open('https://github.com/Arvinth-Krishna/Reco-PC-Server')
+
+
 
 
 # Instructions

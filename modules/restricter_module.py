@@ -7,6 +7,11 @@ import configs
 # Import Restricters
 from user_restricter import *
 from webhook_restricter import *
+from lib.reco_command_counter import addcount
+from lib.helpers import boolConverter
+
+allow_all_users=boolConverter(configs.ALLOW_ALL_USERS)
+allow_all_webhooks=boolConverter(configs.ALLOW_ALL_WEBHOOKS)
 
 
 media_Volume_Keys=['vol-up','vol-down','vol-mute',]
@@ -112,13 +117,16 @@ async def restricter(message,client):
                         restricter_data=webhook_commands_restricter_list[webhook_index]
                 else:
                     if(bool_webhooks_restricter_list==False ):
+                        await addcount(ctx)
                         await client.invoke(ctx)
                     else:
                         restricter_data=webhook_commands_restricter_list[webhook_index]
                 
             else:
                 if(bool_webhooks_restricter_list==False):
+                    await addcount(ctx)
                     await client.invoke(ctx)
+
                 else:
                     restricter_data=webhook_commands_restricter_list[webhook_index]
         else:
@@ -134,6 +142,7 @@ async def restricter(message,client):
             if(allow_all_users==False):
                 if (message.author.guild_permissions.administrator):
                     if(bool_Users_restricter_list==False):
+                        await addcount(ctx)
                         await client.invoke(ctx)
                     else:
                         restricter_data=user_commands_restricter_list[user_index]
@@ -146,11 +155,13 @@ async def restricter(message,client):
                             restricter_data=user_commands_restricter_list[user_index]
                     else:
                         if(bool_Users_restricter_list==False):
+                            await addcount(ctx)
                             await client.invoke(ctx)
                         else:
                             restricter_data=user_commands_restricter_list[user_index]
             else:
                 if(bool_Users_restricter_list==False):
+                    await addcount(ctx)
                     await client.invoke(ctx)
                 else:
                     restricter_data=user_commands_restricter_list[user_index]
@@ -164,19 +175,33 @@ async def restricter(message,client):
         messageContentList.pop(1)
         if(messageContentList[0]=='!media'):
             if(messageContentList[1]in media_Volume_Keys and i['media_Volume_Keys']):
+                await addcount(ctx)
                 await client.invoke(ctx)
+                
             elif(messageContentList[1]in media_ArrowKeys and i['media_ArrowKeys']):
+                await addcount(ctx)
                 await client.invoke(ctx)
+                
             elif(messageContentList[1]in media_CloseandQuitKeys and i['media_Close&QuitKeys']):
-                await client.invoke(ctx)                    
-            elif(messageContentList[1]in media_Tab_SpaceandEnterKeys and i['media_Tab,Space&EnterKeys']):
+                await addcount(ctx)
                 await client.invoke(ctx)
+                                    
+            elif(messageContentList[1]in media_Tab_SpaceandEnterKeys and i['media_Tab,Space&EnterKeys']):
+                await addcount(ctx)
+                await client.invoke(ctx)
+                
             elif(messageContentList[1]in media_Function_Keys and i['media_Function_Keys']):
-                await client.invoke(ctx)    
+                await addcount(ctx)
+                await client.invoke(ctx) 
+                   
             elif(messageContentList[1]in media_Music_Control_Keys and i['music_Controls_Keys']):
-                await client.invoke(ctx)      
+                await addcount(ctx)
+                await client.invoke(ctx)
+                     
             elif(messageContentList[1]in other_media_commands and i['other_media_commands']):
-                await client.invoke(ctx)    
+                await addcount(ctx)
+                await client.invoke(ctx) 
+
             else:
                 if (check_bot==True):
                     await ctx.send("This webhook: ( "+i['webhookName'] +" ) tried to use permission denied command: ( "+original_command+" "+messageContentList[1]+" )")     
@@ -190,7 +215,9 @@ async def restricter(message,client):
                     await ctx.send("This command: ( **"+original_command+"** ) is not added in your \"**user_restricter.py**\" file, so it\'s taken as \"**False**\" (Permission denied).\n\n Please add the commad to use: **'"+messageContentList[0]+"':True,** ")     
                                      
         elif(i[messageContentList[0]]):
+            await addcount(ctx)
             await client.invoke(ctx)
+            
 
         else:
             if (check_bot==True):

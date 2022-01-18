@@ -108,6 +108,7 @@ Installing Reco PC Server is an easy 3 minute process. [🎬 YouTube - Reco Play
 * **[Notification](https://github.com/Arvinth-Krishna/Reco-PC-Server#-notification--)**
 * **[Powershell](https://github.com/Arvinth-Krishna/Reco-PC-Server#-powershell--)**
 * **[Processes](https://github.com/Arvinth-Krishna/Reco-PC-Server#-processes--)**
+* **[Reco](https://github.com/Arvinth-Krishna/Reco-PC-Server#-reco--)**
 * **[Restart](https://github.com/Arvinth-Krishna/Reco-PC-Server#-restart--)**
 * **[Say](https://github.com/Arvinth-Krishna/Reco-PC-Server#-say--)**
 * **[Screenshot](https://github.com/Arvinth-Krishna/Reco-PC-Server#-screenshot--)**
@@ -118,6 +119,7 @@ Installing Reco PC Server is an easy 3 minute process. [🎬 YouTube - Reco Play
 * **[System Info](https://github.com/Arvinth-Krishna/Reco-PC-Server#-system-info--)**
 * **[URL Launcher](https://github.com/Arvinth-Krishna/Reco-PC-Server#-url-launcher--)**
 * **[Version Checker](https://github.com/Arvinth-Krishna/Reco-PC-Server#-version-checker--)**
+* **[Wake](https://github.com/Arvinth-Krishna/Reco-PC-Server#-Wake--)**
 * **[Wlan Signal](https://github.com/Arvinth-Krishna/Reco-PC-Server#-Wlan-Signal--)**
 * **[WhatsApp (click to chat)](https://github.com/Arvinth-Krishna/Reco-PC-Server#-whatsapp--)**
 * **[YouTube (search)](https://github.com/Arvinth-Krishna/Reco-PC-Server#-youtube-search--)**

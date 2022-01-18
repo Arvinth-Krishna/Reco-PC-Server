@@ -7,7 +7,7 @@
 # True -> Allows all webhooks. 
 # False -> only allow - allowed webhooks (in allowed_webhooks_Id_list) or in command restricter list (webhook_commands_restricter_list).
 # ⬇⬇⬇
-allow_all_webhooks=True
+
 
 
 allowed_webhooks_Id_list=['900715738501238431',  ]

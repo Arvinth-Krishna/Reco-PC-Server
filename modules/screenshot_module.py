@@ -3,14 +3,15 @@
 # Usage: !screenshot or !screenshot secondsToScreenshot
 # Dependencies: time, os, mss
 
-import time, os, asyncio, discord
+import time, os, discord
 from mss import mss
+from lib.reco_embeds import recoEmbeds as rm
 
 
 async def screenshot(ctx, seconds=0):
     if os.path.isfile('screenshot.png'):  # Check if a screenshot.png exists, if yes, delete it so it can be replaced
         os.remove('screenshot.png')
-    await ctx.send("Taking a screenshot.")
+    await rm.msg(ctx,"**Taking a screenshot.**")
     if time != 0:
         time.sleep(seconds)
     with mss() as sct:
