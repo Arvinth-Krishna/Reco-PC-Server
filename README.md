@@ -102,11 +102,11 @@ Installing Reco PC Server is an easy 3 minute process. [🎬 YouTube - Reco Play
 * **[Launch](https://github.com/Arvinth-Krishna/Reco-PC-Server#-launch--)**
 * **[Lock](https://github.com/Arvinth-Krishna/Reco-PC-Server#-lock--)**
 * **[Log](https://github.com/Arvinth-Krishna/Reco-PC-Server#-log--)**
-* **[Logoff](https://github.com/Arvinth-Krishna/Reco-PC-Server#-logoff--)**
 * **[Media](https://github.com/Arvinth-Krishna/Reco-PC-Server#-media--)**
 * **[Music](https://github.com/Arvinth-Krishna/Reco-PC-Server#-music--)**
 * **[Notification](https://github.com/Arvinth-Krishna/Reco-PC-Server#-notification--)**
 * **[Powershell](https://github.com/Arvinth-Krishna/Reco-PC-Server#-powershell--)**
+* **[Printer](https://github.com/Arvinth-Krishna/Reco-PC-Server#-printer--)**
 * **[Processes](https://github.com/Arvinth-Krishna/Reco-PC-Server#-processes--)**
 * **[Reco](https://github.com/Arvinth-Krishna/Reco-PC-Server#-reco--)**
 * **[Restart](https://github.com/Arvinth-Krishna/Reco-PC-Server#-restart--)**
@@ -114,7 +114,8 @@ Installing Reco PC Server is an easy 3 minute process. [🎬 YouTube - Reco Play
 * **[Screenshot](https://github.com/Arvinth-Krishna/Reco-PC-Server#-screenshot--)**
 * **[Search (Google)](https://github.com/Arvinth-Krishna/Reco-PC-Server#-google-search--)**
 * **[Shutdown](https://github.com/Arvinth-Krishna/Reco-PC-Server#-shutdown--)**
-* **[Sleep (may act as hibernate)](https://github.com/Arvinth-Krishna/Reco-PC-Server#-sleep--)**
+* **[SignOut (LogOff)](https://github.com/Arvinth-Krishna/Reco-PC-Server#-logoff--)**
+* **[Sleep](https://github.com/Arvinth-Krishna/Reco-PC-Server#-sleep--)**
 * **[Speedtest](https://github.com/Arvinth-Krishna/Reco-PC-Server#-speedtest--)**
 * **[System Info](https://github.com/Arvinth-Krishna/Reco-PC-Server#-system-info--)**
 * **[URL Launcher](https://github.com/Arvinth-Krishna/Reco-PC-Server#-url-launcher--)**
@@ -200,9 +201,9 @@ Installing Reco PC Server is an easy 3 minute process. [🎬 YouTube - Reco Play
 		- list => lists current path
 		- retrieve => uploads a file to the chat from your system
 		- save => saves a file to your saved_files directory in your system from the chat
-	        - save folder => opens the saved_files directory
-	        - rsave => saves a file to your current relaive path from the chat
-	        - open => opens the current relative path
+		- save folder => opens the saved_files directory
+		- rsave => saves a file to your current relaive path from the chat
+		- open => opens the current relative path
 		- download => saves a file from a direct url to the your system
 
 ### ★ Help  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
@@ -335,6 +336,51 @@ Installing Reco PC Server is an easy 3 minute process. [🎬 YouTube - Reco Play
 
 		e.g: !powershell shutdown -s -t 300
 
+
+### ★ Printer  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+
+* !printer 
+	> To print documents from Discord.
+	
+		- !printer showprinters           or showp
+		- !printer showcurrentprinter     or showcp
+		- !printer showdefaultprinter     or showdp
+		- !printer setcurrentprinter NUM  or setcp NUM
+		- !printer setcp  reset           or setcp none
+		- !printer setdefaultprinter NUM  or setdp NUM
+		- !printer folder list            or folder   
+		- !printer folder open
+		- !printer folder upload          or upload
+		- !printer folder delete
+		- !printer folder delete NUM
+		- !printer folder print (optional Attributes: p_ n_ c_ o_)
+		- !printer jobs   list            or jobs
+		- !printer jobs   delete
+		- !printer jobs   delete Num
+		- !printer print        (optional Attributes: p_ n_ c_ o_)
+		- !printer print "FILE_PATH-WITH DOUBLE QUOTES"  (optional Attributes: p_ n_ c_ o_)
+
+           🔸 Optional Attributes can be used with print parameters.
+           🔸 All Optional Attributes are optional.
+           🔸 Remember:
+              p(NUM) > Current Printer > Default Printer
+           🔸 Optional Attributes -> p(NUM) n(NUM) c(b/c) o(p/l)
+              Explanations:
+                 p(Num) -> p1 -> Printer Number
+                 n(NUM) -> n1 -> No of Copies
+                 c(b/c) -> cb -> Color Mode 
+                            b -> Black & White
+                            c -> Color
+                 o(p/l) -> op -> Orientation
+                            p -> Potrait
+                            l -> Landscape 
+           eg: 
+              Read 1st point in FYI.
+              !printer folder print n2 cc
+              !printer folder print p3 n2 op
+              !printer print n5 ol
+              !printer print "C:\Users\krish\Desktop\print test.txt" n2
+
 ### ★ Processes  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 
 * !processes
@@ -342,6 +388,12 @@ Installing Reco PC Server is an easy 3 minute process. [🎬 YouTube - Reco Play
 
 		e.g: !processes
 
+### ★ Reco  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+
+* !reco
+	> Shows all about your Reco PC Server.
+
+		e.g: !reco
 
 ### ★ Restart  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 
@@ -426,7 +478,13 @@ Installing Reco PC Server is an easy 3 minute process. [🎬 YouTube - Reco Play
 	> To check the signal strength of a Wi-Fi Connection.
 
 		e.g: !wlansignal
+### ★ Wake  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 
+* !wake on or !wake off 
+	> Keeps screen always on.
+
+		e.g: !wake on
+	
 ### ★ Whatsapp  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 
 * !whatsapp *countryCode_MobileNumber* or !whatsapp web 
