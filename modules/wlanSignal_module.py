@@ -3,14 +3,16 @@
 # Usage: !wlansignal
 # Dependencies: time, os
 
-import os, asyncio, configs
+import os, asyncio
+from lib.reco_embeds import recoEmbeds as rm
 
 
 async def wlansignal(ctx):
     cmnd="netsh wlan show interfaces"
-    await ctx.send("Executing in command prompt: " + cmnd)
+    msg=await rm.msg(ctx,"**Gathering Wlan Details**...")
     cmnd_result = os.popen(cmnd).read()
-    await ctx.send(cmnd_result)
-    os.system('cmd /c "netsh wlan show interfaces && timeout 25"')
+    await rm.extendableMsg(ctx,f"```{cmnd_result}```")
+    await asyncio.sleep(0.5)
+    await msg.delete()
 
     await asyncio.sleep(3)

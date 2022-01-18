@@ -5,49 +5,50 @@
 
 
 import asyncio, configs,subprocess,json
-from logging import root
+from lib.reco_embeds import recoEmbeds as rm
+
 
 
 async def speedtest(ctx):
     printlist=[]
-    speedtestMSG=await ctx.send("🌐 Finding optimal server...")
+    speedtestMSG=await rm.msg(ctx,"🌐 Finding optimal server...")
     await asyncio.sleep(1.2)
-    await speedtestMSG.edit(content="⚡ Checking your Network speed...")
+    await rm.editMsg(ctx,speedtestMSG,"⚡ Checking your Network speed...")
     await asyncio.sleep(1.2)
-    await speedtestMSG.edit(content="Testing **⏬ Download** and **⏫ Upload** speed...")
+    await rm.editMsg(ctx,speedtestMSG,"Testing **⏬ Download** and **⏫ Upload** speed...")
     await asyncio.sleep(0.8)
-    await speedtestMSG.edit(content="Testing **⏬ Download** and **⏫ Upload** speed ⏳\n\n**.....**                                                 🎯")
+    await rm.editMsg(ctx,speedtestMSG,"Testing **⏬ Download** and **⏫ Upload** speed ⏳\n\n**.....**                              🎯")
 
     cmd = "powershell speedtest.exe --share --json"
     proc = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE,)
-    await speedtestMSG.edit(content="Testing **⏬ Download** and **⏫ Upload** speed ⏳\n\n**........**                                              🎯")
+    await rm.editMsg(ctx,speedtestMSG,"Testing **⏬ Download** and **⏫ Upload** speed ⏳\n\n**........**                             🎯")
     await asyncio.sleep(0.5)
-    await speedtestMSG.edit(content="Testing **⏬ Download** and **⏫ Upload** speed ⏳\n\n**.............**                                         🎯")
+    await rm.editMsg(ctx,speedtestMSG,"Testing **⏬ Download** and **⏫ Upload** speed ⏳\n\n**.............**                          🎯")
     psout=proc.stdout
     count=0
-    await speedtestMSG.edit(content="Testing **⏬ Download** and **⏫ Upload** speed ⏳\n\n**....................**                                  🎯")
+    await rm.editMsg(ctx,speedtestMSG,"Testing **⏬ Download** and **⏫ Upload** speed ⏳\n\n**....................**                       🎯")
 
     for line in psout:
         count=count+1
-        await speedtestMSG.edit(content=f"Testing **⏬ Download** and **⏫ Upload** speed ⏳\n\n**..............................**                        🎯")
+        await rm.editMsg(ctx,speedtestMSG,f"Testing **⏬ Download** and **⏫ Upload** speed ⏳\n\n**..............................**                🎯")
         if count>3:
-            await speedtestMSG.edit(content=f"Testing **⏬ Download** and **⏫ Upload** speed ⏳\n\n**.................................................** ❌", delete_after=1.5)
+            await rm.editMsg(ctx,speedtestMSG,f"Testing **⏬ Download** and **⏫ Upload** speed ⏳\n\n**............................................** ❌", delete_after=1.5)
             break
 
         if not line.decode()[0].isspace():
             printlist.append(line.decode().rstrip())
 
-            await speedtestMSG.edit(content=f"Testing **⏬ Download** and **⏫ Upload** speed ⏳\n\n**.....................................**                 🎯")
+            await rm.editMsg(ctx,speedtestMSG,f"Testing **⏬ Download** and **⏫ Upload** speed ⏳\n\n**.....................................**              🎯")
             await asyncio.sleep(0.5)
-            await speedtestMSG.edit(content=f"Testing **⏬ Download** and **⏫ Upload** speed ⏳\n\n**.................................................** ✅")
+            await rm.editMsg(ctx,speedtestMSG,f"Testing **⏬ Download** and **⏫ Upload** speed ⏳\n\n**........................................................** ✅")
             if count==0 or count>3:
-                await speedtestMSG.edit(content=f"Testing **⏬ Download** and **⏫ Upload** speed ⏳\n\n**.................................................** ❌", delete_after=1.5)
+                await rm.editMsg(ctx,speedtestMSG,f"Testing **⏬ Download** and **⏫ Upload** speed ⏳\n\n**...............................................** ❌", delete_after=1.5)
                 break
 
 
     if count!=0 and count<3:
        await asyncio.sleep(1.5)
-       await speedtestMSG.edit(content="😎 Results are almost ready!", delete_after=1.5)
+       await rm.editMsg(ctx,speedtestMSG,"😎 Results are almost ready!")
     
 
     print("count: ",count)
@@ -63,10 +64,11 @@ async def speedtest(ctx):
             d=printlist[0]
             res = json.loads(d)
             print(res)
+            await speedtestMSG.delete()
             await ctx.send(res['share'])
     elif configs.operating_sys == "Linux":  
         d=printlist[0]
-        res = json.loads(d)  
+        res = json.loads(d) 
         await ctx.send(res['share'])
     else:
         await ctx.send("In Reco, Speedtest feature is currently not available for this platform.")

@@ -1,10 +1,13 @@
-import sys
-import os
+
+import asyncio
 from lib.input_commands import InputCommands
-import logging
-import configs as Configs
+import configs,logging,os,sys
 from datetime import datetime
 from inspect import signature
+import webhook_restricter as wr
+import user_restricter as ur
+
+reco_restart_bool=False
 
 class Logger(object):
 
@@ -26,9 +29,9 @@ class Logger(object):
                 return await f(*args,**kwargs)
             except Exception as e:
                 message = '{} - [{}] while executing [!{}] with params [{}] and named params [{}]'.format(self.now.strftime('%Y-%m-%d %H:%M:%S'),str(e),f.__name__,args,kwargs)
-                if Configs.DISK_LOGS_ENABLED:
+                if boolConverter(configs.DISK_LOGS_ENABLED):
                     self.log.error(message)
-                if Configs.discord_logs_enabled:
+                if boolConverter(configs.discord_logs_enabled):
                     await self.client.say("`{}`".format(message))
                 raise
                 
@@ -57,6 +60,64 @@ class Logger(object):
 #     
 #     decorator.__name__ = f.__name__
 #     return decorator
+
+def boolConverter(bool):
+    if bool=="True":
+        return True
+    elif bool=="False":
+        return False
+    elif bool:
+        return True
+    elif not bool:
+        return False
+
+def checkfolder():
+    if not os.path.isdir('downloads'):
+            os.mkdir("./downloads")  
+    if not os.path.isdir('shortcuts'):
+        os.mkdir("./shortcuts")  
+def savefoldercheck():
+    if not os.path.isdir('downloads'):
+            os.mkdir("./downloads")  
+    if not os.path.isdir('downloads/saved_files'):
+        os.mkdir("./downloads/saved_files")  
+
+        
+
+
+class recoCount():
+    def get_reco_user_count(client):
+        user_set = set()
+        for guild in client.guilds:
+            for member in guild.members:
+                if not member.bot:
+                    user_set.add(member)
+        return len(user_set)
+
+    def get_reco_bot_count(client):
+        bot_set = set()
+        for guild in client.guilds:
+            for member in guild.members:
+                if member.bot:
+                    bot_set.add(member)
+        return len(bot_set)-1
+    
+    def get_reco_total_member_count(client):
+        total_member_set = set()
+        for guild in client.guilds:
+            for member in guild.members:
+                total_member_set.add(member)
+        return len(total_member_set)-1
+    
+    def get_reco_block_user_count():
+        return len(ur.blocked_users_Id_list)
+
+    def get_reco_block_webhook_count(): 
+        return len(wr.blocked_webhooks_Id_list)
+    
+    
+    
+
 
 def get_operating():
     platforms = {
@@ -95,6 +156,11 @@ class MediaControlAdapter():
     VK_KEY_F = 20
     VK_KEY_R=21
     VK_KEY_THREE=22
+    VK_KEY_WIN=19
+    VK_KEY_X = 20
+    VK_KEY_U=21
+    VK_KEY_S=22
+    
     
     
     _command_list = {
@@ -133,6 +199,10 @@ class MediaControlAdapter():
             VK_KEY_F:70,
             VK_KEY_R:82,
             VK_KEY_THREE:51,
+            VK_KEY_WIN:92,
+            VK_KEY_X:88,
+            VK_KEY_U:85,
+            VK_KEY_S:83,
             
         }
     }
@@ -210,5 +280,15 @@ class MediaControlAdapter():
     def media_key_vlc_mute(self):
         virtual_key_id = self._command_list[self.os_name][self.VK_KEY_M]
         self.input_commands.press_release(virtual_key_id) 
-    # 
+    async def win_sleep(self):
+        virtual_key_id = self._command_list[self.os_name][self.VK_KEY_WIN]
+        virtual_key_id2 = self._command_list[self.os_name][self.VK_KEY_X]
+        self.input_commands.hold_release(virtual_key_id,virtual_key_id2)
+        await asyncio.sleep(0.5)
+        virtual_key_id = self._command_list[self.os_name][self.VK_KEY_U]
+        self.input_commands.press_release(virtual_key_id)
+        virtual_key_id = self._command_list[self.os_name][self.VK_KEY_S]
+        self.input_commands.press_release(virtual_key_id)
+        
+
 

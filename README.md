@@ -102,22 +102,25 @@ Installing Reco PC Server is an easy 3 minute process. [🎬 YouTube - Reco Play
 * **[Launch](https://github.com/Arvinth-Krishna/Reco-PC-Server#-launch--)**
 * **[Lock](https://github.com/Arvinth-Krishna/Reco-PC-Server#-lock--)**
 * **[Log](https://github.com/Arvinth-Krishna/Reco-PC-Server#-log--)**
-* **[Logoff](https://github.com/Arvinth-Krishna/Reco-PC-Server#-logoff--)**
 * **[Media](https://github.com/Arvinth-Krishna/Reco-PC-Server#-media--)**
 * **[Music](https://github.com/Arvinth-Krishna/Reco-PC-Server#-music--)**
 * **[Notification](https://github.com/Arvinth-Krishna/Reco-PC-Server#-notification--)**
 * **[Powershell](https://github.com/Arvinth-Krishna/Reco-PC-Server#-powershell--)**
+* **[Printer](https://github.com/Arvinth-Krishna/Reco-PC-Server#-printer--)**
 * **[Processes](https://github.com/Arvinth-Krishna/Reco-PC-Server#-processes--)**
+* **[Reco](https://github.com/Arvinth-Krishna/Reco-PC-Server#-reco--)**
 * **[Restart](https://github.com/Arvinth-Krishna/Reco-PC-Server#-restart--)**
 * **[Say](https://github.com/Arvinth-Krishna/Reco-PC-Server#-say--)**
 * **[Screenshot](https://github.com/Arvinth-Krishna/Reco-PC-Server#-screenshot--)**
 * **[Search (Google)](https://github.com/Arvinth-Krishna/Reco-PC-Server#-google-search--)**
 * **[Shutdown](https://github.com/Arvinth-Krishna/Reco-PC-Server#-shutdown--)**
-* **[Sleep (may act as hibernate)](https://github.com/Arvinth-Krishna/Reco-PC-Server#-sleep--)**
+* **[SignOut (LogOff)](https://github.com/Arvinth-Krishna/Reco-PC-Server#-logoff--)**
+* **[Sleep](https://github.com/Arvinth-Krishna/Reco-PC-Server#-sleep--)**
 * **[Speedtest](https://github.com/Arvinth-Krishna/Reco-PC-Server#-speedtest--)**
 * **[System Info](https://github.com/Arvinth-Krishna/Reco-PC-Server#-system-info--)**
 * **[URL Launcher](https://github.com/Arvinth-Krishna/Reco-PC-Server#-url-launcher--)**
 * **[Version Checker](https://github.com/Arvinth-Krishna/Reco-PC-Server#-version-checker--)**
+* **[Wake](https://github.com/Arvinth-Krishna/Reco-PC-Server#-Wake--)**
 * **[Wlan Signal](https://github.com/Arvinth-Krishna/Reco-PC-Server#-Wlan-Signal--)**
 * **[WhatsApp (click to chat)](https://github.com/Arvinth-Krishna/Reco-PC-Server#-whatsapp--)**
 * **[YouTube (search)](https://github.com/Arvinth-Krishna/Reco-PC-Server#-youtube-search--)**
@@ -142,14 +145,14 @@ Installing Reco PC Server is an easy 3 minute process. [🎬 YouTube - Reco Play
 
 ### ★ Battery Level  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 
-* !batterylevel
+* !batterylevel or !batterylevel show
 	> To check the estimated battery charge remaining.
 
 		e.g: !batterylevel
 
 ### ★ Battery Report Generator  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 
-* !batteryreport
+* !batteryreport or !batteryreport file
 	> Generates a detailed battery report for your PC. [Screenshots](https://github.com/Arvinth-Krishna/Battery_Report/blob/master/README.md#screenshots)
 
 		e.g: !batteryreport
@@ -173,8 +176,9 @@ Installing Reco PC Server is an easy 3 minute process. [🎬 YouTube - Reco Play
 
 ### ★ Clip  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 
-* !clip *text*
-	> Copy the message to your PC's Clipboard.
+* !clip *text* or !clip get
+	> **!clip** *<text>* - Copy the message to your PC's Clipboard.
+	> **!clip get**     - Get data from PC's Clipboard
 
 		e.g: !clip Copy this text to PC's Clipboard
 
@@ -195,9 +199,12 @@ Installing Reco PC Server is an easy 3 minute process. [🎬 YouTube - Reco Play
 		- absolute => sets an absolute path
 		- relative => sets a relative path
 		- list => lists current path
-		- retrieve => uploads a file to the chat
-		- save => saves a file to the HD from the chat
-		- download => saves a file from a direct url to the HD
+		- retrieve => uploads a file to the chat from your system
+		- save => saves a file to your saved_files directory in your system from the chat
+		- save folder => opens the saved_files directory
+		- rsave => saves a file to your current relaive path from the chat
+		- open => opens the current relative path
+		- download => saves a file from a direct url to the your system
 
 ### ★ Help  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 
@@ -215,7 +222,7 @@ Installing Reco PC Server is an easy 3 minute process. [🎬 YouTube - Reco Play
 
 ### ★ Launch  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 
-* !launch *shortcut*
+* !launch *shortcut* or !launch list or !launch list_index
     > Launches a custom shortcut you placed in the shortcuts folder.
 
 
@@ -237,16 +244,9 @@ Installing Reco PC Server is an easy 3 minute process. [🎬 YouTube - Reco Play
 
 		e.g: !log show 2021-02-08
 
-### ★ LogOff  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
-
-* !logoff or !logoff *minutes*
-	> Logs off your user immediately or with a time delay in minutes.
-
-		e.g: !logoff 30
-
 ### ★ Media  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 
-* !media *command* or !media *command* *repeat_n_times or delay_n_minutes*
+* !media *command* or !media *command* *time/times* *time*
 	> Controls computer media playback and volume once or repeatedly.
 	> 
 	> For Play, Pause, and Stop commands have delay_n_minutes feature.
@@ -256,7 +256,7 @@ Installing Reco PC Server is an easy 3 minute process. [🎬 YouTube - Reco Play
 		- vol-up
 		- vol-down
 		- vol-mute
-		- say-vol
+		- say-cv
 		- cv
 		- next
 		- prev
@@ -336,6 +336,51 @@ Installing Reco PC Server is an easy 3 minute process. [🎬 YouTube - Reco Play
 
 		e.g: !powershell shutdown -s -t 300
 
+
+### ★ Printer  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+
+* !printer 
+	> To print documents from Discord.
+	
+		- !printer showprinters           or showp
+		- !printer showcurrentprinter     or showcp
+		- !printer showdefaultprinter     or showdp
+		- !printer setcurrentprinter NUM  or setcp NUM
+		- !printer setcp  reset           or setcp none
+		- !printer setdefaultprinter NUM  or setdp NUM
+		- !printer folder list            or folder   
+		- !printer folder open
+		- !printer folder upload          or upload
+		- !printer folder delete
+		- !printer folder delete NUM
+		- !printer folder print (optional Attributes: p_ n_ c_ o_)
+		- !printer jobs   list            or jobs
+		- !printer jobs   delete
+		- !printer jobs   delete Num
+		- !printer print        (optional Attributes: p_ n_ c_ o_)
+		- !printer print "FILE_PATH-WITH DOUBLE QUOTES"  (optional Attributes: p_ n_ c_ o_)
+
+           🔸 Optional Attributes can be used with print parameters.
+           🔸 All Optional Attributes are optional.
+           🔸 Remember:
+              p(NUM) > Current Printer > Default Printer
+           🔸 Optional Attributes -> p(NUM) n(NUM) c(b/c) o(p/l)
+              Explanations:
+                 p(Num) -> p1 -> Printer Number
+                 n(NUM) -> n1 -> No of Copies
+                 c(b/c) -> cb -> Color Mode 
+                            b -> Black & White
+                            c -> Color
+                 o(p/l) -> op -> Orientation
+                            p -> Potrait
+                            l -> Landscape 
+           eg: 
+              Read 1st point in FYI.
+              !printer folder print n2 cc
+              !printer folder print p3 n2 op
+              !printer print n5 ol
+              !printer print "C:\Users\krish\Desktop\print test.txt" n2
+
 ### ★ Processes  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 
 * !processes
@@ -343,6 +388,12 @@ Installing Reco PC Server is an easy 3 minute process. [🎬 YouTube - Reco Play
 
 		e.g: !processes
 
+### ★ Reco  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+
+* !reco
+	> Shows all about your Reco PC Server.
+
+		e.g: !reco
 
 ### ★ Restart  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 
@@ -379,11 +430,16 @@ Installing Reco PC Server is an easy 3 minute process. [🎬 YouTube - Reco Play
 
 		e.g: !shutdown 30
 
+### ★ SignOut  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+
+* !signout or !signout *minutes*
+	> Sign out your user immediately or with a time delay in minutes.
+
+		e.g: !signout 30
+	
 ### ★ Sleep  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 
-* !sleep or !sleep *minutes*
-	> ⚠ Warning: Sleep command may act as hibernate. (Please create a pull request if you know to fix this issue. [sleep_module.py](https://github.com/Arvinth-Krishna/Reco-PC-Server/blob/main/modules/sleep_module.py))
-	> 
+* !sleep or !sleep *minutes*	> 
 	> Sleeps your computer immediately or with a time delay in minutes. 
 
 		e.g: !sleep 30
@@ -422,20 +478,26 @@ Installing Reco PC Server is an easy 3 minute process. [🎬 YouTube - Reco Play
 	> To check the signal strength of a Wi-Fi Connection.
 
 		e.g: !wlansignal
+### ★ Wake  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 
+* !wake on or !wake off 
+	> Keeps screen always on.
+
+		e.g: !wake on
+	
 ### ★ Whatsapp  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 
-* !whatsapp *countryCode_MobileNumber*
+* !whatsapp *countryCode_MobileNumber* or !whatsapp web 
 	> Opens chat screen for entered mobile number (Click to Chat feature).
 
 		e.g: !whatsapp 911234567890
 
 ### ★ YouTube Search  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 
-* !youtube or !youtube *search*
+* !yt play *query* or !youtube *search* 
 	> Shows search result on YouTube.
 
-		e.g: !youtube Avicii - The Nights
+		e.g: !yt Avicii - The Nights
 
 Note: 
 * All above commands works best on Windows and some commands may not work on other platforms.
@@ -448,6 +510,7 @@ Note:
 1. **Download & Install Python** - Remember: Tick the Add to path checkBox during installation.
    -> https://www.python.org/   (Python Version - [3.9.8](https://www.python.org/downloads/release/python-398/) recommended)
 2. Create a bot and get its **token** by following these instructions: https://youtu.be/-m-Z7Wav-fM
+	- ⚠ **Don't forget to turn on these [three buttons](https://user-images.githubusercontent.com/49812701/149883812-53643ba8-df84-47ee-89e5-cf3177202b7f.png)**
 3. [Download](https://github.com/Arvinth-Krishna/Reco-PC-Server/archive/main.zip) the Reco PC Server Repository, **run setup.bat on Windows** or **setup.sh on Linux** and put your Bot Token in the newly created **.env file**. 
 4. Get **Webhook URL** from your Channel and add it in your Webhook tab in your [Reco](https://play.google.com/store/apps/details?id=com.gak.reco) mobile App. https://www.youtube.com/watch?v=2Fcvg-Bh7Oo&t=1s
 5. Launch **reco.pyw**, right click on the system tray icon and hit Connect to invite Reco Pc Server to your Discord server.
@@ -640,7 +703,7 @@ Click below GIF to see the video.
 
 ## Setting up Task Scheduler for Reco-Startup:  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
 These instruction will help you to setup Reco to startup automatically when we start your PC.
-It looks like lenghty but its so easy to setup, just follow the steps. so chill, do and have fun...
+It looks like lenghty but its **so easy to setup**, just follow the steps. So chill, do and have fun...
 
 [🎬 YouTube - How to set up Reco Startup using Task Scheduler](https://youtu.be/gAic5Gv9FcQ)
 

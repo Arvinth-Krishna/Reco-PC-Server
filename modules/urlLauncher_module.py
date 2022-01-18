@@ -3,11 +3,13 @@
 # Usage: !url website
 # Dependencies: os, time, asyncio, configs
 
-import os, time, asyncio, configs
+import os, asyncio, configs
+from lib.reco_embeds import recoEmbeds as rm
 
 
-async def url(ctx, txt):
-    await ctx.send("Launching the website")
+async def url(ctx):
+    txt = str(ctx.message.content[5:])
+    await rm.msg(ctx,f"**Launching the website**:\n{txt}")
 
     print(txt)
     list=txt.split(" ")

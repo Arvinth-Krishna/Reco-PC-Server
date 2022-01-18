@@ -6,7 +6,7 @@
 # True -> Allows all users. 
 # False -> only allow - allowed users (in allowed_users_Id_list) or in command restricter list (user_commands_restricter_list).
 # ⬇⬇⬇
-allow_all_users=True  
+
 
 
 allowed_users_Id_list=['111595095059988111', ]
