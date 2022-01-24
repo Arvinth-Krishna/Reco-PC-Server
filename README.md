@@ -756,17 +756,17 @@ If you found this project helpful and want to thank me, consider buying me a cup
 
 
 ## Contributors:  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
-* [Big Flubba#3494](https://github.com/BigFlubba)
 * [CedArctic](https://github.com/CedArctic)
-* [cominixo01](https://github.com/cominixo01)
-* [DragosPopse](https://github.com/DragosPopse)
-* [kostino](https://github.com/kostino)
-* [medusalix](https://github.com/medusalix)
-* [sn0wmanmj](https://github.com/sn0wmanmj)
-* [TGlide](https://github.com/TGlide)
-* [vfcoelho](https://github.com/vfcoelho)
-* [vlad4him](https://github.com/vlad4him)
 * [Zachman61](https://github.com/Zachman61)
+* [vfcoelho](https://github.com/vfcoelho)
+* [DragosPopse](https://github.com/DragosPopse)
+* [TGlide](https://github.com/TGlide)
+* [vlad4him](https://github.com/vlad4him)
+* [sn0wmanmj](https://github.com/sn0wmanmj)
+* [cominixo01](https://github.com/cominixo01)
+* [medusalix](https://github.com/medusalix)
+* [kostino](https://github.com/kostino)
+* [Big Flubba](https://github.com/BigFlubba)
 
 
 ## ❤️ Found this project useful?
