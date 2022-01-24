@@ -20,6 +20,8 @@ Reco PC Server is a self hosted bot, which means that you have to run the bot on
 
 Installing Reco PC Server is an easy 3 minute process. [🎬 YouTube - Reco Playlist](https://www.youtube.com/playlist?list=PLwfmXAeVRyvkiFj_kyodNsd2uUa-0yrAG)
 
+If you have any issues with Reco or you just want the lates news on the developement of the bot you can visit our [support server](https://discord.gg/SMJ44xQz7p) for more info.
+
 
 
 
@@ -71,19 +73,20 @@ Installing Reco PC Server is an easy 3 minute process. [🎬 YouTube - Reco Play
 
 
 
-## Requirements:
-* Python 3
+## Requirements:  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
+**Note: You only need to maually install [Python](https://www.python.org/downloads/) to get started. All other dependencies will be automatically downloaded installed after running [setup.bat](https://github.com/Arvinth-Krishna/Reco-PC-Server/blob/main/setup.bat) or [setup.sh](https://github.com/Arvinth-Krishna/Reco-PC-Server/blob/main/setup.sh).**
+
 * discord.py
 * mss
 * opencv-python
-* pynput
-* requests
-* python-dotenv
-* pystray
 * Pillow
 * plyer
-* pytube
 * pycaw
+* pynput
+* Python 3
+* python-dotenv
+* pytube
+* pystray
 * speedtest-cli
 
 
@@ -749,20 +752,21 @@ If you found this project helpful and want to thank me, consider buying me a cup
 ## Credits:  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
 
 * [CedArctic](https://github.com/CedArctic) and all contributors for creating [Chimera](https://github.com/CedArctic/Chimera) which is modified and improved. And now it act as a server(PC controller) for Reco-Discord PC Remote Controller app.
+* A special thanks goes to [Big Flubba#3494](https://github.com/BigFlubba) for assisting in the developement and ideas for Reco along with the creation of the support server.
 
 
 ## Contributors:  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
+* [Big Flubba#3494](https://github.com/BigFlubba)
 * [CedArctic](https://github.com/CedArctic)
-* [Zachman61](https://github.com/Zachman61)
-* [vfcoelho](https://github.com/vfcoelho)
-* [DragosPopse](https://github.com/DragosPopse)
-* [TGlide](https://github.com/TGlide)
-* [vlad4him](https://github.com/vlad4him)
-* [sn0wmanmj](https://github.com/sn0wmanmj)
 * [cominixo01](https://github.com/cominixo01)
-* [medusalix](https://github.com/medusalix)
+* [DragosPopse](https://github.com/DragosPopse)
 * [kostino](https://github.com/kostino)
-* [Big Flubba](https://github.com/TheHunter1234)
+* [medusalix](https://github.com/medusalix)
+* [sn0wmanmj](https://github.com/sn0wmanmj)
+* [TGlide](https://github.com/TGlide)
+* [vfcoelho](https://github.com/vfcoelho)
+* [vlad4him](https://github.com/vlad4him)
+* [Zachman61](https://github.com/Zachman61)
 
 
 ## ❤️ Found this project useful?
