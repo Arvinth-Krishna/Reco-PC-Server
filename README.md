@@ -74,7 +74,7 @@ If you have any issues with Reco or you just want the latest news on the develop
 
 
 ## Requirements:  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
-**Note: You only need to maually install [Python](https://www.python.org/downloads/) to get started. All other dependencies will be automatically downloaded installed after running [setup.bat](https://github.com/Arvinth-Krishna/Reco-PC-Server/blob/main/setup.bat) or [setup.sh](https://github.com/Arvinth-Krishna/Reco-PC-Server/blob/main/setup.sh).**
+**Note:** You only need to manually install [Python](https://www.python.org/downloads/) to get started. All other dependencies will be automatically downloaded & installed after running [setup.bat](https://github.com/Arvinth-Krishna/Reco-PC-Server/blob/main/setup.bat) or [setup.sh](https://github.com/Arvinth-Krishna/Reco-PC-Server/blob/main/setup.sh). (**[#installation_process](https://github.com/Arvinth-Krishna/Reco-PC-Server#installation--)**)
 
 * discord.py
 * mss
