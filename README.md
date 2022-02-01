@@ -28,7 +28,7 @@ Installing Reco PC Server is an easy 3 minute process. [🎬 YouTube - Reco Play
 If you have any issues with Reco or you just want the latest news on the developement of the bot you can visit our [support server](https://discord.gg/SMJ44xQz7p) for more info.
 
 <div align="left">
-<a href="https://www.youtube.com/playlist?list=PLwfmXAeVRyvkiFj_kyodNsd2uUa-0yrAG"></a> <img alt="YouTube Video Views" src="https://img.shields.io/youtube/views/HbqW0zCIZYg?style=social"></a> <a href="https://discord.gg/SMJ44xQz7p"><img alt="Discord" src="https://img.shields.io/discord/866341547042013244?color=%235465DE&label=Discord&logo=discord&logoColor=white"></a> <a href="https://www.buymeacoffee.com/ArvinthKrishna"><img alt="BuyMeACoffee" src="https://badgen.net/badge/icon/buymeacoffee?icon=buymeacoffee&label"></a>
+<a href="https://www.youtube.com/playlist?list=PLwfmXAeVRyvkiFj_kyodNsd2uUa-0yrAG"><img alt="YouTube Video Views" src="https://img.shields.io/youtube/views/HbqW0zCIZYg?style=social"></a> <a href="https://discord.gg/SMJ44xQz7p"><img alt="Discord" src="https://img.shields.io/discord/866341547042013244?color=%235465DE&label=Discord&logo=discord&logoColor=white"></a> <a href="https://www.buymeacoffee.com/ArvinthKrishna"><img alt="BuyMeACoffee" src="https://badgen.net/badge/icon/buymeacoffee?icon=buymeacoffee&label"></a>
 </div>
 
 
