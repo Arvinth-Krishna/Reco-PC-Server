@@ -1,11 +1,16 @@
 <div align="center">
 <h1>Reco PC Server</h1>
-
 <p align="center">
 
 <a  href="https://github.com/Arvinth-Krishna/Reco-PC-Server#installation--" ><img  width="265" height="250" alt="Reco PC Server" title="Reco PC Server" src="https://user-images.githubusercontent.com/49812701/123842966-f9f15d80-d92e-11eb-9db0-087202e92f7b.png"></a>
 
 </p>
+<div align="center">
+<a href="https://github.com/Arvinth-Krishna/Reco-PC-Server/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/Arvinth-Krishna/Reco-PC-Server?color=%23F2BE22"></a> <a href="https://github.com/Arvinth-Krishna/Reco-PC-Server/network"><img alt="GitHub forks" src="https://img.shields.io/github/forks/Arvinth-Krishna/Reco-PC-Server?style=social"></a> <a href="https://github.com/Arvinth-Krishna/Reco-PC-Server/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/Arvinth-Krishna/Reco-PC-Server?style=social"></a> <a href="https://github.com/Arvinth-Krishna/Reco-PC-Server/blob/main/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/Arvinth-Krishna/Reco-PC-Server?color=success"></a>
+</div>
+<img alt="GitHub release (latest SemVer)" src="https://img.shields.io/github/v/release/Arvinth-Krishna/Reco-PC-Server?label=latest%20release"> </a> <img alt="GitHub release (by tag)" src="https://img.shields.io/github/downloads/Arvinth-Krishna/Reco-PC-Server/v7.0/total?color=important"> <img alt="GitHub all releases" src="https://img.shields.io/github/downloads/Arvinth-Krishna/Reco-PC-Server/total?color=important&label=total%20downloads">
+	
+
 
  
 </div>
@@ -22,7 +27,9 @@ Installing Reco PC Server is an easy 3 minute process. [🎬 YouTube - Reco Play
 
 If you have any issues with Reco or you just want the latest news on the developement of the bot you can visit our [support server](https://discord.gg/SMJ44xQz7p) for more info.
 
-
+<div align="left">
+</a> <img alt="YouTube Video Views" src="https://img.shields.io/youtube/views/HbqW0zCIZYg?style=social"> <img alt="Discord" src="https://img.shields.io/discord/866341547042013244?color=%235465DE&label=Discord&logo=discord&logoColor=white"> <a href="https://www.buymeacoffee.com/ArvinthKrishna"><img alt="BuyMeACoffee" src="https://badgen.net/badge/icon/buymeacoffee?icon=buymeacoffee&label"></a>
+</div>
 
 
 ## Quick Jumps
@@ -505,7 +512,8 @@ If you have any issues with Reco or you just want the latest news on the develop
 		e.g: !yt Avicii - The Nights
 
 Note: 
-* All above commands works best on Windows and some commands may not work on other platforms.
+* All above commands works best on [![Windows](https://badgen.net/badge/icon/windows?icon=windows&label)](https://github.com/Arvinth-Krishna/Reco-PC-Server#installation--)
+ and some commands may not work on other platforms.
 * And some commands may require elevated privileges on Linux.
 
 
