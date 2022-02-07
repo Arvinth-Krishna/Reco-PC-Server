@@ -36,9 +36,8 @@ Size              : {current_version_response2_Json["assets"][0]["size"]/1000} K
 Download Count    : {current_version_response2_Json["assets"][0]["download_count"]}
 Uploader          : {current_version_response2_Json["assets"][0]["uploader"]["login"]}```''',
           fieldname2=f"Download {current_version_response2_Json['tag_name']} :",
-          fieldvalue2=f'[link]({current_version_response2_Json["assets"][0]["browser_download_url"]})',
-          fieldname3="Improvements:",
-          fieldvalue3=current_version_response2_Json['body'],) 
+          fieldvalue2=f'[link]({current_version_response2_Json["assets"][0]["browser_download_url"]})',) 
+          await rm.msg(ctx,f"**Improvements**:\n{current_version_response2_Json['body']}")
      else:
            await rm.msg(ctx,'''```fix\n⚠ Under API Rate Limt - Please Try Again Later!\n```''')
      await asyncio.sleep(3)
