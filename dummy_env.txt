@@ -2,27 +2,41 @@
 DISCORD_BOT_TOKEN=
 
 
-# Reco's Command Prefix. 
+#  ❗ Reco's Command Prefix. 
 DISCORD_BOT_PREFIX=!
 
-# Reco Online Notifier:
+# 💬 Reco Online Notifier:
 RECO_ONLINE_NOTIFIER=True
 
-# Notifies if any New Reco release.
+# 💹 Notifies if any New Reco release.
 UPDATE_NOTIFIER=True
 UPDATE_NOTIFIER_INTERVAL=8
 
-# Restricters
+# 🆘 Alert Command
+SHOW_DND_BOT_STATUS=True
+BEEP_MINUMUM_VOLUME=20
+
+# 🌼 Rich Presence (RPC)
+RPC_BOOL=True
+SHOW_PC_STATUS_IN_CPU_USAGE=True
+
+# 🟢 Bot Status
+DYNAMIC_BOT_STATUS=True
+SHOW_IDLE_STATUS_IN_MINS=1
+
+# ❌ Restricters
 ALLOW_ALL_USERS=True
 ALLOW_ALL_WEBHOOKS=True
 
 
-# You can change the Reco Embeds Default colour Here: (FYI | #8f047c =>  0x8f047c | just replace # with 0x)
+# 🎨 You can change the Reco Embeds Default colour Here: (FYI | #8f047c =>  0x8f047c | just replace # with 0x)
 DEFAULT_EMBEDS_COLOR=0x8f047c
 SECONDARY_EMBEDS_COLOR=0xF19306 
 
-# File Upload limit. (Normal - 8mb | Nitro Classic - 50mb | Nitro - 100mb | level 2 - 50mb | level 3 - 100mb)
+# 📂 File Upload limit. (Normal - 8mb | Nitro Classic - 50mb | Nitro - 100mb | level 2 - 50mb | level 3 - 100mb)
 FILE_UPLOAD_SIZE=8.3
+
+# ---------------------------------------------
 
 # Don't edit anything given below.
 DISCORD_LOGS_ENABLED=True
@@ -35,7 +49,7 @@ PYTHON_ALIAS=python
 
 # ---------------------------------------------
 
-# Printer DEFAULT Configs:
+# 📠 Printer DEFAULT Configs:
 
 # !printer showprinters  
 CURRENT_PRINTER_NUMBER=
@@ -49,3 +63,4 @@ COLOR_MODE=c
 ORIENTATION=p                 
 
 # ---------------------------------------------
+
