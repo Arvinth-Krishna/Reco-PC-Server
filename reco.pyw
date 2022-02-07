@@ -5,10 +5,7 @@
 # --------------- #
 
 # Basic bot dependencies
-from pydoc import cli
 import discord
-from discord import channel
-from discord.client import Client
 from discord.ext.commands import Bot
 import platform
 import os
@@ -20,9 +17,10 @@ from threading import Thread
 import configs
 
 # Import helpers
-from lib.helpers import Logger
+from lib.helpers import Logger, boolConverter
 from lib.helpers import recoCount
 from lib.reco_startup import startup_Initializer
+from modules import alertInteraction_module, rpc_module
 
 # Imports for system tray icon
 from pystray import Icon, Menu, MenuItem
@@ -40,9 +38,9 @@ intents = discord.Intents.default()
 intents.members = True
 client = Bot(description="A remote system administration bot for discord", command_prefix=configs.BOT_PREFIX,intents=intents)
 
+@Logger(client)
 @client.event
 async def on_ready():
-    
     print('--------')
     print('Reco PC Server Administration Bot by GAK')
     print('--------')
@@ -60,7 +58,8 @@ async def on_ready():
     print('Reco PC Server - Version N0: {0}'.format(configs.RECO_VERSION_NO))
     print('--------')
     await startup_Initializer(client)
-    return await client.change_presence(activity=discord.Game(name='with your PC'))
+    
+    
 
 
 
@@ -86,6 +85,15 @@ async def on_message(message):
 @Logger(client)
 async def abort(ctx):
     await abort_module.abort(ctx,client)
+
+
+# Module: alert
+# Description: Alerts user interaction.
+# Usage: !alert on or !alert off or !alert onwithbeep
+@client.command()
+@Logger(client)
+async def alert(ctx, option=None):
+   await alertInteraction_module.alert(ctx,option)
 
 
 # Module: appQuitter
@@ -141,6 +149,12 @@ async def cmd(ctx,*txt):
 @Logger(client)
 async def clip(ctx):
     await clipboardGetCopy_module.clip(ctx)
+
+
+@client.command()
+@Logger(client)
+async def commands(ctx):
+    await reco_module.reco(ctx,("commands"),client=client,discordVersion=discord.__version__)
 
 
 # Module: echo
@@ -278,6 +292,15 @@ async def restart(ctx, minutes=0):
     await restart_module.restart(ctx,client, minutes)
 
 
+# Module: rich presence
+# Description: Starts the Rich Presence
+# Usage: !rpc or !rpc start or !rpc stop
+@client.command()
+@Logger(client)
+async def rpc(ctx,option=None):
+    await rpc_module.rpc(ctx,client,option)
+
+
 # Module: say
 # Description: Uses powershell and a TTS engine to make your computer say something
 # Usage: !say "Something to say"
@@ -286,6 +309,15 @@ async def restart(ctx, minutes=0):
 async def say(ctx, *txt):
     text=" ".join(txt)
     await say_module.say(ctx, text)
+
+
+# # Module: screenPower
+# # Description: Control screen to turn on or off
+# # Usage: !screen on or !screen off
+# @client.command()
+# @Logger(client)
+# async def screen(ctx, option=None):
+#     await screenPower_module.screen(ctx, option)
 
 
 # Module: screenshot
@@ -411,12 +443,29 @@ async def yt(ctx):
 # System Tray menu functions
 
 # Starts the bot client
+def startclient():
+    while True:
+        try:
+            l=client.start(configs.BOT_TOKEN,reconnect=True)
+            return l
+        except:
+            print("Trouble in Bot client start")
+            continue
+        
 
 def iconRun():
-    loop = asyncio.get_event_loop()
-    loop.create_task(client.start(configs.BOT_TOKEN))
+    try:
+        loop = asyncio.get_event_loop()
+    except RuntimeError as ex:
+        if "There is no current event loop in thread" in str(ex):
+            loop = asyncio.new_event_loop()
+            asyncio.set_event_loop(loop)
+            loop = asyncio.get_event_loop()
+    
+    loop.create_task(startclient())
     t1=Thread(target=loop.run_forever)
     t1.start()
+    
     
 
 
@@ -471,11 +520,11 @@ def instructions(): webbrowser.open('https://github.com/Arvinth-Krishna/Reco-PC-
 def iconSetup():
     iconImage = Image.open("Reco_logo.png")
     iconMenu = Menu(
-        MenuItem("Connect", action=connectInfo, default=True),
+        MenuItem("Connect", action=connectInfo),
         MenuItem("Instructions", action=instructions),
         MenuItem("Show Logs", action=showLogs),
         MenuItem("Show Shortcuts", action=showShortcuts),
-        MenuItem("Show Downloads", action=showdownloads),
+        MenuItem("Show Downloads", action=showdownloads, default=True),
         MenuItem("User Restricter", action=open_User_restricter),
         MenuItem("Webhook Restricter", action=open_Webhook_restricter),
         MenuItem("Hide Icon", action=applicationHide),

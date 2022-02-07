@@ -67,8 +67,12 @@ class FileSystemControl:
         return new_path
     
     @memory
-    async def list_directory(self,memory=None):
-        dir_path = self._current_path
+    async def list_directory(self,ctx,file_path=None,memory=None):
+        if file_path!=None:
+            dir_path=await FileSystemControl.set_path(self,ctx,file_path,relative=True)
+        else:
+            dir_path =  self._current_path 
+        
         
         if not dir_path.is_dir():
             dir_path = Path(*dir_path.parts[:-1])

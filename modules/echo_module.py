@@ -3,11 +3,15 @@
 # Usage: !echo off or !echo on
 # Dependencies: None
 
+import datetime
 import configs
 from lib.reco_embeds import recoEmbeds as rm
 
 
+
 async def echo(ctx, status):
+    print(datetime.datetime.now()-configs.begin_time)
+
     p=configs.BOT_PREFIX
     if status == "on":
         configs.initial_display_output = True

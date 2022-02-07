@@ -9,6 +9,9 @@ from user_restricter import *
 from webhook_restricter import *
 from lib.reco_command_counter import addcount
 from lib.helpers import boolConverter
+from modules import restricter_module as rp
+from lib.reco_embeds import recoEmbeds as rm
+
 
 allow_all_users=boolConverter(configs.ALLOW_ALL_USERS)
 allow_all_webhooks=boolConverter(configs.ALLOW_ALL_WEBHOOKS)
@@ -24,7 +27,7 @@ other_media_commands=['cv','say-vol']
 
 
 
-
+rpc_alert_count=0
 
 async def restricter(message,client):
     messageContentList=[]
@@ -52,6 +55,16 @@ async def restricter(message,client):
 
     if(messageContentList[0][1:] in client.all_commands):
         print(f"\nCommand Received!--> {varMsgcontent}\n")
+    else:
+        return
+    
+    if boolConverter(configs.RPC_BOOL )and not configs.desktop_discord_client:
+        
+        rp.rpc_alert_count=rp.rpc_alert_count+1
+        if rpc_alert_count in (2,6,11) or (messageContentList[0][1:]=="rpc" and not configs.desktop_discord_client):
+            await rm.msg(ctx,"FYI,\n**Your RPC is not running!**\n\nTo run please Open/Install **Discord Desktop Client(App)**.\n\n **[Discord.com](https://discord.com)**",color=rm.color('colorforWaitingMsg'))
+
+        
 
 
     if( (message.author.bot and message.webhook_id!=None) and f"{configs.BOT_PREFIX}" in messageContentList[0] and messageContentList[0][1:] in client.all_commands ):

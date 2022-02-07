@@ -31,7 +31,8 @@ class recoEmbeds:
     async def recoOnline(ctx,txt,authorName,authorURL,authorIcon,color=colorforCommonMsg):
         embed=discord.Embed(  description= txt ,color=color)
         embed.set_author(name=authorName, url=authorURL, icon_url=authorIcon)
-        embed.add_field(name=recoEmbeds.nullFieldName,value=recoEmbeds.banner,inline=False)
+        embed.add_field(name=recoEmbeds.nullFieldName,value=recoEmbeds.banner+"\n ",inline=False)
+
         msg=await ctx.send(embed=embed)
     
     async def msg(ctx,txt,color=colorforCommonMsg):
@@ -58,8 +59,8 @@ class recoEmbeds:
         embed.set_author(name=authorName, url=authorURL, icon_url=authorIcon)
         if fieldname12!=None:
            embed.add_field(name=fieldname12,value=fieldvalue12,inline=False)
-        embed.add_field(name=fieldname2,value=fieldvalue2,inline=True)
         embed.add_field(name=fieldname1,value=fieldvalue1,inline=True)
+        embed.add_field(name=fieldname2,value=fieldvalue2,inline=False)
         embed.add_field(name="\u200B",value="> **[Check Out! Reco Mobile App  🤩](https://bit.ly/RecoApp)**\n\u200B",inline=False)
         if fieldname10!=None:
            embed.add_field(name=fieldname10,value=fieldvalue10,inline=True)

@@ -3,7 +3,8 @@
 # Usage: !batterylevel
 # Dependencies: os, asyncio,time
 
-import os, asyncio, configs,time,psutil,socket
+import os, asyncio, configs,time,psutil
+from socket import gethostname
 
 from lib.reco_embeds import recoEmbeds as rm
 from modules.notification_module import notification
@@ -20,10 +21,9 @@ async def batterylevel(ctx,client,option=None):
         if configs.operating_sys == "Windows":
               if option in(None,'show'):
                     battery = psutil.sensors_battery()
-                    deviceName = socket.gethostname()
                     editEmbed=await rm.msg(ctx,txt="**Getting Battery Level!**",color=rm.color("colorforWaitingMsg"))
                     if battery!=None:
-                         batteryInfoTxt=f"💻 **{deviceName.capitalize()}**\n\n{'⚡' if battery.power_plugged else '🔋' } **{battery.percent}%** | Battery left: **{convertTime(battery.secsleft)}**"
+                         batteryInfoTxt=f"💻 **{gethostname().capitalize()}**\n\n{'⚡' if battery.power_plugged else '🔋' } **{battery.percent}%** | Battery left: **{convertTime(battery.secsleft)}**"
                     else:
                          batteryInfoTxt="Opps!, No battery connected to your system."
 

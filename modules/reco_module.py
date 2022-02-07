@@ -4,12 +4,9 @@
 # Dependencies: os
 
 
+from distutils.command.config import config
 import os
 from platform import python_version
-from sys import prefix
-import discord
-
-from requests.api import options
 import win32print
 import configs
 from lib import helpers
@@ -20,6 +17,7 @@ from lib.reco_command_counter import getCommandCount, getUpdateRemainderCount
 from lib import printHelper
 from modules import recoPrint_module,recoRestart_module
 from lib.reco_startup import onlineNotifierChannelCount
+from lib.updatePresence_helper import  reco_rpc
 
 
 
@@ -106,7 +104,7 @@ License     : {recoGitData2["license"]["name"]}```'''
     currentPrintertxt=f'''```{win32print.GetDefaultPrinterW() if printHelper.current_Printer== None else all_printers[printHelper.current_Printer]}```'''
     
     if configs.WAKE_BOOL:
-        wakeNotifier='''```fix\n!wake is Enabled.\n```'''
+        wakeNotifier=f'''```fix\n⚠ {prefix}wake is Enabled.\n```'''
     print(f"wake bool:{configs.WAKE_BOOL}")
 
     
@@ -147,15 +145,37 @@ Blocked Webhooks        : {rc.get_reco_block_webhook_count()}```''',
 fieldname2="Configs:",
 fieldvalue2= f'''```Reco Bot Prefix        : {configs.BOT_PREFIX}
 Operating System       : {configs.operating_sys}
+
+# Reco Online Notifier
 Online Notifier        : {configs.RECO_ONLINE_NOTIFIER}
+
+# Update Notifier
 Update Notifier        : {configs.UPDATE_NOTIFIER}
 Notifier Interval      : {configs.UPDATE_NOTIFIER_INTERVAL}
+
+# Alert Command
+Alert Enabled          : {configs.is_alert_bool}
+Show DND Status        : {configs.SHOW_DND_BOT_STATUS}
+Beep Minimum Volume    : {configs.BEEP_MINUMUM_VOLUME}%
+
+# Rich Presence
+RPC Enabled            : {configs.RPC_BOOL}
+Custom RPC Enabled     : {configs.ENABLE_CUSTOM_RICH_PRESENCE}
+Show PC Status         : {configs.SHOW_PC_STATUS_IN_CPU_USAGE}
+
+# Bot Status
+Dynamic Status         : {configs.DYNAMIC_BOT_STATUS}
+Idle Time              : {configs.SHOW_IDLE_STATUS_IN_MINS} mins
+
+# Restricters
+Allow All Users        : {configs.ALLOW_ALL_USERS}
+Allow All Webhooks     : {configs.ALLOW_ALL_WEBHOOKS}
+
+# Others
 Discord Logs Enabled   : {configs.discord_logs_enabled}
 Disk Logs Enabled      : {configs.DISK_LOGS_ENABLED}
 Initial Display Output : {configs.initial_display_output}
-Python Alias           : {configs.PYTHON_ALIAS}
-Allow All Users        : {configs.ALLOW_ALL_USERS}
-Allow All Webhooks     : {configs.ALLOW_ALL_WEBHOOKS}```''',
+Python Alias           : {configs.PYTHON_ALIAS}```''',
 fieldname3=None if option=="showall" else "Connected Servers:",
 fieldvalue3=f"```{serverListTxt}```",
 
@@ -303,7 +323,7 @@ Use this command to confirm the restart:
                 await rm.recoEmbeds.msg(ctx,"Opps!, you can't use this command before calling:\n\n**!reco restart**",color=rm.colorforError)
             
 
-
+        
 
 
 
