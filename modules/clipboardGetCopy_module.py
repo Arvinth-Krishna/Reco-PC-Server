@@ -17,7 +17,7 @@ async def clip(ctx):
     
     if configs.operating_sys == "Windows":
         getDataBool=False
-        if txt=="!clip get":
+        if txt==f"{p}clip get":
             msg=await rm.msg(ctx,"**Getting data from Clipboard...**",color=rm.color("colorforWaitingMsg"))
             getdata=pyperclip.paste()
             time.sleep(0.5)
@@ -53,8 +53,8 @@ async def clip(ctx):
             await rm.msg(ctx,f'''**Copying to Clipboard:**\n\n{msgCopydata if filedata=="" else f'Message.txt{ " file" if attachLength==1 else f"({attachLength}) files"} data + msg.contents copied!'}''')
             pyperclip.copy(msgCopydata)
 
-        elif txt in ("!clip", '!clip '):
-            await rm.msg(ctx,f"**Help - {p}clip**\n\n**Commands:**\n```{p}clip <text>\n{p}clip get```")
+        elif txt in (f"{p}clip", f'{p}clip '):
+            await rm.msg(ctx,f"**Help - {p}clip**\n\n**Commands:**\n```{p}clip <text> -> Copy the text to your System Clipboard\n{p}clip get -> Paste the data from system clipboard to chat```")
     else:
         await ctx.send("Clipboard feature is not available for your platform.")
         await asyncio.sleep(3)

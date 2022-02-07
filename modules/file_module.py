@@ -5,8 +5,6 @@
 
 import os,asyncio
 from pathlib import Path
-
-from discord.message import Attachment
 import configs, requests, discord
 from lib.helpers import savefoldercheck
 from lib.reco_embeds import recoEmbeds as rm
@@ -40,11 +38,6 @@ async def path_getter(ctx,path):
 async def file(ctx, command, *args):
     
     editMsgBool=False    
-    if command=='list':
-        if len(args)>0:
-            filterName=ctx.message.content[11:]
-        else:
-            filterName=None
     p=configs.BOT_PREFIX
     filesystem_control = FileSystemControl(configs.initial_path)
     await filesystem_control.load_path_from_memory()
@@ -132,9 +125,12 @@ async def file(ctx, command, *args):
             lenght=len(ctx.message.attachments)
             print(ctx.message.attachments," ",len(ctx.message.attachments))
             finalFilepath="\n\n"
-            msg=await rm.msg(ctx,f'**Storing {"files" if lenght>1 else "file"} in your system.**',color=rm.color('colorforWaitingMsg'))
+            FileName_has_underscore=False
+            msg=await rm.msg(ctx,f'**Uploading {"files" if lenght>1 else "file"} to your system.**',color=rm.color('colorforWaitingMsg'))
             for i in range(len(ctx.message.attachments)):
                 filename = ctx.message.attachments[i].filename
+                if filename.__contains__("_"):
+                    FileName_has_underscore=True
                 url = ctx.message.attachments[i].url
     
                 r = requests.get(url, allow_redirects=True)
@@ -144,6 +140,9 @@ async def file(ctx, command, *args):
                 file_path = await filesystem_control.save_file(file, filename, path)
     
                 finalFilepath=finalFilepath+f"**{filename}**: {file_path}\n▸ [share link]({url})\n\n"
+            if FileName_has_underscore:
+                finalFilepath=finalFilepath+"\n\n"+f"⚠ **Share link{'s**' if lenght>1 else '**'} may not work in **Discord Mobile App** if **FileName** has **underscore**(**_**) or **Space** used."
+                
             await msg.delete()
 
             return '**Files Saved on** {}'.format(finalFilepath)
@@ -162,9 +161,12 @@ async def file(ctx, command, *args):
             lenght=len(ctx.message.attachments)
             print(ctx.message.attachments," ",len(ctx.message.attachments))
             finalFilepath="\n\n"
-            msg=await rm.msg(ctx,f'**Storing {"files" if lenght>1 else "file"} in your system.**',color=rm.color('colorforWaitingMsg'))
+            msg=await rm.msg(ctx,f'**Uploading {"files" if lenght>1 else "file"} to your system.**',color=rm.color('colorforWaitingMsg'))
+            FileName_has_underscore=False
             for i in range(len(ctx.message.attachments)):
                 filename = ctx.message.attachments[i].filename
+                if filename.__contains__("_"):
+                    FileName_has_underscore=True
                 url = ctx.message.attachments[i].url
     
                 r = requests.get(url, allow_redirects=True)
@@ -174,6 +176,9 @@ async def file(ctx, command, *args):
                 file_path = await filesystem_control.relative_save_file(file, filename, path)
     
                 finalFilepath=finalFilepath+f"**{filename}**: {file_path}\n▸ [share link]({url})\n\n"
+            if FileName_has_underscore:
+                finalFilepath=finalFilepath+"\n\n"+f"⚠ **Share link{'s**' if lenght>1 else '**'} may not work in **Discord Mobile App** if **FileName** has **underscore**(**_**) or **Space** used."
+     
             await msg.delete()
 
             return '**Files Saved on** {}'.format(finalFilepath)
@@ -182,31 +187,57 @@ async def file(ctx, command, *args):
 
 
     async def list_directory(*ignore):
-        fileListPaths.clear()
-        output = await filesystem_control.list_directory()
+        print("Ignores: ",ignore)
+        if command=='list':
+            if len(args)>0:
+                filterName=ctx.message.content[11:]
+            else:
+                filterName=None
+        
+        path=None
+        if len(ignore)>=1:
+            filterName=ctx.message.content[11:]
+            if ignore[0].isnumeric():
+                path=await path_getter(ctx,[i for i in ignore])
+                if len(ignore)>1:
+                   filterName=filterName.split(" ",1)[1]
+                else:
+                    filterName=None            
+                print("filtername :  ",filterName)
+            elif ignore[0]=="..":
+                path=".."
+            if path==False:return None
+        print("filtername :  ",filterName)
+
+
+
+        
+        output = await filesystem_control.list_directory(ctx,file_path=path)
         dir_list=output[0]
         path=output[1]
         filtered_dir_list=[]
         addInfo=""
+        print(dir_list,path)
         
-        if filterName!=None:
+        if filterName!=None and filterName!="..":
             for i in dir_list:
                 f=i.name.lower()
                 if f.__contains__(filterName.lower()):
                     filtered_dir_list.append(i)
-        if filtered_dir_list!=[] and filterName!=None :
+        if filtered_dir_list!=[] and (filterName!=None and filterName!="..") :
             dir_list=filtered_dir_list
             addInfo=f"**Searched Keyword:** {filterName}\n\n"
-        elif filterName!=None:
-            dir_list="**No files found!**"
+        elif filterName!=None and filterName!="..":
+            dir_list=f"**Searched Keyword:** {filterName}\n\n**No files found!**"
         
         
-        if filterName==None or (len(args)>0 and filtered_dir_list!=[]):
+        if (filterName==None or filterName=="..") or (len(args)>0 and filtered_dir_list!=[]):
+            fileListPaths.clear()
             result = f"**Path:** {path}\n\n**Files Count:** {len(dir_list)}\n\n{addInfo}**Directory items:**\n\n"
             for n,item in enumerate(dir_list):
                filename=item.name.replace("_","\_")
                result += f"{n} ⪧ {filename}\n"
-
+            
             fileListPaths.extend(dir_list)
             await rm.extendableMsg(ctx,result)
             

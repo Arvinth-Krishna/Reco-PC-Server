@@ -39,11 +39,18 @@ Using launch command you can easily open any application or file which are avail
             return
         shortcutFolderPath=configs.RECO_PATH+"/shortcuts/*"
         files = glob(shortcutFolderPath)
+
+        print(len(files))
+        print(files)
         time.sleep(1)
         if len(files)!=0:
            folderExtensions=set([f".{e.split('.')[-1]}" for e in files])
            folderFileNames=[f"{f.split(chr(92))[-1]}" for f in files]
-        print(folderExtensions)
+           print(folderExtensions)
+        else:
+            await msg.delete()
+            await rm.msg(ctx,f"**Shortcut Folder is Empty!**\n\n**Path**: {shortcutFolderPath}",rm.color('colorforError'))
+            return
 
         if shortcut=="list":
             await msg.delete()
@@ -83,7 +90,7 @@ Using launch command you can easily open any application or file which are avail
                                 break
                    
             if not fileOpened:
-                await rm.editMsg(ctx,msg,"No such file in your shortcuts folder.",color=rm.color('colorforError'))
+                await rm.editMsg(ctx,msg,"**No such file in your shortcuts folder.**",color=rm.color('colorforError'))
        
             
     else:

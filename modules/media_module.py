@@ -18,8 +18,18 @@ interface = devices.Activate(IAudioEndpointVolume._iid_, CLSCTX_ALL, None)
 volume = cast(interface, POINTER(IAudioEndpointVolume))
 
 
+async def notify_alert_media_command_bool(bool):
+    if configs.is_alert_bool:
+        if not bool:
+           await asyncio.sleep(4)
+        configs.notify_alert_media_command=bool
+    else:
+        return
+    
+
 
 async def media(ctx, command, times=0,*time):
+    await notify_alert_media_command_bool(True)
     p=configs.BOT_PREFIX
     if command==None:
         await rm.msg(ctx,f'''**Help - {p}media**\n
@@ -58,6 +68,7 @@ async def media(ctx, command, times=0,*time):
 {p}media key-right
 {p}media key-close
 {p}media key-quit```''')
+        await notify_alert_media_command_bool(False)
         return
     p=configs.BOT_PREFIX
     timer=0
@@ -91,6 +102,7 @@ async def media(ctx, command, times=0,*time):
     }
 
     if command not in switcher and command not in('say-cv','cv'):
+        await notify_alert_media_command_bool(False)
         return 
     media_commands=['pause','play','stop','loop','vol-mute']
     bool_media_command=False
@@ -111,7 +123,9 @@ async def media(ctx, command, times=0,*time):
             timer=int(time[0])*60
         if timer !=0:
             await rm.msg(ctx,'Command: **{0} {1}** will be executed within **{2}** minutes'.format(command.capitalize(),times,time[0]))
+            await notify_alert_media_command_bool(False)
             await asyncio.sleep(timer)
+            await notify_alert_media_command_bool(True)
         else:
             if command in('vol-up','vol-down'):
               inform_msg=await rm.msg(ctx,f'**{"Increasing" if command=="vol-up" else "Decreasing"} your Volume{f"** (**{times}**)**.**" if times!=1 else ".**"}',color=rm.color("colorforWaitingMsg"))
@@ -119,13 +133,18 @@ async def media(ctx, command, times=0,*time):
               inform_msg=await rm.msg(ctx,f'Executing **{command}{f"** (**{times}**)**.**" if times!=1 else ".**"}',color=rm.color("colorforWaitingMsg"))
 
         for i in range(0, times):
-             switcher[command]()
-             await asyncio.sleep(0.5)
+            switcher[command]()
+            await asyncio.sleep(0.5)
+        currentVolume=(round(volume.GetMasterVolumeLevelScalar()*100))
+        await notify_alert_media_command_bool(False)
+        
     elif bool_media_command==None:
         if command=="say-cv":
             await say_module.say(ctx,txt=f"Current volume level is **{(round(volume.GetMasterVolumeLevelScalar()*100))}%**")
+            await notify_alert_media_command_bool(False)
         elif command=="cv":
             await rm.msg(ctx,f"Current volume level is **{(round(volume.GetMasterVolumeLevelScalar()*100))}%**.")
+            await notify_alert_media_command_bool(False)
 
 
 
@@ -133,21 +152,24 @@ async def media(ctx, command, times=0,*time):
         timer=times*60
         if timer !=0:
              await rm.msg(ctx,'Command: **{0}** will be executed within **{1}** minutes'.format(command.capitalize(),times))
-        await asyncio.sleep(timer)
-        
+             await notify_alert_media_command_bool(False)
+             await asyncio.sleep(timer)
+             await notify_alert_media_command_bool(True)
         switcher[command]()
+        
         
         
     if command in ('vol-up','vol-down') or not bool_media_command and command not in('say-cv','cv'):
        if len(time)==0 :
            await inform_msg.delete()
        msg=await rm.msg(ctx,f"{f'(**Time is up! - {minutesinmin} mins**)' if len(time)!=0 else ''}\n\n**{p}{command}**{f' (**{times}**)' if times!=1 else ''} - Media Command Executed!!")
-
+       
     elif command not in('say-cv','cv'):
         await rm.msg(ctx,f"{f'(**Time is up! - {minutesinmin} mins**)' if (minutesinmin!=0) else ''}\n\n**{p}{command}** - Media Command Executed!")
-
+        await notify_alert_media_command_bool(False)
     await asyncio.sleep(0.8)
     if command in ('vol-up','vol-down'):
-        await rm.editMsg(ctx,msg,f"{f'(**Time is up! - {minutesinmin} mins**)' if len(time)!=0 else ''}\n\n**{command}**{f' (**{times}**)' if times!=1 else ''} - **Media Adjusted!**\n\nCurrent volume level is **{(round(volume.GetMasterVolumeLevelScalar()*100))}%**.")
+        await rm.editMsg(ctx,msg,f"{f'(**Time is up! - {minutesinmin} mins**)' if len(time)!=0 else ''}\n\n**{command}**{f' (**{times}**)' if times!=1 else ''} - **Media Adjusted!**\n\nCurrent volume level is **{currentVolume}%**.")
+        await notify_alert_media_command_bool(False)
 
 

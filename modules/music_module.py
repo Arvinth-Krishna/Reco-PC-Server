@@ -46,10 +46,15 @@ async def music(ctx,client, txt):
             urlMaker=urlMaker+" https://www.youtube.com/watch?v="+id
             link=" https://www.youtube.com/watch?v="+id
             yt = pytube.YouTube(link)
-            stream = yt.streams.filter(only_audio=True).first()
+            try:
+                stream = yt.streams.filter(only_audio=True).first()
+                audiomp4=stream.download(r'./downloads/youtube_music')
+            except Exception as e:
+                print(f"{type(e).__name__} at line {e.__traceback__.tb_lineno} of {__file__}: {e}")
+                e=f"Error: at line {e.__traceback__.tb_lineno} of\n{__file__}\n**{e}**"
+                await rm.msg(ctx,e,color=0xF70000)
+                return
 
-
-            audiomp4=stream.download(r'./downloads/youtube_music')
             base, ext=os.path.splitext(audiomp4)
             new_file=base+'.mp3'
             os.rename(audiomp4,new_file)        
@@ -72,11 +77,16 @@ async def music(ctx,client, txt):
 
 
         yt = pytube.YouTube(link)
-        stream = yt.streams.filter(only_audio=True).first()
-        await rm.msg(ctx,"**Downloading your music** <{0}>".format(link))
+        try:
+            stream = yt.streams.filter(only_audio=True).first()
+            await rm.msg(ctx,"**Downloading your music** <{0}>".format(link))
+            audiomp4=stream.download(r'./downloads/youtube_music')
+        except Exception as e:
+            print(f"{type(e).__name__} at line {e.__traceback__.tb_lineno} of {__file__}: {e}")
+            e=f"Error: at line {e.__traceback__.tb_lineno} of\n{__file__}\n**{e}**"
+            await rm.msg(ctx,e,color=0xF70000)
+            return
 
-
-        audiomp4=stream.download(r'./downloads/youtube_music')
         base, ext=os.path.splitext(audiomp4)
         new_file=base+'.mp3'
         os.rename(audiomp4,new_file)
@@ -102,9 +112,14 @@ async def music(ctx,client, txt):
         
 
         yt = pytube.YouTube(link)
-        stream = yt.streams.filter(only_audio=True).first()
-
-        audiomp4=stream.download(r'./downloads/youtube_music')
+        try:
+            stream = yt.streams.filter(only_audio=True).first()
+            audiomp4=stream.download(r'./downloads/youtube_music')
+        except Exception as e:
+            print(f"{type(e).__name__} at line {e.__traceback__.tb_lineno} of {__file__}: {e}")
+            e=f"Error: at line {e.__traceback__.tb_lineno} of\n{__file__}\n**{e}**"
+            await rm.msg(ctx,e,color=0xF70000)
+            return
         base, ext=os.path.splitext(audiomp4)
         new_file=base+'.mp3'
         os.rename(audiomp4,new_file)
@@ -143,14 +158,21 @@ async def music(ctx,client, txt):
             urlMaker=urlMaker+" https://www.youtube.com/watch?v="+id
             link=" https://www.youtube.com/watch?v="+id
             yt = pytube.YouTube(link)
-            stream = yt.streams.filter(res="720p").first()
-            if stream==None:
-                stream = yt.streams.filter(res="480p").first()
-            if stream==None:
-                stream = yt.streams.filter(res="360p").first()
-            if stream==None:
-                stream = yt.streams.filter(res="240p").first()
-            stream.download(r'./downloads/youtube_videos')
+            try:
+                stream = yt.streams.filter(res="720p").first()
+                if stream==None:
+                    stream = yt.streams.filter(res="480p").first()
+                if stream==None:
+                    stream = yt.streams.filter(res="360p").first()
+                if stream==None:
+                    stream = yt.streams.filter(res="240p").first()
+                stream.download(r'./downloads/youtube_videos')
+            except Exception as e:
+                print(f"{type(e).__name__} at line {e.__traceback__.tb_lineno} of {__file__}: {e}")
+                e=f"Error: at line {e.__traceback__.tb_lineno} of\n{__file__}\n**{e}**"
+                await rm.msg(ctx,e,color=0xF70000)
+                return
+    
             await rm.msg(ctx,"Downloaded Video: **{0}**.\nTrack No: **{1}**".format(yt.title,count))
 
         
@@ -171,16 +193,21 @@ async def music(ctx,client, txt):
         await notification_module.notification(ctx,client,txt="Fetching the video from the URL and file will be downloaded soon.\n⚠⚠ Till then Reco can\'t be used.",noti=False)
 
         yt = pytube.YouTube(link)
-        stream = yt.streams.filter(res="720p").first()
-        await ctx.send("**Downloading your video** <{0}>".format(link))
-        if stream==None:
-            stream = yt.streams.filter(res="480p").first()
-        if stream==None:
-            stream = yt.streams.filter(res="360p").first()
-        if stream==None:
-            stream = yt.streams.filter(res="240p").first()
 
-        stream.download(r'./downloads/youtube_videos')
+        try:
+            stream = yt.streams.filter(res="720p").first()
+            if stream==None:
+                stream = yt.streams.filter(res="480p").first()
+            if stream==None:
+                stream = yt.streams.filter(res="360p").first()
+            if stream==None:
+                stream = yt.streams.filter(res="240p").first()
+            stream.download(r'./downloads/youtube_videos')
+        except Exception as e:
+            print(f"{type(e).__name__} at line {e.__traceback__.tb_lineno} of {__file__}: {e}")
+            e=f"Error: at line {e.__traceback__.tb_lineno} of\n{__file__}\n**{e}**"
+            await rm.msg(ctx,e,color=0xF70000)
+            return
 
     elif (splitTxt[0]=="dv" or splitTxt[0]=="DV" or splitTxt[0]=="Dv"):
         await rm.msg(ctx,"**Searching your video by the keyword given and your video file will be downloaded soon.\n\n⚠⚠ Till then Reco can\'t be used.**")
@@ -203,14 +230,20 @@ async def music(ctx,client, txt):
         
 
         yt = pytube.YouTube(link)
-        stream = yt.streams.filter(res="720p").first()
-        if stream==None:
-            stream = yt.streams.filter(res="480p").first()
-        if stream==None:
-            stream = yt.streams.filter(res="360p").first()
-        if stream==None:
-            stream = yt.streams.filter(res="240p").first()
-        stream.download(r'./downloads/youtube_videos')
+        try:
+            stream = yt.streams.filter(res="720p").first()
+            if stream==None:
+                stream = yt.streams.filter(res="480p").first()
+            if stream==None:
+                stream = yt.streams.filter(res="360p").first()
+            if stream==None:
+                stream = yt.streams.filter(res="240p").first()
+            stream.download(r'./downloads/youtube_videos')
+        except Exception as e:
+            print(f"{type(e).__name__} at line {e.__traceback__.tb_lineno} of {__file__}: {e}")
+            e=f"Error: at line {e.__traceback__.tb_lineno} of\n{__file__}\n**{e}**"
+            await rm.msg(ctx,e,color=0xF70000)
+            return
 
         videoResult="https://www.youtube.com/channel/UC-9-kyTW8ZkZNDHQJ6FgpwQ"
 

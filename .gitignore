@@ -2,7 +2,8 @@
 __pycache__/
 lib/__pycache__/
 logs
-dowloads
+dowloads/
+dowloads/saved_files
 printer
 modules/__pycache__/
 video.avi
@@ -11,3 +12,5 @@ gitreco.txt
 photo.jpg
 shortcuts
 Downloader_info.txt
+battery_report.html
+screenshot.png
