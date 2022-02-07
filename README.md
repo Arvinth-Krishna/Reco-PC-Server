@@ -87,6 +87,7 @@ If you have any issues with Reco or you just want the latest news on the develop
 * mss
 * opencv-python
 * Pillow
+* playsound
 * plyer
 * pycaw
 * pynput
@@ -100,13 +101,15 @@ If you have any issues with Reco or you just want the latest news on the develop
 
 
 ## Features List:  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
-* **[Abort](https://github.com/Arvinth-Krishna/Reco-PC-Server#-abort--)**
-* **[App Quitter](https://github.com/Arvinth-Krishna/Reco-PC-Server#-appquitter--)**
+* **[Abort](https://bit.ly/recoabort)**
+* **[Alert](https://bit.ly/recoalert)**
+* **[App Quitter](https://bit.ly/recoappquitter)**
 * **[Battery Level](https://github.com/Arvinth-Krishna/Reco-PC-Server#-battery-level--)**
 * **[Battery Report Generator](https://github.com/Arvinth-Krishna/Reco-PC-Server#-battery-report-generator--)**
 * **[Camera](https://github.com/Arvinth-Krishna/Reco-PC-Server#-camera--)**
-* **[Cmd](https://github.com/Arvinth-Krishna/Reco-PC-Server#-cmd--)**
 * **[Clip](https://github.com/Arvinth-Krishna/Reco-PC-Server#-clip--)**
+* **[Cmd](https://github.com/Arvinth-Krishna/Reco-PC-Server#-cmd--)**
+* **[Commands](https://github.com/Arvinth-Krishna/Reco-PC-Server#-commands--)**
 * **[Echo](https://github.com/Arvinth-Krishna/Reco-PC-Server#-echo--)**
 * **[File](https://github.com/Arvinth-Krishna/Reco-PC-Server#-file--)**
 * **[Help](https://github.com/Arvinth-Krishna/Reco-PC-Server#-help--)**
@@ -122,6 +125,7 @@ If you have any issues with Reco or you just want the latest news on the develop
 * **[Processes](https://github.com/Arvinth-Krishna/Reco-PC-Server#-processes--)**
 * **[Reco](https://github.com/Arvinth-Krishna/Reco-PC-Server#-reco--)**
 * **[Restart](https://github.com/Arvinth-Krishna/Reco-PC-Server#-restart--)**
+* **[RPC](https://github.com/Arvinth-Krishna/Reco-PC-Server#-rpc--)**
 * **[Say](https://github.com/Arvinth-Krishna/Reco-PC-Server#-say--)**
 * **[Screenshot](https://github.com/Arvinth-Krishna/Reco-PC-Server#-screenshot--)**
 * **[Search (Google)](https://github.com/Arvinth-Krishna/Reco-PC-Server#-google-search--)**
@@ -147,6 +151,13 @@ If you have any issues with Reco or you just want the latest news on the develop
 	> Aborts the Shutdown or Restart schedule.
 
 		e.g: !abort
+
+### ★ Alert  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--)
+
+* !alert on or !alert off or !alert onwithbeep
+	> Alerts user interaction.
+
+		e.g: !alert onwithbeep
 
 ### ★ AppQuitter  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--)
 
@@ -179,13 +190,6 @@ If you have any issues with Reco or you just want the latest news on the develop
 		- video time
 		- photo
 
-### ★ Cmd  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
-
-* !cmd "*command*"
-	> Executes *command* in cmd.exe.
-
-		e.g: !cmd shutdown -a
-
 ### ★ Clip  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 
 * !clip *text* or !clip get
@@ -193,6 +197,19 @@ If you have any issues with Reco or you just want the latest news on the develop
 	> **!clip get**     - Get data from PC's Clipboard
 
 		e.g: !clip Copy this text to PC's Clipboard
+
+### ★ Cmd  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+
+* !cmd "*command*"
+	> Executes *command* in cmd.exe.
+
+		e.g: !cmd shutdown -a
+### ★ Commands  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+
+* !commands
+	> Shows all Reco Commands.
+
+		e.g: !commands
 
 ### ★ Echo  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 
@@ -413,6 +430,13 @@ If you have any issues with Reco or you just want the latest news on the develop
 	> Restarts your computer immediately or with a time delay in minutes.
 
 		e.g: !restart 30
+
+### ★ RPC  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+
+* !rpc start or  !rpc stop or !rpc restart
+	> Shows Rich Presences.
+
+		e.g: !rpc start
 
 ### ★ Say  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 
