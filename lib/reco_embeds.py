@@ -88,7 +88,6 @@ class recoEmbeds:
         embed.set_author(name=authorName, url=authorURL, icon_url=authorIcon)
         embed.add_field(name=fieldname1,value=fieldvalue1,inline=False)
         embed.add_field(name=fieldname2,value=fieldvalue2,inline=False)
-        embed.add_field(name=fieldname3,value=fieldvalue3,inline=False)
         await ctx.send(embed=embed)
 
     async def fieldEmbed(ctx,txt,fieldname1="",fieldvalue1="",color=colorforCommonMsg):
