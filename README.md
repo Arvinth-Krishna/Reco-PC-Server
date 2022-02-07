@@ -130,7 +130,7 @@ If you have any issues with Reco or you just want the latest news on the develop
 * **[Screenshot](https://github.com/Arvinth-Krishna/Reco-PC-Server#-screenshot--)**
 * **[Search (Google)](https://github.com/Arvinth-Krishna/Reco-PC-Server#-google-search--)**
 * **[Shutdown](https://github.com/Arvinth-Krishna/Reco-PC-Server#-shutdown--)**
-* **[SignOut (LogOff)](https://github.com/Arvinth-Krishna/Reco-PC-Server#-logoff--)**
+* **[SignOut (LogOff)](https://github.com/Arvinth-Krishna/Reco-PC-Server#-signout--)**
 * **[Sleep](https://github.com/Arvinth-Krishna/Reco-PC-Server#-sleep--)**
 * **[Speedtest](https://github.com/Arvinth-Krishna/Reco-PC-Server#-speedtest--)**
 * **[System Info](https://github.com/Arvinth-Krishna/Reco-PC-Server#-system-info--)**
