@@ -101,9 +101,9 @@ If you have any issues with Reco or you just want the latest news on the develop
 
 
 ## Features List:  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
-* **[Abort](https://bit.ly/recoabort)**
-* **[Alert](https://bit.ly/recoalert)**
-* **[App Quitter](https://bit.ly/recoappquitter)**
+* **[Abort](https://github.com/Arvinth-Krishna/Reco-PC-Server#-abort--)**
+* **[Alert](https://github.com/Arvinth-Krishna/Reco-PC-Server#-alert--)**
+* **[App Quitter](https://github.com/Arvinth-Krishna/Reco-PC-Server#-appquitter--)**
 * **[Battery Level](https://github.com/Arvinth-Krishna/Reco-PC-Server#-battery-level--)**
 * **[Battery Report Generator](https://github.com/Arvinth-Krishna/Reco-PC-Server#-battery-report-generator--)**
 * **[Camera](https://github.com/Arvinth-Krishna/Reco-PC-Server#-camera--)**
