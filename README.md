@@ -8,7 +8,7 @@
 <div align="center">
 <a href="https://github.com/Arvinth-Krishna/Reco-PC-Server/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/Arvinth-Krishna/Reco-PC-Server?color=%23F2BE22"></a> <a href="https://github.com/Arvinth-Krishna/Reco-PC-Server/network"><img alt="GitHub forks" src="https://img.shields.io/github/forks/Arvinth-Krishna/Reco-PC-Server?style=social"></a> <a href="https://github.com/Arvinth-Krishna/Reco-PC-Server/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/Arvinth-Krishna/Reco-PC-Server?style=social"></a> <a href="https://github.com/Arvinth-Krishna/Reco-PC-Server/blob/main/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/Arvinth-Krishna/Reco-PC-Server?color=success"></a>
 </div>
-<a href="https://github.com/Arvinth-Krishna/Reco-PC-Server#reco-pc-server"><img alt="GitHub release (latest SemVer)" src="https://img.shields.io/github/v/release/Arvinth-Krishna/Reco-PC-Server?label=latest%20release"></a> <a href="https://github.com/Arvinth-Krishna/Reco-PC-Server#reco-pc-server"><img alt="GitHub release (by tag)" src="https://img.shields.io/github/downloads/Arvinth-Krishna/Reco-PC-Server/v7.0/total?color=important"></a> <a href="https://github.com/Arvinth-Krishna/Reco-PC-Server#reco-pc-server"><img alt="GitHub all releases" src="https://img.shields.io/github/downloads/Arvinth-Krishna/Reco-PC-Server/total?color=important&label=total%20downloads"></a>
+<a href="https://github.com/Arvinth-Krishna/Reco-PC-Server#reco-pc-server"><img alt="GitHub release (latest SemVer)" src="https://img.shields.io/github/v/release/Arvinth-Krishna/Reco-PC-Server?label=latest%20release"></a> <a href="https://github.com/Arvinth-Krishna/Reco-PC-Server#reco-pc-server"><img alt="GitHub release (by tag)" src="https://img.shields.io/github/downloads/Arvinth-Krishna/Reco-PC-Server/v8.0/total?color=important"></a> <a href="https://github.com/Arvinth-Krishna/Reco-PC-Server#reco-pc-server"><img alt="GitHub all releases" src="https://img.shields.io/github/downloads/Arvinth-Krishna/Reco-PC-Server/total?color=important&label=total%20downloads"></a>
 	
 
 
@@ -547,7 +547,7 @@ Note:
 1. **[Download & Install Python](https://www.python.org/downloads/)** - Remember: Tick the Add to path checkBox during installation.
 2. Create a bot and get its **token** by following these instructions: https://youtu.be/-m-Z7Wav-fM
 	- ⚠ **Don't forget to turn ON these [three switches](https://user-images.githubusercontent.com/49812701/149883812-53643ba8-df84-47ee-89e5-cf3177202b7f.png)** in [Discord Developer Portal](https://discord.com/developers/applications).
-3. [Download](https://github.com/Arvinth-Krishna/Reco-PC-Server/releases/download/v7.0/Reco-PC-Server-main.zip) the Reco PC Server Repository, **run setup.bat on Windows** or **setup.sh on Linux** and put your Bot Token in the newly created **.env file**. 
+3. [Download](https://github.com/Arvinth-Krishna/Reco-PC-Server/releases/download/v8.0/Reco-PC-Server-main.zip) the Reco PC Server Repository, **run setup.bat on Windows** or **setup.sh on Linux** and put your Bot Token in the newly created **.env file**. 
 4. Get **Webhook URL** from your Channel and add it in your Webhook tab in your [Reco](https://play.google.com/store/apps/details?id=com.gak.reco) mobile App. https://www.youtube.com/watch?v=2Fcvg-Bh7Oo&t=1s
 5. Launch **reco.pyw**, right click on the system tray icon and hit Connect to invite Reco Pc Server to your Discord server.
 6. Enjoy!🥳
