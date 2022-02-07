@@ -123,9 +123,6 @@ async def rp_cpu_usage(client,rpc_obj,bot_image_url,deviceName):
 async def rp_Runner(client,rp_order,rpc_obj,bot_image_url,deviceName):
     while True:
             
-            print(get_idle_duration()," / ",(float(configs.SHOW_IDLE_STATUS_IN_MINS)*60))
-
-            
             while True:
                 try:
                     requests.get("http://www.google.com", timeout=5)

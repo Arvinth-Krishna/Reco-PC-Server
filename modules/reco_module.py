@@ -44,7 +44,7 @@ async def reco(ctx,*options,client,discordVersion):
     current_version_response_json=current_version_response.json()
     prefix=configs.BOT_PREFIX
 
-    readme = open('readme.md', 'r', encoding="utf8")
+    readme = open('r.md', 'r', encoding="utf8")
     readme = readme.read()
     readme = readme.split('## ')
     readme=readme[5]
@@ -55,11 +55,11 @@ async def reco(ctx,*options,client,discordVersion):
         mtxt=mtxt+"‣ "+x
     
     mtxt="**🔮 Commands List ("+str(len(features))+"):**\n\n"+mtxt
-    for x in features[:12]:
+    for x in features[:13]:
         mtxt1=mtxt1+"‣ "+x
-    for x in features[12:24]:
+    for x in features[13:26]:
         mtxt2=mtxt2+"‣ "+x
-    for x in features[24:]:
+    for x in features[26:]:
         mtxt3=mtxt3+"‣ "+x    
 
 
