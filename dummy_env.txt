@@ -17,7 +17,7 @@ SHOW_DND_BOT_STATUS=True
 BEEP_MINUMUM_VOLUME=20
 
 # 🌼 Rich Presence (RPC)
-RPC_BOOL=True
+RPC_BOOL=False
 SHOW_PC_STATUS_IN_CPU_USAGE=True
 
 # 🟢 Bot Status
