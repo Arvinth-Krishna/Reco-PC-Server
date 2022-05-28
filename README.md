@@ -544,7 +544,8 @@ Note:
 ## Installation:  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
 
 ### Text Instructions:
-1. **[Download & Install Python](https://www.python.org/downloads/)** - Remember: Tick the Add to path checkBox during installation.
+1. **Download & Install Python** - Remember: Tick the Add to path checkBox during installation.
+   -> https://www.python.org/   (Python Version - [3.9.8](https://www.python.org/downloads/release/python-398/) recommended)
 2. Create a bot and get its **token** by following these instructions: https://youtu.be/-m-Z7Wav-fM
 	- ⚠ **Don't forget to turn ON these [three switches](https://user-images.githubusercontent.com/49812701/149883812-53643ba8-df84-47ee-89e5-cf3177202b7f.png)** in [Discord Developer Portal](https://discord.com/developers/applications).
 3. [Download](https://github.com/Arvinth-Krishna/Reco-PC-Server/releases/download/v8.0/Reco-PC-Server-main.zip) the Reco PC Server Repository, **run setup.bat on Windows** or **setup.sh on Linux** and put your Bot Token in the newly created **.env file**. 
