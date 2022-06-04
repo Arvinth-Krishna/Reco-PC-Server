@@ -38,18 +38,22 @@ If you have any issues with Reco or you just want the latest news on the develop
 * **[🔸Commands List](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--)**
 * **[Commands Documentation](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-documentation--)**
 * **[🔸Installation Process](https://github.com/Arvinth-Krishna/Reco-PC-Server#installation--)**
-* **[Installation Error-Help](https://github.com/Arvinth-Krishna/Reco-PC-Server#to-deal-with-any-error-during-installation--)**
-* Restricters
+* **[Installation Error(s)-Help](https://github.com/Arvinth-Krishna/Reco-PC-Server#to-deal-with-any-error-during-installation--)**
+     * **[Error 1: Building wheel for multidict (PEP 517) ... error](https://github.com/Arvinth-Krishna/Reco-PC-Server#error-1-building-wheel-for-multidict-pep-517--error--)**
+     * **[Error 2: WARNING: The script chardetect.exe is installed in ........ which is not on PATH](https://github.com/Arvinth-Krishna/Reco-PC-Server#error-2-warning-the-script-chardetectexe-is-installed-in--which-is-not-on-path--)**
+* **[Restricters](https://github.com/Arvinth-Krishna/Reco-PC-Server#restrictors--)**
      * **[User Restricter](https://github.com/Arvinth-Krishna/Reco-PC-Server#user-restricter--)**
      * **[Webhook Restricter](https://github.com/Arvinth-Krishna/Reco-PC-Server#webhook-restricter--)**
 * **[Setting up Task Scheduler for Reco-Startup](https://github.com/Arvinth-Krishna/Reco-PC-Server#setting-up-task-scheduler-for-reco-startup--)**
-* **[For Contributing](https://github.com/Arvinth-Krishna/Reco-PC-Server#contributing--)**
+* **[Contributing](https://github.com/Arvinth-Krishna/Reco-PC-Server#contributing--)**
 * **[Donate](https://github.com/Arvinth-Krishna/Reco-PC-Server#donate--)**
 * **[Credits](https://github.com/Arvinth-Krishna/Reco-PC-Server#credits--)**
 * **[Contributors](https://github.com/Arvinth-Krishna/Reco-PC-Server#contributors--)**
 
 
 ## Reco - Mobile App  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
+<details><summary>Click to expand!</summary><blockquote>
+	
 **[Reco: Discord PC Remote Controller](https://play.google.com/store/apps/details?id=com.gak.reco)**-Mobile App is now available on Play Store✌. 
 
 [🎬 YouTube - How to install and use Reco - Mobile App](https://youtu.be/YJXfgRL4aK4)
@@ -77,10 +81,12 @@ If you have any issues with Reco or you just want the latest news on the develop
   <img  width="100" height="187.5" alt="Reco - Discord PC Remote Controller App" src="https://user-images.githubusercontent.com/49812701/107601806-b29f5480-6c4d-11eb-95a9-043bc57e5d6d.jpg">
   <img  width="100" height="187.5" alt="Reco - Discord PC Remote Controller App" src="https://user-images.githubusercontent.com/49812701/107602896-0b242100-6c51-11eb-8fc8-4473af17c846.jpg">
 </p>
-
-
+</blockquote></details>
+	
 
 ## Requirements:  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
+<details><summary>Click to expand!</summary><blockquote>
+	
 **Note:** You only need to manually install [Python](https://www.python.org/downloads/) to get started. All other dependencies will be automatically downloaded & installed after running [setup.bat](https://github.com/Arvinth-Krishna/Reco-PC-Server/blob/main/setup.bat) or [setup.sh](https://github.com/Arvinth-Krishna/Reco-PC-Server/blob/main/setup.sh). (**[#installation_process](https://github.com/Arvinth-Krishna/Reco-PC-Server#installation--)**)
 
 * discord.py
@@ -98,9 +104,12 @@ If you have any issues with Reco or you just want the latest news on the develop
 * pystray
 * speedtest-cli
 * win10toast
+</blockquote></details>
 
 
 ## Features List:  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
+<details><summary>Click to expand!</summary><blockquote>
+	
 * **[Abort](https://github.com/Arvinth-Krishna/Reco-PC-Server#-abort--)**
 * **[Alert](https://github.com/Arvinth-Krishna/Reco-PC-Server#-alert--)**
 * **[App Quitter](https://github.com/Arvinth-Krishna/Reco-PC-Server#-appquitter--)**
@@ -140,47 +149,59 @@ If you have any issues with Reco or you just want the latest news on the develop
 * **[Wlan Signal](https://github.com/Arvinth-Krishna/Reco-PC-Server#-Wlan-Signal--)**
 * **[WhatsApp](https://github.com/Arvinth-Krishna/Reco-PC-Server#-whatsapp--)**
 * **[YouTube (search)](https://github.com/Arvinth-Krishna/Reco-PC-Server#-youtube-search--)**
-
-
+</blockquote></details>
+	
 
 ## Features Documentation:  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
-
+<details><summary>Click to expand!</summary><blockquote>
+		
 ### ★ Abort  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--)
-
+<details><summary>Click to expand!</summary><blockquote>
+	
 * !abort
 	> Aborts the Shutdown or Restart schedule.
 
 		e.g: !abort
-
+</blockquote></details>
+	
 ### ★ Alert  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--)
+<details><summary>Click to expand!</summary><blockquote>
 
 * !alert on or !alert off or !alert onwithbeep
 	> Alerts user interaction.
 
 		e.g: !alert onwithbeep
+</blockquote></details>
 
 ### ★ AppQuitter  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--)
+<details><summary>Click to expand!</summary><blockquote>
 
 * !appquitter *PID/Application_Name* or !appquitter *PID/Application_Name* *minutes*
 	> Quits the specified application immediately or with a time delay in minutes.
 
 		e.g: !appquitter chrome 30
+</blockquote></details>
 
 ### ★ Battery Level  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+<details><summary>Click to expand!</summary><blockquote>
 
 * !batterylevel or !batterylevel show
 	> To check the estimated battery charge remaining.
 
 		e.g: !batterylevel
-
+</blockquote></details>
+	
 ### ★ Battery Report Generator  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+<details><summary>Click to expand!</summary><blockquote>
 
 * !batteryreport or !batteryreport file
 	> Generates a detailed battery report for your PC. [Screenshots](https://github.com/Arvinth-Krishna/Battery_Report/blob/master/README.md#screenshots)
 
 		e.g: !batteryreport
+</blockquote></details>
 
 ### ★ Camera  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+<details><summary>Click to expand!</summary><blockquote>
 
 * !camera *command* or !camera *command* *time*
 	> Controls computer camera for taking photo or filming for a given *time* in seconds (default is 5 seconds).
@@ -189,36 +210,47 @@ If you have any issues with Reco or you just want the latest news on the develop
 		list of commands:
 		- video time
 		- photo
-
+</blockquote></details>
+	
 ### ★ Clip  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+<details><summary>Click to expand!</summary><blockquote>
 
 * !clip *text* or !clip get
 	> **!clip** *<text>* - Copy the message to your PC's Clipboard.
 	> **!clip get**     - Get data from PC's Clipboard
 
 		e.g: !clip Copy this text to PC's Clipboard
+</blockquote></details>
 
 ### ★ Cmd  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
-
+<details><summary>Click to expand!</summary><blockquote>
+	
 * !cmd "*command*"
 	> Executes *command* in cmd.exe.
 
 		e.g: !cmd shutdown -a
+</blockquote></details>
+	
 ### ★ Commands  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+<details><summary>Click to expand!</summary><blockquote>
 
 * !commands
 	> Shows all Reco Commands.
 
 		e.g: !commands
-
+</blockquote></details>
+	
 ### ★ Echo  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+<details><summary>Click to expand!</summary><blockquote>
 
 * !echo *status*
 	> Turns on or off !cmd and !powershell command echo in chat. When turned on, the command return will be sent to chat.
 
 		e.g: !echo on (or) !echo off
-
+</blockquote></details>
+	
 ### ★ File  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+<details><summary>Click to expand!</summary><blockquote>
 
 * !file *command* or !file *command* *path*
 	> Browses, saves and retrieves files from or to your computer.
@@ -234,22 +266,28 @@ If you have any issues with Reco or you just want the latest news on the develop
 		- rsave => saves a file to your current relaive path from the chat
 		- open => opens the current relative path
 		- download => saves a file from a direct url to the your system
-
+</blockquote></details>
+	
 ### ★ Help  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+<details><summary>Click to expand!</summary><blockquote>
 
 * !help or !help *command*
 	> Shows Reco help, listing commands of shows help for a specific command.
 	
 		e.g: !help screenshot
-
+</blockquote></details>
+	
 ### ★ Hibernate  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+<details><summary>Click to expand!</summary><blockquote>
 
 * !hibernate or !hibernate *minutes*
 	> Hibernates your computer immediately or with a time delay in minutes. 
 
 		e.g: !hibernate 30
-
+</blockquote></details>
+	
 ### ★ Launch  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+<details><summary>Click to expand!</summary><blockquote>
 
 * !launch *shortcut* or !launch list or !launch list_index
     > Launches a custom shortcut you placed in the shortcuts folder.
@@ -258,22 +296,28 @@ If you have any issues with Reco or you just want the latest news on the develop
     > [🎬 YouTube - How to use App Launcher](https://youtu.be/-b-7-8oK1tI)
 
 		e.g: !launch Application_Name_in_Shortcut_Folder
+</blockquote></details>
 
 ### ★ Lock  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+<details><summary>Click to expand!</summary><blockquote>
 
 * !lock or !lock *minutes*
 	> Locks your computer immediately or with a time delay in minutes.
 
 		e.g: !lock 30
-
+</blockquote></details>
+	
 ### ★ Log  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+<details><summary>Click to expand!</summary><blockquote>
 
 * !log *param* or !log *param* *date*
 	> turns on or off chat logging or show log for given date (defaults to today).
 
 		e.g: !log show 2021-02-08
-
+</blockquote></details>
+	
 ### ★ Media  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+<details><summary>Click to expand!</summary><blockquote>
 
 * !media *command* or !media *command* *time/times* *time*
 	> Controls computer media playback and volume once or repeatedly.
@@ -301,9 +345,11 @@ If you have any issues with Reco or you just want the latest news on the develop
 		- key-right
 		- key-close
 		- key-quit	
-
+</blockquote></details>
+	
 
 ### ★ Music  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+<details><summary>Click to expand!</summary><blockquote>
 
 * !music "*query*" or !m "*query*"
     > "*query*" can be a song name or video link or playlist link
@@ -350,23 +396,28 @@ If you have any issues with Reco or you just want the latest news on the develop
 		     !m dv *query*      - Downloads videos files.
 		     !m df              - Shows Download folder.
 		     
+</blockquote></details>
 
 ### ★ Notification  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+<details><summary>Click to expand!</summary><blockquote>
 
 * !notification "*message*"
     > Sends a notification to the computer.
 
 		e.g: !notification who are you?
-
+</blockquote></details>
+	
 ### ★ Powershell  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+<details><summary>Click to expand!</summary><blockquote>
 
 * !powershell "*command*"
 	> Executes *command* in Powershell.
 
 		e.g: !powershell shutdown -s -t 300
-
-
+</blockquote></details>
+	
 ### ★ Printer  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+<details><summary>Click to expand!</summary><blockquote>
 
 * !printer 
 	> To print documents from Discord.
@@ -409,126 +460,163 @@ If you have any issues with Reco or you just want the latest news on the develop
               !printer folder print p3 n2 op
               !printer print n5 ol
               !printer print "C:\Users\krish\Desktop\print test.txt" n2
+</blockquote></details>
 
 ### ★ Processes  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+<details><summary>Click to expand!</summary><blockquote>
 
 * !processes
 	> Shows the current Foreground Apps with PID.
 
 		e.g: !processes
-
+</blockquote></details>
+	
 ### ★ Reco  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+<details><summary>Click to expand!</summary><blockquote>
 
 * !reco
 	> Shows all about your Reco PC Server.
 
 		e.g: !reco
-
+</blockquote></details>
+	
 ### ★ Restart  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+<details><summary>Click to expand!</summary><blockquote>
 
 * !restart or !restart *minutes*
 	> Restarts your computer immediately or with a time delay in minutes.
 
 		e.g: !restart 30
-
+</blockquote></details>
+	
 ### ★ RPC  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+<details><summary>Click to expand!</summary><blockquote>
 
 * !rpc start or  !rpc stop or !rpc restart
 	> Shows Rich Presences.
 
 		e.g: !rpc start
-
+</blockquote></details>
+	
 ### ★ Say  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+<details><summary>Click to expand!</summary><blockquote>
 
 * !say "*text*"
 	> Uses powershell commands and a TTS engine to make your computer say something.
      
 		e.g: !say Reco
-
+</blockquote></details>
+	
 ### ★ ScreenShot  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+<details><summary>Click to expand!</summary><blockquote>
 
 * !screenshot or !screenshot *seconds*
 	> Takes a screenshot of your computer and sends it back to you.
 
 		e.g: !screenshot 1
-
-### ★ Google Search  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+</blockquote></details>
+	
+### ★ Search (Google)  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+<details><summary>Click to expand!</summary><blockquote>
 
 * !search or !search *query*
 	> Helps you to search your query in Google very easily.
 
 		e.g: !search Reco Discord PC Remote Controller
-
+</blockquote></details>
+	
 ### ★ Shutdown  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+<details><summary>Click to expand!</summary><blockquote>
 
 * !shutdown or !shutdown *minutes*
 	> Shuts down your computer immediately or with a time delay in minutes.
 
 		e.g: !shutdown 30
+</blockquote></details>
 
 ### ★ SignOut  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+<details><summary>Click to expand!</summary><blockquote>
 
 * !signout or !signout *minutes*
 	> Sign out your user immediately or with a time delay in minutes.
 
 		e.g: !signout 30
-	
+</blockquote></details>
+
 ### ★ Sleep  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+<details><summary>Click to expand!</summary><blockquote>
 
 * !sleep or !sleep *minutes*	> 
 	> Sleeps your computer immediately or with a time delay in minutes. 
 
 		e.g: !sleep 30
+</blockquote></details>
 
 ### ★ Speedtest  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+<details><summary>Click to expand!</summary><blockquote>
 
 * !speedtest 
 	> Shows your internet speed. 
 
 		e.g: !speedtest
+</blockquote></details>
 
 ### ★ System Info  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+<details><summary>Click to expand!</summary><blockquote>
 
 * !systeminfo
 	> Shows your System Information. 
 
 		e.g: !systeminfo
+</blockquote></details>
 
 ### ★ URL Launcher  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--)
+<details><summary>Click to expand!</summary><blockquote>
 
 * !url *website*
 	> Opens the website in your browser.
 
-		e.g: !url www.google.com
+		e.g: !url google.com
+</blockquote></details>
 
 ### ★ Version Checker  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--)
+<details><summary>Click to expand!</summary><blockquote>
 
 * !version
 	> Shows the current version of Reco PC Server.
 
 		e.g: !version
-
+</blockquote></details>
+	
 ### ★ Wlan Signal  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--)
+<details><summary>Click to expand!</summary><blockquote>
 
 * !wlansignal
 	> To check the signal strength of a Wi-Fi Connection.
 
 		e.g: !wlansignal
+</blockquote></details>
+	
 ### ★ Wake  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
-
+<details><summary>Click to expand!</summary><blockquote>
+	
 * !wake on or !wake off 
 	> Keeps screen always on.
 
 		e.g: !wake on
-	
+</blockquote></details>
+
 ### ★ Whatsapp  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+<details><summary>Click to expand!</summary><blockquote>
 
 * !whatsapp *countryCode_MobileNumber* or !whatsapp web 
 	> Opens chat screen for entered mobile number (Click to Chat feature).
 
 		e.g: !whatsapp 911234567890
-
+</blockquote></details>
+	
 ### ★ YouTube Search  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+<details><summary>Click to expand!</summary><blockquote>
 
 * !yt play *query* or !youtube *search* 
 	> Shows search result on YouTube.
@@ -539,9 +627,12 @@ Note:
 * All above commands works best on [![Windows](https://badgen.net/badge/icon/windows?icon=windows&label)](https://github.com/Arvinth-Krishna/Reco-PC-Server#installation--)
  and some commands may not work on other platforms.
 * And some commands may require elevated privileges on Linux.
+</blockquote></details>
+	</blockquote></details>
 
-
+	
 ## Installation:  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
+<details><summary>Click to expand!</summary><blockquote>
 
 ### Text Instructions:
 1. **Download & Install Python** - Remember: Tick the Add to path checkBox during installation.
@@ -556,11 +647,14 @@ Note:
 ### Video tutorial:
 Click below GIF to see the video.
 [![Video Tutorial](https://j.gifs.com/J8qwWg.gif)](https://www.youtube.com/watch?v=HbqW0zCIZYg)
+</blockquote></details>
+ 
 
+## Installation Error(s)-Help:  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
+<details><summary>Click to expand!</summary><blockquote>
 
-## To Deal with any Error during Installation:  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
-
-### Error 1: Building wheel for multidict (PEP 517) ... error
+### Error 1: Building wheel for multidict (PEP 517) ... error:  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps)
+<details><summary>Click to expand!</summary><blockquote>
 
      error: Microsoft Visual C++ 14.0 or greater is required. Get it with "Microsoft C++ Build Tools": https://visualstudio.microsoft.com/visual-cpp-build-tools/
      ----------------------------------------
@@ -574,8 +668,10 @@ Click below GIF to see the video.
    - And now try again to **run setup.bat on Windows** or **setup.sh on Linux** from Downloaded Reco Folder.
    - After successfully installed Reco setup, Paste your Bot Token in the newly created **.env file** & continue following the [instuction from the 4th Step](https://github.com/Arvinth-Krishna/Reco-PC-Server#text-instructions)
    - And, now you can uninstall Visual Studio Installer from Controll Panel
+</blockquote></details>
 
-### Error 2: WARNING: The script chardetect.exe is installed in ........ which is not on PATH.
+### Error 2: WARNING: The script chardetect.exe is installed in ........ which is not on PATH:  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps)
+<details><summary>Click to expand!</summary><blockquote>
 
 * To solve this issue **just copy and paste the path which is given in the error in The Environmental variable.**
    - eg:   
@@ -589,11 +685,15 @@ Click below GIF to see the video.
     - In that **click Path** and **then add the copied path in that field** and click OK.
     - And now try again to **run setup.bat on Windows** or **setup.sh on Linux** from Downloaded Reco Folder.
     - After successfully installed Reco setup, Paste your Bot Token in the newly created **.env file** & continue following the [instuction from the 4th Step](https://github.com/Arvinth-Krishna/Reco-PC-Server#text-instructions)
-
-
-
-## User Restricter:  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
-
+</blockquote></details>
+	</blockquote></details>
+	
+## Restrictors:  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
+<details><summary>Click to expand!</summary><blockquote>
+	
+### User Restricter:  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
+<details><summary>Click to expand!</summary><blockquote>
+	
 * Using this feature you can easily restrict commands permission by adding **User's Id** in **user_restricter.py** file.
 * Follow the commented instruction in that file.
 
@@ -660,12 +760,12 @@ Click below GIF to see the video.
                   '!wlansignal':True,
                   '!youtube':True,
 		},
+</blockquote></details>
 
 
-
-
-## Webhook Restricter:  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
-
+### Webhook Restricter:  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
+<details><summary>Click to expand!</summary><blockquote>
+	
 [🎬 YouTube - How to use Webhook Restricter](https://youtu.be/JpJQW7IAKj0)
 
 * Using **[Reco mobile app](https://play.google.com/store/apps/details?id=com.gak.reco)** you can easily control your PC using webhook. And if you want to share your webhooks with others and you want to restrict some commands.
@@ -734,11 +834,12 @@ Click below GIF to see the video.
                   '!wlansignal':True,
                   '!youtube':True,
 		},
-
-
-
+</blockquote></details>
+	</blockquote></details>
 
 ## Setting up Task Scheduler for Reco-Startup:  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
+<details><summary>Click to expand!</summary><blockquote>
+	
 These instruction will help you to setup Reco to startup automatically when we start your PC.
 It looks like lenghty but its **so easy to setup**, just follow the steps. So chill, do and have fun...
 
@@ -761,8 +862,12 @@ It looks like lenghty but its **so easy to setup**, just follow the steps. So ch
 10. And now go to **Conditions tab** and **uncheck all the checkBox** and **Check(✔) ONLY Network CheckBox** -> (Start only if following network connection avaliable: Any Connection)
 11. And now **Click OK**
 12.  Next time when you turn on your PC - Reco will Start Automatically🥳.
+</blockquote></details>
 
+	
 ## Contributing:  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
+<details><summary>Click to expand!</summary><blockquote>
+	
 Reco was written to be modular so one can easily modify the code and enhance it. I welcome and greatly appreciate anyone who wishes to contribute a module of their own.
 Here's how to create a Reco module:
 
@@ -770,9 +875,12 @@ Here's how to create a Reco module:
 2. Create an entry for your modules in reco.pyw. The file is full of examples.
 3. Test Reco PC Server with your changes and make a pull request if everything works well.
 4. Update the README.md file to include your new module and your github profile under Contributors
-
+</blockquote></details>
+	
 
 ## Donate  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
+<details><summary>Click to expand!</summary><blockquote>
+	
 If you found this project helpful and want to thank me, consider buying me a cup of ☕
 
 
@@ -780,16 +888,20 @@ If you found this project helpful and want to thank me, consider buying me a cup
 
 
 <a href="https://www.buymeacoffee.com/ArvinthKrishna"><img width="240"  src="https://github.com/appcraftstudio/buymeacoffee/raw/master/Images/snapshot-bmc-button.png"></a>
-
-
+</blockquote></details>
+	
 
 ## Credits:  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
+<details><summary>Click to expand!</summary><blockquote>
 
 * [CedArctic](https://github.com/CedArctic) and all contributors for creating [Chimera](https://github.com/CedArctic/Chimera) which is modified and improved. And now it act as a server(PC controller) for Reco-Discord PC Remote Controller app.
 * A special thanks goes to [Big Flubba#3494](https://github.com/BigFlubba) for assisting in the developement and ideas for Reco along with the creation of the support server.
+</blockquote></details>
 
 
 ## Contributors:  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
+<details><summary>Click to expand!</summary><blockquote>
+
 * [CedArctic](https://github.com/CedArctic)
 * [Zachman61](https://github.com/Zachman61)
 * [vfcoelho](https://github.com/vfcoelho)
@@ -801,7 +913,8 @@ If you found this project helpful and want to thank me, consider buying me a cup
 * [medusalix](https://github.com/medusalix)
 * [kostino](https://github.com/kostino)
 * [Big Flubba](https://github.com/BigFlubba)
-
+</blockquote></details>
+	
 
 ## ❤️ Found this project useful?
 If you found this project useful, then please consider giving it a **⭐ on Github and sharing it with your friends via social media**.
