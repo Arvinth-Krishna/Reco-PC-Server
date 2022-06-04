@@ -39,9 +39,9 @@ If you have any issues with Reco or you just want the latest news on the develop
 * **[Commands Documentation](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-documentation--)**
 * **[🔸Installation Process](https://github.com/Arvinth-Krishna/Reco-PC-Server#installation--)**
 * **[Installation Error-Help](https://github.com/Arvinth-Krishna/Reco-PC-Server#to-deal-with-any-error-during-installation--)**
-* Restricters
-     * **[User Restricter](https://github.com/Arvinth-Krishna/Reco-PC-Server#user-restricter--)**
-     * **[Webhook Restricter](https://github.com/Arvinth-Krishna/Reco-PC-Server#webhook-restricter--)**
+* Restrictors
+     * **[User Restrictor](https://github.com/Arvinth-Krishna/Reco-PC-Server#user-restrictor--)**
+     * **[Webhook Restrictor](https://github.com/Arvinth-Krishna/Reco-PC-Server#webhook-restrictor--)**
 * **[Setting up Task Scheduler for Reco-Startup](https://github.com/Arvinth-Krishna/Reco-PC-Server#setting-up-task-scheduler-for-reco-startup--)**
 * **[For Contributing](https://github.com/Arvinth-Krishna/Reco-PC-Server#contributing--)**
 * **[Donate](https://github.com/Arvinth-Krishna/Reco-PC-Server#donate--)**
@@ -591,12 +591,12 @@ Click below GIF to see the video.
 
 
 
-## User Restricter:  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
+## User Restrictor:  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
 
-* Using this feature you can easily restrict commands permission by adding **User's Id** in **user_restricter.py** file.
+* Using this feature you can easily restrict commands permission by adding **User's Id** in **user_restrictor.py** file.
 * Follow the commented instruction in that file.
 
-	> Synatx for webhook restricter:
+	> Synatx for webhook restrictor:
 
 		{ 
 		
@@ -663,15 +663,15 @@ Click below GIF to see the video.
 
 
 
-## Webhook Restricter:  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
+## Webhook Restrictor:  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
 
-[🎬 YouTube - How to use Webhook Restricter](https://youtu.be/JpJQW7IAKj0)
+[🎬 YouTube - How to use Webhook Restrictor](https://youtu.be/JpJQW7IAKj0)
 
 * Using **[Reco mobile app](https://play.google.com/store/apps/details?id=com.gak.reco)** you can easily control your PC using webhook. And if you want to share your webhooks with others and you want to restrict some commands.
-* You can restrict so easily by adding that **webhook** in **webhook_restricter.py** file.
+* You can restrict so easily by adding that **webhook** in **webhook_restrictor.py** file.
 * Follow the commented instruction in that file.
 
-	> Synatx for webhook restricter:
+	> Synatx for webhook restrictor:
 
 		{ 
 		
