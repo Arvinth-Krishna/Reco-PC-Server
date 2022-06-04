@@ -650,10 +650,11 @@ Click below GIF to see the video.
 
 
 ## Installation Error(s)-Help:  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
-<details><summary>Click to expand!</summary><blockquote>
 
-### Error 1: Building wheel for multidict (PEP 517) ... error:  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps)
-<details><summary>Click to expand!</summary><blockquote>
+<details><summary>⭕ Error 1: Building wheel for multidict (PEP 517) ... error:</summary><blockquote>
+
+[Jump to the top ⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
+
 
      error: Microsoft Visual C++ 14.0 or greater is required. Get it with "Microsoft C++ Build Tools": https://visualstudio.microsoft.com/visual-cpp-build-tools/
      ----------------------------------------
@@ -669,8 +670,9 @@ Click below GIF to see the video.
    - And, now you can uninstall Visual Studio Installer from Controll Panel
 </blockquote></details>
 
-### Error 2: WARNING: The script chardetect.exe is installed in ........ which is not on PATH:  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps)
-<details><summary>Click to expand!</summary><blockquote>
+
+<details><summary>⭕ Error 2: WARNING: The script chardetect.exe is installed in ........ which is not on PATH:</summary><blockquote>
+[Jump to the top ⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
 
 * To solve this issue **just copy and paste the path which is given in the error in The Environmental variable.**
    - eg:   
@@ -685,13 +687,15 @@ Click below GIF to see the video.
     - And now try again to **run setup.bat on Windows** or **setup.sh on Linux** from Downloaded Reco Folder.
     - After successfully installed Reco setup, Paste your Bot Token in the newly created **.env file** & continue following the [instuction from the 4th Step](https://github.com/Arvinth-Krishna/Reco-PC-Server#text-instructions)
 </blockquote></details>
-	</blockquote></details>
+
 	
 ## Restrictors:  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
 
 	
-#### User Restricter:  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
-<details><summary>Click to expand!</summary><blockquote>
+
+<details><summary>🔸 User Restricter:</summary><blockquote>
+
+[Jump to the top ⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
 	
 * Using this feature you can easily restrict commands permission by adding **User's Id** in **user_restricter.py** file.
 * Follow the commented instruction in that file.
@@ -762,8 +766,10 @@ Click below GIF to see the video.
 </blockquote></details>
 
 
-#### Webhook Restricter:  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
-<details><summary>Click to expand!</summary><blockquote>
+
+<details><summary>🔸 Webhook Restricter:</summary><blockquote>
+
+[Jump to the top ⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
 	
 [🎬 YouTube - How to use Webhook Restricter](https://youtu.be/JpJQW7IAKj0)
 
@@ -837,7 +843,7 @@ Click below GIF to see the video.
 	
 
 ## Setting up Task Scheduler for Reco-Startup:  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
-<details><summary>Click to expand!</summary>
+<details><summary>🔹 Click to see the instruction to set up Auto Startup.</summary>
 	
 These instruction will help you to setup Reco to startup automatically when we start your PC.
 It looks like lenghty but its **so easy to setup**, just follow the steps. So chill, do and have fun...
@@ -865,7 +871,7 @@ It looks like lenghty but its **so easy to setup**, just follow the steps. So ch
 
 	
 ## Contributing:  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
-<details><summary>Click to expand!</summary>
+<details><summary>💎 Click to know how to contribute!</summary>
 	
 Reco was written to be modular so one can easily modify the code and enhance it. I welcome and greatly appreciate anyone who wishes to contribute a module of their own.
 Here's how to create a Reco module:
@@ -883,10 +889,10 @@ Here's how to create a Reco module:
 If you found this project helpful and want to thank me, consider buying me a cup of ☕
 
 
-<a href="https://www.paypal.com/paypalme/gak15"><img width="240" src="https://cdn.pixabay.com/photo/2015/05/26/09/37/paypal-784404__480.png"></a>
+<a href="https://www.paypal.com/paypalme/gak15"><img width="140" src="https://cdn.pixabay.com/photo/2015/05/26/09/37/paypal-784404__480.png"></a>
 
 
-<a href="https://www.buymeacoffee.com/ArvinthKrishna"><img width="240"  src="https://github.com/appcraftstudio/buymeacoffee/raw/master/Images/snapshot-bmc-button.png"></a>
+<a href="https://www.buymeacoffee.com/ArvinthKrishna"><img width="140"  src="https://github.com/appcraftstudio/buymeacoffee/raw/master/Images/snapshot-bmc-button.png"></a>
 
 	
 
