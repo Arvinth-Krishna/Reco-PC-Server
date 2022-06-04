@@ -38,8 +38,10 @@ If you have any issues with Reco or you just want the latest news on the develop
 * **[🔸Commands List](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--)**
 * **[Commands Documentation](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-documentation--)**
 * **[🔸Installation Process](https://github.com/Arvinth-Krishna/Reco-PC-Server#installation--)**
-* **[Installation Error-Help](https://github.com/Arvinth-Krishna/Reco-PC-Server#to-deal-with-any-error-during-installation--)**
-* Restricters
+* **[Installation Error(s)-Help](https://github.com/Arvinth-Krishna/Reco-PC-Server#to-deal-with-any-error-during-installation--)**
+     * **[Error 1: Building wheel for multidict (PEP 517) ... error](https://github.com/BigFlubba/Reco-PC-Server/edit/main/README.md#error-1-building-wheel-for-multidict-pep-517--error--)**
+     * **[Error 2: WARNING: The script chardetect.exe is installed in ........ which is not on PATH](https://github.com/BigFlubba/Reco-PC-Server/edit/main/README.md#error-2-warning-the-script-chardetectexe-is-installed-in--which-is-not-on-path--)**
+* **[Restricters](https://github.com/BigFlubba/Reco-PC-Server/edit/main/README.md#restrictors--)**
      * **[User Restricter](https://github.com/Arvinth-Krishna/Reco-PC-Server#user-restricter--)**
      * **[Webhook Restricter](https://github.com/Arvinth-Krishna/Reco-PC-Server#webhook-restricter--)**
 * **[Setting up Task Scheduler for Reco-Startup](https://github.com/Arvinth-Krishna/Reco-PC-Server#setting-up-task-scheduler-for-reco-startup--)**
@@ -646,12 +648,13 @@ Note:
 Click below GIF to see the video.
 [![Video Tutorial](https://j.gifs.com/J8qwWg.gif)](https://www.youtube.com/watch?v=HbqW0zCIZYg)
 </blockquote></details>
+ 
 
-
-## Error(s) during Installation:  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
+## Installation Error(s)-Help:  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
 <details><summary>Click to expand!</summary><blockquote>
 
-### Error 1: Building wheel for multidict (PEP 517) ... error
+### Error 1: Building wheel for multidict (PEP 517) ... error:  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps)
+<details><summary>Click to expand!</summary><blockquote>
 
      error: Microsoft Visual C++ 14.0 or greater is required. Get it with "Microsoft C++ Build Tools": https://visualstudio.microsoft.com/visual-cpp-build-tools/
      ----------------------------------------
@@ -665,8 +668,10 @@ Click below GIF to see the video.
    - And now try again to **run setup.bat on Windows** or **setup.sh on Linux** from Downloaded Reco Folder.
    - After successfully installed Reco setup, Paste your Bot Token in the newly created **.env file** & continue following the [instuction from the 4th Step](https://github.com/Arvinth-Krishna/Reco-PC-Server#text-instructions)
    - And, now you can uninstall Visual Studio Installer from Controll Panel
+</blockquote></details>
 
-### Error 2: WARNING: The script chardetect.exe is installed in ........ which is not on PATH.
+### Error 2: WARNING: The script chardetect.exe is installed in ........ which is not on PATH:  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps)
+<details><summary>Click to expand!</summary><blockquote>
 
 * To solve this issue **just copy and paste the path which is given in the error in The Environmental variable.**
    - eg:   
@@ -681,11 +686,14 @@ Click below GIF to see the video.
     - And now try again to **run setup.bat on Windows** or **setup.sh on Linux** from Downloaded Reco Folder.
     - After successfully installed Reco setup, Paste your Bot Token in the newly created **.env file** & continue following the [instuction from the 4th Step](https://github.com/Arvinth-Krishna/Reco-PC-Server#text-instructions)
 </blockquote></details>
+	</blockquote></details>
 	
-
-## User Restricter:  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
+## Restrictors:  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
 <details><summary>Click to expand!</summary><blockquote>
-
+	
+### User Restricter:  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
+<details><summary>Click to expand!</summary><blockquote>
+	
 * Using this feature you can easily restrict commands permission by adding **User's Id** in **user_restricter.py** file.
 * Follow the commented instruction in that file.
 
@@ -755,9 +763,9 @@ Click below GIF to see the video.
 </blockquote></details>
 
 
-## Webhook Restricter:  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
+### Webhook Restricter:  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
 <details><summary>Click to expand!</summary><blockquote>
-
+	
 [🎬 YouTube - How to use Webhook Restricter](https://youtu.be/JpJQW7IAKj0)
 
 * Using **[Reco mobile app](https://play.google.com/store/apps/details?id=com.gak.reco)** you can easily control your PC using webhook. And if you want to share your webhooks with others and you want to restrict some commands.
@@ -827,7 +835,7 @@ Click below GIF to see the video.
                   '!youtube':True,
 		},
 </blockquote></details>
-	
+	</blockquote></details>
 
 ## Setting up Task Scheduler for Reco-Startup:  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
 <details><summary>Click to expand!</summary><blockquote>
