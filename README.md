@@ -52,7 +52,7 @@ If you have any issues with Reco or you just want the latest news on the develop
 
 
 ## Reco - Mobile App  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
-<details><summary>Click to expand!</summary><blockquote>
+
 	
 **[Reco: Discord PC Remote Controller](https://play.google.com/store/apps/details?id=com.gak.reco)**-Mobile App is now available on Play Store✌. 
 
@@ -81,7 +81,7 @@ If you have any issues with Reco or you just want the latest news on the develop
   <img  width="100" height="187.5" alt="Reco - Discord PC Remote Controller App" src="https://user-images.githubusercontent.com/49812701/107601806-b29f5480-6c4d-11eb-95a9-043bc57e5d6d.jpg">
   <img  width="100" height="187.5" alt="Reco - Discord PC Remote Controller App" src="https://user-images.githubusercontent.com/49812701/107602896-0b242100-6c51-11eb-8fc8-4473af17c846.jpg">
 </p>
-</blockquote></details>
+
 	
 
 ## Requirements:  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
@@ -108,7 +108,7 @@ If you have any issues with Reco or you just want the latest news on the develop
 
 
 ## Features List:  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
-<details><summary>Click to expand!</summary><blockquote>
+
 	
 * **[Abort](https://github.com/Arvinth-Krishna/Reco-PC-Server#-abort--)**
 * **[Alert](https://github.com/Arvinth-Krishna/Reco-PC-Server#-alert--)**
@@ -149,13 +149,13 @@ If you have any issues with Reco or you just want the latest news on the develop
 * **[Wlan Signal](https://github.com/Arvinth-Krishna/Reco-PC-Server#-Wlan-Signal--)**
 * **[WhatsApp](https://github.com/Arvinth-Krishna/Reco-PC-Server#-whatsapp--)**
 * **[YouTube (search)](https://github.com/Arvinth-Krishna/Reco-PC-Server#-youtube-search--)**
-</blockquote></details>
+
 	
 
 ## Features Documentation:  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
-<details><summary>Click to expand!</summary><blockquote>
+<details><summary>Click to expand!</summary>
 		
-### ★ Abort  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--)
+#### ★ Abort  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--)
 <details><summary>Click to expand!</summary><blockquote>
 	
 * !abort
@@ -164,7 +164,7 @@ If you have any issues with Reco or you just want the latest news on the develop
 		e.g: !abort
 </blockquote></details>
 	
-### ★ Alert  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--)
+#### ★ Alert  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--)
 <details><summary>Click to expand!</summary><blockquote>
 
 * !alert on or !alert off or !alert onwithbeep
@@ -173,7 +173,7 @@ If you have any issues with Reco or you just want the latest news on the develop
 		e.g: !alert onwithbeep
 </blockquote></details>
 
-### ★ AppQuitter  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--)
+#### ★ AppQuitter  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--)
 <details><summary>Click to expand!</summary><blockquote>
 
 * !appquitter *PID/Application_Name* or !appquitter *PID/Application_Name* *minutes*
@@ -182,7 +182,7 @@ If you have any issues with Reco or you just want the latest news on the develop
 		e.g: !appquitter chrome 30
 </blockquote></details>
 
-### ★ Battery Level  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+#### ★ Battery Level  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 <details><summary>Click to expand!</summary><blockquote>
 
 * !batterylevel or !batterylevel show
@@ -191,7 +191,7 @@ If you have any issues with Reco or you just want the latest news on the develop
 		e.g: !batterylevel
 </blockquote></details>
 	
-### ★ Battery Report Generator  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+#### ★ Battery Report Generator  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 <details><summary>Click to expand!</summary><blockquote>
 
 * !batteryreport or !batteryreport file
@@ -200,7 +200,7 @@ If you have any issues with Reco or you just want the latest news on the develop
 		e.g: !batteryreport
 </blockquote></details>
 
-### ★ Camera  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+#### ★ Camera  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 <details><summary>Click to expand!</summary><blockquote>
 
 * !camera *command* or !camera *command* *time*
@@ -212,7 +212,7 @@ If you have any issues with Reco or you just want the latest news on the develop
 		- photo
 </blockquote></details>
 	
-### ★ Clip  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+#### ★ Clip  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 <details><summary>Click to expand!</summary><blockquote>
 
 * !clip *text* or !clip get
@@ -222,7 +222,7 @@ If you have any issues with Reco or you just want the latest news on the develop
 		e.g: !clip Copy this text to PC's Clipboard
 </blockquote></details>
 
-### ★ Cmd  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+#### ★ Cmd  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 <details><summary>Click to expand!</summary><blockquote>
 	
 * !cmd "*command*"
@@ -231,7 +231,7 @@ If you have any issues with Reco or you just want the latest news on the develop
 		e.g: !cmd shutdown -a
 </blockquote></details>
 	
-### ★ Commands  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+#### ★ Commands  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 <details><summary>Click to expand!</summary><blockquote>
 
 * !commands
@@ -240,7 +240,7 @@ If you have any issues with Reco or you just want the latest news on the develop
 		e.g: !commands
 </blockquote></details>
 	
-### ★ Echo  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+#### ★ Echo  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 <details><summary>Click to expand!</summary><blockquote>
 
 * !echo *status*
@@ -249,7 +249,7 @@ If you have any issues with Reco or you just want the latest news on the develop
 		e.g: !echo on (or) !echo off
 </blockquote></details>
 	
-### ★ File  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+#### ★ File  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 <details><summary>Click to expand!</summary><blockquote>
 
 * !file *command* or !file *command* *path*
@@ -268,7 +268,7 @@ If you have any issues with Reco or you just want the latest news on the develop
 		- download => saves a file from a direct url to the your system
 </blockquote></details>
 	
-### ★ Help  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+#### ★ Help  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 <details><summary>Click to expand!</summary><blockquote>
 
 * !help or !help *command*
@@ -277,7 +277,7 @@ If you have any issues with Reco or you just want the latest news on the develop
 		e.g: !help screenshot
 </blockquote></details>
 	
-### ★ Hibernate  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+#### ★ Hibernate  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 <details><summary>Click to expand!</summary><blockquote>
 
 * !hibernate or !hibernate *minutes*
@@ -286,7 +286,7 @@ If you have any issues with Reco or you just want the latest news on the develop
 		e.g: !hibernate 30
 </blockquote></details>
 	
-### ★ Launch  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+#### ★ Launch  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 <details><summary>Click to expand!</summary><blockquote>
 
 * !launch *shortcut* or !launch list or !launch list_index
@@ -298,7 +298,7 @@ If you have any issues with Reco or you just want the latest news on the develop
 		e.g: !launch Application_Name_in_Shortcut_Folder
 </blockquote></details>
 
-### ★ Lock  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+#### ★ Lock  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 <details><summary>Click to expand!</summary><blockquote>
 
 * !lock or !lock *minutes*
@@ -307,7 +307,7 @@ If you have any issues with Reco or you just want the latest news on the develop
 		e.g: !lock 30
 </blockquote></details>
 	
-### ★ Log  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+#### ★ Log  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 <details><summary>Click to expand!</summary><blockquote>
 
 * !log *param* or !log *param* *date*
@@ -316,7 +316,7 @@ If you have any issues with Reco or you just want the latest news on the develop
 		e.g: !log show 2021-02-08
 </blockquote></details>
 	
-### ★ Media  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+#### ★ Media  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 <details><summary>Click to expand!</summary><blockquote>
 
 * !media *command* or !media *command* *time/times* *time*
@@ -348,7 +348,7 @@ If you have any issues with Reco or you just want the latest news on the develop
 </blockquote></details>
 	
 
-### ★ Music  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+#### ★ Music  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 <details><summary>Click to expand!</summary><blockquote>
 
 * !music "*query*" or !m "*query*"
@@ -398,7 +398,7 @@ If you have any issues with Reco or you just want the latest news on the develop
 		     
 </blockquote></details>
 
-### ★ Notification  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+#### ★ Notification  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 <details><summary>Click to expand!</summary><blockquote>
 
 * !notification "*message*"
@@ -407,7 +407,7 @@ If you have any issues with Reco or you just want the latest news on the develop
 		e.g: !notification who are you?
 </blockquote></details>
 	
-### ★ Powershell  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+#### ★ Powershell  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 <details><summary>Click to expand!</summary><blockquote>
 
 * !powershell "*command*"
@@ -416,7 +416,7 @@ If you have any issues with Reco or you just want the latest news on the develop
 		e.g: !powershell shutdown -s -t 300
 </blockquote></details>
 	
-### ★ Printer  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+#### ★ Printer  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 <details><summary>Click to expand!</summary><blockquote>
 
 * !printer 
@@ -462,7 +462,7 @@ If you have any issues with Reco or you just want the latest news on the develop
               !printer print "C:\Users\krish\Desktop\print test.txt" n2
 </blockquote></details>
 
-### ★ Processes  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+#### ★ Processes  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 <details><summary>Click to expand!</summary><blockquote>
 
 * !processes
@@ -471,7 +471,7 @@ If you have any issues with Reco or you just want the latest news on the develop
 		e.g: !processes
 </blockquote></details>
 	
-### ★ Reco  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+#### ★ Reco  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 <details><summary>Click to expand!</summary><blockquote>
 
 * !reco
@@ -480,7 +480,7 @@ If you have any issues with Reco or you just want the latest news on the develop
 		e.g: !reco
 </blockquote></details>
 	
-### ★ Restart  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+#### ★ Restart  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 <details><summary>Click to expand!</summary><blockquote>
 
 * !restart or !restart *minutes*
@@ -489,7 +489,7 @@ If you have any issues with Reco or you just want the latest news on the develop
 		e.g: !restart 30
 </blockquote></details>
 	
-### ★ RPC  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+#### ★ RPC  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 <details><summary>Click to expand!</summary><blockquote>
 
 * !rpc start or  !rpc stop or !rpc restart
@@ -498,7 +498,7 @@ If you have any issues with Reco or you just want the latest news on the develop
 		e.g: !rpc start
 </blockquote></details>
 	
-### ★ Say  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+#### ★ Say  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 <details><summary>Click to expand!</summary><blockquote>
 
 * !say "*text*"
@@ -507,7 +507,7 @@ If you have any issues with Reco or you just want the latest news on the develop
 		e.g: !say Reco
 </blockquote></details>
 	
-### ★ ScreenShot  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+#### ★ ScreenShot  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 <details><summary>Click to expand!</summary><blockquote>
 
 * !screenshot or !screenshot *seconds*
@@ -516,7 +516,7 @@ If you have any issues with Reco or you just want the latest news on the develop
 		e.g: !screenshot 1
 </blockquote></details>
 	
-### ★ Search (Google)  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+#### ★ Search (Google)  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 <details><summary>Click to expand!</summary><blockquote>
 
 * !search or !search *query*
@@ -525,7 +525,7 @@ If you have any issues with Reco or you just want the latest news on the develop
 		e.g: !search Reco Discord PC Remote Controller
 </blockquote></details>
 	
-### ★ Shutdown  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+#### ★ Shutdown  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 <details><summary>Click to expand!</summary><blockquote>
 
 * !shutdown or !shutdown *minutes*
@@ -534,7 +534,7 @@ If you have any issues with Reco or you just want the latest news on the develop
 		e.g: !shutdown 30
 </blockquote></details>
 
-### ★ SignOut  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+#### ★ SignOut  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 <details><summary>Click to expand!</summary><blockquote>
 
 * !signout or !signout *minutes*
@@ -543,7 +543,7 @@ If you have any issues with Reco or you just want the latest news on the develop
 		e.g: !signout 30
 </blockquote></details>
 
-### ★ Sleep  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+#### ★ Sleep  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 <details><summary>Click to expand!</summary><blockquote>
 
 * !sleep or !sleep *minutes*	> 
@@ -552,7 +552,7 @@ If you have any issues with Reco or you just want the latest news on the develop
 		e.g: !sleep 30
 </blockquote></details>
 
-### ★ Speedtest  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+#### ★ Speedtest  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 <details><summary>Click to expand!</summary><blockquote>
 
 * !speedtest 
@@ -561,7 +561,7 @@ If you have any issues with Reco or you just want the latest news on the develop
 		e.g: !speedtest
 </blockquote></details>
 
-### ★ System Info  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+#### ★ System Info  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 <details><summary>Click to expand!</summary><blockquote>
 
 * !systeminfo
@@ -570,7 +570,7 @@ If you have any issues with Reco or you just want the latest news on the develop
 		e.g: !systeminfo
 </blockquote></details>
 
-### ★ URL Launcher  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--)
+#### ★ URL Launcher  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--)
 <details><summary>Click to expand!</summary><blockquote>
 
 * !url *website*
@@ -579,7 +579,7 @@ If you have any issues with Reco or you just want the latest news on the develop
 		e.g: !url google.com
 </blockquote></details>
 
-### ★ Version Checker  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--)
+#### ★ Version Checker  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--)
 <details><summary>Click to expand!</summary><blockquote>
 
 * !version
@@ -588,7 +588,7 @@ If you have any issues with Reco or you just want the latest news on the develop
 		e.g: !version
 </blockquote></details>
 	
-### ★ Wlan Signal  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--)
+#### ★ Wlan Signal  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--)
 <details><summary>Click to expand!</summary><blockquote>
 
 * !wlansignal
@@ -597,7 +597,7 @@ If you have any issues with Reco or you just want the latest news on the develop
 		e.g: !wlansignal
 </blockquote></details>
 	
-### ★ Wake  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+#### ★ Wake  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 <details><summary>Click to expand!</summary><blockquote>
 	
 * !wake on or !wake off 
@@ -606,7 +606,7 @@ If you have any issues with Reco or you just want the latest news on the develop
 		e.g: !wake on
 </blockquote></details>
 
-### ★ Whatsapp  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+#### ★ Whatsapp  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 <details><summary>Click to expand!</summary><blockquote>
 
 * !whatsapp *countryCode_MobileNumber* or !whatsapp web 
@@ -615,7 +615,7 @@ If you have any issues with Reco or you just want the latest news on the develop
 		e.g: !whatsapp 911234567890
 </blockquote></details>
 	
-### ★ YouTube Search  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+#### ★ YouTube Search  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
 <details><summary>Click to expand!</summary><blockquote>
 
 * !yt play *query* or !youtube *search* 
@@ -627,12 +627,12 @@ Note:
 * All above commands works best on [![Windows](https://badgen.net/badge/icon/windows?icon=windows&label)](https://github.com/Arvinth-Krishna/Reco-PC-Server#installation--)
  and some commands may not work on other platforms.
 * And some commands may require elevated privileges on Linux.
-</blockquote></details>
+</details>
 	</blockquote></details>
 
 	
 ## Installation:  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
-<details><summary>Click to expand!</summary><blockquote>
+
 
 ### Text Instructions:
 1. **Download & Install Python** - Remember: Tick the Add to path checkBox during installation.
@@ -647,8 +647,7 @@ Note:
 ### Video tutorial:
 Click below GIF to see the video.
 [![Video Tutorial](https://j.gifs.com/J8qwWg.gif)](https://www.youtube.com/watch?v=HbqW0zCIZYg)
-</blockquote></details>
- 
+
 
 ## Installation Error(s)-Help:  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
 <details><summary>Click to expand!</summary><blockquote>
@@ -689,9 +688,9 @@ Click below GIF to see the video.
 	</blockquote></details>
 	
 ## Restrictors:  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
-<details><summary>Click to expand!</summary><blockquote>
+
 	
-### User Restricter:  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
+#### User Restricter:  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
 <details><summary>Click to expand!</summary><blockquote>
 	
 * Using this feature you can easily restrict commands permission by adding **User's Id** in **user_restricter.py** file.
@@ -763,7 +762,7 @@ Click below GIF to see the video.
 </blockquote></details>
 
 
-### Webhook Restricter:  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
+#### Webhook Restricter:  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
 <details><summary>Click to expand!</summary><blockquote>
 	
 [🎬 YouTube - How to use Webhook Restricter](https://youtu.be/JpJQW7IAKj0)
@@ -835,10 +834,10 @@ Click below GIF to see the video.
                   '!youtube':True,
 		},
 </blockquote></details>
-	</blockquote></details>
+	
 
 ## Setting up Task Scheduler for Reco-Startup:  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
-<details><summary>Click to expand!</summary><blockquote>
+<details><summary>Click to expand!</summary>
 	
 These instruction will help you to setup Reco to startup automatically when we start your PC.
 It looks like lenghty but its **so easy to setup**, just follow the steps. So chill, do and have fun...
@@ -862,11 +861,11 @@ It looks like lenghty but its **so easy to setup**, just follow the steps. So ch
 10. And now go to **Conditions tab** and **uncheck all the checkBox** and **Check(✔) ONLY Network CheckBox** -> (Start only if following network connection avaliable: Any Connection)
 11. And now **Click OK**
 12.  Next time when you turn on your PC - Reco will Start Automatically🥳.
-</blockquote></details>
+</details>
 
 	
 ## Contributing:  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
-<details><summary>Click to expand!</summary><blockquote>
+<details><summary>Click to expand!</summary>
 	
 Reco was written to be modular so one can easily modify the code and enhance it. I welcome and greatly appreciate anyone who wishes to contribute a module of their own.
 Here's how to create a Reco module:
@@ -875,32 +874,32 @@ Here's how to create a Reco module:
 2. Create an entry for your modules in reco.pyw. The file is full of examples.
 3. Test Reco PC Server with your changes and make a pull request if everything works well.
 4. Update the README.md file to include your new module and your github profile under Contributors
-</blockquote></details>
+</details>
 	
 
 ## Donate  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
-<details><summary>Click to expand!</summary><blockquote>
+
 	
 If you found this project helpful and want to thank me, consider buying me a cup of ☕
 
 
-<a href="https://www.paypal.com/paypalme/gak15"><img width="240" src="https://github.com/everdrone/coolbadge/blob/master/badges/Paypal/Coffee/Dark/Big.png?raw=true"></a>
+<a href="https://www.paypal.com/paypalme/gak15"><img width="240" src="https://cdn.pixabay.com/photo/2015/05/26/09/37/paypal-784404__480.png"></a>
 
 
 <a href="https://www.buymeacoffee.com/ArvinthKrishna"><img width="240"  src="https://github.com/appcraftstudio/buymeacoffee/raw/master/Images/snapshot-bmc-button.png"></a>
-</blockquote></details>
+
 	
 
 ## Credits:  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
-<details><summary>Click to expand!</summary><blockquote>
+
 
 * [CedArctic](https://github.com/CedArctic) and all contributors for creating [Chimera](https://github.com/CedArctic/Chimera) which is modified and improved. And now it acts as a server(PC controller) for the Reco-Discord PC Remote Controller app.
 * A special thanks goes to [Big Flubba#3494](https://github.com/BigFlubba) for assisting in the developement and ideas for Reco along with the creation of the support server.
-</blockquote></details>
+
 
 
 ## Contributors:  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
-<details><summary>Click to expand!</summary><blockquote>
+
 
 * [CedArctic](https://github.com/CedArctic)
 * [Zachman61](https://github.com/Zachman61)
@@ -913,8 +912,7 @@ If you found this project helpful and want to thank me, consider buying me a cup
 * [medusalix](https://github.com/medusalix)
 * [kostino](https://github.com/kostino)
 * [Big Flubba](https://github.com/BigFlubba)
-</blockquote></details>
-	
+
 
 ## ❤️ Found this project useful?
 If you found this project useful, then please consider giving it a **⭐ on Github and sharing it with your friends via social media**.
