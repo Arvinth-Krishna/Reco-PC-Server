@@ -39,9 +39,9 @@ If you have any issues with Reco or you just want the latest news on the develop
 * **[Commands Documentation](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-documentation--)**
 * **[🔸Installation Process](https://github.com/Arvinth-Krishna/Reco-PC-Server#installation--)**
 * **[Installation Error(s)-Help](https://github.com/Arvinth-Krishna/Reco-PC-Server#to-deal-with-any-error-during-installation--)**
-     * **[Error 1: Building wheel for multidict (PEP 517) ... error](https://github.com/BigFlubba/Reco-PC-Server/edit/main/README.md#error-1-building-wheel-for-multidict-pep-517--error--)**
-     * **[Error 2: WARNING: The script chardetect.exe is installed in ........ which is not on PATH](https://github.com/BigFlubba/Reco-PC-Server/edit/main/README.md#error-2-warning-the-script-chardetectexe-is-installed-in--which-is-not-on-path--)**
-* **[Restricters](https://github.com/BigFlubba/Reco-PC-Server/edit/main/README.md#restrictors--)**
+     * **[Error 1: Building wheel for multidict (PEP 517) ... error](https://github.com/Arvinth-Krishna/Reco-PC-Server#error-1-building-wheel-for-multidict-pep-517--error--)**
+     * **[Error 2: WARNING: The script chardetect.exe is installed in ........ which is not on PATH](https://github.com/Arvinth-Krishna/Reco-PC-Server#error-2-warning-the-script-chardetectexe-is-installed-in--which-is-not-on-path--)**
+* **[Restricters](https://github.com/Arvinth-Krishna/Reco-PC-Server#restrictors--)**
      * **[User Restricter](https://github.com/Arvinth-Krishna/Reco-PC-Server#user-restricter--)**
      * **[Webhook Restricter](https://github.com/Arvinth-Krishna/Reco-PC-Server#webhook-restricter--)**
 * **[Setting up Task Scheduler for Reco-Startup](https://github.com/Arvinth-Krishna/Reco-PC-Server#setting-up-task-scheduler-for-reco-startup--)**
