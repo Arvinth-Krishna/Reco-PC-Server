@@ -894,7 +894,7 @@ If you found this project helpful and want to thank me, consider buying me a cup
 ## Credits:  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
 <details><summary>Click to expand!</summary><blockquote>
 
-* [CedArctic](https://github.com/CedArctic) and all contributors for creating [Chimera](https://github.com/CedArctic/Chimera) which is modified and improved. And now it act as a server(PC controller) for Reco-Discord PC Remote Controller app.
+* [CedArctic](https://github.com/CedArctic) and all contributors for creating [Chimera](https://github.com/CedArctic/Chimera) which is modified and improved. And now it acts as a server(PC controller) for the Reco-Discord PC Remote Controller app.
 * A special thanks goes to [Big Flubba#3494](https://github.com/BigFlubba) for assisting in the developement and ideas for Reco along with the creation of the support server.
 </blockquote></details>
 
