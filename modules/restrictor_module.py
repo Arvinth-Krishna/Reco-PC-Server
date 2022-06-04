@@ -4,12 +4,12 @@
 # Dependencies: 
 
 import configs
-# Import Restricters
-from user_restricter import *
-from webhook_restricter import *
+# Import Restrictors
+from user_restrictor import *
+from webhook_restrictor import *
 from lib.reco_command_counter import addcount
 from lib.helpers import boolConverter
-from modules import restricter_module as rp
+from modules import restrictor_module as rp
 from lib.reco_embeds import recoEmbeds as rm
 
 
@@ -29,7 +29,7 @@ other_media_commands=['cv','say-vol']
 
 rpc_alert_count=0
 
-async def restricter(message,client):
+async def restrictor(message,client):
     messageContentList=[]
     ctx = await client.get_context(message)
     varMsgcontent=message.content
@@ -43,13 +43,13 @@ async def restricter(message,client):
     webhook_found=False
     bool_blocked_user=False
     bool_allowed_user=False
-    bool_Users_restricter_list=False
+    bool_Users_restrictor_list=False
     bool_blocked_webhook=False
     bool_allowed_webhook=False
-    bool_webhooks_restricter_list=False
+    bool_webhooks_restrictor_list=False
     webhook_index=None
     user_index=None
-    restricter_data=None
+    restrictor_data=None
 
     
 
@@ -86,9 +86,9 @@ async def restricter(message,client):
                     break
         if bool_blocked_user==False:
             count=0
-            for i in user_commands_restricter_list:             
+            for i in user_commands_restrictor_list:             
                 if i['userId']==msgUserId:
-                    bool_Users_restricter_list=True
+                    bool_Users_restrictor_list=True
                     user_index=count
                     break
                 count+=1
@@ -106,9 +106,9 @@ async def restricter(message,client):
                     break
         if bool_blocked_webhook==False:
             count=0
-            for i in webhook_commands_restricter_list:                
+            for i in webhook_commands_restrictor_list:                
                 if i['webhookId']==msgWebhookId:
-                    bool_webhooks_restricter_list=True
+                    bool_webhooks_restrictor_list=True
                     webhook_index=count
                     break
                 count=+1
@@ -120,28 +120,28 @@ async def restricter(message,client):
         print(f'Name   : {message.author.name}')
         print(f'Block  : {bool_blocked_webhook}')
         print(f'Allow  : {bool_allowed_webhook}')
-        print(f'WCRList: {bool_webhooks_restricter_list}\n')
+        print(f'WCRList: {bool_webhooks_restrictor_list}\n')
         if (bool_blocked_webhook==False):
             if(allow_all_webhooks==False):
                 if(bool_allowed_webhook==False):
-                    if(bool_webhooks_restricter_list==False):
+                    if(bool_webhooks_restrictor_list==False):
                         await ctx.reply("❌- Oops! you don't have permission.")
                     else:
-                        restricter_data=webhook_commands_restricter_list[webhook_index]
+                        restrictor_data=webhook_commands_restrictor_list[webhook_index]
                 else:
-                    if(bool_webhooks_restricter_list==False ):
+                    if(bool_webhooks_restrictor_list==False ):
                         await addcount(ctx)
                         await client.invoke(ctx)
                     else:
-                        restricter_data=webhook_commands_restricter_list[webhook_index]
+                        restrictor_data=webhook_commands_restrictor_list[webhook_index]
                 
             else:
-                if(bool_webhooks_restricter_list==False):
+                if(bool_webhooks_restrictor_list==False):
                     await addcount(ctx)
                     await client.invoke(ctx)
 
                 else:
-                    restricter_data=webhook_commands_restricter_list[webhook_index]
+                    restrictor_data=webhook_commands_restrictor_list[webhook_index]
         else:
             await ctx.reply("❌- Command Denied (Blocked Webhook)")   
     elif check_bot==False:
@@ -150,39 +150,39 @@ async def restricter(message,client):
         print(f'Name   : {message.author.name}')
         print(f'Block  : {bool_blocked_user}')
         print(f'Allow  : {bool_allowed_user}')
-        print(f'UCRList: {bool_Users_restricter_list}\n')
+        print(f'UCRList: {bool_Users_restrictor_list}\n')
         if (bool_blocked_user==False):
             if(allow_all_users==False):
                 if (message.author.guild_permissions.administrator):
-                    if(bool_Users_restricter_list==False):
+                    if(bool_Users_restrictor_list==False):
                         await addcount(ctx)
                         await client.invoke(ctx)
                     else:
-                        restricter_data=user_commands_restricter_list[user_index]
+                        restrictor_data=user_commands_restrictor_list[user_index]
                 
                 else:
                     if(bool_allowed_user==False):
-                        if(bool_Users_restricter_list==False):
+                        if(bool_Users_restrictor_list==False):
                             await ctx.reply("❌- Oops! you don't have permission.")
                         else:
-                            restricter_data=user_commands_restricter_list[user_index]
+                            restrictor_data=user_commands_restrictor_list[user_index]
                     else:
-                        if(bool_Users_restricter_list==False):
+                        if(bool_Users_restrictor_list==False):
                             await addcount(ctx)
                             await client.invoke(ctx)
                         else:
-                            restricter_data=user_commands_restricter_list[user_index]
+                            restrictor_data=user_commands_restrictor_list[user_index]
             else:
-                if(bool_Users_restricter_list==False):
+                if(bool_Users_restrictor_list==False):
                     await addcount(ctx)
                     await client.invoke(ctx)
                 else:
-                    restricter_data=user_commands_restricter_list[user_index]
+                    restrictor_data=user_commands_restrictor_list[user_index]
         else:
             await ctx.reply("❌- Command Denied (Blocked User)")   
     
-    if restricter_data!=None:
-        i=restricter_data
+    if restrictor_data!=None:
+        i=restrictor_data
         original_command=messageContentList[0]; 
         messageContentList.insert(0,"!"+messageContentList[0][1:])
         messageContentList.pop(1)
@@ -223,9 +223,9 @@ async def restricter(message,client):
 
         elif not messageContentList[0] in i:
                 if (check_bot==True):
-                    await ctx.send("This command: ( **"+original_command+"** ) is not added in your \"**webhook_restricter.py**\" file, so it\'s taken as \"**False**\" (Permission denied).\n\n Please add the commad to use: **'"+messageContentList[0]+"':True,** ")     
+                    await ctx.send("This command: ( **"+original_command+"** ) is not added in your \"**webhook_restrictor.py**\" file, so it\'s taken as \"**False**\" (Permission denied).\n\n Please add the commad to use: **'"+messageContentList[0]+"':True,** ")     
                 else:           
-                    await ctx.send("This command: ( **"+original_command+"** ) is not added in your \"**user_restricter.py**\" file, so it\'s taken as \"**False**\" (Permission denied).\n\n Please add the commad to use: **'"+messageContentList[0]+"':True,** ")     
+                    await ctx.send("This command: ( **"+original_command+"** ) is not added in your \"**user_restrictor.py**\" file, so it\'s taken as \"**False**\" (Permission denied).\n\n Please add the commad to use: **'"+messageContentList[0]+"':True,** ")     
                                      
         elif(i[messageContentList[0]]):
             await addcount(ctx)
