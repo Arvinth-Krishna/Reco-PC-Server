@@ -39,8 +39,8 @@ If you have any issues with Reco or you just want the latest news on the develop
 * **[Commands Documentation](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-documentation--)**
 * **[🔸Installation Process](https://github.com/Arvinth-Krishna/Reco-PC-Server#installation--)**
 * **[Installation Error(s)-Help](https://github.com/Arvinth-Krishna/Reco-PC-Server#installation-errors-help--)**
-     * **[Error 1: Building wheel for multidict (PEP 517) ... error](https://github.com/Arvinth-Krishna/Reco-PC-Server#to-deal-with-any-error-during-installation--)**
-     * **[Error 2: WARNING: The script chardetect.exe is installed in ........ which is not on PATH](https://github.com/Arvinth-Krishna/Reco-PC-Server#to-deal-with-any-error-during-installation--)**
+     * **[Error 1: Building wheel for multidict (PEP 517) ... error](https://github.com/Arvinth-Krishna/Reco-PC-Server#installation-errors-help--)**
+     * **[Error 2: WARNING: The script chardetect.exe is installed in ........ which is not on PATH](https://github.com/Arvinth-Krishna/Reco-PC-Server#installation-errors-help--)**
 * **[Restricters](https://github.com/Arvinth-Krishna/Reco-PC-Server#restrictors--)**
      * **[User Restricter](https://github.com/Arvinth-Krishna/Reco-PC-Server#restrictors--)**
      * **[Webhook Restricter](https://github.com/Arvinth-Krishna/Reco-PC-Server#restrictors--)**
