@@ -86,6 +86,7 @@ If you have any issues with Reco or you just want the latest news on the develop
 
 ## Requirements:  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
 <details><summary>Click to expand!</summary><blockquote>
+​
 	
 **Note:** You only need to manually install [Python](https://www.python.org/downloads/) to get started. All other dependencies will be automatically downloaded & installed after running [setup.bat](https://github.com/Arvinth-Krishna/Reco-PC-Server/blob/main/setup.bat) or [setup.sh](https://github.com/Arvinth-Krishna/Reco-PC-Server/blob/main/setup.sh). (**[#installation_process](https://github.com/Arvinth-Krishna/Reco-PC-Server#installation--)**)
 
@@ -154,6 +155,7 @@ If you have any issues with Reco or you just want the latest news on the develop
 
 ## Features Documentation:  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
 <details><summary>Click to expand!</summary>
+​
 		
 #### ★ Abort  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--)
 	
@@ -575,6 +577,7 @@ Click below GIF to see the video.
 ## Installation Error(s)-Help:  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
 
 <details><summary>⭕ Error 1: Building wheel for multidict (PEP 517) ... error:</summary><blockquote>
+​
 
 [Jump to the top ⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
 
@@ -595,6 +598,7 @@ Click below GIF to see the video.
 
 
 <details><summary>⭕ Error 2: WARNING: The script chardetect.exe is installed in ........ which is not on PATH:</summary><blockquote>
+​
 
 [Jump to the top ⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
 
@@ -618,6 +622,7 @@ Click below GIF to see the video.
 	
 
 <details><summary>🔸 User Restricter:</summary><blockquote>
+​
 
 [Jump to the top ⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
 	
@@ -692,6 +697,7 @@ Click below GIF to see the video.
 
 
 <details><summary>🔸 Webhook Restricter:</summary><blockquote>
+​
 
 [Jump to the top ⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
 	
@@ -768,6 +774,7 @@ Click below GIF to see the video.
 
 ## Setting up Task Scheduler for Reco-Startup:  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
 <details><summary>🔹 Click to see the instruction to set up Auto Startup.</summary>
+​
 	
 These instruction will help you to setup Reco to startup automatically when we start your PC.
 It looks like lenghty but its **so easy to setup**, just follow the steps. So chill, do and have fun...
@@ -796,6 +803,7 @@ It looks like lenghty but its **so easy to setup**, just follow the steps. So ch
 	
 ## Contributing:  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
 <details><summary>💎 Click to know how to contribute!</summary>
+​
 	
 Reco was written to be modular so one can easily modify the code and enhance it. I welcome and greatly appreciate anyone who wishes to contribute a module of their own.
 Here's how to create a Reco module:
