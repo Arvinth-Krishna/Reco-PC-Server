@@ -108,7 +108,7 @@ If you have any issues with Reco or you just want the latest news on the develop
 </blockquote></details>
 
 
-## Features List:  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
+## Commands List:  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
 
 	
 * **[Abort](https://github.com/Arvinth-Krishna/Reco-PC-Server#-abort--)**
@@ -153,7 +153,7 @@ If you have any issues with Reco or you just want the latest news on the develop
 
 	
 
-## Features Documentation:  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
+## Commands Documentation:  [↟](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
 <details><summary>Click to expand!</summary>
 ​
 		
