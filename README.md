@@ -35,8 +35,8 @@ If you have any issues with Reco or you just want the latest news on the develop
 ## Quick Jumps
 
 * **[Reco-Mobile App](https://github.com/Arvinth-Krishna/Reco-PC-Server#reco---mobile-app--)**
-* **[🔸Commands List](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--)**
-* **[Commands Documentation](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-documentation--)**
+* **[🔸Commands List](https://github.com/Arvinth-Krishna/Reco-PC-Server#commands-list--)**
+* **[Commands Documentation](https://github.com/Arvinth-Krishna/Reco-PC-Server#commands-documentation--)**
 * **[🔸Installation Process](https://github.com/Arvinth-Krishna/Reco-PC-Server#installation--)**
 * **[Installation Error(s)-Help](https://github.com/Arvinth-Krishna/Reco-PC-Server#installation-errors-help--)**
      * **[Error 1: Building wheel for multidict (PEP 517) ... error](https://github.com/Arvinth-Krishna/Reco-PC-Server#installation-errors-help--)**
@@ -157,42 +157,42 @@ If you have any issues with Reco or you just want the latest news on the develop
 <details><summary>Click to expand!</summary>
 ​
 		
-#### ★ Abort  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--)
+#### ★ Abort  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#commands-list--)
 	
 * !abort
 	> Aborts the Shutdown or Restart schedule.
 
 		e.g: !abort
 
-#### ★ Alert  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--)
+#### ★ Alert  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#commands-list--)
 
 * !alert on or !alert off or !alert onwithbeep
 	> Alerts user interaction.
 
 		e.g: !alert onwithbeep
 
-#### ★ AppQuitter  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--)
+#### ★ AppQuitter  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#commands-list--)
 
 * !appquitter *PID/Application_Name* or !appquitter *PID/Application_Name* *minutes*
 	> Quits the specified application immediately or with a time delay in minutes.
 
 		e.g: !appquitter chrome 30
 
-#### ★ Battery Level  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+#### ★ Battery Level  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#commands-list--) 
 
 * !batterylevel or !batterylevel show
 	> To check the estimated battery charge remaining.
 
 		e.g: !batterylevel
 	
-#### ★ Battery Report Generator  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+#### ★ Battery Report Generator  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#commands-list--) 
 
 * !batteryreport or !batteryreport file
 	> Generates a detailed battery report for your PC. [Screenshots](https://github.com/Arvinth-Krishna/Battery_Report/blob/master/README.md#screenshots)
 
 		e.g: !batteryreport
 
-#### ★ Camera  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+#### ★ Camera  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#commands-list--) 
 
 * !camera *command* or !camera *command* *time*
 	> Controls computer camera for taking photo or filming for a given *time* in seconds (default is 5 seconds).
@@ -202,7 +202,7 @@ If you have any issues with Reco or you just want the latest news on the develop
 		- video time
 		- photo
 	
-#### ★ Clip  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+#### ★ Clip  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#commands-list--) 
 
 * !clip *text* or !clip get
 	> **!clip** *<text>* - Copy the message to your PC's Clipboard.
@@ -210,28 +210,28 @@ If you have any issues with Reco or you just want the latest news on the develop
 
 		e.g: !clip Copy this text to PC's Clipboard
 
-#### ★ Cmd  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+#### ★ Cmd  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#commands-list--) 
 	
 * !cmd "*command*"
 	> Executes *command* in cmd.exe.
 
 		e.g: !cmd shutdown -a
 	
-#### ★ Commands  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+#### ★ Commands  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#commands-list--) 
 
 * !commands
 	> Shows all Reco Commands.
 
 		e.g: !commands
 	
-#### ★ Echo  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+#### ★ Echo  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#commands-list--) 
 
 * !echo *status*
 	> Turns on or off !cmd and !powershell command echo in chat. When turned on, the command return will be sent to chat.
 
 		e.g: !echo on (or) !echo off
 	
-#### ★ File  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+#### ★ File  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#commands-list--) 
 
 * !file *command* or !file *command* *path*
 	> Browses, saves and retrieves files from or to your computer.
@@ -248,21 +248,21 @@ If you have any issues with Reco or you just want the latest news on the develop
 		- open => opens the current relative path
 		- download => saves a file from a direct url to the your system
 	
-#### ★ Help  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+#### ★ Help  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#commands-list--) 
 
 * !help or !help *command*
 	> Shows Reco help, listing commands of shows help for a specific command.
 	
 		e.g: !help screenshot
 	
-#### ★ Hibernate  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+#### ★ Hibernate  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#commands-list--) 
 
 * !hibernate or !hibernate *minutes*
 	> Hibernates your computer immediately or with a time delay in minutes. 
 
 		e.g: !hibernate 30
 	
-#### ★ Launch  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+#### ★ Launch  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#commands-list--) 
 
 * !launch *shortcut* or !launch list or !launch list_index
     > Launches a custom shortcut you placed in the shortcuts folder.
@@ -272,21 +272,21 @@ If you have any issues with Reco or you just want the latest news on the develop
 
 		e.g: !launch Application_Name_in_Shortcut_Folder
 
-#### ★ Lock  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+#### ★ Lock  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#commands-list--) 
 
 * !lock or !lock *minutes*
 	> Locks your computer immediately or with a time delay in minutes.
 
 		e.g: !lock 30
 	
-#### ★ Log  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+#### ★ Log  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#commands-list--) 
 
 * !log *param* or !log *param* *date*
 	> turns on or off chat logging or show log for given date (defaults to today).
 
 		e.g: !log show 2021-02-08
 	
-#### ★ Media  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+#### ★ Media  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#commands-list--) 
 
 * !media *command* or !media *command* *time/times* *time*
 	> Controls computer media playback and volume once or repeatedly.
@@ -316,7 +316,7 @@ If you have any issues with Reco or you just want the latest news on the develop
 		- key-quit	
 	
 
-#### ★ Music  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+#### ★ Music  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#commands-list--) 
 
 * !music "*query*" or !m "*query*"
     > "*query*" can be a song name or video link or playlist link
@@ -364,21 +364,21 @@ If you have any issues with Reco or you just want the latest news on the develop
 		     !m df              - Shows Download folder.
 		     
 
-#### ★ Notification  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+#### ★ Notification  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#commands-list--) 
 
 * !notification "*message*"
     > Sends a notification to the computer.
 
 		e.g: !notification who are you?
 	
-#### ★ Powershell  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+#### ★ Powershell  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#commands-list--) 
 
 * !powershell "*command*"
 	> Executes *command* in Powershell.
 
 		e.g: !powershell shutdown -s -t 300
 	
-#### ★ Printer  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+#### ★ Printer  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#commands-list--) 
 
 * !printer 
 	> To print documents from Discord.
@@ -422,126 +422,126 @@ If you have any issues with Reco or you just want the latest news on the develop
               !printer print n5 ol
               !printer print "C:\Users\krish\Desktop\print test.txt" n2
 
-#### ★ Processes  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+#### ★ Processes  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#commands-list--) 
 
 * !processes
 	> Shows the current Foreground Apps with PID.
 
 		e.g: !processes
 	
-#### ★ Reco  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+#### ★ Reco  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#commands-list--) 
 
 * !reco
 	> Shows all about your Reco PC Server.
 
 		e.g: !reco
 	
-#### ★ Restart  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+#### ★ Restart  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#commands-list--) 
 
 * !restart or !restart *minutes*
 	> Restarts your computer immediately or with a time delay in minutes.
 
 		e.g: !restart 30
 	
-#### ★ RPC  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+#### ★ RPC  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#commands-list--) 
 
 * !rpc start or  !rpc stop or !rpc restart
 	> Shows Rich Presences.
 
 		e.g: !rpc start
 	
-#### ★ Say  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+#### ★ Say  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#commands-list--) 
 
 * !say "*text*"
 	> Uses powershell commands and a TTS engine to make your computer say something.
      
 		e.g: !say Reco
 	
-#### ★ ScreenShot  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+#### ★ ScreenShot  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#commands-list--) 
 
 * !screenshot or !screenshot *seconds*
 	> Takes a screenshot of your computer and sends it back to you.
 
 		e.g: !screenshot 1
 	
-#### ★ Search (Google)  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+#### ★ Search (Google)  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#commands-list--) 
 
 * !search or !search *query*
 	> Helps you to search your query in Google very easily.
 
 		e.g: !search Reco Discord PC Remote Controller
 	
-#### ★ Shutdown  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+#### ★ Shutdown  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#commands-list--) 
 
 * !shutdown or !shutdown *minutes*
 	> Shuts down your computer immediately or with a time delay in minutes.
 
 		e.g: !shutdown 30
 
-#### ★ SignOut  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+#### ★ SignOut  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#commands-list--) 
 
 * !signout or !signout *minutes*
 	> Sign out your user immediately or with a time delay in minutes.
 
 		e.g: !signout 30
 
-#### ★ Sleep  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+#### ★ Sleep  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#commands-list--) 
 
 * !sleep or !sleep *minutes*	> 
 	> Sleeps your computer immediately or with a time delay in minutes. 
 
 		e.g: !sleep 30
 
-#### ★ Speedtest  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+#### ★ Speedtest  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#commands-list--) 
 
 * !speedtest 
 	> Shows your internet speed. 
 
 		e.g: !speedtest
 
-#### ★ System Info  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+#### ★ System Info  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#commands-list--) 
 
 * !systeminfo
 	> Shows your System Information. 
 
 		e.g: !systeminfo
 
-#### ★ URL Launcher  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--)
+#### ★ URL Launcher  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#commands-list--)
 
 * !url *website*
 	> Opens the website in your browser.
 
 		e.g: !url google.com
 
-#### ★ Version Checker  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--)
+#### ★ Version Checker  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#commands-list--)
 
 * !version
 	> Shows the current version of Reco PC Server.
 
 		e.g: !version
 	
-#### ★ Wlan Signal  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--)
+#### ★ Wlan Signal  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#commands-list--)
 
 * !wlansignal
 	> To check the signal strength of a Wi-Fi Connection.
 
 		e.g: !wlansignal
 	
-#### ★ Wake  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+#### ★ Wake  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#commands-list--) 
 	
 * !wake on or !wake off 
 	> Keeps screen always on.
 
 		e.g: !wake on
 
-#### ★ Whatsapp  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+#### ★ Whatsapp  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#commands-list--) 
 
 * !whatsapp *countryCode_MobileNumber* or !whatsapp web 
-	> Opens chat screen for entered mobile number (Click to Chat feature).
+	> Opens chat screen for entered mobile number (Click to Chat command).
 
 		e.g: !whatsapp 911234567890
 	
-#### ★ YouTube Search  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#features-list--) 
+#### ★ YouTube Search  [⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#commands-list--) 
 
 * !yt play *query* or !youtube *search* 
 	> Shows search result on YouTube.
@@ -626,7 +626,7 @@ Click below GIF to see the video.
 
 [Jump to the top ⇪](https://github.com/Arvinth-Krishna/Reco-PC-Server#quick-jumps) 
 	
-* Using this feature you can easily restrict commands permission by adding **User's Id** in **user_restrictor.py** file.
+* Using this command you can easily restrict commands permission by adding **User's Id** in **user_restrictor.py** file.
 * Follow the commented instruction in that file.
 
 	> Synatx for webhook restrictor:
