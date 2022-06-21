@@ -63,7 +63,7 @@ async def on_ready():
 
 
 
-# Module: restricter
+# Module: restrictor
 # Description: To control both user and webhook commands permission
 @client.event
 async def on_message(message):
@@ -75,7 +75,7 @@ async def on_message(message):
         await ctx.send("**YouTube**: <https://bit.ly/recoYoutube>")
         await ctx.send("**My Brother 😉**:\n**De & go**: <https://bit.ly/deandgo-invite>")     
     else:
-        await restricter_module.restricter(message,client)
+        await restrictor_module.restrictor(message,client)
 
   
 # Module: abort
@@ -483,11 +483,11 @@ def showdownloads(): os.startfile("downloads")
 def connectInfo(): webbrowser.open(
     'https://discordapp.com/oauth2/authorize?client_id={}&scope=bot&permissions=8'.format(client.user.id))
 
-# Opens webhook_restricter.py file
-def open_Webhook_restricter(): os.startfile("webhook_restricter.py")
+# Opens webhook_restrictor.py file
+def open_Webhook_restrictor(): os.startfile("webhook_restrictor.py")
 
-# Opens webhook_restricter.py file
-def open_User_restricter(): os.startfile("user_restricter.py")
+# Opens webhook_restrictor.py file
+def open_User_restrictor(): os.startfile("user_restrictor.py")
 
 # Hides the application
 def applicationHide():
@@ -525,8 +525,8 @@ def iconSetup():
         MenuItem("Show Logs", action=showLogs),
         MenuItem("Show Shortcuts", action=showShortcuts),
         MenuItem("Show Downloads", action=showdownloads, default=True),
-        MenuItem("User Restricter", action=open_User_restricter),
-        MenuItem("Webhook Restricter", action=open_Webhook_restricter),
+        MenuItem("User Restrictor", action=open_User_restrictor),
+        MenuItem("Webhook Restrictor", action=open_Webhook_restrictor),
         MenuItem("Hide Icon", action=applicationHide),
         MenuItem("About", action=about),
         MenuItem("Force Quit",action=applicationExit),
