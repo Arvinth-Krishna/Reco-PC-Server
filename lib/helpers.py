@@ -4,8 +4,8 @@ from lib.input_commands import InputCommands
 import configs,logging,os,sys
 from datetime import datetime
 from inspect import signature
-import webhook_restricter as wr
-import user_restricter as ur
+import webhook_restrictor as wr
+import user_restrictor as ur
 from ctypes import Structure, windll, c_uint, sizeof, byref
 reco_restart_bool=False
 
