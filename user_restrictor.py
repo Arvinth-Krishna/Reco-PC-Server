@@ -4,7 +4,7 @@
 # ⚠ All Id entries should be in quotes(' ') and followed by comma (,)
 
 # True -> Allows all users. 
-# False -> only allow - allowed users (in allowed_users_Id_list) or in command restricter list (user_commands_restricter_list).
+# False -> only allow - allowed users (in allowed_users_Id_list) or in command restrictor list (user_commands_restrictor_list).
 # ⬇⬇⬇
 
 
@@ -13,7 +13,7 @@ allowed_users_Id_list=['111595095059988111', ]
 blocked_users_Id_list=['111595095059988111', ]
 
 
-user_commands_restricter_list=[
+user_commands_restrictor_list=[
 
 #(copy starts from here)    
 { 
