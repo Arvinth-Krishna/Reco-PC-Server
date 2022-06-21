@@ -61,7 +61,7 @@ SHOW_CPU_USAGE_RP =crp.SHOW_CPU_USAGE_RP
 CUSTOM_RP_ACTIVITY =crp.CUSTOM_RP_ACTIVITY
 # -----------------------------------------------
 
-# Restricters
+# Restrictors
 ALLOW_ALL_USERS = os.getenv('ALLOW_ALL_USERS','True')
 
 ALLOW_ALL_WEBHOOKS = os.getenv('ALLOW_ALL_WEBHOOKS','True')
