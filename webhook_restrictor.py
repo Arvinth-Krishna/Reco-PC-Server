@@ -5,7 +5,7 @@
 
 
 # True -> Allows all webhooks. 
-# False -> only allow - allowed webhooks (in allowed_webhooks_Id_list) or in command restricter list (webhook_commands_restricter_list).
+# False -> only allow - allowed webhooks (in allowed_webhooks_Id_list) or in command restrictor list (webhook_commands_restrictor_list).
 # ⬇⬇⬇
 
 
@@ -15,7 +15,7 @@ blocked_webhooks_Id_list=['901715738501238431',  ]
 
 
 
-webhook_commands_restricter_list=[
+webhook_commands_restrictor_list=[
 
 #(copy starts from here)    
 { 
