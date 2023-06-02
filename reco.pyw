@@ -221,6 +221,15 @@ async def media(ctx, command=None, times=0,*time):
     await media_module.media(ctx, command, times,*time)
 
     
+# Module: mouse
+# Description: Controls Mouse Movements
+# Usage: !mouse command or !mouse command times
+@client.command()
+@Logger(client)
+async def mouse(ctx, command="", times=1, distance=1):
+    await mouse_module.mouse(ctx, command, times, distance)
+
+    
 # Module: Music
 # Description: Play video music from YouTube in VLC Player.
 # Usage: !music query or !m query
