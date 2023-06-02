@@ -36,22 +36,22 @@ async def mouse(ctx,action, duration=0,distance=1):
         if action == 'up':
             color=rm.color('colorforCommonMsg')
             await rm.msg(ctx,f"**Moving mouse up{f'** for **{duration}** seconds.' if duration>1 else'.**'}",color=color)
-            pyautogui.move(0, distance*-100, duration=duration)
+            pyautogui.move(0, distance*-50, duration=duration)
 
         elif action == 'down':
             color=rm.color('colorforCommonMsg')
             await rm.msg(ctx,f"**Moving mouse down{f'** for **{duration}** seconds.' if duration>1 else'.**'}",color=color)
-            pyautogui.move(0, distance*100, duration=duration)
+            pyautogui.move(0, distance*50, duration=duration)
 
         elif action == 'left':
             color=rm.color('colorforCommonMsg')
             await rm.msg(ctx,f"**Moving mouse left{f'** for **{duration}** seconds.' if duration>1 else'.**'}",color=color)
-            pyautogui.move(distance*-100, 0, duration=duration)
+            pyautogui.move(distance*-50, 0, duration=duration)
 
         elif action == 'right':
             color=rm.color('colorforCommonMsg')
             await rm.msg(ctx,f"**Moving mouse right{f'** for **{duration}** seconds.' if duration>1 else'.**'}",color=color)
-            pyautogui.move(distance*100, 0, duration=duration)
+            pyautogui.move(distance*50, 0, duration=duration)
 
         elif action == 'left-click':
             color=rm.color('colorforCommonMsg')
@@ -62,6 +62,23 @@ async def mouse(ctx,action, duration=0,distance=1):
             color=rm.color('colorforCommonMsg')
             await rm.msg(ctx,"**Mouse right_click pressed**",color=color)
             pyautogui.click(button='right')
+        elif action=="":
+            p=configs.BOT_PREFIX
+            await rm.msg(ctx,txt=f'''**Help - {p}mouse <direction> <duration> <distance>**\n\n**Commands:**
+```{p}mouse <up/down/left/right>
+{p}mouse <up/down/left/right> <duration_in_seconds>
+{p}mouse <up/down/left/right> <duration_in_seconds> <distance*offset(50)>
+```
+
+**Example:**
+```
+{p}mouse up
+{p}mouse up 5
+{p}mouse up 5 10```
+
+**FYI**,
+🔸 [YouTube video coming soon!](https://www.youtube.com/channel/UCKU73B2c4FBl8o4b1qBBPxA)
+''')
 
     elif configs.operating_sys == "Linux":
         await ctx.send("Currently mouse feature not added in linux.")
