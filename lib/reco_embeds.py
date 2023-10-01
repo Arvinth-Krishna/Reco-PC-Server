@@ -4,7 +4,7 @@ from logging import fatal
 import discord, configs
 
 
-colorforCommonMsg=int(configs.EMBEDS_COLOR,0)
+colorforCommonMsg=int(configs.DEFAULT_EMBEDS_COLOR,0)
 colorforWaitingMsg=int(configs.SECONDARY_EMBEDS_COLOR,0)
 colorforLockMsg=0xf5c816
 colorforShutdownMsg=0xeb0606
