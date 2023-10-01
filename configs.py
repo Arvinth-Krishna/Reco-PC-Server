@@ -69,7 +69,7 @@ ALLOW_ALL_WEBHOOKS = os.getenv('ALLOW_ALL_WEBHOOKS','True')
 
 # Embeds
 
-EMBEDS_COLOR = os.getenv('DEFAULT_EMBEDS_COLOR',0xf5c816)
+DEFAULT_EMBEDS_COLOR = os.getenv('DEFAULT_EMBEDS_COLOR',0xf5c816)
 
 SECONDARY_EMBEDS_COLOR = os.getenv('SECONDARY_EMBEDS_COLOR',0xF19306)
 # -----------------------------------------------
