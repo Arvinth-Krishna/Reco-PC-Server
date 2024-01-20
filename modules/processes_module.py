@@ -29,7 +29,7 @@ async def processes(ctx):
             applicationNlist=applicationNlist+j[1]+"\n "
             p=p+j[0]+"  ::: "+j[1]+"\n"
         p=p+"\n```"
-        embed=discord.Embed( color=int(configs.EMBEDS_COLOR,0))
+        embed=discord.Embed( color=int(configs.DEFAULT_EMBEDS_COLOR,0))
         embed.set_author(name="!processes", url="https://bit.ly/RecoCommands", icon_url="https://user-images.githubusercontent.com/49812701/123842966-f9f15d80-d92e-11eb-9db0-087202e92f7b.png")
         embed.add_field(name="Foreground Apps:",value=p,inline=False)
         embed.add_field(name="Pro Tip:",value="```\nTry!\n!appquitter PID/Application_Name\nor\n!appquitter PID/Application_Name minutes```",inline=False)
