@@ -61,15 +61,21 @@ SHOW_CPU_USAGE_RP =crp.SHOW_CPU_USAGE_RP
 CUSTOM_RP_ACTIVITY =crp.CUSTOM_RP_ACTIVITY
 # -----------------------------------------------
 
-# Restrictors
+# Restricters
+ALLOW_ADMINS = os.getenv('ALLOW_ADMINS','True')
+
+RECO_OWNER_USER_ID = os.getenv('RECO_OWNER_USER_ID','0000000000')
+
 ALLOW_ALL_USERS = os.getenv('ALLOW_ALL_USERS','True')
 
 ALLOW_ALL_WEBHOOKS = os.getenv('ALLOW_ALL_WEBHOOKS','True')
+
+LIMIT_ALL_USER_COMMAND = os.getenv('LIMIT_ALL_USER_COMMAND','False')
 # -----------------------------------------------
 
 # Embeds
 
-DEFAULT_EMBEDS_COLOR = os.getenv('DEFAULT_EMBEDS_COLOR',0xf5c816)
+EMBEDS_COLOR = os.getenv('DEFAULT_EMBEDS_COLOR',0xf5c816)
 
 SECONDARY_EMBEDS_COLOR = os.getenv('SECONDARY_EMBEDS_COLOR',0xF19306)
 # -----------------------------------------------
