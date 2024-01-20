@@ -15,6 +15,68 @@ blocked_users_Id_list=['111595095059988111', ]
 
 user_commands_restrictor_list=[
 
+   # Below permission will be applied to everyone if LIMIT_ALL_USER_COMMAND=True in .env file.   
+{ 
+   #1️⃣ Replace User Name
+    'userName':'everyone',         # Here you can enter the User name, so you can identify easily in this file. 
+
+   #2️⃣ Replace User ID
+   'userId':'everyone',   # Watch this video if you don't know how to get User ID - https://youtu.be/OS2rp7wHVTI
+
+ #3️⃣ Before sharing your Reco with others. you can set permission to each commands as you wish🥳
+ # "True"  => means Permission granted to use the command.
+ # "False" => means Permission Denied to use the command.
+
+ # For safety and security purposes we have set False as default for all commands and you can override by mentioning commands permission down here.
+
+   # ⚠ Powerfull Commands: (All powerfull commands will be "False" by default)
+    '!abort':False,
+    '!appquitter':False,
+    '!cmd':False,
+    '!file': False,
+    '!hibernate':False,
+    '!lock':False,
+    '!logoff':False,
+    'media_Close&QuitKeys':False,          # !media key-close, !media key-quit 
+    '!powershell':False,
+    '!restart':False,
+    '!shutdown':False,
+    '!sleep':False,
+
+   # Moderate Commands:
+    '!camera':True,
+    '!clip':True,
+    '!launch':True,
+    '!screenshot':True,              
+
+   # Media Commands: (!media)
+    'media_Function_Keys':True,           # next, prev, stop, play, pause
+    'media_Volume_Keys':True,             # vol-up, vol-down, vol-mute
+    'media_ArrowKeys':True,               # key-up, key-down, key-left, key-right
+    'media_Tab,Space&EnterKeys':True,     # key-tab, key-space, key-enter
+    'music_Controls_Keys':True,           # key-f, ey-shuffle, key-loop
+    'other_media_commands':True,          # say-vol, cv
+
+    # Other Commands:
+    '!batterylevel':True,
+    '!batteryreport':True,
+    '!echo':True,
+    '!log':True,
+    '!music':True,
+    '!m':True,
+    '!notification':True,
+    '!help':True,
+    '!processes':True,
+    '!search':True,
+    '!say':True,
+    '!speedtest':True,
+    '!systeminfo':True,
+    '!url':True, 
+    '!version':True, 
+    '!whatsapp':True,
+    '!wlansignal':True,
+    '!youtube':True,
+},
 #(copy starts from here)    
 { 
    #1️⃣ Replace User Name
