@@ -75,7 +75,7 @@ LIMIT_ALL_USER_COMMAND = os.getenv('LIMIT_ALL_USER_COMMAND','False')
 
 # Embeds
 
-EMBEDS_COLOR = os.getenv('DEFAULT_EMBEDS_COLOR',0xf5c816)
+DEFAULT_EMBEDS_COLOR = os.getenv('DEFAULT_EMBEDS_COLOR',0xf5c816)
 
 SECONDARY_EMBEDS_COLOR = os.getenv('SECONDARY_EMBEDS_COLOR',0xF19306)
 # -----------------------------------------------
