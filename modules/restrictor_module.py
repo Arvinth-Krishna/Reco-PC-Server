@@ -182,7 +182,7 @@ async def restrictor(message,client):
                         else:
                             restrictor_data=user_commands_restrictor_list[user_index]
             else:
-                if(bool_Users_restricter_list==False or (boolConverter(configs.ALLOW_ADMINS) or configs.RECO_OWNER_USER_ID==str(message.author.id))):
+                if(bool_Users_restrictor_list==False or (boolConverter(configs.ALLOW_ADMINS) or configs.RECO_OWNER_USER_ID==str(message.author.id))):
                     await addcount(ctx)
                     await client.invoke(ctx)
                 else:
