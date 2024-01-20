@@ -84,7 +84,7 @@ async def restrictor(message,client):
                 if i==msgUserId:
                     bool_allowed_user=True
                     break
-                if bool_blocked_user==False:
+        if bool_blocked_user==False:
             count=0
             for i in user_commands_restrictor_list:             
                 if i['userId']==msgUserId:
