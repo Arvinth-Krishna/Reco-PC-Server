@@ -156,12 +156,13 @@ async def restrictor(message,client):
         print(f"Allow all users: {allow_all_users}\n")
         print('Sender\'s profile:')
         print(f'Name   : {message.author.name}')
+        print(f'ID   : {message.author.id}')
         print(f'Block  : {bool_blocked_user}')
         print(f'Allow  : {bool_allowed_user}')
         print(f'UCRList: {bool_Users_restrictor_list}\n')
         if (bool_blocked_user==False):
             if(allow_all_users==False):
-                if (message.author.guild_permissions.administrator):
+                if ((message.author.guild_permissions.administrator and boolConverter(configs.ALLOW_ADMINS)) or configs.RECO_OWNER_USER_ID==str(message.author.id)):
                     if(bool_Users_restrictor_list==False):
                         await addcount(ctx)
                         await client.invoke(ctx)
@@ -181,7 +182,7 @@ async def restrictor(message,client):
                         else:
                             restrictor_data=user_commands_restrictor_list[user_index]
             else:
-                if(bool_Users_restrictor_list==False):
+                if(bool_Users_restricter_list==False or (boolConverter(configs.ALLOW_ADMINS) or configs.RECO_OWNER_USER_ID==str(message.author.id))):
                     await addcount(ctx)
                     await client.invoke(ctx)
                 else:
@@ -227,7 +228,7 @@ async def restrictor(message,client):
                 if (check_bot==True):
                     await ctx.send("This webhook: ( "+i['webhookName'] +" ) tried to use permission denied command: ( "+original_command+" "+messageContentList[1]+" )")     
                 else:
-                    await ctx.send("This user: ( "+i['userName'] +" ) tried to use permission denied command: ( "+original_command+" "+messageContentList[1]+" )")     
+                    await ctx.send(f"This user: ( **{message.author.name}** ) tried to use permission denied command: ( **"+original_command+" "+messageContentList[1]+"** )")     
 
         elif not messageContentList[0] in i:
                 if (check_bot==True):
@@ -244,7 +245,7 @@ async def restrictor(message,client):
             if (check_bot==True):
                 await ctx.send("This webhook: ( "+i['webhookName']+" ) tried to use permission denied command: ( "+original_command+" )")          
             else:           
-                await ctx.send("This user: ( "+i['userName']+" ) tried to use permission denied command: ( "+original_command+" )")          
+                await ctx.send(f"This user: ( **{message.author.name}** ) tried to use permission denied command: ( **"+original_command+"** )")          
                           
 
 
