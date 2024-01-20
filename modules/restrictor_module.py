@@ -84,7 +84,7 @@ async def restrictor(message,client):
                 if i==msgUserId:
                     bool_allowed_user=True
                     break
-        if bool_blocked_user==False:
+                if bool_blocked_user==False:
             count=0
             for i in user_commands_restrictor_list:             
                 if i['userId']==msgUserId:
@@ -92,6 +92,14 @@ async def restrictor(message,client):
                     user_index=count
                     break
                 count+=1
+            if user_index==None and boolConverter(configs.LIMIT_ALL_USER_COMMAND)==True:
+                count=0
+                for i in user_commands_restrictor_list:             
+                    if i['userId']=='everyone':
+                        bool_Users_restrictor_list=True
+                        user_index=count
+                        break
+                    count+=1
                 
     elif check_bot==True:
         for i in blocked_webhooks_Id_list:
