@@ -24,9 +24,12 @@ SHOW_PC_STATUS_IN_CPU_USAGE=True
 DYNAMIC_BOT_STATUS=True
 SHOW_IDLE_STATUS_IN_MINS=1
 
-# ❌ Restrictors
+# ❌ Restricters
+ALLOW_ADMINS=True                         # Even if you make False Users will have access if ALLOW_ALL_USERS=True
+RECO_OWNER_USER_ID=568649451116298265     # Replace with your User ID if you make ALLOW_ADMINS=False or LIMIT_ALL_USER_COMMAND=True. # Watch this video if you don't know how to get User ID - https://youtu.be/OS2rp7wHVTI
 ALLOW_ALL_USERS=True
 ALLOW_ALL_WEBHOOKS=True
+LIMIT_ALL_USER_COMMAND=False               # True-> Reco will restrict as per user_commands_restricter_list's  'userId':'everyone'. Fasle -> All command access.
 
 
 # 🎨 You can change the Reco Embeds Default colour Here: (FYI | #8f047c =>  0x8f047c | just replace # with 0x)
