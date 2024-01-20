@@ -156,7 +156,7 @@ async def restrictor(message,client):
         print(f"Allow all users: {allow_all_users}\n")
         print('Sender\'s profile:')
         print(f'Name   : {message.author.name}')
-        print(f'ID   : {message.author.id}')
+        print(f'ID     : {message.author.id}')
         print(f'Block  : {bool_blocked_user}')
         print(f'Allow  : {bool_allowed_user}')
         print(f'UCRList: {bool_Users_restrictor_list}\n')
