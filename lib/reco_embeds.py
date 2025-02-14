@@ -4,8 +4,14 @@ from logging import fatal
 import discord, configs
 
 
-colorforCommonMsg=int(configs.DEFAULT_EMBEDS_COLOR,0)
-colorforWaitingMsg=int(configs.SECONDARY_EMBEDS_COLOR,0)
+def safe_int(value, default):
+    try:
+        return int(value, 0)  # Automatically detects base (hex, decimal, etc.)
+    except (ValueError, TypeError):
+        return default  # Fallback to a valid default value
+
+colorforCommonMsg = safe_int(configs.EMBEDS_COLOR, 0xf5c816)
+colorforWaitingMsg = safe_int(configs.SECONDARY_EMBEDS_COLOR, 0xF19306)
 colorforLockMsg=0xf5c816
 colorforShutdownMsg=0xeb0606
 colorforHibernateandSleep=0x52e924
