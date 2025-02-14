@@ -36,6 +36,7 @@ from modules import signout_module
 # Create a bot client with a description and a command prefix
 intents = discord.Intents.default()
 intents.members = True
+intents.message_content=True
 client = Bot(description="A remote system administration bot for discord", command_prefix=configs.BOT_PREFIX,intents=intents)
 
 @Logger(client)
